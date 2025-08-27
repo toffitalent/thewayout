@@ -1,0 +1,13 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.popoverWrapper {
+  @include mq(md, max) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.popoverArrow {
+  color: var(--color-grey-100);
+}

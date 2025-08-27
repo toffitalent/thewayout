@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgBrightnessOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M12 3v5m0 4v9M5.641 5.631A9 9 0 1018.36 18.369m1.68-2.318A9 9 0 007.966 3.953M12.5 8.5l4.15-4.15M12 14l1.025-.983m2.065-1.981l4.28-4.106M12 19.6l3.79-3.79m2-2l3.054-3.054M3 3l18 18" }));
+export default SvgBrightnessOff;

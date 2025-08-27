@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgAffiliate = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M5.931 6.936l1.275 4.249m5.607 5.609l4.251 1.275M11.683 12.317l5.759-5.759M4 5.5a1.5 1.5 0 103 0 1.5 1.5 0 10-3 0M17 5.5a1.5 1.5 0 103 0 1.5 1.5 0 10-3 0M17 18.5a1.5 1.5 0 103 0 1.5 1.5 0 10-3 0M4 15.5a4.5 4.5 0 109 0 4.5 4.5 0 10-9 0" }));
+export default SvgAffiliate;

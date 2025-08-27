@@ -1,0 +1,10 @@
+.circleci
+.git
+**/.cache
+**/.gitignore
+**/.nyc_output
+**/build
+**/coverage
+**/dist
+**/node_modules
+**/Pods

@@ -1,0 +1,16 @@
+| Hi !{rsp.caseManagerFirstName},
+|
+| !{rsp.name} has received a new client referral from The Way Out.
+| Please respond to the applicant within two business days.
+|
+| - Full name: !{user.name}
+| - Address: !{user.address}
+| - Email: !{user.email}
+| - Phone: !{user.phone}
+| - Support services needed: !{user.support}
+| - Offense history: !{user.offense}
+if user.justiceStatus
+  | - Justice status: Currently Incarcerated
+  | - Current facility: !{user.facility}
+  | - Release date: !{user.expectedReleasedAt}
+else

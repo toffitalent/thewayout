@@ -1,0 +1,32 @@
+@use '../core' as *;
+
+$sidebar-padding: 2rem 2rem;
+$sidebar-width: 28rem;
+$sidebar-spacing: 3rem;
+
+$sidebar-mobile-height: 6rem;
+$sidebar-mobile-overlay-bg: rgba(0, 0, 0, 0.5) !default;
+$sidebar-mobile-padding: 1rem 1rem;
+$sidebar-mobile-width: 30rem;
+
+$sidebar-item-accessory-size: 3.2rem;
+$sidebar-item-border-radius: 5px;
+$sidebar-item-font-size: $font-p1-size;
+$sidebar-item-font-weight: 700;
+$sidebar-item-padding: 0.8rem;
+$sidebar-item-spacing: 1rem;
+
+$sidebar-grey-background: var(--color-grey-100);
+$sidebar-grey-color: var(--color-grey-700);
+$sidebar-grey-active-background: var(--color-grey-200);
+$sidebar-grey-active-color: var(--color-text);
+
+$sidebar-dark-background: var(--color-grey-900);
+$sidebar-dark-color: var(--color-grey-300);
+$sidebar-dark-active-background: var(--color-grey-700);
+$sidebar-dark-active-color: var(--color-light);
+
+$sidebar-light-background: var(--color-light);
+$sidebar-light-color: var(--color-grey-700);
+$sidebar-light-active-background: var(--color-grey-200);
+$sidebar-light-active-color: var(--color-text);

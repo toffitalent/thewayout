@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reducers root reducer combines reducers and returns initial state 1`] = `
+{
+  "auth": {
+    "user": null,
+  },
+  "clientJobs": {
+    "appliedJobs": {
+      "entities": {},
+      "forceReload": false,
+      "ids": [],
+      "listUpdatedAt": "",
+      "total": 0,
+    },
+    "caseManager": null,
+    "jobs": {
+      "entities": {},
+      "ids": [],
+    },
+    "jobsList": {
+      "entities": {},
+      "ids": [],
+      "listUpdatedAt": "",
+      "total": 0,
+    },
+    "rspList": {
+      "entities": {},
+      "ids": [],
+    },
+    "suggestedJobs": {
+      "entities": {},
+      "ids": [],
+    },
+  },
+  "employerJobs": {
+    "client": null,
+    "job": null,
+    "jobs": {
+      "entities": {},
+      "ids": [],
+      "listUpdatedAt": "",
+      "total": 0,
+    },
+    "jobsApplications": {
+      "entities": {},
+      "ids": [],
+    },
+  },
+  "rsp": {
+    "account": null,
+    "caseManagers": {
+      "entities": {},
+      "ids": [],
+      "listUpdatedAt": "",
+      "total": 0,
+    },
+    "caseManagersNames": [],
+    "client": null,
+    "clients": {
+      "entities": {},
+      "ids": [],
+      "listUpdatedAt": "",
+      "total": 0,
+    },
+    "invitations": {
+      "entities": {},
+      "ids": [],
+      "listUpdatedAt": "",
+      "total": 0,
+    },
+    "rsp": null,
+    "statistic": null,
+    "statisticsClients": {
+      "entities": {},
+      "ids": [],
+      "listUpdatedAt": "",
+      "total": 0,
+    },
+  },
+}
+`;

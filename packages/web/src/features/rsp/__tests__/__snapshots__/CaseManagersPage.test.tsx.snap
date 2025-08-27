@@ -1,0 +1,489 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CaseManagersPage renders correctly 1`] = `
+<div>
+  <div
+    class="flexDirection-column width-full"
+  >
+    <div
+      class="flexDirection-row justifyContent-space-between"
+    >
+      <h2
+        class="text"
+      >
+        Case Managers
+      </h2>
+      <a
+        class="button md solid c-primary"
+        href="/ssp/case-managers/add"
+      >
+        Add Case Manager
+      </a>
+    </div>
+    <div
+      class="list default marginBottom-8"
+      id=":r0:-tabs"
+      role="tablist"
+    >
+      <button
+        aria-controls=":r0:-tabs-active-panel"
+        aria-selected="true"
+        class="item itemActive"
+        id=":r0:-tabs-active"
+        role="tab"
+        tabindex="0"
+        type="button"
+      >
+        Active
+      </button>
+      <button
+        aria-controls=":r0:-tabs-invited-panel"
+        aria-selected="false"
+        class="item"
+        id=":r0:-tabs-invited"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Invited
+      </button>
+    </div>
+    <div
+      aria-hidden="true"
+      class="listSelect"
+    >
+      <div
+        class="control"
+        role="group"
+      >
+        <div
+          class="root primary md fluid md"
+        >
+          <select
+            class="input"
+            data-testid="tabs-select"
+            id=":r1:"
+          >
+            <option
+              value="active"
+            >
+              Active
+            </option>
+            <option
+              value="invited"
+            >
+              Invited
+            </option>
+          </select>
+          <div
+            class="icon"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby=":r0:-tabs-active"
+      class=""
+      id=":r0:-tabs-active-panel"
+      role="tabpanel"
+    >
+      <div
+        class="borderBottom flexDirection-row width-full paddingTop-5 paddingBottom-5 fontWeight-700"
+      >
+        <p
+          class="text width-1/4"
+        >
+          Case Manager Name
+        </p>
+        <p
+          class="text width-1/4"
+        >
+          Email
+        </p>
+        <p
+          class="text width-1/4"
+        >
+          Phone
+        </p>
+        <p
+          class="text width-1/4"
+        >
+          Case Load
+        </p>
+        <div
+          class="width-12"
+        />
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="infinite-scroll-component__outerdiv"
+        >
+          <div
+            class="infinite-scroll-component "
+            style="height: auto; overflow: auto;"
+          >
+            <div
+              class="borderBottom alignItems-center flexDirection-row"
+            >
+              <div
+                class="alignItems-center flexDirection-row width-1/4 paddingTop-5 paddingBottom-5"
+              >
+                <div
+                  class="avatar s-xs marginRight-3"
+                >
+                  <div
+                    aria-label="Leonard Krasner"
+                    class="initials"
+                  >
+                    LK
+                  </div>
+                </div>
+                <p
+                  class="text fontWeight-700"
+                >
+                  Leonard Krasner
+                </p>
+              </div>
+              <p
+                class="text overflow-hidden width-1/4 whiteSpace-nowrap"
+                style="text-overflow: ellipsis;"
+              >
+                leonard.k@example.com
+              </p>
+              <p
+                class="text width-1/4"
+              >
+                (123) 123-1234
+              </p>
+              <p
+                class="text width-1/4"
+              >
+                1
+              </p>
+              <div
+                class="width-12"
+              >
+                <svg
+                  aria-controls="menu-:r2:"
+                  aria-expanded="false"
+                  aria-haspopup="menu"
+                  aria-hidden="true"
+                  class="icon width-6 height-6"
+                  cursor="pointer"
+                  data-testid="menu"
+                  focusable="false"
+                  id="menu-:r2:-trigger"
+                  role="button"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M11 12a1 1 0 102 0 1 1 0 10-2 0M11 19a1 1 0 102 0 1 1 0 10-2 0M11 5a1 1 0 102 0 1 1 0 10-2 0"
+                  />
+                </svg>
+                <div
+                  class="menu"
+                  data-popper-escaped="true"
+                  data-popper-placement="bottom-start"
+                  data-popper-reference-hidden="true"
+                  style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; transform: translate(0px, 0px);"
+                >
+                  <div
+                    aria-orientation="vertical"
+                    class="list"
+                    id="menu-:r2:"
+                    role="menu"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="group"
+                      role="group"
+                    >
+                      <button
+                        class="button md text c-primary item minWidth-40"
+                        role="menuitem"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        Edit
+                      </button>
+                      <button
+                        class="button md text c-primary item minWidth-40"
+                        role="menuitem"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby=":r0:-tabs-invited"
+      class=""
+      hidden=""
+      id=":r0:-tabs-invited-panel"
+      role="tabpanel"
+    />
+  </div>
+</div>
+`;
+
+exports[`CaseManagersPage renders correctly invitations tab 1`] = `
+<div>
+  <div
+    class="flexDirection-column width-full"
+  >
+    <div
+      class="flexDirection-row justifyContent-space-between"
+    >
+      <h2
+        class="text"
+      >
+        Case Managers
+      </h2>
+      <a
+        class="button md solid c-primary"
+        href="/ssp/case-managers/add"
+      >
+        Add Case Manager
+      </a>
+    </div>
+    <div
+      class="list default marginBottom-8"
+      id=":r5:-tabs"
+      role="tablist"
+    >
+      <button
+        aria-controls=":r5:-tabs-active-panel"
+        aria-selected="false"
+        class="item"
+        id=":r5:-tabs-active"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Active
+      </button>
+      <button
+        aria-controls=":r5:-tabs-invited-panel"
+        aria-selected="true"
+        class="item itemActive"
+        id=":r5:-tabs-invited"
+        role="tab"
+        tabindex="0"
+        type="button"
+      >
+        Invited
+      </button>
+    </div>
+    <div
+      aria-hidden="true"
+      class="listSelect"
+    >
+      <div
+        class="control"
+        role="group"
+      >
+        <div
+          class="root primary md fluid md"
+        >
+          <select
+            class="input"
+            data-testid="tabs-select"
+            id=":r6:"
+          >
+            <option
+              value="active"
+            >
+              Active
+            </option>
+            <option
+              value="invited"
+            >
+              Invited
+            </option>
+          </select>
+          <div
+            class="icon"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby=":r5:-tabs-active"
+      class=""
+      hidden=""
+      id=":r5:-tabs-active-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":r5:-tabs-invited"
+      class=""
+      id=":r5:-tabs-invited-panel"
+      role="tabpanel"
+    >
+      <div
+        class="borderBottom flexDirection-row width-full paddingTop-5 paddingBottom-5 fontWeight-700"
+      >
+        <p
+          class="text width-1/3"
+        >
+          Case Manager Name
+        </p>
+        <p
+          class="text width-1/3"
+        >
+          Email
+        </p>
+        <p
+          class="text width-1/3"
+        >
+          Phone
+        </p>
+        <div
+          class="width-12"
+        />
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="infinite-scroll-component__outerdiv"
+        >
+          <div
+            class="infinite-scroll-component "
+            style="height: auto; overflow: auto;"
+          >
+            <div
+              class="borderBottom alignItems-center flexDirection-row"
+            >
+              <div
+                class="alignItems-center flexDirection-row width-1/3 paddingTop-5 paddingBottom-5"
+              >
+                <div
+                  class="avatar s-xs marginRight-3"
+                >
+                  <div
+                    aria-label="First Last"
+                    class="initials"
+                  >
+                    FL
+                  </div>
+                </div>
+                <p
+                  class="text fontWeight-700"
+                >
+                  First Last
+                </p>
+              </div>
+              <p
+                class="text overflow-hidden width-1/3 whiteSpace-nowrap"
+                style="text-overflow: ellipsis;"
+              >
+                first.last@email.com
+              </p>
+              <p
+                class="text width-1/3"
+              >
+                (334) 222-3333
+              </p>
+              <div
+                class="width-12"
+              >
+                <svg
+                  aria-controls="menu-:ra:"
+                  aria-expanded="false"
+                  aria-haspopup="menu"
+                  aria-hidden="true"
+                  class="icon width-6 height-6"
+                  cursor="pointer"
+                  data-testid="menu"
+                  focusable="false"
+                  id="menu-:ra:-trigger"
+                  role="button"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M11 12a1 1 0 102 0 1 1 0 10-2 0M11 19a1 1 0 102 0 1 1 0 10-2 0M11 5a1 1 0 102 0 1 1 0 10-2 0"
+                  />
+                </svg>
+                <div
+                  class="menu"
+                  data-popper-escaped="true"
+                  data-popper-placement="bottom-start"
+                  data-popper-reference-hidden="true"
+                  style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; transform: translate(0px, 0px);"
+                >
+                  <div
+                    aria-orientation="vertical"
+                    class="list"
+                    id="menu-:ra:"
+                    role="menu"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="group"
+                      role="group"
+                    >
+                      <button
+                        class="button md text c-primary item minWidth-40"
+                        role="menuitem"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,15 @@
+@use '@styles/theme';
+
+.round {
+  border-radius: 9999px;
+}
+
+@each $button-size, $size in theme.$button-sizes {
+  .iconButton.#{$button-size} {
+    $font-size: map-get($size, 'font') * 1.25;
+
+    padding-left: 0;
+    padding-right: 0;
+    font-size: $font-size;
+  }
+}

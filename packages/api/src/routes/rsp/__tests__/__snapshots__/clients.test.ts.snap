@@ -1,0 +1,889 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients list rsp clients 1`] = `
+[
+  {
+    "caseManagerFirstName": null,
+    "caseManagerId": null,
+    "caseManagerLastName": null,
+    "id": "01817e24-0d43-7cac-9d31-2ce8609bafd2",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "pending",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "keenan43@example.com",
+      "firstName": "Keenan",
+      "lastName": "Boehm",
+    },
+  },
+  {
+    "caseManagerFirstName": null,
+    "caseManagerId": null,
+    "caseManagerLastName": null,
+    "id": "01817e24-0d43-7c89-912f-c849cacdbb3c",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "pending",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "akeem.heathcote@example.com",
+      "firstName": "Akeem",
+      "lastName": "Heathcote",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-7aa6-988d-d92bdfb0121a",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "emelia_harvey@example.com",
+      "firstName": "Emelia",
+      "lastName": "Harvey",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-7a8f-b4f3-bd65c31fc59e",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "gertrude_king@example.com",
+      "firstName": "Gertrude",
+      "lastName": "King",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-7a88-8250-2ab9214f1582",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "archibald0@example.com",
+      "firstName": "Archibald",
+      "lastName": "Corkery",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-7a63-b6dd-569226c6d98b",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "marcelo97@example.com",
+      "firstName": "Marcelo",
+      "lastName": "Stanton",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-7a5b-a6b3-21088924f0f0",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "ali_abernathy@example.com",
+      "firstName": "Ali",
+      "lastName": "Abernathy",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-7a4b-b09c-e97266167180",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "francis.kihn@example.com",
+      "firstName": "Francis",
+      "lastName": "Kihn",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-7a30-a4ac-565f077e6c9f",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "nicola32@example.com",
+      "firstName": "Nicola",
+      "lastName": "Schinner",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-79f0-b60b-4953b58d48a3",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "celine_steuber@example.com",
+      "firstName": "Celine",
+      "lastName": "Steuber",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-79ec-868c-b62960f03cf8",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "destin84@example.com",
+      "firstName": "Destin",
+      "lastName": "Langosh",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-79e9-982e-166a0d4afe4a",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "khalid.kreiger@example.com",
+      "firstName": "Khalid",
+      "lastName": "Kreiger",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-79cb-a83c-c815e76f2e3e",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "blaze_hirthe34@example.com",
+      "firstName": "Blaze",
+      "lastName": "Hirthe",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-79c6-a13a-0decdd1562c6",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "nico57@example.com",
+      "firstName": "Nico",
+      "lastName": "Heidenreich",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-79ae-b8b0-df971b45e1ee",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "chauncey_hilpert57@example.com",
+      "firstName": "Chauncey",
+      "lastName": "Hilpert",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-79a3-bdc7-c20c7893d530",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "lillian99@example.com",
+      "firstName": "Lillian",
+      "lastName": "Grimes",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-7974-bc3c-6b4dcf54484e",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "bud_goldner28@example.com",
+      "firstName": "Bud",
+      "lastName": "Goldner",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-793f-bc55-4e1428822790",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "makenna32@example.com",
+      "firstName": "Makenna",
+      "lastName": "Heller",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-791d-9143-36d6c4dde49d",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "jack52@example.com",
+      "firstName": "Jack",
+      "lastName": "Christiansen",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-791a-b322-3cf23a4d0166",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "eunice.witting@example.com",
+      "firstName": "Eunice",
+      "lastName": "Witting",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-7914-9b0c-7eed17bedc8a",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "zelda82@example.com",
+      "firstName": "Zelda",
+      "lastName": "McKenzie",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-790d-907e-36bf201e0454",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "hilda_ankunding@example.com",
+      "firstName": "Hilda",
+      "lastName": "Ankunding",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-790a-a3d9-6778b0382fe6",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "irving.braun61@example.com",
+      "firstName": "Irving",
+      "lastName": "Braun",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-78c7-899e-6ce2e45a8bf2",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "kennedy.little@example.com",
+      "firstName": "Kennedy",
+      "lastName": "Little",
+    },
+  },
+  {
+    "caseManagerFirstName": "Mariah",
+    "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+    "caseManagerLastName": "Barton",
+    "id": "01817e24-0d43-78ac-9b49-14643230051d",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "christian.bauch@example.com",
+      "firstName": "Christian",
+      "lastName": "Bauch",
+    },
+  },
+]
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients list rsp clients with filters 1`] = `
+[
+  {
+    "caseManagerFirstName": null,
+    "caseManagerId": null,
+    "caseManagerLastName": null,
+    "id": "01817e24-0d42-7975-8a06-059d5ca88e39",
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "status": "active",
+    "user": {
+      "client": {
+        "phone": null,
+      },
+      "email": "annetta.robel@example.com",
+      "firstName": "Annetta",
+      "lastName": "Robel",
+    },
+  },
+]
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients/:clientId returns rsp client 1`] = `
+{
+  "caseManager": null,
+  "caseManagerId": null,
+  "id": "01817e24-0d42-7902-a2bf-60cb82a6785b",
+  "notes": null,
+  "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+  "status": "pending",
+  "user": {
+    "client": {
+      "address": "Fahey Pine",
+      "age": "25-34",
+      "city": "South Gust",
+      "disability": false,
+      "education": [],
+      "ethnicity": "eastAsian",
+      "experience": [],
+      "firstName": "Cordie",
+      "gender": "female",
+      "id": "01817e24-0d42-7721-8438-6e35862b8d41",
+      "justiceStatus": "freeWorld",
+      "languages": [],
+      "lastName": "Gutkowski",
+      "license": [],
+      "maritalStatus": "married",
+      "offense": [
+        "burglary",
+      ],
+      "orientation": "heterosexual",
+      "personalStrengths": [],
+      "personalSummary": "Incidunt esse rerum inventore modi. Possimus temporibus unde commodi adipisci aperiam ipsum. Accusamus adipisci quam iure quasi necessitatibus. Optio consectetur ratione.",
+      "phone": null,
+      "postalCode": "97568",
+      "referredBy": "newsMedia",
+      "relativeExperience": [],
+      "releasedAt": "releasedAt01",
+      "religion": "noReligion",
+      "state": "AK",
+      "stateOrFederal": "federal",
+      "support": [
+        "clothing",
+      ],
+      "timeServed": "timeServed01",
+      "updatedAt": "<Date>",
+      "userId": "01817e24-0d42-746b-a19b-ecca4410365a",
+      "veteranOrJustice": [
+        "justiceImpacted",
+      ],
+      "veteranStatus": "notVeteran",
+    },
+    "createdAt": "<Date>",
+    "email": "jordy.schroeder2@example.com",
+    "firstName": "Jordy",
+    "id": "01817e24-0d42-746b-a19b-ecca4410365a",
+    "lastName": "Schroeder",
+    "type": "client",
+    "updatedAt": "<Date>",
+  },
+}
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients/:clientId returns rsp client information only to assigned case manager 1`] = `
+{
+  "code": "ResourceNotFound",
+  "message": "Client 01817e24-0d42-7902-a2bf-60cb82a6785b not found",
+  "status": 404,
+}
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients/statistic/:category returns statistics for age 1`] = `
+{
+  "result": {
+    "16-24": 0,
+    "25-34": 32,
+    "35-44": 0,
+    "45-54": 1,
+    "55-64": 0,
+    "65+": 0,
+  },
+  "total": 33,
+}
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients/statistic/:category returns statistics for ethnicity 1`] = `
+{
+  "result": {
+    "blackAfricanAmerican": 1,
+    "blackAfricanAmericanEastAsian": 0,
+    "blackAfricanAmericanLatinxHispanic": 0,
+    "blackAfricanAmericanNativeAmericanIndigenous": 0,
+    "blackAfricanAmericanPacificIslander": 0,
+    "blackAfricanAmericanSouthAsian": 0,
+    "blackAfricanAmericanSoutheastAsian": 0,
+    "blackAfricanAmericanWhite": 0,
+    "eastAsian": 31,
+    "eastAsianBlack": 0,
+    "eastAsianLatinxHispanic": 0,
+    "eastAsianNativeAmericanIndigenous": 0,
+    "eastAsianPacificIslander": 0,
+    "eastAsianSouthAsian": 0,
+    "eastAsianSoutheastAsian": 0,
+    "eastAsianWhite": 0,
+    "latinxHispanic": 1,
+    "latinxHispanicBlack": 0,
+    "latinxHispanicEastAsian": 0,
+    "latinxHispanicNativeAmericanIndigenous": 0,
+    "latinxHispanicPacificIslander": 0,
+    "latinxHispanicSouthAsian": 0,
+    "latinxHispanicSoutheastAsian": 0,
+    "latinxHispanicWhite": 0,
+    "nativeAmericanIndigenous": 0,
+    "nativeAmericanIndigenousBlackAfricanAmerican": 0,
+    "nativeAmericanIndigenousEastAsian": 0,
+    "nativeAmericanIndigenousLatinxHispanic": 0,
+    "nativeAmericanIndigenousPacificIslander": 0,
+    "nativeAmericanIndigenousSouthAsian": 0,
+    "nativeAmericanIndigenousSoutheastAsian": 0,
+    "nativeAmericanIndigenousWhite": 0,
+    "pacificIslander": 0,
+    "pacificIslanderBlackAfricanAmerican": 0,
+    "pacificIslanderEastAsian": 0,
+    "pacificIslanderLatinxHispanic": 0,
+    "pacificIslanderNativeAmericanIndigenous": 0,
+    "pacificIslanderSouthAsian": 0,
+    "pacificIslanderSoutheastAsian": 0,
+    "pacificIslanderWhite": 0,
+    "southAsian": 0,
+    "southAsianBlackAfricanAmerican": 0,
+    "southAsianEastAsian": 0,
+    "southAsianLatinxHispanic": 0,
+    "southAsianNativeAmericanIndigenous": 0,
+    "southAsianPacificIslander": 0,
+    "southAsianSoutheastAsian": 0,
+    "southAsianWhite": 0,
+    "southeastAsian": 0,
+    "southeastAsianBlackAfricanAmerican": 0,
+    "southeastAsianEastAsian": 0,
+    "southeastAsianLatinxHispanic": 0,
+    "southeastAsianNativeAmericanIndigenous": 0,
+    "southeastAsianPacificIslander": 0,
+    "southeastAsianSouthAsian": 0,
+    "southeastAsianWhite": 0,
+    "white": 0,
+    "whiteBlackAfricanAmerican": 0,
+    "whiteEastAsian": 0,
+    "whiteLatinxHispanic": 0,
+    "whiteNativeAmericanIndigenous": 0,
+    "whitePacificIslander": 0,
+    "whiteSouthAsian": 0,
+    "whiteSoutheastAsian": 0,
+  },
+  "total": 33,
+}
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients/statistic/:category returns statistics for gender 1`] = `
+{
+  "result": {
+    "female": 31,
+    "genderFluid": 0,
+    "intersex": 0,
+    "male": 1,
+    "nonBinary": 0,
+    "preferNotToSay": 1,
+    "transgender": 0,
+  },
+  "total": 33,
+}
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients/statistic/:category returns statistics for offense 1`] = `
+{
+  "result": {
+    "burglary": 28,
+    "distribution": 1,
+    "diuDwi": 1,
+    "embezzlement": 2,
+  },
+  "total": 33,
+}
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients/statistic/:category returns statistics for postalCode 1`] = `
+{
+  "result": {
+    "00477": 1,
+    "02768": 1,
+    "05079": 1,
+    "14596": 1,
+    "18644": 1,
+    "19758": 1,
+    "22015": 1,
+    "22218": 1,
+    "23914": 1,
+    "29046": 1,
+    "30793": 1,
+    "33078": 1,
+    "36065": 1,
+    "42337": 1,
+    "44178": 1,
+    "48865": 1,
+    "51220": 1,
+    "53910": 2,
+    "55076": 1,
+    "55318": 1,
+    "58524": 1,
+    "59363": 1,
+    "59974": 1,
+    "62238": 1,
+    "63871": 1,
+    "67595": 1,
+    "80170": 1,
+    "80453": 1,
+    "84953": 1,
+    "95534": 1,
+    "97568": 1,
+    "98638": 1,
+  },
+  "total": 33,
+}
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients/statistic/:category returns statistics for releasedAt 1`] = `
+{
+  "result": {
+    "2024-06": 1,
+    "2024-08": 1,
+    "2024-12": 2,
+  },
+  "total": 33,
+}
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients/statistic/:category returns statistics for services 1`] = `
+{
+  "result": {
+    "basicHygieneSupport": 1,
+    "basicTechSkills": 2,
+    "childCare": 1,
+    "clothing": 1,
+  },
+  "total": 33,
+}
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients/statistic/:category returns statistics for stateOrFederal 1`] = `
+{
+  "result": {
+    "both": 1,
+    "federal": 30,
+    "state": 1,
+  },
+  "total": 33,
+}
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients/statistic/:category returns statistics for status 1`] = `
+{
+  "result": {
+    "active": 26,
+    "closed": 0,
+    "pending": 7,
+  },
+  "total": 33,
+}
+`;
+
+exports[`Routes > Rsp > Clients GET /rsp/:id/clients/statistic/:category returns statistics for veteran 1`] = `
+{
+  "result": {
+    "no": 31,
+    "yes": 2,
+  },
+  "total": 33,
+}
+`;
+
+exports[`Routes > Rsp > Clients PATCH /rsp/:id/clients/:clientId updates rsp client status 1`] = `
+{
+  "caseManager": null,
+  "caseManagerId": null,
+  "id": "01817e24-0d42-7902-a2bf-60cb82a6785b",
+  "notes": null,
+  "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+  "status": "active",
+  "user": {
+    "client": {
+      "address": "Fahey Pine",
+      "age": "25-34",
+      "city": "South Gust",
+      "disability": false,
+      "education": [],
+      "ethnicity": "eastAsian",
+      "experience": [],
+      "firstName": "Cordie",
+      "gender": "female",
+      "id": "01817e24-0d42-7721-8438-6e35862b8d41",
+      "justiceStatus": "freeWorld",
+      "languages": [],
+      "lastName": "Gutkowski",
+      "license": [],
+      "maritalStatus": "married",
+      "offense": [
+        "burglary",
+      ],
+      "orientation": "heterosexual",
+      "personalStrengths": [],
+      "personalSummary": "Incidunt esse rerum inventore modi. Possimus temporibus unde commodi adipisci aperiam ipsum. Accusamus adipisci quam iure quasi necessitatibus. Optio consectetur ratione.",
+      "phone": null,
+      "postalCode": "97568",
+      "referredBy": "newsMedia",
+      "relativeExperience": [],
+      "releasedAt": "releasedAt01",
+      "religion": "noReligion",
+      "state": "AK",
+      "stateOrFederal": "federal",
+      "support": [
+        "clothing",
+      ],
+      "timeServed": "timeServed01",
+      "updatedAt": "<Date>",
+      "userId": "01817e24-0d42-746b-a19b-ecca4410365a",
+      "veteranOrJustice": [
+        "justiceImpacted",
+      ],
+      "veteranStatus": "notVeteran",
+    },
+    "createdAt": "<Date>",
+    "email": "jordy.schroeder2@example.com",
+    "firstName": "Jordy",
+    "id": "01817e24-0d42-746b-a19b-ecca4410365a",
+    "lastName": "Schroeder",
+    "type": "client",
+    "updatedAt": "<Date>",
+  },
+}
+`;
+
+exports[`Routes > Rsp > Clients PATCH /rsp/:id/clients/:clientId/case-manager assigns rsp client case manager 1`] = `
+{
+  "caseManager": {
+    "id": "01817e24-0d42-786a-a454-7291c0173657",
+    "isProfileFilled": true,
+    "role": "member",
+    "rsp": {
+      "address": "Ibrahim Pine",
+      "avatar": null,
+      "city": "East Barneybury",
+      "createdAt": "<Date>",
+      "description": "Enim sequi iusto.
+Explicabo quisquam omnis nisi corporis corrupti.
+Cupiditate qui culpa numquam iure quisquam vero architecto.",
+      "email": null,
+      "id": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+      "justiceStatus": [
+        "halfwayHouse",
+        "parole",
+      ],
+      "name": "Oberbrunner and Sons",
+      "offenses": [
+        "burglary",
+        "distribution",
+        "diuDwi",
+        "embezzlement",
+      ],
+      "phone": null,
+      "postalCode": "78580",
+      "servicesArea": [
+        "Adams",
+        "Ashland",
+        "Barron",
+      ],
+      "state": "AK",
+      "support": [
+        "basicHygieneSupport",
+        "clothing",
+        "basicTechSkills",
+        "childCare",
+      ],
+      "updatedAt": "<Date>",
+      "veteranOrJustice": [
+        "justiceImpacted",
+      ],
+    },
+    "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "userId": "01817e24-0d42-75e5-8c38-8eb33c91884c",
+  },
+  "caseManagerId": "01817e24-0d42-786a-a454-7291c0173657",
+  "id": "01817e24-0d42-7902-a2bf-60cb82a6785b",
+  "notes": null,
+  "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+  "status": "pending",
+  "user": {
+    "client": {
+      "address": "Fahey Pine",
+      "age": "25-34",
+      "city": "South Gust",
+      "disability": false,
+      "education": [],
+      "ethnicity": "eastAsian",
+      "experience": [],
+      "firstName": "Cordie",
+      "gender": "female",
+      "id": "01817e24-0d42-7721-8438-6e35862b8d41",
+      "justiceStatus": "freeWorld",
+      "languages": [],
+      "lastName": "Gutkowski",
+      "license": [],
+      "maritalStatus": "married",
+      "offense": [
+        "burglary",
+      ],
+      "orientation": "heterosexual",
+      "personalStrengths": [],
+      "personalSummary": "Incidunt esse rerum inventore modi. Possimus temporibus unde commodi adipisci aperiam ipsum. Accusamus adipisci quam iure quasi necessitatibus. Optio consectetur ratione.",
+      "phone": null,
+      "postalCode": "97568",
+      "referredBy": "newsMedia",
+      "relativeExperience": [],
+      "releasedAt": "releasedAt01",
+      "religion": "noReligion",
+      "state": "AK",
+      "stateOrFederal": "federal",
+      "support": [
+        "clothing",
+      ],
+      "timeServed": "timeServed01",
+      "updatedAt": "<Date>",
+      "userId": "01817e24-0d42-746b-a19b-ecca4410365a",
+      "veteranOrJustice": [
+        "justiceImpacted",
+      ],
+      "veteranStatus": "notVeteran",
+    },
+    "createdAt": "<Date>",
+    "email": "jordy.schroeder2@example.com",
+    "firstName": "Jordy",
+    "id": "01817e24-0d42-746b-a19b-ecca4410365a",
+    "lastName": "Schroeder",
+    "type": "client",
+    "updatedAt": "<Date>",
+  },
+}
+`;
+
+exports[`Routes > Rsp > Clients PATCH /rsp/:id/clients/:clientId/case-manager assigns rsp client case manager only by owner 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "owner",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Allowed only to owners",
+  "status": 400,
+}
+`;

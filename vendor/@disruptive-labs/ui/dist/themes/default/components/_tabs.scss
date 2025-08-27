@@ -1,0 +1,9 @@
+@use '../core' as *;
+
+$tab-border-color: $border-color !default;
+$tab-border-radius: $border-radius !default;
+$tab-border-width: $border-width !default;
+$tab-color: var(--color-grey-700) !default;
+$tab-focus-shadow-opacity: 0.2 !default;
+$tab-font-weight: 700 !default;
+$tab-spacing: $spacing_2_5 !default;

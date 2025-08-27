@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgEaseInOutControlPoints = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M17 20a2 2 0 104 0 2 2 0 00-4 0zM17 20h-2M7 4a2 2 0 11-4 0 2 2 0 014 0zM7 4h2M14 4h-2M12 20h-2M3 20c8 0 10-16 18-16" }));
+export default SvgEaseInOutControlPoints;

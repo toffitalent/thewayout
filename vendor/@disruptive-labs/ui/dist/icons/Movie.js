@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgMovie = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M4 6a2 2 0 012-2h12a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2zM8 4v16M16 4v16M4 8h4M4 16h4M4 12h16M16 8h4M16 16h4" }));
+export default SvgMovie;

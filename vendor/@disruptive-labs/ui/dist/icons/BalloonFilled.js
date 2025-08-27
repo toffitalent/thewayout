@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgBalloonFilled = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M12 1a7 7 0 017 7c0 5.457-3.028 10-7 10-3.9 0-6.89-4.379-6.997-9.703L5 8l.004-.24A7 7 0 0112 1zm0 4a1 1 0 000 2l.117.007A1 1 0 0113 8l.007.117A1 1 0 0015 8a3 3 0 00-3-3z", fill: "currentColor", stroke: "none" }), React.createElement("path", { d: "M12 16a1 1 0 01.993.883L13 17v1a3 3 0 01-2.824 2.995L10 21H7a1 1 0 00-.993.883L6 22a1 1 0 01-2 0 3 3 0 012.824-2.995L7 19h3a1 1 0 00.993-.883L11 18v-1a1 1 0 011-1z", fill: "currentColor", stroke: "none" }));
+export default SvgBalloonFilled;

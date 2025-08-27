@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateProfilePageWithLayout renders correctly 1`] = `
+<div>
+  <div
+    class="wizardWrapper"
+  >
+    <section
+      class="layout"
+    >
+      <div
+        class="container"
+      >
+        <header
+          class="header"
+        >
+          <button
+            aria-label="Previous"
+            class="button sm outline c-grey disabled iconButton sm round back backHidden"
+            disabled=""
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+                stroke="none"
+              />
+              <polyline
+                points="15 6 9 12 15 18"
+              />
+            </svg>
+          </button>
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="0"
+            class="progress md rounded trackColor progress"
+            role="progressbar"
+          >
+            <div
+              class="track bgcolor-primary"
+              style="transform: translateX(-100%);"
+            />
+          </div>
+          <h2
+            class="text title"
+          >
+            What's Your Phone Number?
+          </h2>
+        </header>
+        <div
+          class="maxWidth-96 marginRight-auto marginLeft-auto"
+        >
+          <form>
+            <div
+              class="control"
+              role="group"
+            >
+              <label
+                class="label"
+                for=":r0:"
+              >
+                Phone number
+              </label>
+              <div
+                class="root primary md fluid md"
+              >
+                <input
+                  class="input"
+                  id=":r0:"
+                  maxlength="14"
+                  name="phone"
+                  placeholder="Add your phone number"
+                  type="text"
+                  validate="[object Object]"
+                  value=""
+                />
+              </div>
+            </div>
+            <button
+              class="button md solid c-primary disabled fluid maxWidth-96 marginTop-8"
+              disabled=""
+              type="submit"
+            >
+              Save & Next
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;

@@ -1,0 +1,96 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.wizardWrapper {
+  form > div[role='group'] {
+    text-align: left;
+
+    fieldset > div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    fieldset[class*='offenseCategoryStep'] {
+      margin: unset;
+    }
+    fieldset[class*='offenseCategoryStep'] > legend {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+      line-height: 27px;
+    }
+
+    div[class*='fieldHalfWidth'] {
+      + div[id*='helptext'] {
+        position: absolute;
+        margin-top: 0;
+      }
+    }
+  }
+
+  form[class*='detailsStep'] {
+    max-width: 38.4rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section > div[class*='Content'] {
+    padding-left: unset;
+    padding-right: unset;
+
+    > header > div[role='progressbar'] {
+      max-width: 100%;
+
+      @include mq(md) {
+        max-width: 75%;
+      }
+    }
+  }
+}
+
+.confirm {
+  &Wrapper {
+    padding: 0 20px;
+
+    @include mq(md) {
+      padding: 30px 40px;
+    }
+  }
+
+  &Item {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(md) {
+      flex-direction: row;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &Edit {
+      display: flex;
+      @include mq(md, max) {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.skills {
+  &Title {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(md) {
+      flex-direction: row;
+    }
+
+    &Text {
+      @include mq(md, max) {
+        padding-bottom: 18px;
+      }
+    }
+  }
+}

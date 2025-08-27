@@ -1,0 +1,11 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.wrapper {
+  form > div[class*='layout_width-1__2'] {
+    div[id*='helptext'] {
+      position: absolute;
+      margin-top: 0;
+    }
+  }
+}

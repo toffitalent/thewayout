@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgPlugConnectedX = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M20 16l-4 4M7 12l5 5-1.5 1.5a3.536 3.536 0 11-5-5L7 12zM17 12l-5-5 1.5-1.5a3.536 3.536 0 115 5L17 12zM3 21l2.5-2.5M18.5 5.5L21 3M10 11l-2 2M13 14l-2 2M16 16l4 4" }));
+export default SvgPlugConnectedX;

@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgChisel = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M14 14l1.5 1.5M18.347 15.575l2.08 2.079a1.96 1.96 0 01-2.773 2.772l-2.08-2.079a1.96 1.96 0 012.773-2.772zM3 6l3-3 7.414 7.414A2 2 0 0114 11.828V14h-2.172a2 2 0 01-1.414-.586L3 6z" }));
+export default SvgChisel;

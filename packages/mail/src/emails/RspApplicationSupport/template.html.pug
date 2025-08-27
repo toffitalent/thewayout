@@ -1,0 +1,19 @@
+extends ../templates/base.pug
+include ../templates/mixins.pug
+
+block content
+  h1 Hi #{rsp.caseManagerFirstName},
+  p 
+    | #{rsp.name} has received a new client referral from The Way Out.
+    | Please respond to the applicant within two business days.
+  ul
+    li Full name: #{user.name}
+    li Address: #{user.address}
+    li Email: #{user.email}
+    li Phone: #{user.phone}
+    li Support services needed: #{user.support}
+    li Offense history: #{user.offense}
+    if user.justiceStatus
+      li Justice status: Currently Incarcerated
+      li Current facility: #{user.facility}
+      li Release date: #{user.expectedReleasedAt}

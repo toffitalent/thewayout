@@ -1,0 +1,74 @@
+@use 'sass:list';
+@use '@styles/theme';
+
+.border {
+  &Width {
+    border-style: solid;
+    border-width: theme.$border-width !important;
+    &-0 {
+      border-style: solid;
+      border-width: 0px !important;
+    }
+    &-1 {
+      border-style: solid;
+      border-width: 1px !important;
+    }
+  }
+
+  $prefixes: (
+    'Top': 'border-top',
+    'Right': 'border-right',
+    'Bottom': 'border-bottom',
+    'Left': 'border-left',
+  );
+
+  @each $side, $prefix in $prefixes {
+    &#{$side} {
+      #{$prefix}-color: theme.$border-color;
+      #{$prefix}-style: solid;
+      #{$prefix}-width: theme.$border-width !important;
+    }
+    &#{$side}-0 {
+      #{$prefix}-width: 0px !important;
+    }
+    &#{$side}-1 {
+      #{$prefix}-color: theme.$border-color;
+      #{$prefix}-style: solid;
+      #{$prefix}-width: 1px !important;
+    }
+  }
+
+  &Color {
+    @each $color in theme.$colors {
+      &-#{$color} {
+        border-color: var(--color-#{$color}) !important;
+      }
+
+      @for $i from 1 through 9 {
+        &-#{$color}-#{$i * 100} {
+          border-color: var(--color-#{$color}-#{$i * 100}) !important;
+        }
+      }
+    }
+
+    @each $color in theme.$extra-colors {
+      &-#{$color} {
+        border-color: var(--color-#{$color}) !important;
+      }
+    }
+
+    &-transparent {
+      border-color: theme.$color-transparent;
+    }
+  }
+}
+
+.rounded {
+  border-radius: theme.$border-radius !important;
+
+  @each $br, $size in theme.$border-radii {
+    &-#{$br} {
+      border-radius: $size !important;
+    }
+  }
+}

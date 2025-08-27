@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgYinYangFilled = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M17 3.34a10 10 0 11-14.995 8.984L2 12l.005-.324A10 10 0 0117 3.34zM8 5.072A8 8 0 0012 20l.2-.005a4 4 0 000-7.99L12 12a4 4 0 01-.2-7.995L12 4a7.995 7.995 0 00-4 1.072zM12 6.5a1.5 1.5 0 100 3 1.5 1.5 0 000-3z", fill: "currentColor", stroke: "none" }), React.createElement("path", { d: "M12 14.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3z", fill: "currentColor", stroke: "none" }));
+export default SvgYinYangFilled;

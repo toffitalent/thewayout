@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgCameraOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M8.297 4.289A.997.997 0 019 4h6a1 1 0 011 1 2 2 0 002 2h1a2 2 0 012 2v8m-1.187 2.828c-.249.11-.524.172-.813.172H5a2 2 0 01-2-2V9a2 2 0 012-2h1c.298 0 .58-.065.834-.181M10.422 10.448a3 3 0 104.15 4.098M3 3l18 18" }));
+export default SvgCameraOff;

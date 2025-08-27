@@ -1,0 +1,23 @@
+extends ../templates/base.pug
+include ../templates/mixins.pug
+
+block preheader
+  | Below is the verification code you requested. This code is only valid for 1 hour.
+
+block content
+  h1 Hi #{user ? user.firstName : 'there'},
+  p
+    | Below is the verification code you requested.
+    |
+    strong This code is only valid for 1 hour.
+  +attributes !{code}
+  p
+    | If you did not request a verification code, please ignore this email or
+    |
+    a(href=`mailto:${config.get('company.supportEmail')}`) contact support
+    |
+    | if you have questions.
+  p
+    | Thanks,
+    br
+    | The !{config.get('company.name')} Team

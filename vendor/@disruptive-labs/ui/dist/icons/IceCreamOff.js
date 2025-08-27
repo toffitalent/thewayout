@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgIceCreamOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M12 21.5V17M8 8v9h8v-1m0-4V7a4 4 0 00-7.277-2.294M8 10.5l1.74-.76m2.79-1.222L16 7M8 14.5l4.488-1.964M3 3l18 18" }));
+export default SvgIceCreamOff;

@@ -1,0 +1,541 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header opens menu after clicking on Toggle navigation button 1`] = `
+<div>
+  <header
+    class="header menuOpen"
+  >
+    <nav
+      class="nav"
+    >
+      <a
+        aria-label="Home"
+        class="logo"
+        href="/client"
+      />
+      <button
+        aria-controls="nav_links"
+        aria-expanded="true"
+        aria-label="Toggle navigation"
+        class="toggle"
+        type="button"
+      >
+        <div
+          class="hamburger"
+        >
+          <div
+            class="hamburgerInner"
+          />
+        </div>
+      </button>
+      <div
+        class="wrapper"
+      >
+        <ul
+          class="links"
+          id="nav_links"
+          role="menu"
+        >
+          <div
+            class="renderedLinks"
+          >
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="/client"
+              >
+                Dashboard
+              </a>
+            </li>
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="/client/profile"
+              >
+                My Profile
+              </a>
+            </li>
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="/client/jobs"
+              >
+                Jobs
+              </a>
+            </li>
+          </div>
+          <li
+            class="loggedUserMainMenuItem"
+            role="menuitem"
+          >
+            <button
+              class="button lg text c-primary linkButton"
+              type="button"
+            >
+              Account settings
+            </button>
+          </li>
+          <li
+            class="loggedUserMainMenuItem"
+            role="menuitem"
+          >
+            <button
+              class="button lg text c-primary linkButton"
+              type="button"
+            >
+              Log Out
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="loggedUserMenu marginLeft-10"
+      >
+        <button
+          aria-controls="menu-:r2:"
+          aria-expanded="false"
+          aria-haspopup="menu"
+          class="button md text c-primary"
+          id="menu-:r2:-trigger"
+          role="button"
+          type="button"
+        >
+          <div
+            class="avatar bgcolor-dark color-light"
+          >
+            <div
+              aria-label="Test User"
+              class="initials"
+            >
+              TU
+            </div>
+          </div>
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon menuTriggerAccessory"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 9l6 6 6-6"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          class="menu"
+          data-popper-escaped="true"
+          data-popper-placement="bottom-start"
+          data-popper-reference-hidden="true"
+          style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; transform: translate(0px, 8px);"
+        >
+          <div
+            aria-orientation="vertical"
+            class="list"
+            id="menu-:r2:"
+            role="menu"
+            tabindex="-1"
+          >
+            <div
+              class="group"
+              role="group"
+            >
+              <button
+                class="button md text c-primary item minWidth-40"
+                role="menuitem"
+                tabindex="-1"
+                type="button"
+              >
+                Account settings
+              </button>
+              <button
+                class="button md text c-primary item minWidth-40"
+                role="menuitem"
+                tabindex="-1"
+                type="button"
+              >
+                Log Out
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+`;
+
+exports[`Header renders correctly 1`] = `
+<div>
+  <header
+    class="header"
+  >
+    <nav
+      class="nav"
+    >
+      <a
+        aria-label="Home"
+        class="logo"
+        href="/client"
+      />
+      <button
+        aria-controls="nav_links"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="toggle"
+        type="button"
+      >
+        <div
+          class="hamburger"
+        >
+          <div
+            class="hamburgerInner"
+          />
+        </div>
+      </button>
+      <div
+        class="wrapper"
+      >
+        <ul
+          class="links"
+          id="nav_links"
+          role="menu"
+        >
+          <div
+            class="renderedLinks"
+          >
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="/client"
+              >
+                Dashboard
+              </a>
+            </li>
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="/client/profile"
+              >
+                My Profile
+              </a>
+            </li>
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="/client/jobs"
+              >
+                Jobs
+              </a>
+            </li>
+          </div>
+          <li
+            class="loggedUserMainMenuItem"
+            role="menuitem"
+          >
+            <button
+              class="button lg text c-primary linkButton"
+              type="button"
+            >
+              Account settings
+            </button>
+          </li>
+          <li
+            class="loggedUserMainMenuItem"
+            role="menuitem"
+          >
+            <button
+              class="button lg text c-primary linkButton"
+              type="button"
+            >
+              Log Out
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="loggedUserMenu marginLeft-10"
+      >
+        <button
+          aria-controls="menu-:r0:"
+          aria-expanded="false"
+          aria-haspopup="menu"
+          class="button md text c-primary"
+          id="menu-:r0:-trigger"
+          role="button"
+          type="button"
+        >
+          <div
+            class="avatar bgcolor-dark color-light"
+          >
+            <div
+              aria-label="Test User"
+              class="initials"
+            >
+              TU
+            </div>
+          </div>
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon menuTriggerAccessory"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 9l6 6 6-6"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          class="menu"
+          data-popper-escaped="true"
+          data-popper-placement="bottom-start"
+          data-popper-reference-hidden="true"
+          style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; transform: translate(0px, 8px);"
+        >
+          <div
+            aria-orientation="vertical"
+            class="list"
+            id="menu-:r0:"
+            role="menu"
+            tabindex="-1"
+          >
+            <div
+              class="group"
+              role="group"
+            >
+              <button
+                class="button md text c-primary item minWidth-40"
+                role="menuitem"
+                tabindex="-1"
+                type="button"
+              >
+                Account settings
+              </button>
+              <button
+                class="button md text c-primary item minWidth-40"
+                role="menuitem"
+                tabindex="-1"
+                type="button"
+              >
+                Log Out
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+`;
+
+exports[`Header renders correctly transparent 1`] = `
+<div>
+  <header
+    class="header transparent"
+  >
+    <nav
+      class="nav"
+    >
+      <a
+        aria-label="Home"
+        class="logo"
+        href="/client"
+      />
+      <button
+        aria-controls="nav_links"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="toggle"
+        type="button"
+      >
+        <div
+          class="hamburger"
+        >
+          <div
+            class="hamburgerInner"
+          />
+        </div>
+      </button>
+      <div
+        class="wrapper"
+      >
+        <ul
+          class="links"
+          id="nav_links"
+          role="menu"
+        >
+          <div
+            class="renderedLinks"
+          >
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="/client"
+              >
+                Dashboard
+              </a>
+            </li>
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="/client/profile"
+              >
+                My Profile
+              </a>
+            </li>
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="/client/jobs"
+              >
+                Jobs
+              </a>
+            </li>
+          </div>
+          <li
+            class="loggedUserMainMenuItem"
+            role="menuitem"
+          >
+            <button
+              class="button lg text c-primary linkButton"
+              type="button"
+            >
+              Account settings
+            </button>
+          </li>
+          <li
+            class="loggedUserMainMenuItem"
+            role="menuitem"
+          >
+            <button
+              class="button lg text c-primary linkButton"
+              type="button"
+            >
+              Log Out
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="loggedUserMenu marginLeft-10"
+      >
+        <button
+          aria-controls="menu-:r4:"
+          aria-expanded="false"
+          aria-haspopup="menu"
+          class="button md text c-primary"
+          id="menu-:r4:-trigger"
+          role="button"
+          type="button"
+        >
+          <div
+            class="avatar bgcolor-dark color-light"
+          >
+            <div
+              aria-label="Test User"
+              class="initials"
+            >
+              TU
+            </div>
+          </div>
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon menuTriggerAccessory"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 9l6 6 6-6"
+              />
+            </svg>
+          </span>
+        </button>
+        <div
+          class="menu"
+          data-popper-escaped="true"
+          data-popper-placement="bottom-start"
+          data-popper-reference-hidden="true"
+          style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; transform: translate(0px, 8px);"
+        >
+          <div
+            aria-orientation="vertical"
+            class="list"
+            id="menu-:r4:"
+            role="menu"
+            tabindex="-1"
+          >
+            <div
+              class="group"
+              role="group"
+            >
+              <button
+                class="button md text c-primary item minWidth-40"
+                role="menuitem"
+                tabindex="-1"
+                type="button"
+              >
+                Account settings
+              </button>
+              <button
+                class="button md text c-primary item minWidth-40"
+                role="menuitem"
+                tabindex="-1"
+                type="button"
+              >
+                Log Out
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+`;

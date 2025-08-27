@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgAdjustmentsSearch = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M4 10a2 2 0 104 0 2 2 0 00-4 0M6 4v4M6 12v8M12 14a2 2 0 00-1.042 3.707M12 4v10M16 7a2 2 0 104 0 2 2 0 00-4 0M18 4v1M18 9v2M15 18a3 3 0 106 0 3 3 0 10-6 0M20.2 20.2L22 22" }));
+export default SvgAdjustmentsSearch;

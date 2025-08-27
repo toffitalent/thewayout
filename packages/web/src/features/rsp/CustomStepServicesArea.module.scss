@@ -1,0 +1,9 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.formWrapper {
+  div > div[class*='combobox'] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

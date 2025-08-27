@@ -1,0 +1,25 @@
+{
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": ["tsconfig.json", "packages/api/tsconfig.json"]
+      }
+    }
+  },
+  "rules": {
+    "class-methods-use-this": "off",
+    "max-classes-per-file": "off",
+    "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 6 }],
+    "@typescript-eslint/no-non-null-assertion": "off"
+  },
+  "overrides": [
+    { "files": "src/models/*.ts", "rules": { "import/no-cycle": "off" } },
+    {
+      "files": "src/tasks/*.ts",
+      "rules": {
+        "no-await-in-loop": "off",
+        "import/no-cycle": "off"
+      }
+    }
+  ]
+}

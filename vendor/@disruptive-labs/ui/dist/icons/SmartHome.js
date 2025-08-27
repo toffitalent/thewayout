@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgSmartHome = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M19 8.71l-5.333-4.148a2.666 2.666 0 00-3.274 0L5.059 8.71a2.665 2.665 0 00-1.029 2.105v7.2a2 2 0 002 2h12a2 2 0 002-2v-7.2c0-.823-.38-1.6-1.03-2.105M16 15c-2.21 1.333-5.792 1.333-8 0" }));
+export default SvgSmartHome;

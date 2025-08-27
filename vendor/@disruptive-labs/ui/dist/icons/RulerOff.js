@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgRulerOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M8 4h11a1 1 0 011 1v5a1 1 0 01-1 1h-4m-3.713.299A1 1 0 0011 12v7a1 1 0 01-1 1H5a1 1 0 01-1-1V5c0-.284.118-.54.308-.722M4 8h2M4 12h3M4 16h2M12 4v3M16 4v2M3 3l18 18" }));
+export default SvgRulerOff;

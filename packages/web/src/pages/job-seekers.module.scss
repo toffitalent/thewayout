@@ -1,0 +1,44 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &Title1 {
+    font-size: 3.2rem;
+  }
+
+  &Title2 {
+    font-size: 2.8rem;
+  }
+
+  &Content {
+    padding: 10rem 2rem;
+
+    @include mq(md) {
+      padding: 20rem 9rem;
+    }
+  }
+
+  &ContentWider {
+    padding: 10rem 2rem;
+
+    @include mq(md) {
+      padding: 20rem 6rem;
+    }
+  }
+}
+
+.greenBg {
+  background-color: var(--color-green-100);
+}
+
+.imgWrapper {
+  @include mq(md, min) {
+    position: relative;
+  }
+}

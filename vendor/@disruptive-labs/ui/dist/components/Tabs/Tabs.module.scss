@@ -1,0 +1,102 @@
+@use '@styles/theme';
+@use '../../styles/mixins';
+
+.list {
+  @include mixins.mq(sm, max) {
+    @include mixins.visually-hidden;
+  }
+
+  @include mixins.mq(sm) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-bottom: theme.$tab-border-width solid theme.$tab-border-color;
+
+    &Select {
+      display: none;
+    }
+
+    &.solid {
+      border-bottom: 0;
+    }
+  }
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: theme.$tab-color;
+  font-family: inherit;
+  font-weight: theme.$tab-font-weight;
+  line-height: theme.$line-height;
+  margin: 0;
+  outline: 0;
+  padding: theme.$spacing_3 theme.$spacing_4_5;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 250ms;
+  white-space: nowrap;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none !important;
+
+  &::-moz-focus-inner {
+    border-style: none;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: var(--focus-shadow-color) 0 0 0 theme.$focus-shadow-width;
+
+    &:not(:focus-visible) {
+      box-shadow: none;
+    }
+  }
+
+  &Active {
+    color: var(--color-primary);
+
+    &::after {
+      content: '';
+      height: theme.$tab-border-width * 2;
+      display: block;
+      position: absolute;
+      bottom: theme.$tab-border-width * -1;
+      left: 0;
+      right: 0;
+      background-color: var(--color-primary);
+      z-index: 1;
+    }
+  }
+
+  .solid & {
+    border: theme.$tab-border-width solid theme.$tab-color;
+    border-radius: theme.$tab-border-radius;
+
+    &Active {
+      background-color: var(--color-primary);
+      border-color: var(--color-primary);
+      color: var(--color-light);
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .solid & + & {
+    margin-left: theme.$tab-spacing;
+  }
+}
+
+.icon {
+  display: inline-flex;
+  align-self: center;
+  margin-right: theme.$tab-spacing;
+}

@@ -1,0 +1,78 @@
+@use 'sass:map';
+@use '@styles/theme';
+
+.root {
+  display: inline-flex;
+  align-items: stretch;
+  position: relative;
+  z-index: 5;
+  background: theme.$input-bg;
+  border-color: theme.$input-border-color;
+  border-style: solid;
+  border-top-width: theme.$input-border-top-width;
+  border-left-width: theme.$input-border-left-width;
+  border-right-width: theme.$input-border-right-width;
+  border-bottom-width: theme.$input-border-bottom-width;
+  border-radius: theme.$input-border-radius;
+  transition: border-color 250ms ease, box-shadow 250ms ease;
+
+  @if theme.$input-border-top-width ==
+    0 and
+    theme.$input-focus-border-width >
+    theme.$input-border-bottom-width
+  {
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: theme.$input-border-bottom-width * -1;
+      border-bottom: theme.$input-focus-border-width solid transparent;
+      transition: border-color 250ms ease;
+    }
+  }
+}
+
+.disabled {
+  opacity: theme.$input-disabled-opacity;
+  cursor: not-allowed;
+}
+
+.fluid {
+  width: 100%;
+}
+
+.invalid {
+  border-color: theme.$input-error-border-color;
+  @if (theme.$input-border-top-width > 0) {
+    box-shadow: theme.$input-error-border-color
+      0
+      0
+      0
+      (theme.$focus-border-width - theme.$input-border-top-width);
+  }
+}
+
+@each $color in theme.$colors {
+  .#{$color}:not(.invalid):focus-within {
+    border-color: var(--color-#{$color});
+    @if (theme.$input-border-top-width > 0) {
+      box-shadow: var(--color-#{$color})
+        0
+        0
+        0
+        (theme.$focus-border-width - theme.$input-border-top-width);
+    } @else {
+      &::after {
+        border-color: var(--color-#{$color});
+      }
+    }
+  }
+}
+
+@each $input-size, $size in theme.$input-sizes {
+  .#{$input-size} {
+    min-height: map.get($size, 'size');
+    font-size: map.get($size, 'font');
+  }
+}

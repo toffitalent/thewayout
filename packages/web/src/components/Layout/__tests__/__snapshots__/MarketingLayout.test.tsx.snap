@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarketingLayout renders correctly 1`] = `
+<div>
+  <a
+    class="skipNav"
+    href="#skip-nav"
+  >
+    Skip to content
+  </a>
+  <header
+    class="header"
+  >
+    <nav
+      class="nav"
+    >
+      <a
+        aria-label="Home"
+        class="logo"
+        href="/"
+      />
+      <button
+        aria-controls="nav_links"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="toggle"
+        type="button"
+      >
+        <div
+          class="hamburger"
+        >
+          <div
+            class="hamburgerInner"
+          />
+        </div>
+      </button>
+      <div
+        class="wrapper"
+      >
+        <ul
+          class="links"
+          id="nav_links"
+          role="menu"
+        >
+          <div
+            class="renderedLinks"
+          >
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="/job-seekers"
+              >
+                Job Seekers
+              </a>
+            </li>
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="/employers"
+              >
+                Employers
+              </a>
+            </li>
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="/service-providers"
+              >
+                Service Providers
+              </a>
+            </li>
+            <li
+              role="menuitem"
+            >
+              <a
+                class="link"
+                href="mailto:support@twout.org"
+              >
+                Contact Us
+              </a>
+            </li>
+          </div>
+          <li
+            role="menuitem"
+          >
+            <a
+              class="link"
+              href="/login"
+            >
+              Log In
+            </a>
+          </li>
+          <li
+            role="menuitem"
+          >
+            <a
+              class="button md solid c-primary linkButton"
+              href="/signup"
+            >
+              Sign Up
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div
+    id="skip-nav"
+  />
+  <main
+    class=""
+  >
+    <div>
+      Page
+    </div>
+  </main>
+  <footer
+    class="footer"
+  >
+    <div
+      class="container"
+    >
+      <p
+        class="text color-grey-500 fontWeight-700"
+      >
+        The Way Out, Inc. © 
+        2024
+        <a
+          href="/terms"
+        >
+          Terms
+        </a>
+        <a
+          href="/privacy"
+        >
+          Privacy
+        </a>
+      </p>
+    </div>
+  </footer>
+</div>
+`;

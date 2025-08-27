@@ -1,0 +1,22 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.modal {
+  &Wrapper {
+    max-width: 60rem;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @include mq(md, max) {
+      margin-left: 1.8rem;
+      margin-right: 1.8rem;
+    }
+  }
+
+  &CloseButton {
+    top: 3.2rem;
+    right: 3rem;
+    min-height: unset;
+    min-width: unset;
+  }
+}

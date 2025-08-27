@@ -1,0 +1,17 @@
+{
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": ["tsconfig.json", "packages/mail/tsconfig.json"]
+      }
+    }
+  },
+  "rules": {
+    "camelcase": [
+      "error",
+      { "properties": "never", "ignoreDestructuring": false, "allow": ["__webpack_public_path__"] }
+    ],
+    "class-methods-use-this": "off",
+    "no-underscore-dangle": ["error", { "allow": ["__webpack_public_path__"] }]
+  }
+}

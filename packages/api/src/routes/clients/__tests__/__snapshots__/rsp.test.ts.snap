@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > Clients > Rsp GET /api/v1/clients/:id/rsp list rsp for clients 1`] = `
+[
+  {
+    "description": "repellendus maiores sunt",
+    "id": "01817e24-0d43-7ab4-927f-49d0b06d5cf2",
+    "name": "Funk, Koch and Wiegand",
+    "servicesArea": [
+      "Adams",
+      "Ashland",
+      "Barron",
+    ],
+    "support": [
+      "basicHygieneSupport",
+      "clothing",
+      "basicTechSkills",
+      "childCare",
+    ],
+  },
+  {
+    "description": "Enim sequi iusto.
+Explicabo quisquam omnis nisi corporis corrupti.
+Cupiditate qui culpa numquam iure quisquam vero architecto.",
+    "id": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "name": "Oberbrunner and Sons",
+    "servicesArea": [
+      "Adams",
+      "Ashland",
+      "Barron",
+    ],
+    "support": [
+      "basicHygieneSupport",
+      "clothing",
+      "basicTechSkills",
+      "childCare",
+    ],
+  },
+]
+`;
+
+exports[`Routes > Clients > Rsp GET /api/v1/clients/:id/rsp lists only rsp that match client county 1`] = `
+{
+  "body": [
+    {
+      "description": null,
+      "id": Any<String>,
+      "name": "2",
+      "servicesArea": [
+        "Douglas",
+      ],
+      "support": [
+        "childCare",
+      ],
+    },
+  ],
+}
+`;
+
+exports[`Routes > Clients > Rsp GET /api/v1/clients/:id/rsp lists only rsp that match client offenses 1`] = `
+{
+  "body": [
+    {
+      "description": null,
+      "id": Any<String>,
+      "name": "1",
+      "servicesArea": [
+        "Adams",
+      ],
+      "support": [
+        "basicTechSkills",
+      ],
+    },
+  ],
+}
+`;
+
+exports[`Routes > Clients > Rsp GET /api/v1/clients/:id/rsp lists only rsp that match client offenses 2`] = `[]`;
+
+exports[`Routes > Clients > Rsp GET /api/v1/clients/:id/rsp lists only rsp that match client support 1`] = `
+{
+  "body": [
+    {
+      "description": null,
+      "id": Any<String>,
+      "name": "3",
+      "servicesArea": [
+        "Pepin",
+      ],
+      "support": [
+        "employment",
+      ],
+    },
+  ],
+}
+`;

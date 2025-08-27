@@ -1,0 +1,4 @@
+{
+  "main": "../dist/next/index.js",
+  "module": "../dist/next/index.js"
+}

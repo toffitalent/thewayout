@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobPageWithLayout renders correctly 1`] = `
+<div>
+  <div
+    class="flexDirection-column width-full"
+  >
+    <div
+      class=""
+    >
+      <div
+        class="container justifyContent-space-between"
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-3xl fontWeight-700"
+          >
+            Car Wash Attendant
+          </p>
+          <svg
+            aria-hidden="true"
+            class="icon color-primary width-7 height-7 marginLeft-2"
+            cursor="pointer"
+            focusable="false"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              stroke="none"
+            />
+            <path
+              d="M4 20h4L18.5 9.5a2.828 2.828 0 10-4-4L4 16v4M13.5 6.5l4 4"
+            />
+          </svg>
+        </div>
+        <div
+          class="status alignItems-center flexDirection-row"
+        >
+          <p
+            class="text"
+          >
+            Job status:
+          </p>
+          <p
+            class="text marginRight-4 marginLeft-1 fontWeight-700"
+          >
+            Active
+          </p>
+          <div
+            class="control alignItems-center display-flex"
+            role="group"
+          >
+            <label
+              class="toggle primary md"
+            >
+              <input
+                checked=""
+                class="input"
+                id=":r0:"
+                type="checkbox"
+              />
+              <div
+                aria-hidden="true"
+                class="control bgcolor-primary"
+              >
+                <div
+                  class="thumb"
+                />
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="item justifyContent-space-between"
+      >
+        <div
+          class="color-grey-600 flexWrap-wrap display-flex marginTop-1"
+        >
+          <p
+            class="text"
+          >
+            Hybrid (Full-time)
+             • 
+          </p>
+          <p
+            class="text"
+          >
+            $15 - $30/hour
+             • 
+          </p>
+          <p
+            class="text"
+          >
+            0 Applicants
+          </p>
+          <p
+            class="text"
+          >
+             
+            (0 of 3 positions filled)
+          </p>
+        </div>
+        <p
+          class="text color-grey-600 marginTop-4"
+        >
+          Wash attendants are responsible for performing the daily operational practices of running the car wash facility.
+        </p>
+      </div>
+    </div>
+    <div
+      class="marginTop-8"
+    />
+    <div
+      class="alignItems-center flexDirection-column justifyContent-center display-flex height-full"
+    >
+      <p
+        class="text fontSize-3xl fontWeight-700"
+      >
+        Stay Tuned... 👋
+      </p>
+      <p
+        class="text marginTop-1"
+      >
+        Your job posting has no applicants yet. We will let you know as soon a someone applies.
+      </p>
+    </div>
+  </div>
+</div>
+`;

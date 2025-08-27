@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgBrightnessDownFilled = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M12 8a4 4 0 11-3.995 4.2L8 12l.005-.2A4 4 0 0112 8zM12 4a1 1 0 01.993.883L13 5.01a1 1 0 01-1.993.117L11 5a1 1 0 011-1zM17 6a1 1 0 01.993.883L18 7.01a1 1 0 01-1.993.117L16 7a1 1 0 011-1zM19 11a1 1 0 01.993.883l.007.127a1 1 0 01-1.993.117L18 12a1 1 0 011-1zM17 16a1 1 0 01.993.883l.007.127a1 1 0 01-1.993.117L16 17a1 1 0 011-1zM12 18a1 1 0 01.993.883l.007.127a1 1 0 01-1.993.117L11 19a1 1 0 011-1zM7 16a1 1 0 01.993.883L8 17.01a1 1 0 01-1.993.117L6 17a1 1 0 011-1zM5 11a1 1 0 01.993.883L6 12.01a1 1 0 01-1.993.117L4 12a1 1 0 011-1zM7 6a1 1 0 01.993.883L8 7.01a1 1 0 01-1.993.117L6 7a1 1 0 011-1z", fill: "currentColor", stroke: "none" }));
+export default SvgBrightnessDownFilled;

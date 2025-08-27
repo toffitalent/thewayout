@@ -1,0 +1,56 @@
+@use '../core' as *;
+
+$input-bg: transparent !default;
+$input-border-color: var(--color-grey-400) !default;
+$input-border-radius: $border-radius !default;
+$input-border-top-width: $border-width !default;
+$input-border-left-width: $border-width !default;
+$input-border-right-width: $border-width !default;
+$input-border-bottom-width: $border-width !default;
+$input-color: var(--color-text) !default;
+$input-disabled-opacity: 0.5 !default;
+$input-error-border-color: var(--color-red) !default;
+$input-error-color: var(--color-red) !default;
+$input-font-family: inherit !default;
+$input-font-weight: $font-p1-weight !default;
+$input-line-height: $line-height !default;
+$input-multiline-resize: none !default;
+$input-placeholder-color: var(--color-grey-500) !default;
+
+// Sizes
+$input-size-xs: $spacing-8 !default;
+$input-size-xs-font-size: $font-size-xs !default;
+$input-size-xs-padding: $spacing-3 !default;
+$input-size-sm: $spacing-10 !default;
+$input-size-sm-font-size: $font-size-sm !default;
+$input-size-sm-padding: $spacing-4 !default;
+$input-size-md: $spacing-12 !default;
+$input-size-md-font-size: $font-size-md !default;
+$input-size-md-padding: $spacing-5 !default;
+$input-size-lg: $spacing-14 !default;
+$input-size-lg-font-size: $font-size-lg !default;
+$input-size-lg-padding: $spacing-5 !default;
+
+// Utilities
+$input-sizes: (
+  'xs': (
+    'font': $input-size-xs-font-size,
+    'padding': $input-size-xs-padding,
+    'size': $input-size-xs,
+  ),
+  'sm': (
+    'font': $input-size-sm-font-size,
+    'padding': $input-size-sm-padding,
+    'size': $input-size-sm,
+  ),
+  'md': (
+    'font': $input-size-md-font-size,
+    'padding': $input-size-md-padding,
+    'size': $input-size-md,
+  ),
+  'lg': (
+    'font': $input-size-lg-font-size,
+    'padding': $input-size-lg-padding,
+    'size': $input-size-lg,
+  ),
+);

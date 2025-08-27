@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginPage renders correctly 1`] = `
+<div>
+  <h1
+    class="text marginBottom-2-5 font-h2"
+  >
+    Log In
+  </h1>
+  <p
+    class="text marginBottom-10"
+  >
+    Welcome back! Enter your email and password to login.
+  </p>
+  <form>
+    <div
+      class="control"
+      role="group"
+    >
+      <label
+        class="label"
+        for=":r0:"
+      >
+        Email
+      </label>
+      <div
+        class="root primary md fluid md"
+      >
+        <input
+          aria-label="Email address"
+          class="input"
+          id=":r0:"
+          name="username"
+          type="email"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="control"
+      role="group"
+    >
+      <label
+        class="label"
+        for=":r1:"
+      >
+        Password
+      </label>
+      <div
+        class="root primary md fluid md"
+      >
+        <input
+          aria-label="Password"
+          class="input"
+          id=":r1:"
+          name="password"
+          type="password"
+          value=""
+        />
+      </div>
+    </div>
+    <button
+      class="button md solid c-primary disabled fluid marginTop-10"
+      disabled=""
+      type="submit"
+    >
+      Log In
+    </button>
+  </form>
+  <div
+    class="marginTop-5"
+  >
+    New to The Way Out? 
+    <a
+      href="/signup"
+    >
+      <p
+        class="text display-inline fontWeight-700"
+      >
+        Sign Up
+      </p>
+    </a>
+  </div>
+  <div
+    class="marginTop-5"
+  >
+    <a
+      class="button md text c-primary"
+      href="/forgot-password"
+    >
+      Forgot password?
+    </a>
+  </div>
+</div>
+`;

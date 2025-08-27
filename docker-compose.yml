@@ -1,0 +1,111 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: packages/api/Dockerfile
+      args:
+        - NODE_ENV=development
+        - NPM_TOKEN
+    image: two/api
+    command: yarn run dev
+    container_name: two-api
+    depends_on:
+      - db
+      - localstack
+      - store
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - API_REDIS_URL=redis://store:6379
+      - API_DB_HOSTNAME=db
+      - API_DB_USERNAME=two
+      - API_DB_PASSWORD=
+      - API_DB_DATABASE=two
+      - API_TASKS_QUEUE_URL=http://localstack:4566/000000000000/tasks.fifo
+      - AWS_ENDPOINT_URL=http://localstack:4566
+      - AWS_REGION=us-west-2
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+      - MAIL_QUEUE_URL=http://localstack:4566/000000000000/mail.fifo
+    ports:
+      - '3000:3000'
+    restart: unless-stopped
+    volumes:
+      - ./packages/api/src:/app/packages/api/src:ro
+      - ./packages/config/src:/app/packages/config/src:ro
+      - ./packages/mail/src:/app/packages/mail/src:ro
+      - ./packages/shared/src:/app/packages/shared/src:ro
+
+  db:
+    image: postgres:12
+    restart: always
+    container_name: two-db
+    environment:
+      - POSTGRES_USER=two
+      - POSTGRES_PASSWORD=
+      - POSTGRES_DB=two
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - '5432:5432'
+
+  localstack:
+    image: localstack/localstack:0.14.5
+    container_name: two-localstack
+    ports:
+      - '4566-4567:4566-4567'
+    environment:
+      - AWS_DEFAULT_REGION=us-west-2
+      - EDGE_PORT=4566
+      - SERVICES=sqs
+      - SQS_PORT_EXTERNAL=4567
+    volumes:
+      - './packages/api/sqs-setup.dev.sh:/docker-entrypoint-initaws.d/sqs-api.sh'
+      - './packages/mail/sqs-setup.dev.sh:/docker-entrypoint-initaws.d/sqs-mail.sh'
+      - '${TMPDIR:-/tmp/localstack}:/tmp/localstack'
+      - '/var/run/docker.sock:/var/run/docker.sock'
+
+  mail:
+    build:
+      context: .
+      dockerfile: packages/mail/Dockerfile
+      args:
+        - NODE_ENV=development
+        - NPM_TOKEN
+    image: two/mail
+    command: yarn run dev
+    container_name: two-mail
+    depends_on:
+      - localstack
+      - mailhog
+    environment:
+      - NODE_ENV=development
+      - AWS_ENDPOINT_URL=http://localstack:4566
+      - AWS_REGION=us-west-2
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+      - MAIL_QUEUE_URL=http://localstack:4566/000000000000/mail.fifo
+      - MAIL_SMTP_HOST=mailhog
+    ports:
+      - '8080:8080'
+    restart: unless-stopped
+    volumes:
+      - ./packages/config/src:/app/packages/config/src:ro
+      - ./packages/mail/src:/app/packages/mail/src:ro
+      - ./packages/shared/src:/app/packages/shared/src:ro
+
+  mailhog:
+    image: mailhog/mailhog
+    container_name: two-mailhog
+    restart: always
+    ports:
+      - '1025:1025'
+      - '8025:8025'
+
+  store:
+    image: redis:6
+    restart: always
+    container_name: two-store
+    ports:
+      - '6379:6379'

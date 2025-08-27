@@ -1,0 +1,1548 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomStepOffenseCategory press next & save button 1`] = `
+<div>
+  <form>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          Drugs
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Distribution
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="true"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Possession
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          Motor Vehicle
+        </legend>
+        <div>
+          <div
+            aria-checked="true"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              DUI and/or DWI
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Fleeing Police
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Hit & Run
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Vehicular Homicide
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Vehicular Manslaughter
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          Sexual
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Pornography
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Sexual Assault 
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Statutory Rape
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          Violent
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Battery
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Domestic Violence
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Homicide
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Manslaughter
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Reckless Endangerment
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          Theft
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Burglary
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Identity Theft
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Robbery
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          Property Damage
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Arson
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Vandalism
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          White - collar
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Bail Jumping
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Embezzlement
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Fraud 
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Money-Laundering
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <button
+      class="button md solid c-primary fluid maxWidth-96 marginTop-8"
+      type="submit"
+    >
+      Save & Next
+    </button>
+  </form>
+</div>
+`;
+
+exports[`CustomStepOffenseCategory renders correctly 1`] = `
+<div>
+  <form>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          Drugs
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Distribution
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Possession
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          Motor Vehicle
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              DUI and/or DWI
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Fleeing Police
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Hit & Run
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Vehicular Homicide
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Vehicular Manslaughter
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          Sexual
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Pornography
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Sexual Assault 
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Statutory Rape
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          Violent
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Battery
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Domestic Violence
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Homicide
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Manslaughter
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Reckless Endangerment
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          Theft
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Burglary
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Identity Theft
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Robbery
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          Property Damage
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Arson
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Vandalism
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline offenseCategoryStep"
+      >
+        <legend
+          class="label"
+        >
+          White - collar
+        </legend>
+        <div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Bail Jumping
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Embezzlement
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Fraud 
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="checkbox"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Money-Laundering
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <button
+      class="button md solid c-primary disabled fluid maxWidth-96 marginTop-8"
+      disabled=""
+      type="submit"
+    >
+      Save & Next
+    </button>
+  </form>
+</div>
+`;

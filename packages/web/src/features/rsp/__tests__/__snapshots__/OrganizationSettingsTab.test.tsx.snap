@@ -1,0 +1,2532 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrganizationSettingsTab renders correctly 1`] = `
+<div>
+  <div
+    class="borderBottom flexDirection-row marginTop-8 paddingBottom-5"
+  >
+    <div
+      class="width-1/3 paddingRight-5"
+    >
+      <p
+        class="text fontSize-xl fontWeight-700"
+      >
+        Organization Information
+      </p>
+    </div>
+    <div
+      class="width-2/3"
+    >
+      <form>
+        <div
+          class="flexDirection-row marginBottom-10"
+        >
+          <div
+            class="avatar s-2xl"
+          >
+            <div
+              aria-label="Employ Milwaukee"
+              class="initials"
+            >
+              EM
+            </div>
+          </div>
+          <div
+            class="marginTop-5 marginLeft-5"
+          >
+            <button
+              class="button md outline c-primary marginBottom-2"
+              type="button"
+            >
+              Edit Picture
+            </button>
+            <input
+              accept="image/jpg, image/png, image/gif"
+              hidden=""
+              type="file"
+            />
+            <p
+              class="text color-grey-600 fontSize-sm"
+            >
+              JPG, GIF or PNG. 1MB max.
+            </p>
+          </div>
+        </div>
+        <div
+          class="control"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r0:"
+          >
+            Organization Name
+          </label>
+          <div
+            class="root primary md fluid md"
+          >
+            <input
+              class="input"
+              id=":r0:"
+              name="name"
+              type="text"
+              value="Employ Milwaukee"
+            />
+          </div>
+        </div>
+        <div
+          class="control"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r1:"
+          >
+            Organization Description
+          </label>
+          <div
+            class="root primary md fluid md multiline"
+          >
+            <textarea
+              aria-describedby=":r1:-helptext"
+              class="input"
+              id=":r1:"
+              name="description"
+              rows="4"
+              type="text"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </textarea>
+          </div>
+          <div
+            aria-live="polite"
+            class="helperText"
+            id=":r1:-helptext"
+          >
+            Max 1,000 characters.
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingRight-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r2:"
+          >
+            Organization Email
+          </label>
+          <div
+            class="root primary md fluid md fieldHalfWidth"
+          >
+            <input
+              class="input"
+              id=":r2:"
+              name="email"
+              placeholder="Organization Email"
+              type="text"
+              value="hello@em.com"
+            />
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingLeft-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r3:"
+          >
+            Organization Phone
+          </label>
+          <div
+            class="root primary md fluid md fieldHalfWidth"
+          >
+            <input
+              class="input"
+              id=":r3:"
+              maxlength="14"
+              name="phone"
+              placeholder="Organization Phone"
+              type="text"
+              value="(310) 123-1234"
+            />
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingRight-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r4:"
+          >
+            Business Address
+          </label>
+          <div
+            class="root primary md fluid md fieldHalfWidth"
+          >
+            <input
+              class="input"
+              id=":r4:"
+              name="address"
+              type="text"
+              value="1010 Maple Dr"
+            />
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingLeft-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r5:"
+          >
+            Town / City
+          </label>
+          <div
+            class="root primary md fluid md fieldHalfWidth"
+          >
+            <input
+              class="input"
+              id=":r5:"
+              name="city"
+              type="text"
+              value="West Allis"
+            />
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingRight-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r6:"
+          >
+            State
+          </label>
+          <div
+            class="root primary md fluid md fieldHalfWidth"
+          >
+            <select
+              class="input"
+              id=":r6:"
+              name="state"
+            >
+              <option
+                value="AL"
+              >
+                Alabama
+              </option>
+              <option
+                value="AK"
+              >
+                Alaska
+              </option>
+              <option
+                value="AZ"
+              >
+                Arizona
+              </option>
+              <option
+                value="AR"
+              >
+                Arkansas
+              </option>
+              <option
+                value="CA"
+              >
+                California
+              </option>
+              <option
+                value="CO"
+              >
+                Colorado
+              </option>
+              <option
+                value="CT"
+              >
+                Connecticut
+              </option>
+              <option
+                value="DE"
+              >
+                Delaware
+              </option>
+              <option
+                value="DC"
+              >
+                District Of Columbia
+              </option>
+              <option
+                value="FL"
+              >
+                Florida
+              </option>
+              <option
+                value="GA"
+              >
+                Georgia
+              </option>
+              <option
+                value="HI"
+              >
+                Hawaii
+              </option>
+              <option
+                value="ID"
+              >
+                Idaho
+              </option>
+              <option
+                value="IL"
+              >
+                Illinois
+              </option>
+              <option
+                value="IN"
+              >
+                Indiana
+              </option>
+              <option
+                value="IA"
+              >
+                Iowa
+              </option>
+              <option
+                value="KS"
+              >
+                Kansas
+              </option>
+              <option
+                value="KY"
+              >
+                Kentucky
+              </option>
+              <option
+                value="LA"
+              >
+                Louisiana
+              </option>
+              <option
+                value="ME"
+              >
+                Maine
+              </option>
+              <option
+                value="MD"
+              >
+                Maryland
+              </option>
+              <option
+                value="MA"
+              >
+                Massachusetts
+              </option>
+              <option
+                value="MI"
+              >
+                Michigan
+              </option>
+              <option
+                value="MN"
+              >
+                Minnesota
+              </option>
+              <option
+                value="MS"
+              >
+                Mississippi
+              </option>
+              <option
+                value="MO"
+              >
+                Missouri
+              </option>
+              <option
+                value="MT"
+              >
+                Montana
+              </option>
+              <option
+                value="NE"
+              >
+                Nebraska
+              </option>
+              <option
+                value="NV"
+              >
+                Nevada
+              </option>
+              <option
+                value="NH"
+              >
+                New Hampshire
+              </option>
+              <option
+                value="NJ"
+              >
+                New Jersey
+              </option>
+              <option
+                value="NM"
+              >
+                New Mexico
+              </option>
+              <option
+                value="NY"
+              >
+                New York
+              </option>
+              <option
+                value="NC"
+              >
+                North Carolina
+              </option>
+              <option
+                value="ND"
+              >
+                North Dakota
+              </option>
+              <option
+                value="OH"
+              >
+                Ohio
+              </option>
+              <option
+                value="OK"
+              >
+                Oklahoma
+              </option>
+              <option
+                value="OR"
+              >
+                Oregon
+              </option>
+              <option
+                value="PA"
+              >
+                Pennsylvania
+              </option>
+              <option
+                value="RI"
+              >
+                Rhode Island
+              </option>
+              <option
+                value="SC"
+              >
+                South Carolina
+              </option>
+              <option
+                value="SD"
+              >
+                South Dakota
+              </option>
+              <option
+                value="TN"
+              >
+                Tennessee
+              </option>
+              <option
+                value="TX"
+              >
+                Texas
+              </option>
+              <option
+                value="UT"
+              >
+                Utah
+              </option>
+              <option
+                value="VT"
+              >
+                Vermont
+              </option>
+              <option
+                value="VA"
+              >
+                Virginia
+              </option>
+              <option
+                value="WA"
+              >
+                Washington
+              </option>
+              <option
+                value="WV"
+              >
+                West Virginia
+              </option>
+              <option
+                value="WI"
+              >
+                Wisconsin
+              </option>
+              <option
+                value="WY"
+              >
+                Wyoming
+              </option>
+            </select>
+            <div
+              class="icon"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingLeft-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r7:"
+          >
+            Postcode / Zipcode
+          </label>
+          <div
+            class="root primary md fluid md fieldHalfWidth"
+          >
+            <input
+              class="input"
+              id=":r7:"
+              name="postalCode"
+              type="text"
+              value="53227"
+            />
+          </div>
+        </div>
+        <button
+          class="button md solid c-primary disabled marginTop-8"
+          disabled=""
+          type="submit"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+  <div
+    class="borderBottom flexDirection-row marginTop-8 paddingBottom-5"
+  >
+    <div
+      class="width-1/3 paddingRight-5"
+    >
+      <p
+        class="text fontSize-xl fontWeight-700"
+      >
+        Service Area
+      </p>
+    </div>
+    <div
+      class="width-2/3"
+    >
+      <div
+        class="serviceAreaForm"
+      >
+        <div
+          class="control"
+          role="group"
+        >
+          <div
+            class="combobox width-96"
+          >
+            <label
+              class="label"
+              for=":r8:-input"
+              id=":r8:-label"
+            >
+              Search Area
+            </label>
+            <div
+              class="input"
+            >
+              <div
+                class="root primary md md width-96"
+              >
+                <input
+                  aria-activedescendant=""
+                  aria-autocomplete="list"
+                  aria-controls=":r8:-menu"
+                  aria-expanded="false"
+                  aria-labelledby=":r8:-label"
+                  autocomplete="off"
+                  class="input"
+                  id=":r8:-input"
+                  name="servicesArea"
+                  role="combobox"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="menu"
+            data-popper-escaped="true"
+            data-popper-placement="bottom-start"
+            data-popper-reference-hidden="true"
+            role="presentation"
+            style="position: absolute; top: 0px; left: 0px; will-change: transform, visibility; transform: translate(0px, 5px); width: 0px;"
+          >
+            <ul
+              aria-labelledby=":r8:-label"
+              class="list combobox"
+              id=":r8:-menu"
+              role="listbox"
+            />
+          </div>
+        </div>
+        <div
+          class=""
+        >
+          <p
+            class="text marginTop-10 marginBottom-4 fontSize-xl fontWeight-700"
+          >
+            Selected Service Areas
+          </p>
+          <div
+            class="container spacing-4 flexDirection-row flexWrap-wrap"
+          >
+            <div
+              class="item"
+            >
+              <span
+                class="tag grey sm outline borderColor-grey bgcolor-grey color-grey"
+              >
+                <span
+                  class="label"
+                >
+                  County Name
+                </span>
+                <button
+                  class="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="icon"
+                    focusable="false"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      stroke="none"
+                    />
+                    <path
+                      d="M18 6L6 18M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+        <button
+          class="button md solid c-primary disabled fluid width-96 marginTop-8"
+          disabled=""
+          type="button"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="borderBottom flexDirection-row marginTop-8 paddingBottom-5"
+  >
+    <div
+      class="width-1/3 paddingRight-5"
+    >
+      <p
+        class="text fontSize-xl fontWeight-700"
+      >
+        Allowed Applicants
+      </p>
+      <p
+        class="text color-grey-600 fontSize-sm"
+      >
+        We will only recommend Employ Milwaukee to candidates that meet the selected attribute(s).
+      </p>
+    </div>
+    <div
+      class="width-2/3"
+    >
+      <form>
+        <div
+          class="control control fluid"
+          role="group"
+        >
+          <fieldset
+            class="choices inline"
+          >
+            <div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Veteran
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="true"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Justice Impacted
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="button md solid c-primary disabled marginTop-8"
+          disabled=""
+          type="submit"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+  <div
+    class="borderBottom flexDirection-row marginTop-8 paddingBottom-5"
+  >
+    <div
+      class="width-1/3 paddingRight-5"
+    >
+      <p
+        class="text fontSize-xl fontWeight-700"
+      >
+        Support Services
+      </p>
+      <p
+        class="text color-grey-600 fontSize-sm"
+      >
+        Please select all the support services that you provide.
+      </p>
+    </div>
+    <div
+      class="width-2/3"
+    >
+      <form>
+        <div
+          class="control control fluid"
+          role="group"
+        >
+          <fieldset
+            class="choices inline"
+          >
+            <div>
+              <div
+                aria-checked="true"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Employment
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Housing Resources
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Financial Management
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Family Counseling
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Transportation
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Healthcare Services
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Religion / Spirituality
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Drug / Alcohol Counseling
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Life Coaching
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Business Startup
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Drivers Licence and / or State ID
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Resume
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Child Care
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Ongoing Education
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Food Assistance
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Basic Tech Skills
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Cell Phone Resources
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Soft Skills Training
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Legal Resources
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Basic Hygiene Support
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Clothing
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Mental Health
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Veteran Support
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Domestic Violence
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Vocational Training
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  GED/HSED
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="button md solid c-primary disabled marginTop-8"
+          disabled=""
+          type="submit"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+  <div
+    class="borderBottom flexDirection-row marginTop-8 paddingBottom-5"
+  >
+    <div
+      class="width-1/3 paddingRight-5"
+    >
+      <p
+        class="text fontSize-xl fontWeight-700"
+      >
+        Accepted Justice Status
+      </p>
+      <p
+        class="text color-grey-600 fontSize-sm"
+      >
+        Please select all accepted statuses.
+      </p>
+    </div>
+    <div
+      class="width-2/3"
+    >
+      <form>
+        <div
+          class="control control fluid"
+          role="group"
+        >
+          <fieldset
+            class="choices inline"
+          >
+            <div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  No Offense
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="true"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Free World
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  On probation
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  On parole
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="true"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Halfway House
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Extended Supervision
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+              <div
+                aria-checked="false"
+                aria-disabled="false"
+                class="choicesItem"
+                role="checkbox"
+                tabindex="0"
+              >
+                <span
+                  class="choicesItemText"
+                >
+                  Currently Incarcerated
+                </span>
+                <span
+                  class="choicesItemIcon"
+                >
+                  <svg
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <polygon
+                      fill="currentColor"
+                      points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <button
+          class="button md solid c-primary disabled marginTop-8"
+          disabled=""
+          type="submit"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+  <div
+    class="borderBottom flexDirection-row marginTop-8 paddingBottom-5"
+  >
+    <div
+      class="width-1/3 paddingRight-5"
+    >
+      <p
+        class="text fontSize-xl fontWeight-700"
+      >
+        Allowed Offenses
+      </p>
+      <p
+        class="text color-grey-600 fontSize-sm"
+      >
+        We will only recommend Employ Milwaukee to candidates that meet your allowable offenses (per State and Federal statutes).
+      </p>
+    </div>
+    <div
+      class="width-2/3"
+    >
+      <div
+        class="offensesSection"
+      >
+        <form>
+          <div
+            class="justifyContent-center marginBottom-5"
+          >
+            <button
+              class="button md outline c-primary"
+              type="button"
+            >
+              Select All
+            </button>
+            <button
+              class="button md text c-primary paddingRight-6 paddingLeft-6"
+              type="button"
+            >
+              Clear All
+            </button>
+          </div>
+          <div
+            class="control control fluid"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                Drugs
+              </legend>
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Distribution
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="true"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Possession
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="control control fluid"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                Motor Vehicle
+              </legend>
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    DUI and/or DWI
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Fleeing Police
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Hit & Run
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Vehicular Homicide
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Vehicular Manslaughter
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="control control fluid"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                Sexual
+              </legend>
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Pornography
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Sexual Assault 
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Statutory Rape
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="control control fluid"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                Violent
+              </legend>
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Battery
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Domestic Violence
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Homicide
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Manslaughter
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Reckless Endangerment
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="control control fluid"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                Theft
+              </legend>
+              <div>
+                <div
+                  aria-checked="true"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Burglary
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Identity Theft
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Robbery
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="control control fluid"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                Property Damage
+              </legend>
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Arson
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Vandalism
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="control control fluid"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                White - collar
+              </legend>
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Bail Jumping
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Embezzlement
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Fraud 
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Money-Laundering
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button
+            class="button md solid c-primary fluid maxWidth-96 marginTop-8"
+            type="submit"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

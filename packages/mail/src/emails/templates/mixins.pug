@@ -1,0 +1,32 @@
+mixin action(align='center')
+  table(class="body__action" align="center" width="100%" cellpadding="0" cellspacing="0" role="presentation")
+    tr
+      td(align=align)
+        block
+
+mixin attributes(align='center')
+  table(class="attributes" width="100%" cellpadding="0" cellspacing="0" role="presentation")
+    tr
+      td(class="attributes__content")
+        table(width="100%" cellpadding="0" cellspacing="0" role="presentation")
+          tr
+            td(class=`attributes__item align-${align}`)
+              span(class="f-fallback attributes__code")
+                block
+
+mixin button(href, color='primary', align='center')
+  table(width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation")
+    tr
+      td(align=align)
+        a(href=href class=`f-fallback button button--${color}` target="_blank")
+          block
+
+mixin trouble(href)
+  table(class="body__sub" role="presentation")
+    tr
+      td
+        p(class="f-fallback sub")
+          | If you&apos;re having trouble with the button above, copy and paste the URL below into your web browser.
+        p(class="f-fallback sub")
+          a(href=href class="nocolor")
+            | !{href}

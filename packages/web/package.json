@@ -1,0 +1,109 @@
+{
+  "name": "@two/web",
+  "version": "1.0.0",
+  "author": "Disruptive Labs",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Info: use build:production or build:staging'",
+    "build:production": "env-run -e production next build && env-run -e production next-sitemap --config next-sitemap.config.js",
+    "build:staging": "env-run -e staging next build && env-run -e staging next-sitemap --config next-sitemap.config.js",
+    "clean": "rimraf .next build coverage",
+    "dev": "env-run -e development next dev",
+    "start": "next start",
+    "test": "jest --coverage",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "@disruptive-labs/client": "file:../../vendor/@disruptive-labs/client",
+    "@disruptive-labs/config": "file:../../vendor/@disruptive-labs/config",
+    "@disruptive-labs/ui": "file:../../vendor/@disruptive-labs/ui",
+    "@fontsource/lato": "^5.0.3",
+    "@fontsource/mulish": "^5.0.3",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@sentry/browser": "^7.80.0",
+    "@sentry/nextjs": "^7.80.0",
+    "@sentry/react": "^7.80.0",
+    "@two/config": "*",
+    "@two/shared": "*",
+    "axios": "^0.27.2",
+    "content-security-policy-builder": "^2.1.0",
+    "libphonenumber-js": "^1.10.37",
+    "next": "^13.4.10",
+    "next-sitemap": "^3.1.55",
+    "next-transpile-modules": "^9.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.2",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-redux": "^8.1.1",
+    "redux": "^4.2.1",
+    "sharp": "^0.32.1",
+    "snakecase-keys": "^5.4.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@testing-library/dom": "^9.3.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^29.5.2",
+    "@types/lodash.set": "^4.3.7",
+    "@types/react": "^18.2.14",
+    "@types/segment-analytics": "^0.0.34",
+    "babel-jest": "^29.5.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "jest-junit": "^16.0.0",
+    "lodash.set": "^4.3.2",
+    "react-test-renderer": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.63.6",
+    "typescript": "^5.2.2"
+  },
+  "jest": {
+    "clearMocks": true,
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{ts,tsx}"
+    ],
+    "globalSetup": "<rootDir>/test/setup.js",
+    "moduleNameMapper": {
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+      "^.+\\.(css|sass|scss)$": "<rootDir>/test/styleMock.js",
+      "^.+\\.(jpg|jpeg|png|gif|webp|svg)$": "<rootDir>/test/fileMock.js",
+      "^@app/(.*)$": "<rootDir>/src/$1",
+      "^@test$": "<rootDir>/test/index.tsx"
+    },
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/test/jest.test.ts"
+    ],
+    "testEnvironment": "jsdom",
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/.next/",
+      "<rootDir>/build/",
+      "<rootDir>/test/"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": [
+        "babel-jest",
+        {
+          "presets": [
+            "next/babel"
+          ]
+        }
+      ]
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@?disruptive-labs.*|@popperjs/core|es-cookie)/)"
+    ]
+  },
+  "jest-junit": {
+    "outputDirectory": "./artifacts/jest",
+    "outputName": "results.xml"
+  }
+}

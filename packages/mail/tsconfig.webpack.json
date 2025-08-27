@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "incremental": true,
+    "noEmit": false,
+    "outDir": "./build/dist",
+    "rootDir": "./src",
+    "tsBuildInfoFile": "./build/dist/.tsbuildinfo"
+  },
+  "include": ["src/app.ts", "types.d.ts"],
+  "exclude": ["node_modules", "src/**/*.test.ts", "src/__mocks__", "test"],
+  "references": [{ "path": "../config" }, { "path": "../shared/tsconfig.build.json" }]
+}

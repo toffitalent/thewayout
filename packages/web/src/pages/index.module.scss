@@ -1,0 +1,58 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionTitle {
+  font-size: 3.4rem;
+}
+
+.sectionDescription {
+  padding: 3rem 2rem;
+
+  @include mq(md) {
+    padding: 20rem 9rem;
+  }
+}
+
+.sectionHidden {
+  // temporarily hide
+  display: none;
+}
+
+.employerImg {
+  @include mq(md, max) {
+    margin-top: 20px;
+  }
+}
+
+.greyBg {
+  background-color: rgba(224, 231, 255, 0.5);
+}
+.greenBg {
+  background-color: var(--color-green-100);
+}
+
+.imgWrapper {
+  @include mq(md, min) {
+    position: relative;
+  }
+}
+
+.infoIcon {
+  stroke-width: 1px;
+  height: 4rem;
+  width: 4rem;
+}
+
+.infoItem {
+  &:last-child {
+    border-bottom: unset;
+  }
+}

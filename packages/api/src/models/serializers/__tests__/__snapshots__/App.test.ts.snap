@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppSerializer only displays userId property to admins 1`] = `
+{
+  "createdAt": "<Date>",
+  "id": "01817e24-0d42-79ee-bfde-bc16bf2b0e77",
+  "name": "Test App",
+  "updatedAt": "<Date>",
+}
+`;
+
+exports[`AppSerializer only displays userId property to admins 2`] = `
+{
+  "createdAt": "<Date>",
+  "id": Any<String>,
+  "name": "Test App",
+  "updatedAt": "<Date>",
+  "userId": "01817e24-0d42-7176-b613-889fe94905f0",
+}
+`;

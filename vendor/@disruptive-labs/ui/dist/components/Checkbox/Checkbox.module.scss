@@ -1,0 +1,86 @@
+@use 'sass:map';
+@use '@styles/theme';
+@use '../../styles/mixins';
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: theme.$checkbox-disabled-opacity;
+}
+
+.input {
+  @include mixins.visually-hidden;
+
+  &:not(:checked) {
+    & + .control {
+      background-color: transparent !important;
+      border-color: theme.$checkbox-border-color !important;
+    }
+  }
+
+  &:checked,
+  &[aria-checked='mixed'] {
+    & + .control .icon {
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    & + .control {
+      box-shadow: var(--focus-shadow-color) 0 0 0 theme.$focus-shadow-width;
+    }
+
+    &:not(:focus-visible) + .control {
+      box-shadow: none;
+    }
+  }
+}
+
+.control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: theme.$checkbox-border-width solid theme.$checkbox-border-color;
+  border-radius: theme.$checkbox-border-radius;
+  color: theme.$color-white;
+  opacity: 1;
+  user-select: none;
+  transition: background-color 150ms, border-color 150ms, box-shadow 250ms ease;
+
+  .invalid .input + & {
+    border-color: theme.$checkbox-error-color !important;
+    box-shadow: theme.$checkbox-error-color 0 0 0
+      (theme.$focus-border-width - theme.$checkbox-border-width);
+  }
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  fill: currentColor;
+  opacity: 0;
+  transition: opacity 150ms;
+}
+
+.label {
+  margin-left: theme.$checkbox-label-margin;
+  user-select: none;
+}
+
+@each $checkbox-size, $size in theme.$checkbox-sizes {
+  .#{$checkbox-size} {
+    font-size: map.get($size, 'font');
+
+    .control {
+      width: map.get($size, 'size');
+      height: map.get($size, 'size');
+    }
+  }
+}

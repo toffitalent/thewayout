@@ -1,0 +1,23 @@
+extends ../templates/base.pug
+include ../templates/mixins.pug
+
+block preheader
+  | Welcome to !{config.get('company.name')}, #{user.firstName}! We're thrilled to have you on board!
+
+block content
+  h1 Welcome, #{user.firstName}
+  p Thanks for signing up for !{config.get('company.name')}. We're thrilled to have you on board!
+  p To get started, be sure to create your startup profile so people can see what you're working on:
+  +action
+    +button(config.get('urls.web')) Create Profile
+  p
+    | If you have any questions, feel free to
+    |
+    a(href=`mailto:${config.get('company.supportEmail')}`) email our support team
+    | . We're always happy to help :)
+  p
+    | Thanks,
+    br
+    | The !{config.get('company.name')} Team
+
+  +trouble(config.get('urls.web'))

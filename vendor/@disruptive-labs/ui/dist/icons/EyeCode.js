@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgEyeCode = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M10 12a2 2 0 104 0 2 2 0 00-4 0" }), React.createElement("path", { d: "M11.11 17.958C7.901 17.651 5.2 15.665 3 12c2.4-4 5.4-6 9-6 3.6 0 6.6 2 9 6-.21.352-.427.688-.647 1.008M20 21l2-2-2-2M17 17l-2 2 2 2" }));
+export default SvgEyeCode;

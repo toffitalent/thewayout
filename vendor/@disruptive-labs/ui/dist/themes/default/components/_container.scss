@@ -1,0 +1,17 @@
+@use '../core' as *;
+
+$container-padding: $spacing-4 !default;
+
+$container-size-sm: $screen-sm !default;
+$container-size-md: $screen-md !default;
+$container-size-lg: $screen-lg !default;
+$container-size-xl: $screen-xl !default;
+$container-size-2xl: $screen-2xl !default;
+
+$container-sizes: (
+  'sm': $container-size-sm,
+  'md': $container-size-md,
+  'lg': $container-size-lg,
+  'xl': $container-size-xl,
+  '2xl': $container-size-2xl,
+);

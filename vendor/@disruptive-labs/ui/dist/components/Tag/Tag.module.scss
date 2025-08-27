@@ -1,0 +1,180 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '@styles/theme';
+@use '../../styles/functions' as fn;
+@use '../../styles/mixins';
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border-style: solid;
+  border-width: theme.$tag-border-width;
+  border-radius: theme.$tag-border-radius;
+  color: var(--color-light);
+  font-size: theme.$font-p1-size;
+  font-weight: theme.$tag-font-weight;
+  vertical-align: middle;
+
+  &.black {
+    color: var(--color-black) !important;
+    background: var(--color-black) !important;
+    border-color: var(--color-black) !important;
+  }
+
+  &.white {
+    color: var(--color-white) !important;
+    background: var(--color-white) !important;
+    border-color: var(--color-white) !important;
+  }
+
+  &.outline {
+    background: transparent !important;
+  }
+
+  &.solid {
+    color: var(--color-light) !important;
+
+    &.white {
+      color: var(--color-dark) !important;
+    }
+  }
+}
+
+.label {
+  @include mixins.truncate(100%);
+}
+
+.button {
+  min-width: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  font-family: inherit;
+  font-weight: theme.$button-font-weight;
+  line-height: theme.$line-height;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  transition: none;
+  white-space: nowrap;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none !important;
+
+  &::-moz-focus-inner {
+    border-style: none;
+  }
+
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: theme.$tag-button-disabled-opacity;
+  }
+
+  &.showBorder {
+    height: auto !important;
+    align-self: stretch;
+    border-left: 1px solid currentColor;
+
+    &:first-child {
+      border-left: 0;
+      border-right: 1px solid currentColor;
+    }
+  }
+
+  &::before {
+    width: 40px;
+    height: 40px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    width: 30px;
+    height: 30px;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: background 250ms ease;
+    z-index: 0;
+  }
+
+  &:focus::after {
+    background: rgba(0, 0, 0, theme.$tag-button-focus-shadow-opacity);
+  }
+
+  &:focus:not(:focus-visible)::after {
+    background: none;
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@each $tag-size, $size in theme.$tag-sizes {
+  .#{$tag-size} {
+    min-width: map.get($size, 'size');
+    min-height: map.get($size, 'size');
+    padding-left: map.get($size, 'padding');
+    padding-right: map.get($size, 'padding');
+    font-size: map.get($size, 'font');
+
+    $icon-size: map.get($size, 'font') * 1.25;
+
+    .icon {
+      margin-left: math.div(map.get($size, 'padding'), 2);
+      margin-right: math.div(map.get($size, 'padding'), 2);
+      font-size: $icon-size;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .button {
+      width: $icon-size;
+      height: $icon-size;
+      font-size: $icon-size;
+
+      &:first-child {
+        margin-left: map.get($size, 'padding') * -1;
+      }
+
+      &:last-child {
+        margin-right: map.get($size, 'padding') * -1;
+      }
+
+      &::after {
+        width: $icon-size * 1.5;
+        height: $icon-size * 1.5;
+      }
+    }
+
+    .showBorder:first-child + .label {
+      margin-left: map.get($size, 'padding');
+    }
+
+    .label + .showBorder {
+      margin-left: map.get($size, 'padding');
+    }
+  }
+}

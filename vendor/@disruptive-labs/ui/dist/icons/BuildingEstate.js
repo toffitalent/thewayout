@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgBuildingEstate = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M3 21h18M19 21v-4M19 17a2 2 0 002-2v-2a2 2 0 10-4 0v2a2 2 0 002 2zM14 21V7a3 3 0 00-3-3H7a3 3 0 00-3 3v14M9 17v4M8 13h2M8 9h2" }));
+export default SvgBuildingEstate;

@@ -1,0 +1,23 @@
+@use 'sass:color';
+@use 'sass:math';
+@use '@styles/theme';
+
+@function brightness($color) {
+  @return math.div((color.red($color) + color.green($color) + color.blue($color)), (255 * 3));
+}
+
+@function brightness-ratio($base, $color) {
+  @return math.abs(brightness($base) - brightness($color));
+}
+
+@function stripUnit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+@function rem($pxValue, $font-size: theme.$scaling-factor) {
+  @return math.div(stripUnit($pxValue), stripUnit($font-size));
+}
+
+@function px($remValue, $font-size: theme.$scaling-factor) {
+  @return stripUnit($remValue) * stripUnit($font-size);
+}

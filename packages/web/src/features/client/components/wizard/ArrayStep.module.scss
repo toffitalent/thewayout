@@ -1,0 +1,13 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.arrayStepHeader {
+  &Title {
+    margin-top: -40px;
+    line-height: 27px;
+  }
+  &Description {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+}

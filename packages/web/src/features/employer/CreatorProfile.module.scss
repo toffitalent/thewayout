@@ -1,0 +1,14 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.wizardWrapper {
+  form > div[role='group'] {
+    text-align: left;
+  }
+}
+
+.confirmItem {
+  &:last-child {
+    border-bottom: none;
+  }
+}

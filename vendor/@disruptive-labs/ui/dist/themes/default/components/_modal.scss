@@ -1,0 +1,22 @@
+@use '../core' as *;
+
+$modal-bg: var(--color-bg) !default;
+$modal-border-radius: 2rem !default;
+$modal-margin: $spacing-5 !default;
+$modal-overlay-bg: rgba(0, 0, 0, 0.5) !default;
+$modal-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !default;
+$modal-z-index: 200 !default;
+
+$modal-size-xs: 36rem !default;
+$modal-size-sm: 44rem !default;
+$modal-size-md: 54rem !default;
+$modal-size-lg: 66rem !default;
+$modal-size-xl: 78rem !default;
+
+$modal-sizes: (
+  'xs': $modal-size-xs,
+  'sm': $modal-size-sm,
+  'md': $modal-size-md,
+  'lg': $modal-size-lg,
+  'xl': $modal-size-xl,
+);

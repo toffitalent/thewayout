@@ -1,0 +1,1434 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage renders correctly 1`] = `
+<div>
+  <section
+    class="hero"
+  >
+    <div
+      aria-hidden="true"
+      class="bg"
+    >
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+      >
+        <img
+          alt=""
+          data-nimg="fill"
+          decoding="async"
+          sizes="100vw"
+          src="/_next/image?url=%2Ftest-file-stub&w=3840&q=75"
+          srcset="/_next/image?url=%2Ftest-file-stub&w=640&q=75 640w, /_next/image?url=%2Ftest-file-stub&w=750&q=75 750w, /_next/image?url=%2Ftest-file-stub&w=828&q=75 828w, /_next/image?url=%2Ftest-file-stub&w=1080&q=75 1080w, /_next/image?url=%2Ftest-file-stub&w=1200&q=75 1200w, /_next/image?url=%2Ftest-file-stub&w=1920&q=75 1920w, /_next/image?url=%2Ftest-file-stub&w=2048&q=75 2048w, /_next/image?url=%2Ftest-file-stub&w=3840&q=75 3840w"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+        />
+      </span>
+      s
+    </div>
+    <div
+      class="container"
+    >
+      <div
+        class="container justifyContent-center textAlign-center"
+      >
+        <div
+          class="item bp-xs-12 bp-md-8"
+        >
+          <div
+            class="alignItems-center flexDirection-row justifyContent-center marginBottom-5"
+          >
+            <p
+              class="text marginRight-1 fontWeight-700"
+            >
+              Funded by
+            </p>
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2724%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                alt="google"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <h1>
+            Fair Chance Employment Platform
+          </h1>
+          <p
+            class="text"
+          >
+            Solving America's workforce shortage through fair chance employment.
+          </p>
+          <div
+            class="actions"
+          >
+            <a
+              class="button md solid c-primary"
+              href="/job-seekers"
+            >
+              For Job Seekers
+              <span
+                aria-hidden="true"
+                class="accessoryRight"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  focusable="false"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M5 12h14M15 16l4-4M15 8l4 4"
+                  />
+                </svg>
+              </span>
+            </a>
+            <a
+              class="button md outline c-white"
+              href="/employers"
+            >
+              For Employers
+              <span
+                aria-hidden="true"
+                class="accessoryRight"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  focusable="false"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M5 12h14M15 16l4-4M15 8l4 4"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    class="section sectionHidden marginTop-24 marginBottom-24 paddingRight-5 paddingLeft-5"
+  >
+    <h2
+      class="text sectionTitle marginBottom-12"
+    >
+      Our Employers
+    </h2>
+    <div
+      class=""
+    >
+      <div
+        class="container justifyContent-center"
+      >
+        <div
+          class="employerImg item bp-xs-3 bp-lg-true justifyContent-center display-flex height-10 marginTop-3"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              alt=""
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+            />
+            <noscript />
+          </span>
+        </div>
+        <div
+          class="employerImg item bp-xs-3 bp-lg-true justifyContent-center display-flex height-10 marginTop-3"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              alt=""
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+            />
+            <noscript />
+          </span>
+        </div>
+        <div
+          class="employerImg item bp-xs-3 bp-lg-true justifyContent-center display-flex height-10 marginTop-3"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              alt=""
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+            />
+            <noscript />
+          </span>
+        </div>
+        <div
+          class="employerImg item bp-xs-3 bp-lg-true justifyContent-center display-flex height-10 marginTop-3"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              alt=""
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+            />
+            <noscript />
+          </span>
+        </div>
+        <div
+          class="employerImg item bp-xs-3 bp-lg-true justifyContent-center display-flex height-10 marginTop-3"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              alt=""
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+            />
+            <noscript />
+          </span>
+        </div>
+        <div
+          class="employerImg item bp-xs-3 bp-lg-true justifyContent-center display-flex height-10 marginTop-3"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              alt=""
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+            />
+            <noscript />
+          </span>
+        </div>
+        <div
+          class="employerImg item bp-xs-3 bp-lg-true justifyContent-center display-flex height-10 marginTop-3"
+        >
+          <span
+            style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+          >
+            <span
+              style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+              />
+            </span>
+            <img
+              alt=""
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+            />
+            <noscript />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section
+    class=""
+  >
+    <div
+      class="container flexDirection-row-reverse"
+    >
+      <div
+        class="greyBg sectionDescription bp-xs-12 bp-md-6"
+      >
+        <h2
+          class="text sectionTitle marginBottom-5"
+        >
+          Reentering the workforce? No problem.
+        </h2>
+        <p
+          class="text"
+        >
+          The Way Out was founded by two justice impacted individuals (one a Navy Veteran) that believe in the power of utilizing difficult past experiences to create an even better future. That's why they decided to create the most felon-friendly second chance employment platform in America.
+        </p>
+        <div
+          class=""
+        >
+          <div
+            class="infoItem borderBottom alignItems-center flexDirection-row paddingTop-10 paddingBottom-10"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon infoIcon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M8 7a4 4 0 108 0 4 4 0 00-8 0M16 19h6M19 16v6M6 21v-2a4 4 0 014-4h4"
+              />
+            </svg>
+            <p
+              class="text marginLeft-5 fontWeight-700"
+            >
+              Free for all Job Seekers
+            </p>
+          </div>
+          <div
+            class="infoItem borderBottom alignItems-center flexDirection-row paddingTop-10 paddingBottom-10"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon infoIcon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M7 11v8a1 1 0 01-1 1H4a1 1 0 01-1-1v-7a1 1 0 011-1h3a4 4 0 004-4V6a2 2 0 014 0v5h3a2 2 0 012 2l-1 5a2 3 0 01-2 2h-7a3 3 0 01-3-3"
+              />
+            </svg>
+            <p
+              class="text marginLeft-5 fontWeight-700"
+            >
+              All employers are 100% committed to fair chance hiring.
+            </p>
+          </div>
+          <div
+            class="infoItem borderBottom alignItems-center flexDirection-row paddingTop-10 paddingBottom-10"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon infoIcon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M19 8.71l-5.333-4.148a2.666 2.666 0 00-3.274 0L5.059 8.71a2.665 2.665 0 00-1.029 2.105v7.2a2 2 0 002 2h12a2 2 0 002-2v-7.2c0-.823-.38-1.6-1.03-2.105M16 15c-2.21 1.333-5.792 1.333-8 0"
+              />
+            </svg>
+            <p
+              class="text marginLeft-5 fontWeight-700"
+            >
+              Access to a network of 
+              <a
+                href="/service-providers"
+              >
+                Supportive Services Providers
+              </a>
+            </p>
+          </div>
+        </div>
+        <div
+          class="flexDirection-row"
+        >
+          <a
+            class="button md solid c-primary"
+            href="/job-seekers"
+          >
+            For Job Seekers
+            <span
+              aria-hidden="true"
+              class="accessoryRight"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon"
+                focusable="false"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  stroke="none"
+                />
+                <path
+                  d="M5 12h14M15 16l4-4M15 8l4 4"
+                />
+              </svg>
+            </span>
+          </a>
+          <a
+            class="button md outline c-primary marginLeft-2"
+            href="/employers"
+          >
+            For Employers
+            <span
+              aria-hidden="true"
+              class="accessoryRight"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon"
+                focusable="false"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  stroke="none"
+                />
+                <path
+                  d="M5 12h14M15 16l4-4M15 8l4 4"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            sizes="100vw"
+            src="/_next/image?url=%2Ftest-file-stub&w=3840&q=75"
+            srcset="/_next/image?url=%2Ftest-file-stub&w=640&q=75 640w, /_next/image?url=%2Ftest-file-stub&w=750&q=75 750w, /_next/image?url=%2Ftest-file-stub&w=828&q=75 828w, /_next/image?url=%2Ftest-file-stub&w=1080&q=75 1080w, /_next/image?url=%2Ftest-file-stub&w=1200&q=75 1200w, /_next/image?url=%2Ftest-file-stub&w=1920&q=75 1920w, /_next/image?url=%2Ftest-file-stub&w=2048&q=75 2048w, /_next/image?url=%2Ftest-file-stub&w=3840&q=75 3840w"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="sectionDescription bp-xs-12 bp-md-6 bgcolor-grey-900"
+      >
+        <h2
+          class="text sectionTitle color-light marginBottom-5"
+        >
+          There's Power in Your Story
+        </h2>
+        <p
+          class="text color-light"
+        >
+          Our contextualized software takes into consideration all of your personal, life, armed forces and professional experiences when matching you with employment opportunities.
+        </p>
+        <a
+          class="button md solid c-primary marginTop-8"
+          href="/jobs"
+        >
+          Find a Job
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container flexDirection-row-reverse"
+    >
+      <div
+        class="sectionDescription bp-xs-12 bp-md-6"
+      >
+        <h2
+          class="text title marginBottom-2"
+        >
+          How it works?
+        </h2>
+        <p
+          class="text color-grey-600 fontSize-xl fontWeight-700"
+        >
+          Life can be harder upon your return. Our platform makes it easier.
+        </p>
+        <div
+          class=""
+        >
+          <div
+            class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+          >
+            <p
+              class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+            >
+              1
+            </p>
+            <div
+              class="marginLeft-8"
+            >
+              <p
+                class="text marginBottom-2 fontSize-xl fontWeight-700"
+              >
+                Create Your Profile
+              </p>
+              <p
+                class="text color-grey-600"
+              >
+                Our platform creates a blind, contextual profile that removes your name, address, employment gaps and other information that traditionally cause biases from employers.
+              </p>
+            </div>
+          </div>
+          <div
+            class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+          >
+            <p
+              class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+            >
+              2
+            </p>
+            <div
+              class="marginLeft-8"
+            >
+              <p
+                class="text marginBottom-2 fontSize-xl fontWeight-700"
+              >
+                Identify Additional Support Needs
+              </p>
+              <p
+                class="text color-grey-600"
+              >
+                We'll match you with a Supportive Services Provider (SSP) in your area that can help with your personal and professional journey. You can manage your personalized journey in our dashboard.
+              </p>
+            </div>
+          </div>
+          <div
+            class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+          >
+            <p
+              class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+            >
+              3
+            </p>
+            <div
+              class="marginLeft-8"
+            >
+              <p
+                class="text marginBottom-2 fontSize-xl fontWeight-700"
+              >
+                Apply For Jobs
+              </p>
+              <p
+                class="text color-grey-600"
+              >
+                Our platform is designed for job seekers who've recently reentered the workforce.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="button md solid c-primary"
+          href="/signup"
+        >
+          Find jobs
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container flexDirection-row-reverse"
+    >
+      <div
+        class="sectionDescription bp-xs-12 bp-md-6 bgcolor-grey-900"
+      >
+        <h2
+          class="text sectionTitle color-light marginBottom-5"
+        >
+          For Employers
+        </h2>
+        <p
+          class="text color-light"
+        >
+          While other fair chance employment platforms only focus on bringing employers and employees together, The Way Out additionally focuses on development and retention by offering ongoing training and support opportunities.
+        </p>
+        <a
+          class="button md solid c-primary marginTop-8"
+          href="/employers"
+        >
+          Learn more
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class="section marginTop-24 marginBottom-24 textAlign-center"
+  >
+    <div
+      class="paddingRight-4 paddingLeft-4"
+    >
+      <p
+        class="text color-primary marginBottom-5 fontSize-lg fontWeight-700"
+      >
+        For Service Providers
+      </p>
+      <p
+        class="text fontSize-3xl fontWeight-700"
+      >
+        Our platform simplifies your process, allowing your organization to provide even better services at scale while improving employment outcomes for your clients.
+      </p>
+      <div
+        class="flexDirection-row justifyContent-center marginTop-10"
+      >
+        <a
+          class="button md solid c-primary"
+          href="/signup"
+        >
+          Become A Partner
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+        <a
+          class="button md outline c-primary marginLeft-2"
+          href="/service-providers"
+        >
+          Learn more
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section
+    class="section bgcolor-grey-900 paddingRight-8 paddingLeft-8 paddingTop-24 paddingBottom-24 textAlign-center"
+  >
+    <p
+      class="text color-primary marginBottom-2 fontSize-lg"
+    >
+      True Stories
+    </p>
+    <h2
+      class="text sectionTitle color-light"
+    >
+      What others say about The Way Out
+    </h2>
+    <div
+      class="container spacing-12 marginTop-24"
+    >
+      <div
+        class="item bp-xs-12 bp-md-4"
+      >
+        <div
+          class=""
+        >
+          <div
+            class=""
+          >
+            <div
+              class="image"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt=""
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+                <noscript />
+              </span>
+            </div>
+          </div>
+          <div
+            class="color-light marginTop-12 paddingRight-8 paddingLeft-8 textAlign-left"
+          >
+            <div>
+              <div
+                class="stars"
+              >
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+              </div>
+              <p
+                class="text marginTop-4 marginBottom-4 fontSize-lg fontWeight-700"
+              >
+                I found my dream job!
+              </p>
+              <p
+                class="text quote"
+              >
+                After creating an account with The Way Out and answering a few questions, like what are things I'm interested in, my personal strengths, my skill sets, credentials and certifications, I received notice of my dream job.
+              </p>
+              <p
+                class="text marginTop-4 fontWeight-500"
+              >
+                Daniel - Job Seeker
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="item bp-xs-12 bp-md-4"
+      >
+        <div
+          class=""
+        >
+          <div
+            class=""
+          >
+            <div
+              class="image"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt=""
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+                <noscript />
+              </span>
+            </div>
+          </div>
+          <div
+            class="color-light marginTop-12 paddingRight-8 paddingLeft-8 textAlign-left"
+          >
+            <div>
+              <div
+                class="stars"
+              >
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+              </div>
+              <p
+                class="text marginTop-4 marginBottom-4 fontSize-lg fontWeight-700"
+              >
+                Great hiring experience!
+              </p>
+              <p
+                class="text quote"
+              >
+                The Way Out recommended an applicant with no information that we could use to identify them. We decided to interview this person, interviewed them, and they've occupied that role now for almost a year very successfully.
+              </p>
+              <p
+                class="text marginTop-4 fontWeight-500"
+              >
+                Anthony - Employer
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="item bp-xs-12 bp-md-4"
+      >
+        <div
+          class=""
+        >
+          <div
+            class=""
+          >
+            <div
+              class="image"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt=""
+                  data-nimg="fill"
+                  decoding="async"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+                <noscript />
+              </span>
+            </div>
+          </div>
+          <div
+            class="color-light marginTop-12 paddingRight-8 paddingLeft-8 textAlign-left"
+          >
+            <div>
+              <div
+                class="stars"
+              >
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+                <div>
+                  <span
+                    style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+                  >
+                    <span
+                      style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+                    >
+                      <img
+                        alt=""
+                        aria-hidden="true"
+                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                        style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                      />
+                    </span>
+                    <img
+                      alt="star"
+                      data-nimg="intrinsic"
+                      decoding="async"
+                      src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                      style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                    />
+                    <noscript />
+                  </span>
+                </div>
+              </div>
+              <p
+                class="text marginTop-4 marginBottom-4 fontSize-lg fontWeight-700"
+              >
+                We love The Way Out!
+              </p>
+              <p
+                class="text quote"
+              >
+                We love sending our clients to The Way Out! Not only are our clients able to find great jobs, but we're also able to keep our clients on track in meeting their personal and professional life through the app.
+              </p>
+              <p
+                class="text marginTop-4 fontWeight-500"
+              >
+                Caroline - Service Provider
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="greenBg section sectionHidden paddingRight-4 paddingLeft-4 paddingTop-36 paddingBottom-36"
+  >
+    <p
+      class="text sectionTitle marginBottom-10 fontWeight-700 textAlign-center"
+    >
+      See the impact we've made in the fight against recidivism.
+    </p>
+    <a
+      class="button md solid c-primary"
+      href="/"
+    >
+      View Impact Report
+      <span
+        aria-hidden="true"
+        class="accessoryRight"
+      >
+        <svg
+          aria-hidden="true"
+          class="icon"
+          focusable="false"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            stroke="none"
+          />
+          <path
+            d="M5 12h14M15 16l4-4M15 8l4 4"
+          />
+        </svg>
+      </span>
+    </a>
+  </section>
+</div>
+`;

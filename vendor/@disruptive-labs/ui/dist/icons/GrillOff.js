@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgGrillOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M8 8H5a6 6 0 006 6h2c.315 0 .624-.024.926-.071m2.786-1.214a5.99 5.99 0 002.284-4.49V8h-7M18.827 18.815a2 2 0 11-2.663-2.633M9 14l-3 6M15 18H7M15 5V4M12 5V4M9 5V4M3 3l18 18" }));
+export default SvgGrillOff;

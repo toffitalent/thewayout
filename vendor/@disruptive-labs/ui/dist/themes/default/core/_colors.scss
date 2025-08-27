@@ -1,0 +1,309 @@
+@use 'sass:color';
+@use 'sass:list';
+@use './settings' as *;
+
+$color-black: #000 !default;
+$color-white: #fff !default;
+$color-transparent: transparent !default;
+
+// Light palette
+
+$color-primary_light: #3d6af3 !default;
+$color-secondary_light: #d82872 !default;
+
+$color-primary-100_light: color.scale($color-primary_light, $lightness: 95%) !default;
+$color-primary-200_light: color.scale($color-primary_light, $lightness: 85%) !default;
+$color-primary-300_light: color.scale($color-primary_light, $lightness: 75%) !default;
+$color-primary-400_light: color.scale($color-primary_light, $lightness: 50%) !default;
+$color-primary-500_light: color.scale($color-primary_light, $lightness: 30%) !default;
+$color-primary-600_light: color.scale($color-primary_light, $lightness: 15%) !default;
+$color-primary-700_light: $color-primary_light !default;
+$color-primary-800_light: color.scale($color-primary_light, $lightness: -15%) !default;
+$color-primary-900_light: color.scale($color-primary_light, $lightness: -30%) !default;
+
+$color-secondary-100_light: color.scale($color-secondary_light, $lightness: 95%) !default;
+$color-secondary-200_light: color.scale($color-secondary_light, $lightness: 85%) !default;
+$color-secondary-300_light: color.scale($color-secondary_light, $lightness: 75%) !default;
+$color-secondary-400_light: color.scale($color-secondary_light, $lightness: 50%) !default;
+$color-secondary-500_light: color.scale($color-secondary_light, $lightness: 30%) !default;
+$color-secondary-600_light: color.scale($color-secondary_light, $lightness: 15%) !default;
+$color-secondary-700_light: $color-secondary_light !default;
+$color-secondary-800_light: color.scale($color-secondary_light, $lightness: -15%) !default;
+$color-secondary-900_light: color.scale($color-secondary_light, $lightness: -30%) !default;
+
+$color-light_light: $color-white !default;
+$color-dark_light: $color-black !default;
+
+$color-grey-100_light: #f3f4f6 !default;
+$color-grey-200_light: #e5e7eb !default;
+$color-grey-300_light: #d1d5db !default;
+$color-grey-400_light: #9ca3af !default;
+$color-grey-500_light: #6b7280 !default;
+$color-grey-600_light: #4b5563 !default;
+$color-grey-700_light: #374151 !default;
+$color-grey-800_light: #1f2937 !default;
+$color-grey-900_light: #111827 !default;
+$color-grey-default_light: $color-grey-700_light !default;
+
+$color-red-100_light: #fee2e2 !default;
+$color-red-200_light: #fecaca !default;
+$color-red-300_light: #fca5a5 !default;
+$color-red-400_light: #f87171 !default;
+$color-red-500_light: #ef4444 !default;
+$color-red-600_light: #dc2626 !default;
+$color-red-700_light: #b91c1c !default;
+$color-red-800_light: #991b1b !default;
+$color-red-900_light: #7f1d1d !default;
+$color-red-default_light: $color-red-700_light !default;
+
+$color-orange-100_light: #ffedd5 !default;
+$color-orange-200_light: #fed7aa !default;
+$color-orange-300_light: #fdba74 !default;
+$color-orange-400_light: #fb923c !default;
+$color-orange-500_light: #f97316 !default;
+$color-orange-600_light: #ea580c !default;
+$color-orange-700_light: #c2410c !default;
+$color-orange-800_light: #9c4221 !default;
+$color-orange-900_light: #7c2d12 !default;
+$color-orange-default_light: $color-orange-700_light !default;
+
+$color-yellow-100_light: #fef3c7 !default;
+$color-yellow-200_light: #fde68a !default;
+$color-yellow-300_light: #fcd34d !default;
+$color-yellow-400_light: #fbbf24 !default;
+$color-yellow-500_light: #f59e0b !default;
+$color-yellow-600_light: #d97706 !default;
+$color-yellow-700_light: #b45309 !default;
+$color-yellow-800_light: #92400e !default;
+$color-yellow-900_light: #78350f !default;
+$color-yellow-default_light: $color-yellow-700_light !default;
+
+$color-green-100_light: #d1fae5 !default;
+$color-green-200_light: #a7f3d0 !default;
+$color-green-300_light: #6ee7b7 !default;
+$color-green-400_light: #34d399 !default;
+$color-green-500_light: #10b981 !default;
+$color-green-600_light: #059669 !default;
+$color-green-700_light: #047857 !default;
+$color-green-800_light: #065f46 !default;
+$color-green-900_light: #064e3b !default;
+$color-green-default_light: $color-green-700_light !default;
+
+$color-teal-100_light: #ccfbf1 !default;
+$color-teal-200_light: #99f6e4 !default;
+$color-teal-300_light: #5eead4 !default;
+$color-teal-400_light: #5eead4 !default;
+$color-teal-500_light: #14b8a6 !default;
+$color-teal-600_light: #0d9488 !default;
+$color-teal-700_light: #0d9488 !default;
+$color-teal-800_light: #115e59 !default;
+$color-teal-900_light: #134e4a !default;
+$color-teal-default_light: $color-teal-700_light !default;
+
+$color-blue-100_light: #e0f2fe !default;
+$color-blue-200_light: #bae6fd !default;
+$color-blue-300_light: #7dd3fc !default;
+$color-blue-400_light: #38bdf8 !default;
+$color-blue-500_light: #38bdf8 !default;
+$color-blue-600_light: #0ea5e9 !default;
+$color-blue-700_light: #0369a1 !default;
+$color-blue-800_light: #075985 !default;
+$color-blue-900_light: #0c4a6e !default;
+$color-blue-default_light: $color-blue-700_light !default;
+
+$color-indigo-100_light: #e0e7ff !default;
+$color-indigo-200_light: #c7d2fe !default;
+$color-indigo-300_light: #a5b4fc !default;
+$color-indigo-400_light: #818cf8 !default;
+$color-indigo-500_light: #6366f1 !default;
+$color-indigo-600_light: #4f46e5 !default;
+$color-indigo-700_light: #4338ca !default;
+$color-indigo-800_light: #3730a3 !default;
+$color-indigo-900_light: #312e81 !default;
+$color-indigo-default_light: $color-indigo-700_light !default;
+
+$color-purple-100_light: #ece9fe !default;
+$color-purple-200_light: #ddd6fe !default;
+$color-purple-300_light: #c4b5fd !default;
+$color-purple-400_light: #a78bfa !default;
+$color-purple-500_light: #8b5cf6 !default;
+$color-purple-600_light: #7c3aed !default;
+$color-purple-700_light: #6d28d9 !default;
+$color-purple-800_light: #5b21b6 !default;
+$color-purple-900_light: #4c1d95 !default;
+$color-purple-default_light: $color-purple-700_light !default;
+
+$color-pink-100_light: #fce7f3 !default;
+$color-pink-200_light: #fbcfe8 !default;
+$color-pink-300_light: #f9a8d4 !default;
+$color-pink-400_light: #f472b6 !default;
+$color-pink-500_light: #ec4899 !default;
+$color-pink-600_light: #db2777 !default;
+$color-pink-700_light: #be185d !default;
+$color-pink-800_light: #9d174d !default;
+$color-pink-900_light: #831843 !default;
+$color-pink-default_light: $color-pink-700_light !default;
+
+$color-bg_light: $color-white !default;
+$color-text_light: $color-grey-800_light !default;
+$color-caption_light: #4a5568 !default;
+
+// Dark palette
+
+$color-primary_dark: #7093ff !default;
+$color-secondary_dark: #e46c9e !default;
+
+$color-primary-100_dark: color.scale($color-primary_dark, $lightness: -95%) !default;
+$color-primary-200_dark: color.scale($color-primary_dark, $lightness: -85%) !default;
+$color-primary-300_dark: color.scale($color-primary_dark, $lightness: -75%) !default;
+$color-primary-400_dark: color.scale($color-primary_dark, $lightness: -50%) !default;
+$color-primary-500_dark: color.scale($color-primary_dark, $lightness: -30%) !default;
+$color-primary-600_dark: color.scale($color-primary_dark, $lightness: -15%) !default;
+$color-primary-700_dark: $color-primary_dark !default;
+$color-primary-800_dark: color.scale($color-primary_dark, $lightness: 15%) !default;
+$color-primary-900_dark: color.scale($color-primary_dark, $lightness: 30%) !default;
+
+$color-secondary-100_dark: color.scale($color-secondary_dark, $lightness: -95%) !default;
+$color-secondary-200_dark: color.scale($color-secondary_dark, $lightness: -85%) !default;
+$color-secondary-300_dark: color.scale($color-secondary_dark, $lightness: -75%) !default;
+$color-secondary-400_dark: color.scale($color-secondary_dark, $lightness: -50%) !default;
+$color-secondary-500_dark: color.scale($color-secondary_dark, $lightness: -30%) !default;
+$color-secondary-600_dark: color.scale($color-secondary_dark, $lightness: -15%) !default;
+$color-secondary-700_dark: $color-secondary_dark !default;
+$color-secondary-800_dark: color.scale($color-secondary_dark, $lightness: 15%) !default;
+$color-secondary-900_dark: color.scale($color-secondary_dark, $lightness: 30%) !default;
+
+$color-light_dark: $color-black !default;
+$color-dark_dark: $color-white !default;
+
+$color-grey-100_dark: #111827 !default;
+$color-grey-200_dark: #1f2937 !default;
+$color-grey-300_dark: #374151 !default;
+$color-grey-400_dark: #4b5563 !default;
+$color-grey-500_dark: #6b7280 !default;
+$color-grey-600_dark: #9ca3af !default;
+$color-grey-700_dark: #d1d5db !default;
+$color-grey-800_dark: #e5e7eb !default;
+$color-grey-900_dark: #f3f4f6 !default;
+$color-grey-default_dark: $color-grey-700_dark !default;
+
+$color-red-100_dark: #7f1d1d !default;
+$color-red-200_dark: #991b1b !default;
+$color-red-300_dark: #b91c1c !default;
+$color-red-400_dark: #dc2626 !default;
+$color-red-500_dark: #ef4444 !default;
+$color-red-600_dark: #f87171 !default;
+$color-red-700_dark: #fca5a5 !default;
+$color-red-800_dark: #fecaca !default;
+$color-red-900_dark: #fee2e2 !default;
+$color-red-default_dark: $color-red-700_dark !default;
+
+$color-orange-100_dark: #7c2d12 !default;
+$color-orange-200_dark: #9c4221 !default;
+$color-orange-300_dark: #c2410c !default;
+$color-orange-400_dark: #ea580c !default;
+$color-orange-500_dark: #f97316 !default;
+$color-orange-600_dark: #fb923c !default;
+$color-orange-700_dark: #fdba74 !default;
+$color-orange-800_dark: #fed7aa !default;
+$color-orange-900_dark: #ffedd5 !default;
+$color-orange-default_dark: $color-orange-700_dark !default;
+
+$color-yellow-100_dark: #78350f !default;
+$color-yellow-200_dark: #92400e !default;
+$color-yellow-300_dark: #b45309 !default;
+$color-yellow-400_dark: #d97706 !default;
+$color-yellow-500_dark: #f59e0b !default;
+$color-yellow-600_dark: #fbbf24 !default;
+$color-yellow-700_dark: #fcd34d !default;
+$color-yellow-800_dark: #fde68a !default;
+$color-yellow-900_dark: #fef3c7 !default;
+$color-yellow-default_dark: $color-yellow-700_dark !default;
+
+$color-green-100_dark: #064e3b !default;
+$color-green-200_dark: #065f46 !default;
+$color-green-300_dark: #047857 !default;
+$color-green-400_dark: #059669 !default;
+$color-green-500_dark: #10b981 !default;
+$color-green-600_dark: #34d399 !default;
+$color-green-700_dark: #6ee7b7 !default;
+$color-green-800_dark: #a7f3d0 !default;
+$color-green-900_dark: #d1fae5 !default;
+$color-green-default_dark: $color-green-700_dark !default;
+
+$color-teal-100_dark: #134e4a !default;
+$color-teal-200_dark: #115e59 !default;
+$color-teal-300_dark: #0d9488 !default;
+$color-teal-400_dark: #0d9488 !default;
+$color-teal-500_dark: #14b8a6 !default;
+$color-teal-600_dark: #5eead4 !default;
+$color-teal-700_dark: #5eead4 !default;
+$color-teal-800_dark: #99f6e4 !default;
+$color-teal-900_dark: #ccfbf1 !default;
+$color-teal-default_dark: $color-teal-700_dark !default;
+
+$color-blue-100_dark: #0c4a6e !default;
+$color-blue-200_dark: #075985 !default;
+$color-blue-300_dark: #0369a1 !default;
+$color-blue-400_dark: #0ea5e9 !default;
+$color-blue-500_dark: #38bdf8 !default;
+$color-blue-600_dark: #38bdf8 !default;
+$color-blue-700_dark: #7dd3fc !default;
+$color-blue-800_dark: #bae6fd !default;
+$color-blue-900_dark: #e0f2fe !default;
+$color-blue-default_dark: $color-blue-700_dark !default;
+
+$color-indigo-100_dark: #312e81 !default;
+$color-indigo-200_dark: #3730a3 !default;
+$color-indigo-300_dark: #4338ca !default;
+$color-indigo-400_dark: #4f46e5 !default;
+$color-indigo-500_dark: #6366f1 !default;
+$color-indigo-600_dark: #818cf8 !default;
+$color-indigo-700_dark: #a5b4fc !default;
+$color-indigo-800_dark: #c7d2fe !default;
+$color-indigo-900_dark: #e0e7ff !default;
+$color-indigo-default_dark: $color-indigo-700_dark !default;
+
+$color-purple-100_dark: #4c1d95 !default;
+$color-purple-200_dark: #5b21b6 !default;
+$color-purple-300_dark: #6d28d9 !default;
+$color-purple-400_dark: #7c3aed !default;
+$color-purple-500_dark: #8b5cf6 !default;
+$color-purple-600_dark: #a78bfa !default;
+$color-purple-700_dark: #c4b5fd !default;
+$color-purple-800_dark: #ddd6fe !default;
+$color-purple-900_dark: #ece9fe !default;
+$color-purple-default_dark: $color-purple-700_dark !default;
+
+$color-pink-100_dark: #831843 !default;
+$color-pink-200_dark: #9d174d !default;
+$color-pink-300_dark: #be185d !default;
+$color-pink-400_dark: #db2777 !default;
+$color-pink-500_dark: #ec4899 !default;
+$color-pink-600_dark: #f472b6 !default;
+$color-pink-700_dark: #f9a8d4 !default;
+$color-pink-800_dark: #fbcfe8 !default;
+$color-pink-900_dark: #fce7f3 !default;
+$color-pink-default_dark: $color-pink-700_dark !default;
+
+$color-bg_dark: #202124 !default;
+$color-text_dark: $color-grey-900_dark !default;
+$color-caption_dark: $color-grey-700_dark !default;
+
+// Utilities
+$colors: (
+  'primary',
+  'secondary',
+  'grey',
+  'red',
+  'orange',
+  'yellow',
+  'green',
+  'teal',
+  'blue',
+  'indigo',
+  'purple',
+  'pink'
+);
+
+$extra-colors: ('bg', 'caption', 'dark', 'light', 'text');

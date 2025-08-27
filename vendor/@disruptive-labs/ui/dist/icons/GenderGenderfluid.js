@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgGenderGenderfluid = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M10 15.464a4 4 0 104-6.928 4 4 0 00-4 6.928zM15.464 14l3-5.196M5.536 15.195l3-5.196M12 12h.01M9 9L3 3M5.5 8.5l3-3M21 21l-6-6M17 20l3-3M3 7V3h4" }));
+export default SvgGenderGenderfluid;

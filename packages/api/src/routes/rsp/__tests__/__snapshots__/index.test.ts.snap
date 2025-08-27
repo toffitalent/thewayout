@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > Rsp POST /api/v1/rsp creates rsp organization - allowed veteran client type and updates owner account 1`] = `
+{
+  "owner": {
+    "avatar": null,
+    "id": Any<String>,
+    "isProfileFilled": true,
+    "phone": "",
+    "role": "owner",
+    "rsp": {
+      "address": "",
+      "avatar": null,
+      "city": "",
+      "createdAt": "<Date>",
+      "description": "",
+      "email": "",
+      "id": Any<String>,
+      "name": "Organization Name",
+      "phone": "",
+      "postalCode": "",
+      "servicesArea": [],
+      "state": "",
+      "support": [
+        "basicHygieneSupport",
+      ],
+      "updatedAt": "<Date>",
+      "veteranOrJustice": [
+        "veteran",
+      ],
+    },
+    "rspId": Any<String>,
+    "userId": "01817e24-0d42-761b-8f08-5f532d6045f9",
+  },
+  "rsp": {
+    "address": "",
+    "avatar": null,
+    "city": "",
+    "createdAt": "<Date>",
+    "description": "",
+    "email": "",
+    "id": Any<String>,
+    "name": "Organization Name",
+    "phone": "",
+    "postalCode": "",
+    "servicesArea": [],
+    "state": "",
+    "support": [
+      "basicHygieneSupport",
+    ],
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "veteran",
+    ],
+  },
+}
+`;
+
+exports[`Routes > Rsp POST /api/v1/rsp creates rsp organization and updates owner account 1`] = `
+{
+  "owner": {
+    "avatar": null,
+    "id": Any<String>,
+    "isProfileFilled": true,
+    "phone": "",
+    "role": "owner",
+    "rsp": {
+      "address": "",
+      "avatar": null,
+      "city": "",
+      "createdAt": "<Date>",
+      "description": "",
+      "email": "",
+      "id": Any<String>,
+      "justiceStatus": [
+        "extendedSupervision",
+      ],
+      "name": "Organization Name",
+      "offenses": [
+        "arson",
+      ],
+      "phone": "",
+      "postalCode": "",
+      "servicesArea": [],
+      "state": "",
+      "support": [
+        "basicHygieneSupport",
+      ],
+      "updatedAt": "<Date>",
+      "veteranOrJustice": [
+        "justiceImpacted",
+      ],
+    },
+    "rspId": Any<String>,
+    "userId": "01817e24-0d42-761b-8f08-5f532d6045f9",
+  },
+  "rsp": {
+    "address": "",
+    "avatar": null,
+    "city": "",
+    "createdAt": "<Date>",
+    "description": "",
+    "email": "",
+    "id": Any<String>,
+    "justiceStatus": [
+      "extendedSupervision",
+    ],
+    "name": "Organization Name",
+    "offenses": [
+      "arson",
+    ],
+    "phone": "",
+    "postalCode": "",
+    "servicesArea": [],
+    "state": "",
+    "support": [
+      "basicHygieneSupport",
+    ],
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+    ],
+  },
+}
+`;
+
+exports[`Routes > Rsp POST /api/v1/rsp creates rsp organization only by owner account 1`] = `
+{
+  "code": "ResourceNotFound",
+  "message": "Rsp user not found",
+  "status": 404,
+}
+`;
+
+exports[`Routes > Rsp POST /api/v1/rsp creates rsp organization only with unique name 1`] = `
+{
+  "code": "ResourceConflict",
+  "message": "Rsp name already exist",
+  "status": 409,
+}
+`;

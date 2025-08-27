@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgArrowMerge = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M8 7l4-4 4 4" }), React.createElement("path", { d: "M12 3v5.394A6.737 6.737 0 019 14a6.737 6.737 0 00-3 5.606V21" }), React.createElement("path", { d: "M12 3v5.394A6.737 6.737 0 0015 14a6.737 6.737 0 013 5.606V21" }));
+export default SvgArrowMerge;

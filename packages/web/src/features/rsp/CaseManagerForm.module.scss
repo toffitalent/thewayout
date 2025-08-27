@@ -1,0 +1,9 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.formWrapper {
+  div + div[id*='helptext'] {
+    position: absolute;
+    margin-top: 0;
+  }
+}

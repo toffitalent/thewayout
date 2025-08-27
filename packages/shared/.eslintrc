@@ -1,0 +1,13 @@
+{
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": ["tsconfig.json", "packages/shared/tsconfig.json"]
+      }
+    }
+  },
+  "rules": {
+    "no-param-reassign": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}

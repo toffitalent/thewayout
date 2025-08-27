@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobApplicationListItemSerializer displays cloaked data for client with applied status 1`] = `
+{
+  "clientId": "CLIENT_ID",
+  "email": "t****@*****.***",
+  "firstName": "F****",
+  "id": Any<String>,
+  "jobId": "JOB_ID",
+  "lastName": "L****",
+  "phone": "*****",
+  "status": "applied",
+}
+`;
+
+exports[`JobApplicationListItemSerializer displays cloaked data for client with expired status 1`] = `
+{
+  "clientId": "CLIENT_ID",
+  "email": "t****@*****.***",
+  "firstName": "F****",
+  "id": Any<String>,
+  "jobId": "JOB_ID",
+  "lastName": "L****",
+  "phone": "*****",
+  "status": "expired",
+}
+`;
+
+exports[`JobApplicationListItemSerializer displays cloaked data for client with notAFit status 1`] = `
+{
+  "clientId": "CLIENT_ID",
+  "email": "t****@*****.***",
+  "firstName": "F****",
+  "id": Any<String>,
+  "jobId": "JOB_ID",
+  "lastName": "L****",
+  "phone": "*****",
+  "status": "notAFit",
+}
+`;
+
+exports[`JobApplicationListItemSerializer displays cloaked data for client with rejected status 1`] = `
+{
+  "clientId": "CLIENT_ID",
+  "email": "t****@*****.***",
+  "firstName": "F****",
+  "id": Any<String>,
+  "jobId": "JOB_ID",
+  "lastName": "L****",
+  "phone": "*****",
+  "status": "rejected",
+}
+`;
+
+exports[`JobApplicationListItemSerializer displays uncloaked data for client with hired status 1`] = `
+{
+  "clientId": "CLIENT_ID",
+  "email": "test@email.com",
+  "firstName": "Firstname",
+  "id": Any<String>,
+  "jobId": "JOB_ID",
+  "lastName": "Lastname",
+  "phone": "3345556666",
+  "status": "hired",
+}
+`;
+
+exports[`JobApplicationListItemSerializer displays uncloaked data for client with interview status 1`] = `
+{
+  "clientId": "CLIENT_ID",
+  "email": "test@email.com",
+  "firstName": "Firstname",
+  "id": Any<String>,
+  "jobId": "JOB_ID",
+  "lastName": "Lastname",
+  "phone": "3345556666",
+  "status": "interview",
+}
+`;

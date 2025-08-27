@@ -1,0 +1,50 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.wizardWrapper {
+  form > div[role='group'] {
+    text-align: left;
+
+    fieldset > div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    fieldset[class*='offenseCategoryStep'] {
+      margin: unset;
+    }
+    fieldset[class*='offenseCategoryStep'] > legend {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
+      line-height: 27px;
+    }
+
+    div[class*='fieldHalfWidth'] {
+      + div[id*='helptext'] {
+        position: absolute;
+        margin-top: 0;
+      }
+    }
+  }
+
+  section > div > form[class*='diversityInclusionStep'] {
+    div[class*='ethnicity'] {
+      margin-left: 5rem;
+    }
+  }
+
+  section > div[class*='Content'] {
+    padding-left: unset;
+    padding-right: unset;
+
+    > header > div[role='progressbar'] {
+      max-width: 100%;
+
+      @include mq(md) {
+        max-width: 75%;
+      }
+    }
+  }
+}

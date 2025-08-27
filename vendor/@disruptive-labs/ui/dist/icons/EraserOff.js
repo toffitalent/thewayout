@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgEraserOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M3 3l18 18M19 20H8.5l-4.21-4.3a1 1 0 010-1.41l5-4.993m2.009-2.01l3-3a1 1 0 011.41 0l5 5a1 1 0 010 1.41c-1.417 1.431-2.406 2.432-2.97 3m-2.02 2.043l-4.211 4.256M18 13.3L11.7 7" }));
+export default SvgEraserOff;

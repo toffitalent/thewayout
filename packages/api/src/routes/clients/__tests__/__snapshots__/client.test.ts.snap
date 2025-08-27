@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > Clients > client DELETE /api/v1/clients/:id/rsp does not allow request from non-admins 1`] = `
+{
+  "code": "InsufficientScope",
+  "message": "Insufficient scope has been authorized for this request",
+  "status": 403,
+}
+`;
+
+exports[`Routes > Clients > client DELETE /api/v1/clients/:id/rsp remove rsp client relation 1`] = `{}`;

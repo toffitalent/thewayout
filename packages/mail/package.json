@@ -1,0 +1,79 @@
+{
+  "name": "@two/mail",
+  "version": "1.0.0",
+  "author": "Disruptive Labs",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "build:app": "webpack build",
+    "clean": "rimraf build coverage",
+    "dev": "webpack serve",
+    "start": "node build/dist/app.js",
+    "test": "jest -i --coverage",
+    "type-check": "tsc -b"
+  },
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.362.0",
+    "@aws-sdk/client-sqs": "^3.362.0",
+    "@two/config": "*",
+    "@two/shared": "*",
+    "@sentry/node": "^7.80.0",
+    "juice": "^9.0.0",
+    "nodemailer": "^6.9.3",
+    "pug-runtime": "^3.0.1",
+    "qs": "^6.11.0",
+    "sqs-consumer": "^7.2.1",
+    "url-join": "^4.0.1"
+  },
+  "devDependencies": {
+    "@disruptive-labs/pug-loader": "file:../../vendor/@disruptive-labs/pug-loader",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^18.16.18",
+    "@types/nodemailer": "^6.4.8",
+    "@types/pug": "^2.0.6",
+    "@types/qs": "^6.9.7",
+    "@types/url-join": "^4.0.1",
+    "jest": "^29.5.0",
+    "jest-junit": "^16.0.0",
+    "pug": "^3.0.2",
+    "rimraf": "^3.0.2",
+    "run-script-webpack-plugin": "^0.2.0",
+    "sass": "^1.63.6",
+    "sass-loader": "^13.3.2",
+    "ts-jest": "^29.1.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "jest": {
+    "clearMocks": true,
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{js,ts}"
+    ],
+    "globalSetup": "<rootDir>/test/setup.js",
+    "moduleNameMapper": {
+      "^@app/(.*)$": "<rootDir>/src/$1",
+      "^@test$": "<rootDir>/test/index.ts",
+      "^.+\\.pug$": "<rootDir>/test/pugMock.js"
+    },
+    "preset": "ts-jest",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/config.ts"
+    ],
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/build/",
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "jest-junit": {
+    "outputDirectory": "./artifacts/jest",
+    "outputName": "results.xml"
+  }
+}

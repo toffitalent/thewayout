@@ -1,0 +1,644 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardPage renders correctly 1`] = `
+<div>
+  <div
+    class="container flexDirection-row-reverse"
+  >
+    <div
+      class="rightColumn item bp-xs-12 bp-lg-4"
+    >
+      <div
+        class="profileInfo"
+      >
+        <div
+          class="avatar s-2xl"
+        >
+          <div
+            aria-label="Test User"
+            class="initials"
+          >
+            TU
+          </div>
+        </div>
+        <p
+          class="text marginTop-5 marginBottom-2 fontSize-3xl fontWeight-700 lineHeight-none"
+        >
+          Test User
+        </p>
+        <div
+          class="readMore inline"
+        >
+          <p
+            class="text numLines-2 whiteSpace-pre-line"
+          >
+            personal summary
+          </p>
+        </div>
+      </div>
+      <div
+        class="marginTop-5"
+      >
+        <p
+          class="text fontSize-xl fontWeight-700"
+        >
+          Reentry Service Provider
+        </p>
+        <div
+          class="alignItems-center flexDirection-row justifyContent-space-between display-flex marginTop-4"
+        >
+          <div
+            class="flexDirection-row"
+          >
+            <div
+              class="avatar"
+            >
+              <div
+                aria-label="FirstName LastName"
+                class="initials"
+              >
+                FL
+              </div>
+            </div>
+            <div
+              class="marginLeft-2"
+            >
+              <p
+                class="text fontSize-lg fontWeight-700"
+              >
+                FirstName
+                 
+                LastName
+              </p>
+              <p
+                class="text"
+              >
+                Name
+              </p>
+            </div>
+          </div>
+          <a
+            class="button md outline c-primary borderColor-primary color-primary maxHeight-8 minHeight-8 paddingRight-3 paddingLeft-3 fontSize-sm"
+            href="mailto:test@test.com"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+      <div
+        class="marginTop-5 marginBottom-5"
+      >
+        <p
+          class="text marginBottom-5 fontSize-xl fontWeight-700"
+        >
+          Jobs Applied
+        </p>
+        <div
+          class="infinite-scroll-component__outerdiv"
+        >
+          <div
+            class="infinite-scroll-component "
+            style="height: auto; overflow: auto;"
+          >
+            <div
+              class="container spacing-5 width-full"
+            >
+              <div
+                class="item width-full"
+              >
+                <div
+                  class="alignItems-center flexDirection-row justifyContent-space-between"
+                  style="cursor: pointer;"
+                >
+                  <div
+                    class="alignItems-center flexDirection-row justifyContent-space-between"
+                  >
+                    <div
+                      class="icon rounded bgcolor-orange-200 marginRight-1"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon color-orange-800 width-6 height-6"
+                        focusable="false"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          stroke="none"
+                        />
+                        <path
+                          d="M3 9a2 2 0 012-2h14a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2zM8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M12 12v.01M3 13a20 20 0 0018 0"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class=""
+                    >
+                      <p
+                        class="text fontSize-lg fontWeight-700"
+                      >
+                        Car Wash Attendant
+                      </p>
+                      <p
+                        class="text"
+                      >
+                        Customer Service
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="badge borderColor-grey-200 bgcolor-grey-200 color-grey-800 maxHeight-5"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="item bp-xs-12 bp-lg-8 alignItems-flex-start flexDirection-column"
+    >
+      <p
+        class="text fontSize-xl fontWeight-700"
+      >
+        Suggested Jobs
+      </p>
+      <div
+        class="width-full"
+      >
+        <div
+          class="listItem borderBottom paddingTop-5"
+        >
+          <div
+            class="flexDirection-row marginBottom-5"
+          >
+            <div
+              class="icon rounded bgcolor-orange-200 marginRight-5"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon color-orange-800 width-6 height-6"
+                focusable="false"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  stroke="none"
+                />
+                <path
+                  d="M3 9a2 2 0 012-2h14a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2zM8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M12 12v.01M3 13a20 20 0 0018 0"
+                />
+              </svg>
+            </div>
+            <div
+              class=""
+            >
+              <p
+                class="text fontSize-xl fontWeight-700"
+              >
+                Car Wash Attendant
+              </p>
+              <div
+                class="color-grey-600 flexWrap-wrap display-flex fontSize-sm"
+              >
+                <p
+                  class="text"
+                >
+                  Hybrid (Full-time)
+                </p>
+                <p
+                  class="text"
+                >
+                   • 
+                  $15 - $30/hour
+                </p>
+                <p
+                  class="text"
+                >
+                   • 
+                  0 Applicants
+                </p>
+              </div>
+              <p
+                class="text color-grey-600 paddingTop-4 paddingBottom-4"
+              >
+                Wash attendants are responsible for performing the daily operational practices of running the car wash facility.
+              </p>
+              <div
+                class="container spacing-2"
+              >
+                <div
+                  class="item"
+                >
+                  <div
+                    class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+                  >
+                    NO DRUGS OFFENSES
+                  </div>
+                </div>
+                <div
+                  class="item"
+                >
+                  <div
+                    class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+                  >
+                    NO MOTOR VEHICLE OFFENSES
+                  </div>
+                </div>
+                <div
+                  class="item"
+                >
+                  <div
+                    class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+                  >
+                    NO SEXUAL OFFENSES
+                  </div>
+                </div>
+                <div
+                  class="item"
+                >
+                  <div
+                    class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+                  >
+                    NO VIOLENT OFFENSES
+                  </div>
+                </div>
+                <div
+                  class="item"
+                >
+                  <div
+                    class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+                  >
+                    NO THEFT OFFENSES
+                  </div>
+                </div>
+                <div
+                  class="item"
+                >
+                  <div
+                    class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+                  >
+                    NO WHITE - COLLAR OFFENSES
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`DashboardPage renders correctly for veteran client 1`] = `
+<div>
+  <div
+    class="container flexDirection-row-reverse"
+  >
+    <div
+      class="rightColumn item bp-xs-12 bp-lg-4"
+    >
+      <div
+        class="profileInfo"
+      >
+        <div
+          class="avatar s-2xl"
+        >
+          <div
+            aria-label="Test User"
+            class="initials"
+          >
+            TU
+          </div>
+        </div>
+        <p
+          class="text marginTop-5 marginBottom-2 fontSize-3xl fontWeight-700 lineHeight-none"
+        >
+          Test User
+        </p>
+        <div
+          class="badge borderColor-grey-200 bgcolor-grey-700 color-light marginBottom-2 paddingRight-4 paddingLeft-4"
+        >
+          US VETERAN 🇺🇸
+        </div>
+        <div
+          class="readMore inline"
+        >
+          <p
+            class="text numLines-2 whiteSpace-pre-line"
+          >
+            personal summary
+          </p>
+        </div>
+      </div>
+      <div
+        class="marginTop-5"
+      >
+        <p
+          class="text fontSize-xl fontWeight-700"
+        >
+          Reentry Service Provider
+        </p>
+        <div
+          class="alignItems-center flexDirection-row justifyContent-space-between display-flex marginTop-4"
+        >
+          <div
+            class="flexDirection-row"
+          >
+            <div
+              class="avatar"
+            >
+              <div
+                aria-label="FirstName LastName"
+                class="initials"
+              >
+                FL
+              </div>
+            </div>
+            <div
+              class="marginLeft-2"
+            >
+              <p
+                class="text fontSize-lg fontWeight-700"
+              >
+                FirstName
+                 
+                LastName
+              </p>
+              <p
+                class="text"
+              >
+                Name
+              </p>
+            </div>
+          </div>
+          <a
+            class="button md outline c-primary borderColor-primary color-primary maxHeight-8 minHeight-8 paddingRight-3 paddingLeft-3 fontSize-sm"
+            href="mailto:test@test.com"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+      <div
+        class="marginTop-5 marginBottom-5"
+      >
+        <p
+          class="text marginBottom-5 fontSize-xl fontWeight-700"
+        >
+          Jobs Applied
+        </p>
+        <div
+          class="infinite-scroll-component__outerdiv"
+        >
+          <div
+            class="infinite-scroll-component "
+            style="height: auto; overflow: auto;"
+          >
+            <div
+              class="container spacing-5 width-full"
+            >
+              <div
+                class="item width-full"
+              >
+                <div
+                  class="alignItems-center flexDirection-row justifyContent-space-between"
+                  style="cursor: pointer;"
+                >
+                  <div
+                    class="alignItems-center flexDirection-row justifyContent-space-between"
+                  >
+                    <div
+                      class="icon rounded bgcolor-orange-200 marginRight-1"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="icon color-orange-800 width-6 height-6"
+                        focusable="false"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          stroke="none"
+                        />
+                        <path
+                          d="M3 9a2 2 0 012-2h14a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2zM8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M12 12v.01M3 13a20 20 0 0018 0"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class=""
+                    >
+                      <p
+                        class="text fontSize-lg fontWeight-700"
+                      >
+                        Car Wash Attendant
+                      </p>
+                      <p
+                        class="text"
+                      >
+                        Customer Service
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="badge borderColor-grey-200 bgcolor-grey-200 color-grey-800 maxHeight-5"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="item bp-xs-12 bp-lg-8 alignItems-flex-start flexDirection-column"
+    >
+      <p
+        class="text fontSize-xl fontWeight-700"
+      >
+        Suggested Jobs
+      </p>
+      <div
+        class="width-full"
+      >
+        <div
+          class="listItem borderBottom paddingTop-5"
+        >
+          <div
+            class="flexDirection-row marginBottom-5"
+          >
+            <div
+              class="icon rounded bgcolor-orange-200 marginRight-5"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon color-orange-800 width-6 height-6"
+                focusable="false"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  stroke="none"
+                />
+                <path
+                  d="M3 9a2 2 0 012-2h14a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2zM8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M12 12v.01M3 13a20 20 0 0018 0"
+                />
+              </svg>
+            </div>
+            <div
+              class=""
+            >
+              <p
+                class="text fontSize-xl fontWeight-700"
+              >
+                Car Wash Attendant
+              </p>
+              <div
+                class="color-grey-600 flexWrap-wrap display-flex fontSize-sm"
+              >
+                <p
+                  class="text"
+                >
+                  Hybrid (Full-time)
+                </p>
+                <p
+                  class="text"
+                >
+                   • 
+                  $15 - $30/hour
+                </p>
+                <p
+                  class="text"
+                >
+                   • 
+                  0 Applicants
+                </p>
+              </div>
+              <p
+                class="text color-grey-600 paddingTop-4 paddingBottom-4"
+              >
+                Wash attendants are responsible for performing the daily operational practices of running the car wash facility.
+              </p>
+              <div
+                class="container spacing-2"
+              >
+                <div
+                  class="item"
+                >
+                  <div
+                    class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+                  >
+                    NO DRUGS OFFENSES
+                  </div>
+                </div>
+                <div
+                  class="item"
+                >
+                  <div
+                    class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+                  >
+                    NO MOTOR VEHICLE OFFENSES
+                  </div>
+                </div>
+                <div
+                  class="item"
+                >
+                  <div
+                    class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+                  >
+                    NO SEXUAL OFFENSES
+                  </div>
+                </div>
+                <div
+                  class="item"
+                >
+                  <div
+                    class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+                  >
+                    NO VIOLENT OFFENSES
+                  </div>
+                </div>
+                <div
+                  class="item"
+                >
+                  <div
+                    class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+                  >
+                    NO THEFT OFFENSES
+                  </div>
+                </div>
+                <div
+                  class="item"
+                >
+                  <div
+                    class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+                  >
+                    NO WHITE - COLLAR OFFENSES
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MyJobListItem renders correctly 1`] = `
+<div>
+  <div
+    class="alignItems-center flexDirection-row justifyContent-space-between"
+    style="cursor: pointer;"
+  >
+    <div
+      class="alignItems-center flexDirection-row justifyContent-space-between"
+    >
+      <div
+        class="icon rounded bgcolor-orange-200 marginRight-1"
+      >
+        <svg
+          aria-hidden="true"
+          class="icon color-orange-800 width-6 height-6"
+          focusable="false"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            stroke="none"
+          />
+          <path
+            d="M3 9a2 2 0 012-2h14a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2zM8 7V5a2 2 0 012-2h4a2 2 0 012 2v2M12 12v.01M3 13a20 20 0 0018 0"
+          />
+        </svg>
+      </div>
+      <div
+        class=""
+      >
+        <p
+          class="text fontSize-lg fontWeight-700"
+        >
+          Car Wash Attendant
+        </p>
+        <p
+          class="text"
+        >
+          Customer Service
+        </p>
+      </div>
+    </div>
+    <div
+      class="badge borderColor-grey-200 bgcolor-grey-200 color-grey-800 maxHeight-5"
+    />
+  </div>
+</div>
+`;

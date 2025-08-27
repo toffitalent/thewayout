@@ -1,0 +1,173 @@
+@use 'sass:list';
+@use 'sass:map';
+@use '@styles/theme';
+
+$typography: (
+  'h1': (
+    'line-height': theme.$line-height-heading,
+    'size': theme.$font-h1-size,
+    'weight': theme.$font-h1-weight,
+  ),
+  'h2': (
+    'line-height': theme.$line-height-heading,
+    'size': theme.$font-h2-size,
+    'weight': theme.$font-h2-weight,
+  ),
+  'h3': (
+    'line-height': theme.$line-height-heading,
+    'size': theme.$font-h3-size,
+    'weight': theme.$font-h3-weight,
+  ),
+  'h4': (
+    'line-height': theme.$line-height-heading,
+    'size': theme.$font-h4-size,
+    'weight': theme.$font-h4-weight,
+  ),
+  'h5': (
+    'line-height': theme.$line-height-heading,
+    'size': theme.$font-h5-size,
+    'weight': theme.$font-h5-weight,
+  ),
+  'h6': (
+    'line-height': theme.$line-height-heading,
+    'size': theme.$font-h6-size,
+    'weight': theme.$font-h6-weight,
+  ),
+  's1': (
+    'line-height': theme.$line-height,
+    'size': theme.$font-s1-size,
+    'weight': theme.$font-s1-weight,
+  ),
+  's2': (
+    'line-height': theme.$line-height,
+    'size': theme.$font-s2-size,
+    'weight': theme.$font-s2-weight,
+  ),
+  'p1': (
+    'line-height': theme.$line-height,
+    'size': theme.$font-p1-size,
+    'weight': theme.$font-p1-weight,
+  ),
+  'p2': (
+    'line-height': theme.$line-height,
+    'size': theme.$font-p2-size,
+    'weight': theme.$font-p2-weight,
+  ),
+  'c1': (
+    'line-height': theme.$line-height,
+    'size': theme.$font-c1-size,
+    'weight': theme.$font-c1-weight,
+  ),
+  'c2': (
+    'line-height': theme.$line-height,
+    'size': theme.$font-c2-size,
+    'weight': theme.$font-c2-weight,
+  ),
+  'label': (
+    'line-height': theme.$line-height,
+    'size': theme.$font-label-size,
+    'weight': theme.$font-label-weight,
+  ),
+);
+
+@if list.nth(theme.$font-family-heading, 1) != list.nth(theme.$font-family, 1) {
+  .font-h1,
+  .font-h2,
+  .font-h3,
+  .font-h4,
+  .font-h5,
+  .font-h6 {
+    font-family: theme.$font-family-heading;
+  }
+}
+
+@if list.nth(theme.$font-family-heading, 1) != list.nth(theme.$font-family, 1) {
+  .font-s1,
+  .font-s2,
+  .font-p1,
+  .font-p2,
+  .font-c1,
+  .font-c1,
+  .font-label {
+    font-family: theme.$font-family;
+  }
+}
+
+@each $variant, $font in $typography {
+  .font-#{$variant} {
+    font-size: map.get($font, 'size') !important;
+    font-weight: map.get($font, 'weight') !important;
+    line-height: map.get($font, 'line-height') !important;
+  }
+
+  .fontSize-#{$variant} {
+    font-size: map.get($font, 'size') !important;
+  }
+}
+
+$font-sizes: (
+  'xs': theme.$font-size-xs,
+  'sm': theme.$font-size-sm,
+  'md': theme.$font-size-md,
+  'lg': theme.$font-size-lg,
+  'xl': theme.$font-size-xl,
+  '2xl': theme.$font-size-2xl,
+  '3xl': theme.$font-size-3xl,
+  '4xl': theme.$font-size-4xl,
+  '5xl': theme.$font-size-5xl,
+  '6xl': theme.$font-size-6xl,
+  '7xl': theme.$font-size-7xl,
+  '8xl': theme.$font-size-8xl,
+);
+
+@each $font-size, $size in $font-sizes {
+  .fontSize-#{$font-size} {
+    font-size: $size !important;
+  }
+}
+
+$fontWeight: (100, 200, 300, 400, 500, 600, 700, 800, 900);
+
+@each $value in $fontWeight {
+  .fontWeight-#{$value} {
+    font-weight: $value !important;
+  }
+}
+
+@each $size, $line-height in theme.$line-heights {
+  .lineHeight-#{$size} {
+    line-height: $line-height !important;
+  }
+}
+
+$textAlign: (center, left, right, justify);
+
+@each $value in $textAlign {
+  .textAlign-#{$value} {
+    text-align: $value !important;
+  }
+}
+
+$textDecoration: (line-through, underline, none);
+
+@each $value in $textDecoration {
+  .textDecoration-#{$value} {
+    text-decoration: $value !important;
+  }
+}
+
+$textTransform: (capitalize, lowercase, uppercase, none);
+
+@each $value in $textTransform {
+  .textTransform-#{$value} {
+    text-transform: $value !important;
+  }
+}
+
+$whiteSpace: (normal, nowrap, pre, pre-wrap, pre-line, break-spaces);
+
+@each $value in $whiteSpace {
+  .whiteSpace-#{$value} {
+    white-space: $value !important;
+  }
+}

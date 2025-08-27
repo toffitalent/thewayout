@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgCreativeCommonsBy = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M3 12a9 9 0 1018 0 9 9 0 10-18 0" }), React.createElement("path", { d: "M11 7a1 1 0 102 0 1 1 0 10-2 0M9 13v-1a1 1 0 011-1h4a1 1 0 011 1v1a1 1 0 01-1 1h-.5l-.5 4h-2l-.5-4H10a1 1 0 01-1-1z" }));
+export default SvgCreativeCommonsBy;

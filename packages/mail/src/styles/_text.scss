@@ -1,0 +1,40 @@
+@use 'mixins';
+
+$font-family: Nunito, Roboto, 'Helvetica Neue', Helvetica, Arial, 'Noto Sans', sans-serif;
+$font-size: 16px;
+
+body,
+td,
+th {
+  font-family: $font-family;
+}
+
+h1 {
+  @include mixins.heading();
+}
+
+h2 {
+  @include mixins.heading($size: $font-size);
+}
+
+h3 {
+  @include mixins.heading($size: 14px);
+}
+
+td,
+th {
+  font-size: $font-size;
+}
+
+p,
+ul,
+ol,
+blockquote {
+  margin: 0.4em 0 1.1875em;
+  font-size: $font-size;
+  line-height: 1.625;
+}
+
+p.sub {
+  font-size: 13px;
+}

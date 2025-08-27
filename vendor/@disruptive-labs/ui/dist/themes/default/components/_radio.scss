@@ -1,0 +1,33 @@
+@use '../core' as *;
+@use './checkbox' as *;
+
+$radio-border-color: var(--color-grey-400) !default;
+$radio-border-width: $border-width !default;
+$radio-disabled-opacity: 0.5 !default;
+$radio-error-color: var(--color-red) !default;
+$radio-label-margin: $checkbox-label-margin !default;
+
+$radio-group-margin: $checkbox-group-margin !default;
+$radio-group-margin-inline: $checkbox-group-margin-inline !default;
+
+$radio-size-sm: $checkbox-size-sm !default;
+$radio-size-sm-font-size: $checkbox-size-sm-font-size !default;
+$radio-size-md: $checkbox-size-md !default;
+$radio-size-md-font-size: $checkbox-size-md-font-size !default;
+$radio-size-lg: $checkbox-size-lg !default;
+$radio-size-lg-font-size: $checkbox-size-lg-font-size !default;
+
+$radio-sizes: (
+  'sm': (
+    'font': $radio-size-sm-font-size,
+    'size': $radio-size-sm,
+  ),
+  'md': (
+    'font': $radio-size-md-font-size,
+    'size': $radio-size-md,
+  ),
+  'lg': (
+    'font': $radio-size-lg-font-size,
+    'size': $radio-size-lg,
+  ),
+);

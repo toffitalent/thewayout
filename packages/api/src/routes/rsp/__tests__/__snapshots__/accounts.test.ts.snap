@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > Rsp > Accounts GET /rsp/:id/accounts/case-managers list case manager names 1`] = `
+[
+  {
+    "firstName": "Quinten",
+    "id": "01817e24-0d42-7846-9a0b-4a6f781f0513",
+    "lastName": "McDermott",
+  },
+  {
+    "firstName": "Mariah",
+    "id": "01817e24-0d42-786a-a454-7291c0173657",
+    "lastName": "Barton",
+  },
+]
+`;
+
+exports[`Routes > Rsp > Accounts PUT /rsp/:id/accounts/:userId only updates account by selfs 1`] = `
+{
+  "code": "ResourceNotFound",
+  "message": "Resource /api/v1/rsp/01817e24-0d42-77e5-9a94-ad514d8ec5dc/01817e24-0d42-75e5-8c38-8eb33c91884c/accounts not found",
+  "status": 404,
+}
+`;
+
+exports[`Routes > Rsp > Accounts PUT /rsp/:id/accounts/:userId updates rsp member account 1`] = `
+{
+  "avatar": null,
+  "email": "mariah_barton@example.com",
+  "firstName": "Mariah",
+  "id": "01817e24-0d42-786a-a454-7291c0173657",
+  "isProfileFilled": true,
+  "lastName": "Barton",
+  "phone": "4142133945",
+  "role": "member",
+  "rsp": {
+    "address": "Ibrahim Pine",
+    "avatar": null,
+    "city": "East Barneybury",
+    "createdAt": "<Date>",
+    "description": "Enim sequi iusto.
+Explicabo quisquam omnis nisi corporis corrupti.
+Cupiditate qui culpa numquam iure quisquam vero architecto.",
+    "email": null,
+    "id": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "justiceStatus": [
+      "halfwayHouse",
+      "parole",
+    ],
+    "name": "Oberbrunner and Sons",
+    "offenses": [
+      "burglary",
+      "distribution",
+      "diuDwi",
+      "embezzlement",
+    ],
+    "phone": null,
+    "postalCode": "78580",
+    "servicesArea": [
+      "Adams",
+      "Ashland",
+      "Barron",
+    ],
+    "state": "AK",
+    "support": [
+      "basicHygieneSupport",
+      "clothing",
+      "basicTechSkills",
+      "childCare",
+    ],
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+    ],
+  },
+  "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+  "userId": "01817e24-0d42-75e5-8c38-8eb33c91884c",
+}
+`;

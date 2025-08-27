@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgDeviceTabletMinus = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M12.5 21H6a1 1 0 01-1-1V4a1 1 0 011-1h12a1 1 0 011 1v11M12.872 16.51A1 1 0 1012 18M16 19h6" }));
+export default SvgDeviceTabletMinus;

@@ -1,0 +1,577 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobSeekersPage renders correctly 1`] = `
+<div>
+  <section
+    class="hero"
+  >
+    <div
+      aria-hidden="true"
+      class="bg"
+    >
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+      >
+        <img
+          alt=""
+          data-nimg="fill"
+          decoding="async"
+          sizes="100vw"
+          src="/_next/image?url=%2Ftest-file-stub&w=3840&q=75"
+          srcset="/_next/image?url=%2Ftest-file-stub&w=640&q=75 640w, /_next/image?url=%2Ftest-file-stub&w=750&q=75 750w, /_next/image?url=%2Ftest-file-stub&w=828&q=75 828w, /_next/image?url=%2Ftest-file-stub&w=1080&q=75 1080w, /_next/image?url=%2Ftest-file-stub&w=1200&q=75 1200w, /_next/image?url=%2Ftest-file-stub&w=1920&q=75 1920w, /_next/image?url=%2Ftest-file-stub&w=2048&q=75 2048w, /_next/image?url=%2Ftest-file-stub&w=3840&q=75 3840w"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+        />
+      </span>
+      s
+    </div>
+    <div
+      class="container"
+    >
+      <div
+        class="container justifyContent-center textAlign-center"
+      >
+        <div
+          class="item bp-xs-12 bp-md-8"
+        >
+          <div
+            class="alignItems-center flexDirection-row justifyContent-center marginBottom-5"
+          >
+            <p
+              class="text marginRight-1 fontWeight-700"
+            >
+              Funded by
+            </p>
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2724%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                alt="google"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <h1>
+            Find More Than The Perfect Job
+          </h1>
+          <p
+            class="text"
+          >
+            While other job platforms only focus on bringing employers & employees together, we also connect you with a community of partners to support you in your life journey.
+          </p>
+          <div
+            class="actions"
+          >
+            <a
+              class="button md solid c-primary"
+              href="/signup"
+            >
+              Get Started
+              <span
+                aria-hidden="true"
+                class="accessoryRight"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  focusable="false"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M5 12h14M15 16l4-4M15 8l4 4"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="section marginTop-24 marginBottom-24"
+  >
+    <div
+      class="container justifyContent-center"
+    >
+      <div
+        class="item bp-xs-12 bp-md-8 textAlign-center"
+      >
+        <h2
+          class="text marginBottom-2 fontSize-4xl fontWeight-700"
+        >
+          Reentering the workforce? No problem.
+        </h2>
+        <p
+          class="text color-grey-600 fontSize-xl fontWeight-700"
+        >
+          Our contextualized software takes into consideration all of your personal, life, armed forces and professional experiences when matching you with employment opportunities.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container flexDirection-row-reverse"
+    >
+      <div
+        class="sectionContent bp-xs-12 bp-md-6"
+      >
+        <h2
+          class="text sectionTitle2 marginBottom-5"
+        >
+          Search Living Wage Jobs
+        </h2>
+        <p
+          class="text"
+        >
+          All of our employers are committed to providing living wage jobs based on where their jobs are located.
+        </p>
+        <a
+          class="button md solid c-primary marginTop-8"
+          href="/signup"
+        >
+          Find jobs
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="sectionContent bp-xs-12 bp-md-6"
+      >
+        <h2
+          class="text sectionTitle2 marginBottom-5"
+        >
+          Apply For Jobs Anonymously
+        </h2>
+        <p
+          class="text"
+        >
+          Don't worry about your record getting in the way - we will only match you with jobs that are acceptable with your personal and professional background. Our one of a kind cloaking technology allows you to be 100% transparent without worrying about employer biases.
+        </p>
+        <a
+          class="button md solid c-primary marginTop-8"
+          href="/signup"
+        >
+          Get Started
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container flexDirection-row-reverse"
+    >
+      <div
+        class="sectionContent bp-xs-12 bp-md-6"
+      >
+        <h2
+          class="text sectionTitle2 marginBottom-5"
+        >
+          Find Additional Support Services
+        </h2>
+        <p
+          class="text"
+        >
+          We know that just having a job isn't always enough. Which is why we offer resources and support partners to help you become your best-self, personally and professionally.
+        </p>
+        <a
+          class="button md solid c-primary marginTop-8"
+          href="/signup"
+        >
+          Find jobs
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="sectionContentWider bp-xs-12 bp-md-6"
+      >
+        <h2
+          class="text title marginBottom-2"
+        >
+          How it works?
+        </h2>
+        <p
+          class="text color-grey-600 fontSize-xl fontWeight-700"
+        >
+          Life can be harder upon your return. Our platform makes it easier.
+        </p>
+        <div
+          class=""
+        >
+          <div
+            class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+          >
+            <p
+              class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+            >
+              1
+            </p>
+            <div
+              class="marginLeft-8"
+            >
+              <p
+                class="text marginBottom-2 fontSize-xl fontWeight-700"
+              >
+                Create Your Profile
+              </p>
+              <p
+                class="text color-grey-600"
+              >
+                Our platform creates a blind, contextual profile that removes your name, address, employment gaps and other information that traditionally cause biases from employers.
+              </p>
+            </div>
+          </div>
+          <div
+            class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+          >
+            <p
+              class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+            >
+              2
+            </p>
+            <div
+              class="marginLeft-8"
+            >
+              <p
+                class="text marginBottom-2 fontSize-xl fontWeight-700"
+              >
+                Identify Additional Support Needs
+              </p>
+              <p
+                class="text color-grey-600"
+              >
+                We'll match you with a Supportive Services Provider (SSP) in your area that can help with your personal and professional journey. You can manage your personalized journey in our dashboard.
+              </p>
+            </div>
+          </div>
+          <div
+            class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+          >
+            <p
+              class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+            >
+              3
+            </p>
+            <div
+              class="marginLeft-8"
+            >
+              <p
+                class="text marginBottom-2 fontSize-xl fontWeight-700"
+              >
+                Apply For Jobs
+              </p>
+              <p
+                class="text color-grey-600"
+              >
+                Our platform is designed for job seekers who've recently reentered the workforce.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="button md solid c-primary"
+          href="/signup"
+        >
+          Find jobs
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container flexDirection-row-reverse"
+    >
+      <div
+        class="sectionContent bp-xs-12 bp-md-6"
+      >
+        <h2
+          class="text sectionTitle1 marginBottom-5"
+        >
+          Follow Your Personalized Journey
+        </h2>
+        <p
+          class="text"
+        >
+          Choose the additional support services you need, and we'll do our best to match you with a Supportive Services Provider (SSP) that can help provide you with resources and support.
+        </p>
+        <a
+          class="button md solid c-primary marginTop-8"
+          href="/signup"
+        >
+          Learn more
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class="greenBg section paddingRight-4 paddingLeft-4 paddingTop-36 paddingBottom-36"
+  >
+    <p
+      class="text sectionTitle1 marginBottom-10 fontWeight-700 textAlign-center"
+    >
+      Explore additional services
+    </p>
+    <a
+      class="button md solid c-primary"
+      href="https://www.findhelp.org/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Search For Additional Services
+      <span
+        aria-hidden="true"
+        class="accessoryRight"
+      >
+        <svg
+          aria-hidden="true"
+          class="icon"
+          focusable="false"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            stroke="none"
+          />
+          <path
+            d="M5 12h14M15 16l4-4M15 8l4 4"
+          />
+        </svg>
+      </span>
+    </a>
+  </section>
+</div>
+`;

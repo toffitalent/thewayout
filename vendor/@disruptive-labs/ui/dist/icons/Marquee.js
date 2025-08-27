@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgMarquee = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M4 6a2 2 0 012-2m3 0h1.5m3 0H15m3 0a2 2 0 012 2m0 3v1.5m0 3V15m0 3a2 2 0 01-2 2m-3 0h-1.5m-3 0H9m-3 0a2 2 0 01-2-2m0-3v-1.5m0-3V9m0-3" }));
+export default SvgMarquee;

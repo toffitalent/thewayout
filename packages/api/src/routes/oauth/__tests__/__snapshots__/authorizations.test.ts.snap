@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > OAuth > Authorizations GET /api/v1/oauth/authorizations/:appId does not allow requests without self scope 1`] = `
+{
+  "code": "InsufficientScope",
+  "message": "Insufficient scope has been authorized for this request",
+  "status": 403,
+}
+`;
+
+exports[`Routes > OAuth > Authorizations GET /api/v1/oauth/authorizations/:appId retrieves an app authorization 1`] = `
+{
+  "app": {
+    "createdAt": "<Date>",
+    "id": Any<String>,
+    "name": "Test App",
+    "updatedAt": "<Date>",
+  },
+  "appId": Any<String>,
+  "createdAt": "<Date>",
+  "id": Any<String>,
+  "scope": [
+    "test",
+  ],
+  "updatedAt": "<Date>",
+  "user": {
+    "createdAt": "<Date>",
+    "email": "heidi_marks@example.com",
+    "firstName": "Heidi",
+    "id": "01817e24-0d42-7176-b613-889fe94905f0",
+    "lastName": "Marks",
+    "type": "client",
+    "updatedAt": "<Date>",
+  },
+  "userId": "01817e24-0d42-7176-b613-889fe94905f0",
+}
+`;
+
+exports[`Routes > OAuth > Authorizations GET /api/v1/oauth/authorizations/:appId returns a resource not found response for unknown authorizations 1`] = `
+{
+  "code": "ResourceNotFound",
+  "message": "App 00000000-0000-0000-0000-000000000000 not found",
+  "status": 404,
+}
+`;
+
+exports[`Routes > OAuth > Authorizations POST /api/v1/oauth/authorizations/:appId returns an invalid parameter response for mismatched app-client pairs 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "clientId",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Client 01817e24-0d42-7adb-aa85-cd0c708ca3be not found",
+  "status": 400,
+}
+`;
+
+exports[`Routes > OAuth > Authorizations POST /api/v1/oauth/authorizations/:appId returns an invalid parameter response for unknown clients 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "clientId",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Client 00000000-0000-0000-0000-000000000000 not found",
+  "status": 400,
+}
+`;
+
+exports[`Routes > OAuth > Authorizations PUT /api/v1/oauth/authorizations/:appId returns a resource not found response for unknown apps 1`] = `
+{
+  "code": "ResourceNotFound",
+  "message": "App 00000000-0000-0000-0000-000000000000 not found",
+  "status": 404,
+}
+`;

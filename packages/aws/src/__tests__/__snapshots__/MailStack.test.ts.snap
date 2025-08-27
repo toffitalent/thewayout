@@ -1,0 +1,1056 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MailStack creates mail stack 1`] = `
+"{
+  "Parameters": {
+    "mailImageTag": {
+      "Type": "String",
+      "Default": "latest",
+      "Description": "ECR repository image tags to deploy"
+    },
+    "BootstrapVersion": {
+      "Type": "AWS::SSM::Parameter::Value<String>",
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
+    }
+  },
+  "Resources": {
+    "DeadLetterQueue9F481546": {
+      "Type": "AWS::SQS::Queue",
+      "Properties": {
+        "FifoQueue": true,
+        "KmsMasterKeyId": "alias/aws/sqs",
+        "MessageRetentionPeriod": 1209600
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "Queue4A7E3555": {
+      "Type": "AWS::SQS::Queue",
+      "Properties": {
+        "FifoQueue": true,
+        "KmsMasterKeyId": "alias/aws/sqs",
+        "RedrivePolicy": {
+          "deadLetterTargetArn": {
+            "Fn::GetAtt": [
+              "DeadLetterQueue9F481546",
+              "Arn"
+            ]
+          },
+          "maxReceiveCount": 5
+        },
+        "VisibilityTimeout": 60
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "MailServiceQueueProcessingTaskDefTaskRole0D4B2A97": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ecs-tasks.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      }
+    },
+    "MailServiceQueueProcessingTaskDefTaskRoleDefaultPolicyEB3A4C38": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "sqs:ReceiveMessage",
+                "sqs:ChangeMessageVisibility",
+                "sqs:GetQueueUrl",
+                "sqs:DeleteMessage",
+                "sqs:GetQueueAttributes"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "Queue4A7E3555",
+                  "Arn"
+                ]
+              }
+            },
+            {
+              "Action": [
+                "ses:SendEmail",
+                "ses:SendRawEmail",
+                "ses:SendTemplatedEmail"
+              ],
+              "Effect": "Allow",
+              "Resource": "*"
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "MailServiceQueueProcessingTaskDefTaskRoleDefaultPolicyEB3A4C38",
+        "Roles": [
+          {
+            "Ref": "MailServiceQueueProcessingTaskDefTaskRole0D4B2A97"
+          }
+        ]
+      }
+    },
+    "MailServiceQueueProcessingTaskDef06D4E87F": {
+      "Type": "AWS::ECS::TaskDefinition",
+      "Properties": {
+        "ContainerDefinitions": [
+          {
+            "Environment": [
+              {
+                "Name": "NODE_ENV",
+                "Value": "production"
+              },
+              {
+                "Name": "MAIL_QUEUE_URL",
+                "Value": {
+                  "Ref": "Queue4A7E3555"
+                }
+              },
+              {
+                "Name": "MAIL_URL",
+                "Value": "https://mail.example.com"
+              },
+              {
+                "Name": "WEB_URL",
+                "Value": "https://www.example.com"
+              },
+              {
+                "Name": "QUEUE_NAME",
+                "Value": {
+                  "Fn::GetAtt": [
+                    "Queue4A7E3555",
+                    "QueueName"
+                  ]
+                }
+              }
+            ],
+            "Essential": true,
+            "Image": {
+              "Fn::Join": [
+                "",
+                [
+                  "1111111111.dkr.ecr.us-west-2.",
+                  {
+                    "Ref": "AWS::URLSuffix"
+                  },
+                  "/mail:",
+                  {
+                    "Ref": "mailImageTag"
+                  }
+                ]
+              ]
+            },
+            "LogConfiguration": {
+              "LogDriver": "awslogs",
+              "Options": {
+                "awslogs-group": {
+                  "Ref": "MailServiceQueueProcessingTaskDefQueueProcessingContainerLogGroup0EC97370"
+                },
+                "awslogs-stream-prefix": "MailService",
+                "awslogs-region": "us-west-2"
+              }
+            },
+            "Name": "QueueProcessingContainer",
+            "Secrets": [
+              {
+                "Name": "SOME_SECRET_ENV",
+                "ValueFrom": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":secretsmanager:us-west-2:1111111111:secret:SomeSecret"
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "Cpu": "256",
+        "ExecutionRoleArn": {
+          "Fn::GetAtt": [
+            "MailServiceQueueProcessingTaskDefExecutionRole9BAF610D",
+            "Arn"
+          ]
+        },
+        "Family": "MailStackMailServiceQueueProcessingTaskDefB65DF47A",
+        "Memory": "512",
+        "NetworkMode": "awsvpc",
+        "RequiresCompatibilities": [
+          "FARGATE"
+        ],
+        "RuntimePlatform": {
+          "CpuArchitecture": "ARM64",
+          "OperatingSystemFamily": "LINUX"
+        },
+        "TaskRoleArn": {
+          "Fn::GetAtt": [
+            "MailServiceQueueProcessingTaskDefTaskRole0D4B2A97",
+            "Arn"
+          ]
+        }
+      }
+    },
+    "MailServiceQueueProcessingTaskDefQueueProcessingContainerLogGroup0EC97370": {
+      "Type": "AWS::Logs::LogGroup",
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain"
+    },
+    "MailServiceQueueProcessingTaskDefExecutionRole9BAF610D": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ecs-tasks.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      }
+    },
+    "MailServiceQueueProcessingTaskDefExecutionRoleDefaultPolicy45D6DE4D": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:GetDownloadUrlForLayer",
+                "ecr:BatchGetImage"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":ecr:us-west-2:1111111111:repository/mail"
+                  ]
+                ]
+              }
+            },
+            {
+              "Action": "ecr:GetAuthorizationToken",
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "MailServiceQueueProcessingTaskDefQueueProcessingContainerLogGroup0EC97370",
+                  "Arn"
+                ]
+              }
+            },
+            {
+              "Action": [
+                "secretsmanager:GetSecretValue",
+                "secretsmanager:DescribeSecret"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":secretsmanager:us-west-2:1111111111:secret:SomeSecret-??????"
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "MailServiceQueueProcessingTaskDefExecutionRoleDefaultPolicy45D6DE4D",
+        "Roles": [
+          {
+            "Ref": "MailServiceQueueProcessingTaskDefExecutionRole9BAF610D"
+          }
+        ]
+      }
+    },
+    "MailServiceQueueProcessingFargateService7E92BCE6": {
+      "Type": "AWS::ECS::Service",
+      "Properties": {
+        "Cluster": {
+          "Ref": "EcsDefaultClusterMnL3mNNYNVpc18E0451A"
+        },
+        "DeploymentConfiguration": {
+          "Alarms": {
+            "AlarmNames": [],
+            "Enable": false,
+            "Rollback": false
+          },
+          "MaximumPercent": 200,
+          "MinimumHealthyPercent": 50
+        },
+        "EnableECSManagedTags": false,
+        "LaunchType": "FARGATE",
+        "NetworkConfiguration": {
+          "AwsvpcConfiguration": {
+            "AssignPublicIp": "DISABLED",
+            "SecurityGroups": [
+              {
+                "Fn::GetAtt": [
+                  "MailServiceQueueProcessingFargateServiceSecurityGroupCABD0CA4",
+                  "GroupId"
+                ]
+              }
+            ],
+            "Subnets": [
+              {
+                "Fn::ImportValue": "UtilsStack:ExportsOutputRefVpcPrivateSubnet1Subnet536B997AFD4CC940"
+              },
+              {
+                "Fn::ImportValue": "UtilsStack:ExportsOutputRefVpcPrivateSubnet2Subnet3788AAA1380949A3"
+              },
+              {
+                "Fn::ImportValue": "UtilsStack:ExportsOutputRefVpcPrivateSubnet3SubnetF258B56EC7CF32DD"
+              }
+            ]
+          }
+        },
+        "TaskDefinition": {
+          "Ref": "MailServiceQueueProcessingTaskDef06D4E87F"
+        }
+      },
+      "DependsOn": [
+        "MailServiceQueueProcessingTaskDefTaskRoleDefaultPolicyEB3A4C38",
+        "MailServiceQueueProcessingTaskDefTaskRole0D4B2A97"
+      ]
+    },
+    "MailServiceQueueProcessingFargateServiceSecurityGroupCABD0CA4": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "MailStack/MailService/QueueProcessingFargateService/SecurityGroup",
+        "SecurityGroupEgress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "Allow all outbound traffic by default",
+            "IpProtocol": "-1"
+          }
+        ],
+        "VpcId": {
+          "Fn::ImportValue": "UtilsStack:ExportsOutputRefVpc8378EB38272D6E3A"
+        }
+      },
+      "DependsOn": [
+        "MailServiceQueueProcessingTaskDefTaskRoleDefaultPolicyEB3A4C38",
+        "MailServiceQueueProcessingTaskDefTaskRole0D4B2A97"
+      ]
+    },
+    "MailServiceQueueProcessingFargateServiceTaskCountTargetECD044D0": {
+      "Type": "AWS::ApplicationAutoScaling::ScalableTarget",
+      "Properties": {
+        "MaxCapacity": 2,
+        "MinCapacity": 1,
+        "ResourceId": {
+          "Fn::Join": [
+            "",
+            [
+              "service/",
+              {
+                "Ref": "EcsDefaultClusterMnL3mNNYNVpc18E0451A"
+              },
+              "/",
+              {
+                "Fn::GetAtt": [
+                  "MailServiceQueueProcessingFargateService7E92BCE6",
+                  "Name"
+                ]
+              }
+            ]
+          ]
+        },
+        "RoleARN": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":iam::1111111111:role/aws-service-role/ecs.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_ECSService"
+            ]
+          ]
+        },
+        "ScalableDimension": "ecs:service:DesiredCount",
+        "ServiceNamespace": "ecs"
+      },
+      "DependsOn": [
+        "MailServiceQueueProcessingTaskDefTaskRoleDefaultPolicyEB3A4C38",
+        "MailServiceQueueProcessingTaskDefTaskRole0D4B2A97"
+      ]
+    },
+    "MailServiceQueueProcessingFargateServiceTaskCountTargetCpuScalingAB31E657": {
+      "Type": "AWS::ApplicationAutoScaling::ScalingPolicy",
+      "Properties": {
+        "PolicyName": "MailStackMailServiceQueueProcessingFargateServiceTaskCountTargetCpuScaling02E2D4D6",
+        "PolicyType": "TargetTrackingScaling",
+        "ScalingTargetId": {
+          "Ref": "MailServiceQueueProcessingFargateServiceTaskCountTargetECD044D0"
+        },
+        "TargetTrackingScalingPolicyConfiguration": {
+          "PredefinedMetricSpecification": {
+            "PredefinedMetricType": "ECSServiceAverageCPUUtilization"
+          },
+          "TargetValue": 50
+        }
+      },
+      "DependsOn": [
+        "MailServiceQueueProcessingTaskDefTaskRoleDefaultPolicyEB3A4C38",
+        "MailServiceQueueProcessingTaskDefTaskRole0D4B2A97"
+      ]
+    },
+    "MailServiceQueueProcessingFargateServiceTaskCountTargetQueueMessagesVisibleScalingLowerPolicyAA993249": {
+      "Type": "AWS::ApplicationAutoScaling::ScalingPolicy",
+      "Properties": {
+        "PolicyName": "MailStackMailServiceQueueProcessingFargateServiceTaskCountTargetQueueMessagesVisibleScalingLowerPolicy3F006E33",
+        "PolicyType": "StepScaling",
+        "ScalingTargetId": {
+          "Ref": "MailServiceQueueProcessingFargateServiceTaskCountTargetECD044D0"
+        },
+        "StepScalingPolicyConfiguration": {
+          "AdjustmentType": "ChangeInCapacity",
+          "MetricAggregationType": "Maximum",
+          "StepAdjustments": [
+            {
+              "MetricIntervalUpperBound": 0,
+              "ScalingAdjustment": -1
+            }
+          ]
+        }
+      },
+      "DependsOn": [
+        "MailServiceQueueProcessingTaskDefTaskRoleDefaultPolicyEB3A4C38",
+        "MailServiceQueueProcessingTaskDefTaskRole0D4B2A97"
+      ]
+    },
+    "MailServiceQueueProcessingFargateServiceTaskCountTargetQueueMessagesVisibleScalingLowerAlarmC5FBDCEE": {
+      "Type": "AWS::CloudWatch::Alarm",
+      "Properties": {
+        "AlarmActions": [
+          {
+            "Ref": "MailServiceQueueProcessingFargateServiceTaskCountTargetQueueMessagesVisibleScalingLowerPolicyAA993249"
+          }
+        ],
+        "AlarmDescription": "Lower threshold scaling alarm",
+        "ComparisonOperator": "LessThanOrEqualToThreshold",
+        "Dimensions": [
+          {
+            "Name": "QueueName",
+            "Value": {
+              "Fn::GetAtt": [
+                "Queue4A7E3555",
+                "QueueName"
+              ]
+            }
+          }
+        ],
+        "EvaluationPeriods": 1,
+        "MetricName": "ApproximateNumberOfMessagesVisible",
+        "Namespace": "AWS/SQS",
+        "Period": 300,
+        "Statistic": "Maximum",
+        "Threshold": 0
+      },
+      "DependsOn": [
+        "MailServiceQueueProcessingTaskDefTaskRoleDefaultPolicyEB3A4C38",
+        "MailServiceQueueProcessingTaskDefTaskRole0D4B2A97"
+      ]
+    },
+    "MailServiceQueueProcessingFargateServiceTaskCountTargetQueueMessagesVisibleScalingUpperPolicyD85EE2C8": {
+      "Type": "AWS::ApplicationAutoScaling::ScalingPolicy",
+      "Properties": {
+        "PolicyName": "MailStackMailServiceQueueProcessingFargateServiceTaskCountTargetQueueMessagesVisibleScalingUpperPolicy7B6BCE8D",
+        "PolicyType": "StepScaling",
+        "ScalingTargetId": {
+          "Ref": "MailServiceQueueProcessingFargateServiceTaskCountTargetECD044D0"
+        },
+        "StepScalingPolicyConfiguration": {
+          "AdjustmentType": "ChangeInCapacity",
+          "MetricAggregationType": "Maximum",
+          "StepAdjustments": [
+            {
+              "MetricIntervalLowerBound": 0,
+              "MetricIntervalUpperBound": 400,
+              "ScalingAdjustment": 1
+            },
+            {
+              "MetricIntervalLowerBound": 400,
+              "ScalingAdjustment": 5
+            }
+          ]
+        }
+      },
+      "DependsOn": [
+        "MailServiceQueueProcessingTaskDefTaskRoleDefaultPolicyEB3A4C38",
+        "MailServiceQueueProcessingTaskDefTaskRole0D4B2A97"
+      ]
+    },
+    "MailServiceQueueProcessingFargateServiceTaskCountTargetQueueMessagesVisibleScalingUpperAlarmB7DD4B8A": {
+      "Type": "AWS::CloudWatch::Alarm",
+      "Properties": {
+        "AlarmActions": [
+          {
+            "Ref": "MailServiceQueueProcessingFargateServiceTaskCountTargetQueueMessagesVisibleScalingUpperPolicyD85EE2C8"
+          }
+        ],
+        "AlarmDescription": "Upper threshold scaling alarm",
+        "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+        "Dimensions": [
+          {
+            "Name": "QueueName",
+            "Value": {
+              "Fn::GetAtt": [
+                "Queue4A7E3555",
+                "QueueName"
+              ]
+            }
+          }
+        ],
+        "EvaluationPeriods": 1,
+        "MetricName": "ApproximateNumberOfMessagesVisible",
+        "Namespace": "AWS/SQS",
+        "Period": 300,
+        "Statistic": "Maximum",
+        "Threshold": 100
+      },
+      "DependsOn": [
+        "MailServiceQueueProcessingTaskDefTaskRoleDefaultPolicyEB3A4C38",
+        "MailServiceQueueProcessingTaskDefTaskRole0D4B2A97"
+      ]
+    },
+    "EcsDefaultClusterMnL3mNNYNVpc18E0451A": {
+      "Type": "AWS::ECS::Cluster"
+    },
+    "CdnBucket0DC12795": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "aws-cdk:auto-delete-objects",
+            "Value": "true"
+          }
+        ]
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "CdnBucketPolicyDF9F4914": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "CdnBucket0DC12795"
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": "*"
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "CdnBucket0DC12795",
+                        "Arn"
+                      ]
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            },
+            {
+              "Action": [
+                "s3:PutBucketPolicy",
+                "s3:GetBucket*",
+                "s3:List*",
+                "s3:DeleteObject*"
+              ],
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": {
+                  "Fn::GetAtt": [
+                    "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092",
+                    "Arn"
+                  ]
+                }
+              },
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "CdnBucket0DC12795",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "CdnBucket0DC12795",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "CanonicalUser": {
+                  "Fn::GetAtt": [
+                    "CdnDistributionOrigin1S3Origin5DC86692",
+                    "S3CanonicalUserId"
+                  ]
+                }
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "CdnBucket0DC12795",
+                        "Arn"
+                      ]
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      }
+    },
+    "CdnBucketAutoDeleteObjectsCustomResource025D98C4": {
+      "Type": "Custom::S3AutoDeleteObjects",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F",
+            "Arn"
+          ]
+        },
+        "BucketName": {
+          "Ref": "CdnBucket0DC12795"
+        }
+      },
+      "DependsOn": [
+        "CdnBucketPolicyDF9F4914"
+      ],
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "CdnCertificateCertificateRequestorFunctionServiceRole6C785673": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "CdnCertificateCertificateRequestorFunctionServiceRoleDefaultPolicyD307B699": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "acm:RequestCertificate",
+                "acm:DescribeCertificate",
+                "acm:DeleteCertificate",
+                "acm:AddTagsToCertificate"
+              ],
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": "route53:GetChange",
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": "route53:changeResourceRecordSets",
+              "Condition": {
+                "ForAllValues:StringEquals": {
+                  "route53:ChangeResourceRecordSetsRecordTypes": [
+                    "CNAME"
+                  ],
+                  "route53:ChangeResourceRecordSetsActions": [
+                    "UPSERT"
+                  ]
+                },
+                "ForAllValues:StringLike": {
+                  "route53:ChangeResourceRecordSetsNormalizedRecordNames": [
+                    "*.mail.example.com"
+                  ]
+                }
+              },
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":route53:::hostedzone/DUMMY"
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "CdnCertificateCertificateRequestorFunctionServiceRoleDefaultPolicyD307B699",
+        "Roles": [
+          {
+            "Ref": "CdnCertificateCertificateRequestorFunctionServiceRole6C785673"
+          }
+        ]
+      }
+    },
+    "CdnCertificateCertificateRequestorFunction4FBE17BB": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-1111111111-us-west-2",
+          "S3Key": "d4c47643615e33c32aac58169698a692fa1d1f3e0da0dd6c4bf1c0e6af68d757.zip"
+        },
+        "Handler": "index.certificateRequestHandler",
+        "Role": {
+          "Fn::GetAtt": [
+            "CdnCertificateCertificateRequestorFunctionServiceRole6C785673",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs18.x",
+        "Timeout": 900
+      },
+      "DependsOn": [
+        "CdnCertificateCertificateRequestorFunctionServiceRoleDefaultPolicyD307B699",
+        "CdnCertificateCertificateRequestorFunctionServiceRole6C785673"
+      ]
+    },
+    "CdnCertificateCertificateRequestorResource283E4F9C": {
+      "Type": "AWS::CloudFormation::CustomResource",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CdnCertificateCertificateRequestorFunction4FBE17BB",
+            "Arn"
+          ]
+        },
+        "DomainName": "mail.example.com",
+        "HostedZoneId": "DUMMY",
+        "Region": "us-east-1"
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "CdnDistributionOrigin1S3Origin5DC86692": {
+      "Type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
+      "Properties": {
+        "CloudFrontOriginAccessIdentityConfig": {
+          "Comment": "Identity for MailStackCdnDistributionOrigin100A550D9"
+        }
+      }
+    },
+    "CdnDistribution149FA6C8": {
+      "Type": "AWS::CloudFront::Distribution",
+      "Properties": {
+        "DistributionConfig": {
+          "Aliases": [
+            "mail.example.com"
+          ],
+          "DefaultCacheBehavior": {
+            "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+            "Compress": true,
+            "TargetOriginId": "MailStackCdnDistributionOrigin100A550D9",
+            "ViewerProtocolPolicy": "redirect-to-https"
+          },
+          "Enabled": true,
+          "HttpVersion": "http2",
+          "IPV6Enabled": true,
+          "Origins": [
+            {
+              "DomainName": {
+                "Fn::GetAtt": [
+                  "CdnBucket0DC12795",
+                  "RegionalDomainName"
+                ]
+              },
+              "Id": "MailStackCdnDistributionOrigin100A550D9",
+              "S3OriginConfig": {
+                "OriginAccessIdentity": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "origin-access-identity/cloudfront/",
+                      {
+                        "Ref": "CdnDistributionOrigin1S3Origin5DC86692"
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ],
+          "Restrictions": {
+            "GeoRestriction": {
+              "Locations": [
+                "CN",
+                "KP",
+                "RU"
+              ],
+              "RestrictionType": "blacklist"
+            }
+          },
+          "ViewerCertificate": {
+            "AcmCertificateArn": {
+              "Fn::GetAtt": [
+                "CdnCertificateCertificateRequestorResource283E4F9C",
+                "Arn"
+              ]
+            },
+            "MinimumProtocolVersion": "TLSv1.2_2021",
+            "SslSupportMethod": "sni-only"
+          }
+        }
+      }
+    },
+    "CdnARecord34E08735": {
+      "Type": "AWS::Route53::RecordSet",
+      "Properties": {
+        "AliasTarget": {
+          "DNSName": {
+            "Fn::GetAtt": [
+              "CdnDistribution149FA6C8",
+              "DomainName"
+            ]
+          },
+          "HostedZoneId": {
+            "Fn::FindInMap": [
+              "AWSCloudFrontPartitionHostedZoneIdMap",
+              {
+                "Ref": "AWS::Partition"
+              },
+              "zoneId"
+            ]
+          }
+        },
+        "HostedZoneId": "DUMMY",
+        "Name": "mail.example.com.",
+        "Type": "A"
+      }
+    },
+    "CdnAAAARecordFF7BFA13": {
+      "Type": "AWS::Route53::RecordSet",
+      "Properties": {
+        "AliasTarget": {
+          "DNSName": {
+            "Fn::GetAtt": [
+              "CdnDistribution149FA6C8",
+              "DomainName"
+            ]
+          },
+          "HostedZoneId": {
+            "Fn::FindInMap": [
+              "AWSCloudFrontPartitionHostedZoneIdMap",
+              {
+                "Ref": "AWS::Partition"
+              },
+              "zoneId"
+            ]
+          }
+        },
+        "HostedZoneId": "DUMMY",
+        "Name": "mail.example.com.",
+        "Type": "AAAA"
+      }
+    },
+    "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ]
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Sub": "arn:\${AWS::Partition}:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+          }
+        ]
+      }
+    },
+    "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-1111111111-us-west-2",
+          "S3Key": "b7f33614a69548d6bafe224d751a7ef238cde19097415e553fe8b63a4c8fd8a6.zip"
+        },
+        "Timeout": 900,
+        "MemorySize": 128,
+        "Handler": "index.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs18.x",
+        "Description": {
+          "Fn::Join": [
+            "",
+            [
+              "Lambda function for auto-deleting objects in ",
+              {
+                "Ref": "CdnBucket0DC12795"
+              },
+              " S3 bucket."
+            ]
+          ]
+        }
+      },
+      "DependsOn": [
+        "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+      ]
+    }
+  },
+  "Outputs": {
+    "MailServiceSQSQueue1201FFE5": {
+      "Value": {
+        "Fn::GetAtt": [
+          "Queue4A7E3555",
+          "QueueName"
+        ]
+      }
+    },
+    "MailServiceSQSQueueArn51600FC0": {
+      "Value": {
+        "Fn::GetAtt": [
+          "Queue4A7E3555",
+          "Arn"
+        ]
+      }
+    }
+  },
+  "Mappings": {
+    "AWSCloudFrontPartitionHostedZoneIdMap": {
+      "aws": {
+        "zoneId": "Z2FDTNDATAQYW2"
+      },
+      "aws-cn": {
+        "zoneId": "Z3RFFRIM2A3IF5"
+      }
+    }
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  {
+                    "Ref": "BootstrapVersion"
+                  }
+                ]
+              }
+            ]
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI."
+        }
+      ]
+    }
+  }
+}"
+`;

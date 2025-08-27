@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgRocketOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M9.29 9.275A9.03 9.03 0 009 10a6 6 0 00-5 3 8 8 0 017 7 6 6 0 003-5c.241-.085.478-.18.708-.283m2.428-1.61A9 9 0 0020 7a3 3 0 00-3-3 9 9 0 00-6.107 2.864" }), React.createElement("path", { d: "M7 14a6 6 0 00-3 6 6 6 0 006-3M14 9a1 1 0 102 0 1 1 0 10-2 0M3 3l18 18" }));
+export default SvgRocketOff;

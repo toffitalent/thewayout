@@ -1,0 +1,18 @@
+extends ../templates/base.pug
+include ../templates/mixins.pug
+
+block preheader
+  | As requested, we've updated your password. If you made this change, you don't need to do anything else.
+
+block content
+  h1 Hi #{user.firstName}
+  p The password for your !{config.get('company.name')} account has been updated. If you made this change, you don't need to do anything else.
+  p
+    | If you did not recently update your password and believe an unauthorized person has accessed your account, please
+    |
+    a(href=`mailto:${config.get('company.supportEmail')}`) contact support
+    | .
+  p
+    | Thanks,
+    br
+    | The !{config.get('company.name')} Team

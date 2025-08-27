@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgSkateboardOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M5 15a2 2 0 104 0 2 2 0 10-4 0M15 15a2 2 0 002 2m2-2a2 2 0 00-2-2M3 9c0 .552.895 1 2 1h5m4 0h5c1.105 0 2-.448 2-1M3 3l18 18" }));
+export default SvgSkateboardOff;

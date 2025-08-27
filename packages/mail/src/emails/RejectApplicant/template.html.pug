@@ -1,0 +1,15 @@
+extends ../templates/base.pug
+include ../templates/mixins.pug
+
+block content
+  h1 Dear #{client.firstName},
+  p
+    | Your application for #{offerTitle} has been rejected.
+    |
+  p
+    | Please visit your dashboard to find more jobs you can apply for. 
+    |
+  +action
+    +button(dashboardPageUrl) View Dashboard
+  
+  +trouble(dashboardPageUrl)

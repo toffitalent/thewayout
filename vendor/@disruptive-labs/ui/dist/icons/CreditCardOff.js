@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgCreditCardOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M3 3l18 18M9 5h9a3 3 0 013 3v8a3 3 0 01-.128.87M18.87 18.872A3 3 0 0118 19H6a3 3 0 01-3-3V8a3 3 0 012.124-2.87M3 11h8M15 11h6M7 15h.01M11 15h2" }));
+export default SvgCreditCardOff;

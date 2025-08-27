@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgShieldDollar = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M13.018 20.687c-.333.119-.673.223-1.018.313A12 12 0 013.5 6 12 12 0 0012 3a12 12 0 008.5 3c.433 1.472.575 2.998.436 4.495M21 15h-2.5a1.5 1.5 0 000 3h1a1.5 1.5 0 010 3H17M19 21v1m0-8v1" }));
+export default SvgShieldDollar;

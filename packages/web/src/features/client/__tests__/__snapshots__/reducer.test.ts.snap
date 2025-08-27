@@ -1,0 +1,425 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Client > Reducer handles listAllJobs fulfilled actions 1`] = `
+{
+  "appliedJobs": {
+    "entities": {},
+    "forceReload": false,
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManager": null,
+  "jobs": {
+    "entities": {},
+    "ids": [],
+  },
+  "jobsList": {
+    "entities": {
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06g": {
+        "applications": [],
+        "applicationsCount": 0,
+        "createdAt": 2023-01-01T00:00:00.000Z,
+        "department": "Customer Service",
+        "description": "Wash attendants are responsible for performing the daily operational practices of running the car wash facility.",
+        "experience": "mid",
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06g",
+        "numberOfOpenPositions": 3,
+        "offenses": [
+          "arson",
+        ],
+        "offensesTypes": [
+          "propertyDamage",
+        ],
+        "responsibilities": [],
+        "salaryOptions": {
+          "bonuses": [
+            "Additional $100 Bonus for Positive 90 Day Review",
+          ],
+          "description": "Starting wage is $13 per hour + tips, with an Employer Bonus after positive a 90 Day Review (provided by the employer)",
+          "max": "30",
+          "min": "15",
+          "salary": "hourly",
+        },
+        "skillsDescription": "The most successful and happy people have PMA – a Positive Mental Attitude! We are a huge believer in putting attitude above aptitude. We can always teach you how to do the job, but we can't teach a Positive Mental Attitude... You either have it or you don't!",
+        "startDate": "12.2024",
+        "status": "active",
+        "title": "Car Wash Attendant",
+        "typeOfWork": "hybrid",
+        "updatedAt": 2023-01-01T00:00:00.000Z,
+        "veteranOrJustice": [
+          "veteran",
+          "justiceImpacted",
+        ],
+        "workingTime": "fullTime",
+      },
+    },
+    "ids": [
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06g",
+    ],
+    "total": 1,
+  },
+  "rspList": {
+    "entities": {},
+    "ids": [],
+  },
+  "suggestedJobs": {
+    "entities": {},
+    "ids": [],
+  },
+}
+`;
+
+exports[`Client > Reducer handles listAppliedJobs fulfilled actions 1`] = `
+{
+  "appliedJobs": {
+    "entities": {
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06g": {
+        "applications": [],
+        "applicationsCount": 0,
+        "createdAt": 2023-01-01T00:00:00.000Z,
+        "department": "Customer Service",
+        "description": "Wash attendants are responsible for performing the daily operational practices of running the car wash facility.",
+        "experience": "mid",
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06g",
+        "numberOfOpenPositions": 3,
+        "offenses": [
+          "arson",
+        ],
+        "offensesTypes": [
+          "propertyDamage",
+        ],
+        "responsibilities": [],
+        "salaryOptions": {
+          "bonuses": [
+            "Additional $100 Bonus for Positive 90 Day Review",
+          ],
+          "description": "Starting wage is $13 per hour + tips, with an Employer Bonus after positive a 90 Day Review (provided by the employer)",
+          "max": "30",
+          "min": "15",
+          "salary": "hourly",
+        },
+        "skillsDescription": "The most successful and happy people have PMA – a Positive Mental Attitude! We are a huge believer in putting attitude above aptitude. We can always teach you how to do the job, but we can't teach a Positive Mental Attitude... You either have it or you don't!",
+        "startDate": "12.2024",
+        "status": "active",
+        "title": "Car Wash Attendant",
+        "typeOfWork": "hybrid",
+        "updatedAt": 2023-01-01T00:00:00.000Z,
+        "veteranOrJustice": [
+          "veteran",
+          "justiceImpacted",
+        ],
+        "workingTime": "fullTime",
+      },
+    },
+    "ids": [
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06g",
+    ],
+    "total": 1,
+  },
+  "caseManager": null,
+  "jobs": {
+    "entities": {},
+    "ids": [],
+  },
+  "jobsList": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rspList": {
+    "entities": {},
+    "ids": [],
+  },
+  "suggestedJobs": {
+    "entities": {},
+    "ids": [],
+  },
+}
+`;
+
+exports[`Client > Reducer handles listRsp fulfilled actions 1`] = `
+{
+  "appliedJobs": {
+    "entities": {},
+    "forceReload": false,
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManager": null,
+  "jobs": {
+    "entities": {},
+    "ids": [],
+  },
+  "jobsList": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rspList": {
+    "entities": {
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h": {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+        "name": "Employ Milwaukee",
+        "servicesArea": [
+          "County Name",
+        ],
+        "support": [
+          "employment",
+        ],
+      },
+    },
+    "ids": [
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+    ],
+  },
+  "suggestedJobs": {
+    "entities": {},
+    "ids": [],
+  },
+}
+`;
+
+exports[`Client > Reducer handles listRsp pending actions 1`] = `
+{
+  "appliedJobs": {
+    "entities": {},
+    "forceReload": false,
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManager": null,
+  "jobs": {
+    "entities": {},
+    "ids": [],
+  },
+  "jobsList": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rspList": {
+    "entities": {},
+    "ids": [],
+  },
+  "suggestedJobs": {
+    "entities": {},
+    "ids": [],
+  },
+}
+`;
+
+exports[`Client > Reducer handles listSuggestedJobs fulfilled actions 1`] = `
+{
+  "appliedJobs": {
+    "entities": {},
+    "forceReload": false,
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManager": null,
+  "jobs": {
+    "entities": {},
+    "ids": [],
+  },
+  "jobsList": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rspList": {
+    "entities": {},
+    "ids": [],
+  },
+  "suggestedJobs": {
+    "entities": {
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06g": {
+        "applications": [],
+        "applicationsCount": 0,
+        "createdAt": 2023-01-01T00:00:00.000Z,
+        "department": "Customer Service",
+        "description": "Wash attendants are responsible for performing the daily operational practices of running the car wash facility.",
+        "experience": "mid",
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06g",
+        "numberOfOpenPositions": 3,
+        "offenses": [
+          "arson",
+        ],
+        "offensesTypes": [
+          "propertyDamage",
+        ],
+        "responsibilities": [],
+        "salaryOptions": {
+          "bonuses": [
+            "Additional $100 Bonus for Positive 90 Day Review",
+          ],
+          "description": "Starting wage is $13 per hour + tips, with an Employer Bonus after positive a 90 Day Review (provided by the employer)",
+          "max": "30",
+          "min": "15",
+          "salary": "hourly",
+        },
+        "skillsDescription": "The most successful and happy people have PMA – a Positive Mental Attitude! We are a huge believer in putting attitude above aptitude. We can always teach you how to do the job, but we can't teach a Positive Mental Attitude... You either have it or you don't!",
+        "startDate": "12.2024",
+        "status": "active",
+        "title": "Car Wash Attendant",
+        "typeOfWork": "hybrid",
+        "updatedAt": 2023-01-01T00:00:00.000Z,
+        "veteranOrJustice": [
+          "veteran",
+          "justiceImpacted",
+        ],
+        "workingTime": "fullTime",
+      },
+    },
+    "ids": [
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06g",
+    ],
+  },
+}
+`;
+
+exports[`Client > Reducer handles retrieveCaseManager fulfilled actions 1`] = `
+{
+  "appliedJobs": {
+    "entities": {},
+    "forceReload": false,
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManager": {
+    "email": "test@test.com",
+    "firstName": "FirstName",
+    "lastName": "LastName",
+    "rspName": "Name",
+  },
+  "jobs": {
+    "entities": {},
+    "ids": [],
+  },
+  "jobsList": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rspList": {
+    "entities": {},
+    "ids": [],
+  },
+  "suggestedJobs": {
+    "entities": {},
+    "ids": [],
+  },
+}
+`;
+
+exports[`Client > Reducer handles retrieveJob fulfilled actions 1`] = `
+{
+  "appliedJobs": {
+    "entities": {},
+    "forceReload": false,
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManager": null,
+  "jobs": {
+    "entities": {
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06g": {
+        "applications": [],
+        "applicationsCount": 0,
+        "createdAt": 2023-01-01T00:00:00.000Z,
+        "department": "Customer Service",
+        "description": "Wash attendants are responsible for performing the daily operational practices of running the car wash facility.",
+        "experience": "mid",
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06g",
+        "numberOfOpenPositions": 3,
+        "offenses": [
+          "arson",
+        ],
+        "offensesTypes": [
+          "propertyDamage",
+        ],
+        "responsibilities": [],
+        "salaryOptions": {
+          "bonuses": [
+            "Additional $100 Bonus for Positive 90 Day Review",
+          ],
+          "description": "Starting wage is $13 per hour + tips, with an Employer Bonus after positive a 90 Day Review (provided by the employer)",
+          "max": "30",
+          "min": "15",
+          "salary": "hourly",
+        },
+        "skillsDescription": "The most successful and happy people have PMA – a Positive Mental Attitude! We are a huge believer in putting attitude above aptitude. We can always teach you how to do the job, but we can't teach a Positive Mental Attitude... You either have it or you don't!",
+        "startDate": "12.2024",
+        "status": "active",
+        "title": "Car Wash Attendant",
+        "typeOfWork": "hybrid",
+        "updatedAt": 2023-01-01T00:00:00.000Z,
+        "veteranOrJustice": [
+          "veteran",
+          "justiceImpacted",
+        ],
+        "workingTime": "fullTime",
+      },
+    },
+    "ids": [
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06g",
+    ],
+  },
+  "jobsList": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rspList": {
+    "entities": {},
+    "ids": [],
+  },
+  "suggestedJobs": {
+    "entities": {},
+    "ids": [],
+  },
+}
+`;
+
+exports[`Client > Reducer returns empty initial state 1`] = `
+{
+  "appliedJobs": {
+    "entities": {},
+    "forceReload": false,
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManager": null,
+  "jobs": {
+    "entities": {},
+    "ids": [],
+  },
+  "jobsList": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rspList": {
+    "entities": {},
+    "ids": [],
+  },
+  "suggestedJobs": {
+    "entities": {},
+    "ids": [],
+  },
+}
+`;

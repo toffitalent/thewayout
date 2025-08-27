@@ -1,0 +1,14 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.listItem {
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 4.4rem;
+  height: 4.4rem;
+}

@@ -1,0 +1,108 @@
+{
+  "name": "@disruptive-labs/pug-loader",
+  "version": "0.1.0",
+  "description": "Disruptive Labs pug template loader for webpack",
+  "main": "dist/index.js",
+  "repository": "https://github.com/disruptive-labs/pug-loader.git",
+  "author": "Disruptive Labs",
+  "license": "UNLICENSED",
+  "private": false,
+  "files": [
+    "README.md",
+    "dist/"
+  ],
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf coverage dist",
+    "lint": "tsc --noEmit && eslint .",
+    "prepare": "husky install",
+    "release": "release-it",
+    "test": "jest --coverage"
+  },
+  "peerDependencies": {
+    "pug": "^3.0.2"
+  },
+  "dependencies": {
+    "pug-walk": "^2.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@release-it/conventional-changelog": "^4.1.0",
+    "@types/jest": "^28.1.4",
+    "@types/node": "^16.11.45",
+    "@types/pug": "^2.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.30.3",
+    "@typescript-eslint/parser": "^5.30.3",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.2.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^8.0.1",
+    "jest": "^28.1.2",
+    "jest-junit": "^14.0.0",
+    "memfs": "^3.4.7",
+    "prettier": "^2.7.1",
+    "pug": "^3.0.2",
+    "release-it": "^14.11.8",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.6.3",
+    "webpack": "^5.74.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{js,ts}"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(jpg|jpeg|png|gif|webp|svg)$": "<rootDir>/test/fileMock.js",
+      "^@test$": "<rootDir>/test/index.ts"
+    },
+    "preset": "ts-jest",
+    "resetMocks": true,
+    "resetModules": true,
+    "restoreMocks": true,
+    "setupFilesAfterEnv": [],
+    "testPathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "jest-junit": {
+    "outputDirectory": "./artifacts/jest",
+    "outputName": "results.xml"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true,
+      "releaseName": "${version}"
+    },
+    "hooks": {
+      "after:bump": "yarn clean && yarn build"
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "conventionalcommits"
+      }
+    }
+  }
+}

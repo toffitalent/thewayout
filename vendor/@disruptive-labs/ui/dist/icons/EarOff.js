@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgEarOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M6 10c0-1.146.277-2.245.78-3.219m1.792-2.208A7 7 0 0119 13.6a10 10 0 01-.633.762m-2.045 1.96A8 8 0 0015 18.6 4.5 4.5 0 018.2 20M11.42 7.414a3 3 0 014.131 4.13M3 3l18 18" }));
+export default SvgEarOff;

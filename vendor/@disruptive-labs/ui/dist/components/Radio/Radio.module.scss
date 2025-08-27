@@ -1,0 +1,95 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '@styles/theme';
+@use '../../styles/functions' as fn;
+@use '../../styles/mixins';
+
+.radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: theme.$radio-disabled-opacity;
+}
+
+.input {
+  @include mixins.visually-hidden;
+
+  &:not(:checked) {
+    & + .control {
+      background-color: transparent !important;
+      border-color: theme.$radio-border-color !important;
+    }
+  }
+
+  &:checked,
+  &[aria-checked='mixed'] {
+    & + .control::after {
+      opacity: 1;
+    }
+  }
+
+  &:focus {
+    & + .control {
+      box-shadow: var(--focus-shadow-color) 0 0 0 theme.$focus-shadow-width;
+    }
+
+    &:not(:focus-visible) + .control {
+      box-shadow: none;
+    }
+  }
+}
+
+.control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: theme.$radio-border-width solid theme.$radio-border-color;
+  border-radius: 50%;
+  color: theme.$color-white;
+  opacity: 1;
+  user-select: none;
+  transition: background-color 150ms, box-shadow 250ms ease;
+
+  .invalid & {
+    border-color: theme.$radio-error-color !important;
+    box-shadow: theme.$radio-error-color 0 0 0
+      (theme.$focus-border-width - theme.$radio-border-width);
+  }
+
+  &::after {
+    width: 50%;
+    height: 50%;
+    content: '';
+    opacity: 0;
+    background-color: currentColor;
+    border-radius: 50%;
+  }
+}
+
+.label {
+  margin-left: theme.$radio-label-margin;
+  user-select: none;
+}
+
+@each $radio-size, $size in theme.$radio-sizes {
+  .#{$radio-size} {
+    font-size: map.get($size, 'font');
+
+    .control {
+      width: map.get($size, 'size');
+      height: map.get($size, 'size');
+
+      &::after {
+        $icon: math.div(map.get($size, 'size'), 2) -
+          fn.rem(fn.px(math.div(map.get($size, 'size'), 2)) % 2);
+        width: $icon;
+        height: $icon;
+      }
+    }
+  }
+}

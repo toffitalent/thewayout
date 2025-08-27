@@ -1,0 +1,8 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.detailBadge {
+  background-color: rgba(1, 134, 134, 0.1);
+  height: 44px;
+  border-radius: 22px;
+}

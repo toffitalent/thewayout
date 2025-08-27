@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateProfilePage renders correctly 1`] = `
+<div>
+  <div
+    class="wizardWrapper"
+  >
+    <section
+      class="layout"
+    >
+      <div
+        class="container"
+      >
+        <header
+          class="header"
+        >
+          <button
+            aria-label="Previous"
+            class="button sm outline c-grey disabled iconButton sm round back backHidden"
+            disabled=""
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+                stroke="none"
+              />
+              <polyline
+                points="15 6 9 12 15 18"
+              />
+            </svg>
+          </button>
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="0"
+            class="progress md rounded trackColor progress"
+            role="progressbar"
+          >
+            <div
+              class="track bgcolor-primary"
+              style="transform: translateX(-100%);"
+            />
+          </div>
+          <h2
+            class="text title"
+          >
+            Are You a Veteran or Justice Impacted Individual?
+          </h2>
+          <p
+            class="text description"
+          >
+            Select all that apply.
+          </p>
+        </header>
+        <form
+          class="form"
+        >
+          <div
+            class="control control fluid"
+            role="group"
+          >
+            <fieldset
+              class="choices inline"
+            >
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Veteran
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Justice Impacted
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button
+            class="button md solid c-primary disabled fluid submit"
+            disabled=""
+            type="submit"
+          >
+            Save & Next
+          </button>
+        </form>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`CreateProfilePage renders no content if no user 1`] = `<div />`;

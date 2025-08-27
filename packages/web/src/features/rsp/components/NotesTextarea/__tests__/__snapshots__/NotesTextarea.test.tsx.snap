@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotesTextarea renders correctly 1`] = `
+<div>
+  <div
+    class="root primary md fluid md multiline notes"
+  >
+    <textarea
+      class="input"
+      placeholder="Type notes here..."
+      rows="1"
+      style="height: 0px;"
+    >
+      Test note
+    </textarea>
+  </div>
+</div>
+`;
+
+exports[`NotesTextarea renders correctly empty notes 1`] = `
+<div>
+  <div
+    class="root primary md fluid md multiline notes"
+  >
+    <textarea
+      class="input"
+      placeholder="Type notes here..."
+      rows="1"
+      style="height: 0px;"
+    />
+  </div>
+</div>
+`;

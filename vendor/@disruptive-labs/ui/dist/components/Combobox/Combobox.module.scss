@@ -1,0 +1,82 @@
+@use 'sass:map';
+@use '@styles/theme';
+@use '../../styles/functions' as fn;
+
+.input {
+  display: inline-flex;
+}
+
+.button {
+  &Icon {
+    width: 1em;
+    height: 1em;
+  }
+}
+
+.menu {
+  min-width: unset !important;
+  visibility: hidden;
+  z-index: theme.$menu-z-index;
+
+  &.isOpen {
+    visibility: visible;
+  }
+}
+
+.list {
+  max-height: theme.$menu-max-height;
+  overflow-y: auto;
+  margin: 0;
+  padding: theme.$menu-padding;
+  background: theme.$menu-bg;
+  border-radius: theme.$menu-border-radius;
+  box-shadow: theme.$menu-shadow;
+  list-style: none;
+  text-align: left;
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: theme.$menu-border-radius;
+  color: theme.$menu-item-color;
+  font-size: theme.$menu-item-font-size;
+  font-weight: theme.$menu-item-font-weight;
+  padding: theme.$menu-item-padding;
+
+  &Focused {
+    background: theme.$menu-item-focused-bg;
+  }
+}
+
+.group {
+  padding: theme.$menu-group-padding;
+  border-top: theme.$menu-group-border-width solid theme.$menu-group-border-color;
+  border-bottom: theme.$menu-group-border-width solid theme.$menu-group-border-color;
+
+  &:first-child,
+  & + & {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+  &Title {
+    margin: 0;
+    padding: theme.$menu-group-title-padding;
+    color: theme.$menu-group-title-color;
+    font-size: theme.$menu-group-title-font-size;
+    font-weight: theme.$menu-group-title-font-weight;
+    text-transform: uppercase;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}

@@ -1,0 +1,23 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.wizardWrapper {
+  div[role='group'] {
+    fieldset > legend {
+      font-size: 1.8rem;
+    }
+
+    div[class*='fieldHalfWidth'] {
+      + div[id*='helptext'] {
+        position: absolute;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .salaryForm {
+    form > button {
+      width: unset;
+    }
+  }
+}

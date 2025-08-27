@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgBrandCtemplar = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M6.04 14.831L10.5 10.5M12.555 20.82c4.55-3.456 7.582-8.639 8.426-14.405a1.668 1.668 0 00-.934-1.767A19.647 19.647 0 0012 3a19.647 19.647 0 00-8.047 1.647 1.668 1.668 0 00-.934 1.767c.844 5.766 3.875 10.95 8.426 14.406a.948.948 0 001.11 0z" }), React.createElement("path", { d: "M20 5c-2 0-4.37 3.304-8 6.644C8.37 8.304 6 5 4 5M17.738 15L13.5 10.5" }));
+export default SvgBrandCtemplar;

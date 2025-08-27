@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > Clients > jobs GET /api/v1/clients/:id/jobs return jobs 1`] = `
+[
+  {
+    "applicationStatus": "applied",
+    "createdAt": "<Date>",
+    "department": "Customer Service",
+    "description": "Voluptatibus est officia.",
+    "id": "01817e24-0d42-7b85-8607-60e9802e5cb4",
+    "location": null,
+    "offensesTypes": [
+      "motorVehicle",
+      "propertyDamage",
+      "theft",
+      "violent",
+      "whiteCollar",
+    ],
+    "salaryOptions": {
+      "bonuses": [],
+      "description": "Ab sint corporis corporis fugit quidem. Praesentium illo tempore. Velit adipisci ab eius nisi nisi cum corporis.",
+      "max": "40",
+      "min": "30",
+      "salary": "hourly",
+    },
+    "status": "active",
+    "title": "Senior Factors Designer",
+    "typeOfWork": "hybrid",
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+      "veteran",
+    ],
+    "workingTime": "fullTime",
+  },
+  {
+    "applicationStatus": "applied",
+    "createdAt": "<Date>",
+    "department": "Customer Service",
+    "description": "Delectus pariatur quae accusantium rerum consequatur. Veritatis id quisquam debitis temporibus quibusdam placeat ex saepe. Consequatur cum sint iusto sequi ducimus autem blanditiis libero. Itaque asperiores laudantium cumque. Ab molestias assumenda illum quas iste assumenda odit. Optio fuga reiciendis fuga.",
+    "id": "01817e24-0d42-7b06-943b-43c05c9d4a6e",
+    "location": null,
+    "offensesTypes": [
+      "drugs",
+      "motorVehicle",
+      "propertyDamage",
+      "theft",
+      "violent",
+      "whiteCollar",
+    ],
+    "salaryOptions": {
+      "bonuses": [],
+      "description": "quo",
+      "max": "40",
+      "min": "30",
+      "salary": "hourly",
+    },
+    "status": "active",
+    "title": "Central Quality Liaison",
+    "typeOfWork": "hybrid",
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+      "veteran",
+    ],
+    "workingTime": "fullTime",
+  },
+]
+`;
+
+exports[`Routes > Clients > jobs GET /api/v1/clients/:id/jobs/suggested return suggested jobs 1`] = `
+[
+  {
+    "applicationsCount": 1,
+    "createdAt": "<Date>",
+    "department": "Customer Service",
+    "description": "distinctio iure deserunt",
+    "id": "01817e24-0d42-7c78-8c7b-6f6b5529a2d9",
+    "location": null,
+    "offensesTypes": [
+      "drugs",
+      "motorVehicle",
+      "propertyDamage",
+      "sexual",
+      "theft",
+      "violent",
+    ],
+    "salaryOptions": {
+      "bonuses": [],
+      "description": "Nemo eveniet pariatur temporibus aperiam aliquam. Nostrum dignissimos dolorum ipsum facilis sit autem soluta pariatur. Repellendus adipisci officiis veniam adipisci est temporibus necessitatibus. Repellat repellendus quas temporibus libero. Explicabo exercitationem porro dignissimos rerum. Dolorum voluptatem sunt tenetur eum.
+Ab beatae doloribus. Quia molestias itaque fugiat quae aspernatur inventore tempore. Reiciendis sunt aperiam reprehenderit. Cum repellat quas quas recusandae iure. Reprehenderit reiciendis officia minus pariatur unde inventore ad. Ipsam aperiam quisquam quam rerum atque sapiente accusamus vel.
+Animi non ipsam quo sapiente in veritatis quidem nostrum aliquam. Ad eligendi expedita iusto corporis ad magnam magnam. Ut sit impedit. Voluptatibus ducimus perferendis id recusandae culpa.",
+      "max": "40",
+      "min": "30",
+      "salary": "hourly",
+    },
+    "status": "active",
+    "title": "Dynamic Optimization Supervisor",
+    "typeOfWork": "hybrid",
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+      "veteran",
+    ],
+    "workingTime": "fullTime",
+  },
+  {
+    "applicationsCount": 1,
+    "createdAt": "<Date>",
+    "department": "Customer Service",
+    "description": "Fuga necessitatibus quam assumenda aperiam eaque.",
+    "id": "01817e24-0d42-7bb3-b8f7-a5f897774d1a",
+    "location": null,
+    "offensesTypes": [
+      "drugs",
+      "propertyDamage",
+      "sexual",
+      "theft",
+      "whiteCollar",
+    ],
+    "salaryOptions": {
+      "bonuses": [],
+      "description": "Eius et corrupti odit cumque magni modi cupiditate voluptates culpa.",
+      "max": "40",
+      "min": "30",
+      "salary": "hourly",
+    },
+    "status": "active",
+    "title": "Regional Infrastructure Strategist",
+    "typeOfWork": "hybrid",
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+      "veteran",
+    ],
+    "workingTime": "fullTime",
+  },
+]
+`;
+
+exports[`Routes > Clients > jobs GET /api/v1/clients/:id/jobs/suggested return suggested jobs for veteran 1`] = `
+[
+  {
+    "applicationsCount": 1,
+    "createdAt": "<Date>",
+    "department": "Customer Service",
+    "description": "distinctio iure deserunt",
+    "id": "01817e24-0d42-7c78-8c7b-6f6b5529a2d9",
+    "location": null,
+    "offensesTypes": [
+      "drugs",
+      "motorVehicle",
+      "propertyDamage",
+      "sexual",
+      "theft",
+      "violent",
+    ],
+    "salaryOptions": {
+      "bonuses": [],
+      "description": "Nemo eveniet pariatur temporibus aperiam aliquam. Nostrum dignissimos dolorum ipsum facilis sit autem soluta pariatur. Repellendus adipisci officiis veniam adipisci est temporibus necessitatibus. Repellat repellendus quas temporibus libero. Explicabo exercitationem porro dignissimos rerum. Dolorum voluptatem sunt tenetur eum.
+Ab beatae doloribus. Quia molestias itaque fugiat quae aspernatur inventore tempore. Reiciendis sunt aperiam reprehenderit. Cum repellat quas quas recusandae iure. Reprehenderit reiciendis officia minus pariatur unde inventore ad. Ipsam aperiam quisquam quam rerum atque sapiente accusamus vel.
+Animi non ipsam quo sapiente in veritatis quidem nostrum aliquam. Ad eligendi expedita iusto corporis ad magnam magnam. Ut sit impedit. Voluptatibus ducimus perferendis id recusandae culpa.",
+      "max": "40",
+      "min": "30",
+      "salary": "hourly",
+    },
+    "status": "active",
+    "title": "Dynamic Optimization Supervisor",
+    "typeOfWork": "hybrid",
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+      "veteran",
+    ],
+    "workingTime": "fullTime",
+  },
+  {
+    "applicationsCount": 1,
+    "createdAt": "<Date>",
+    "department": "Customer Service",
+    "description": "Fuga necessitatibus quam assumenda aperiam eaque.",
+    "id": "01817e24-0d42-7bb3-b8f7-a5f897774d1a",
+    "location": null,
+    "offensesTypes": [
+      "drugs",
+      "propertyDamage",
+      "sexual",
+      "theft",
+      "whiteCollar",
+    ],
+    "salaryOptions": {
+      "bonuses": [],
+      "description": "Eius et corrupti odit cumque magni modi cupiditate voluptates culpa.",
+      "max": "40",
+      "min": "30",
+      "salary": "hourly",
+    },
+    "status": "active",
+    "title": "Regional Infrastructure Strategist",
+    "typeOfWork": "hybrid",
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+      "veteran",
+    ],
+    "workingTime": "fullTime",
+  },
+  {
+    "applicationsCount": 1,
+    "createdAt": "<Date>",
+    "department": "Customer Service",
+    "description": "Voluptatibus est officia.",
+    "id": "01817e24-0d42-7b85-8607-60e9802e5cb4",
+    "location": null,
+    "offensesTypes": [
+      "motorVehicle",
+      "propertyDamage",
+      "theft",
+      "violent",
+      "whiteCollar",
+    ],
+    "salaryOptions": {
+      "bonuses": [],
+      "description": "Ab sint corporis corporis fugit quidem. Praesentium illo tempore. Velit adipisci ab eius nisi nisi cum corporis.",
+      "max": "40",
+      "min": "30",
+      "salary": "hourly",
+    },
+    "status": "active",
+    "title": "Senior Factors Designer",
+    "typeOfWork": "hybrid",
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+      "veteran",
+    ],
+    "workingTime": "fullTime",
+  },
+]
+`;

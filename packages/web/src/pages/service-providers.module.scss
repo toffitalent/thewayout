@@ -1,0 +1,64 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &Title1 {
+    font-size: 3.4rem;
+  }
+  &Title2 {
+    font-size: 3.2rem;
+  }
+  &Title3 {
+    font-size: 2.8rem;
+  }
+
+  &Content {
+    padding: 10rem 2rem;
+
+    @include mq(md) {
+      padding: 20rem 9rem;
+    }
+  }
+
+  &ContentWider {
+    padding: 10rem 2rem;
+
+    @include mq(md) {
+      padding: 20rem 6rem;
+    }
+  }
+
+  &ServiceProviders {
+    // temporarily hide
+    display: none;
+    margin-top: 10rem;
+    margin-bottom: 0;
+
+    @include mq(md) {
+      margin-top: 10rem;
+      margin-bottom: 20rem;
+    }
+  }
+}
+
+.serviceProviderImg {
+  @include mq(md, max) {
+    margin-top: 20px;
+  }
+}
+
+.imgWrapper {
+  @include mq(md, min) {
+    position: relative;
+  }
+}
+
+.greenBg {
+  background-color: var(--color-green-100);
+}

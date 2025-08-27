@@ -1,0 +1,10 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.wrapper {
+  div[role='group'] {
+    fieldset > legend {
+      font-size: 2rem;
+    }
+  }
+}

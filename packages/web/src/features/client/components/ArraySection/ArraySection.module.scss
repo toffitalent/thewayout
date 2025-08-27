@@ -1,0 +1,13 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.wizardWrapper {
+  div[role='group'] {
+    div[class*='fieldHalfWidth'] {
+      + div[id*='helptext'] {
+        position: absolute;
+        margin-top: 0;
+      }
+    }
+  }
+}

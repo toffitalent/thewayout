@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > Uploads DELETE /api/v1/uploads/:type/:filename does not allow deletion of other user's uploads or old uploads 1`] = `
+{
+  "code": "BadRequest",
+  "message": "Cannot delete upload image/test-file.jpg",
+  "status": 400,
+}
+`;
+
+exports[`Routes > Uploads DELETE /api/v1/uploads/:type/:filename does not allow deletion of other user's uploads or old uploads 2`] = `
+{
+  "code": "BadRequest",
+  "message": "Cannot delete upload image/test-file.jpg",
+  "status": 400,
+}
+`;
+
+exports[`Routes > Uploads DELETE /api/v1/uploads/:type/:filename does not allow unauthenticated requests 1`] = `
+{
+  "code": "InvalidCredentials",
+  "message": "Authentication required",
+  "status": 401,
+}
+`;
+
+exports[`Routes > Uploads DELETE /api/v1/uploads/:type/:filename returns resource not found response if S3 cannot find file 1`] = `
+{
+  "code": "ResourceNotFound",
+  "message": "Upload image/test-file.jpg not found",
+  "status": 404,
+}
+`;
+
+exports[`Routes > Uploads POST /api/v1/uploads/:type does not allow unauthenticated requests 1`] = `
+{
+  "code": "InvalidCredentials",
+  "message": "Authentication required",
+  "status": 401,
+}
+`;
+
+exports[`Routes > Uploads POST /api/v1/uploads/:type returns a signed S3 upload URL 1`] = `
+{
+  "fields": {
+    "Cache-Control": "public, max-age=31536000, s-maxage=604800",
+    "Content-Type": "image/jpeg",
+    "acl": "private",
+    "x-amz-meta-user-id": "01817e24-0d42-7176-b613-889fe94905f0",
+  },
+  "key": Any<String>,
+  "url": "https://__UPLOADS_BUCKET_DEFAULT__.s3.amazonaws.com",
+}
+`;

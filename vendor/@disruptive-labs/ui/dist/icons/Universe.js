@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgUniverse = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M7.027 11.477a5 5 0 105.496-4.45 4.951 4.951 0 00-3.088.681M5.636 5.636a9 9 0 103.555-2.188" }), React.createElement("path", { d: "M17 5a1 1 0 102 0 1 1 0 10-2 0M11 12a1 1 0 102 0 1 1 0 10-2 0M8 16a1 1 0 102 0 1 1 0 10-2 0" }));
+export default SvgUniverse;

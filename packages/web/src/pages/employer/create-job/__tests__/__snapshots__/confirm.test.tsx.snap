@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmEmployerCreateProfilePage renders correctly 1`] = `
+<div>
+  <div
+    class="maxWidth-96 marginRight-auto marginLeft-auto"
+  >
+    <p
+      class="text marginBottom-2 fontSize-2xl fontWeight-700"
+    >
+      Great! 🎉
+    </p>
+    <p
+      class="text"
+    >
+      Your job offer is ready. Go to your dashboard and check the offer.
+    </p>
+    <button
+      class="button md solid c-primary fluid marginTop-10"
+      type="button"
+    >
+      View Job Post
+      <span
+        aria-hidden="true"
+        class="accessoryRight"
+      >
+        <svg
+          aria-hidden="true"
+          class="icon"
+          focusable="false"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            stroke="none"
+          />
+          <path
+            d="M5 12h14M15 16l4-4M15 8l4 4"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+</div>
+`;

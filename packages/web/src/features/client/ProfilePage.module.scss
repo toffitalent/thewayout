@@ -1,0 +1,23 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.wrapper {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: auto 2rem;
+
+  @include mq(md) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin: auto 6rem;
+  }
+}
+
+.editProfileButton {
+  justify-content: flex-end;
+
+  @include mq(md, max) {
+    padding-top: 2rem;
+    justify-content: flex-start;
+  }
+}

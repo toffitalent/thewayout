@@ -1,0 +1,354 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`config initializes development environment config 1`] = `
+Manager {
+  "internalConfig": {
+    "__ENV": {
+      "CONFIG_ENV": "development",
+      "IGNORE_ENV_FILES": "true",
+      "NODE_ENV": "development",
+    },
+    "analytics": {
+      "segment": {
+        "api": "",
+        "app": "",
+        "web": "",
+      },
+    },
+    "clients": {
+      "web": {
+        "id": "00afc736-b9d2-11ec-b7bf-d3b5ee15ea0b",
+        "secret": "T2t4WbCBhaX7n7rjFqjOjnstzcHckKh6qNTn2maM/Z8=",
+      },
+    },
+    "company": {
+      "address": "PO Box 70620",
+      "city": "Milwaukee",
+      "colorPrimary": "#4C51BF",
+      "description": "The Way Out is a comprehensive anti-bias job platform, that aligns employers with qualified Justice Involved Job Seekers (JIJS).",
+      "emailFromAddress": "support@thewayouthelps.com",
+      "emailFromName": "The Way Out",
+      "facebookUrl": "",
+      "instagramUrl": "",
+      "legalName": "The Way Out, Inc.",
+      "linkedInUrl": "",
+      "name": "The Way Out",
+      "postalCode": "53207",
+      "region": "WI",
+      "shortName": "TWO",
+      "supportEmail": "support@thewayouthelps.com",
+      "twitterUrl": "",
+      "youtubeUrl": "",
+    },
+    "rsp": {
+      "employMilwaukee": undefined,
+      "myWayOut": undefined,
+      "wowWorks": undefined,
+    },
+    "sentry": {
+      "api": {
+        "dsn": undefined,
+        "project": "two-api",
+      },
+      "mail": {
+        "dsn": undefined,
+        "project": "two-mail",
+      },
+      "org": "disruptive-labs",
+      "release": "",
+      "token": "",
+      "url": "https://sentry.io/",
+      "web": {
+        "csp": undefined,
+        "dsn": undefined,
+        "project": "two-web",
+      },
+    },
+    "slack": {
+      "alerts": undefined,
+    },
+    "subscriptionsPlans": {
+      "free": {
+        "jobs": 1,
+        "uncloak": 3,
+      },
+    },
+    "uploads": {
+      "default": {
+        "bucket": "thewayout-dev",
+        "url": "https://thewayout-dev.s3.amazonaws.com",
+      },
+    },
+    "urls": {
+      "api": "http://localhost:3000/api",
+      "mail": "http://localhost:8080",
+      "web": "http://localhost:8000",
+    },
+  },
+}
+`;
+
+exports[`config initializes global config 1`] = `
+Manager {
+  "internalConfig": {
+    "__ENV": {
+      "CONFIG_ENV": "test",
+      "IGNORE_ENV_FILES": "true",
+      "NODE_ENV": "test",
+      "SOME_VAR": "true",
+    },
+    "analytics": {
+      "segment": {
+        "api": "",
+        "app": "",
+        "web": "",
+      },
+    },
+    "clients": {
+      "web": {
+        "id": "00afc736-b9d2-11ec-b7bf-d3b5ee15ea0b",
+        "secret": "T2t4WbCBhaX7n7rjFqjOjnstzcHckKh6qNTn2maM/Z8=",
+      },
+    },
+    "company": {
+      "address": "PO Box 70620",
+      "city": "Milwaukee",
+      "colorPrimary": "#4C51BF",
+      "description": "The Way Out is a comprehensive anti-bias job platform, that aligns employers with qualified Justice Involved Job Seekers (JIJS).",
+      "emailFromAddress": "support@thewayouthelps.com",
+      "emailFromName": "The Way Out",
+      "facebookUrl": "",
+      "instagramUrl": "",
+      "legalName": "The Way Out, Inc.",
+      "linkedInUrl": "",
+      "name": "The Way Out",
+      "postalCode": "53207",
+      "region": "WI",
+      "shortName": "TWO",
+      "supportEmail": "support@thewayouthelps.com",
+      "twitterUrl": "",
+      "youtubeUrl": "",
+    },
+    "rsp": {
+      "employMilwaukee": undefined,
+      "myWayOut": undefined,
+      "wowWorks": undefined,
+    },
+    "sentry": {
+      "api": {
+        "dsn": undefined,
+        "project": "two-api",
+      },
+      "mail": {
+        "dsn": undefined,
+        "project": "two-mail",
+      },
+      "org": "disruptive-labs",
+      "release": "",
+      "token": "",
+      "url": "https://sentry.io/",
+      "web": {
+        "csp": undefined,
+        "dsn": undefined,
+        "project": "two-web",
+      },
+    },
+    "slack": {
+      "alerts": undefined,
+    },
+    "subscriptionsPlans": {
+      "free": {
+        "jobs": 1,
+        "uncloak": 3,
+      },
+    },
+    "uploads": {
+      "default": {
+        "bucket": "__UPLOADS_BUCKET_DEFAULT__",
+        "url": "__UPLOADS_URL_DEFAULT__",
+      },
+    },
+    "urls": {
+      "api": "http://__API__",
+      "mail": "http://__MAIL__",
+      "web": "http://__WEB__",
+    },
+  },
+}
+`;
+
+exports[`config initializes production environment config 1`] = `
+Manager {
+  "internalConfig": {
+    "__ENV": {
+      "CONFIG_ENV": "production",
+      "IGNORE_ENV_FILES": "true",
+      "NODE_ENV": "production",
+    },
+    "analytics": {
+      "segment": {
+        "api": "",
+        "app": "",
+        "web": "",
+      },
+    },
+    "clients": {
+      "web": {
+        "id": "00afc736-b9d2-11ec-b7bf-d3b5ee15ea0b",
+        "secret": "MV2NHW/DOAq6sqvk2UeawkuaE1FoHy6tLNjuBFg1o0w=",
+      },
+    },
+    "company": {
+      "address": "PO Box 70620",
+      "city": "Milwaukee",
+      "colorPrimary": "#4C51BF",
+      "description": "The Way Out is a comprehensive anti-bias job platform, that aligns employers with qualified Justice Involved Job Seekers (JIJS).",
+      "emailFromAddress": "support@thewayouthelps.com",
+      "emailFromName": "The Way Out",
+      "facebookUrl": "",
+      "instagramUrl": "",
+      "legalName": "The Way Out, Inc.",
+      "linkedInUrl": "",
+      "name": "The Way Out",
+      "postalCode": "53207",
+      "region": "WI",
+      "shortName": "TWO",
+      "supportEmail": "support@thewayouthelps.com",
+      "twitterUrl": "",
+      "youtubeUrl": "",
+    },
+    "rsp": {
+      "employMilwaukee": "018ca7f7-daa8-78e9-a829-1b9d11aecc21",
+      "myWayOut": "018c6546-2ece-7d63-be06-b3a2b90b8975",
+      "wowWorks": "018c8879-8688-7c27-b946-cf440df83816",
+    },
+    "sentry": {
+      "api": {
+        "dsn": "https://ef99954d3d7d469f8bf555f042c62ce9@o227825.ingest.sentry.io/4504436804878336",
+        "project": "two-api",
+      },
+      "mail": {
+        "dsn": "https://2b6e405cbe974ab397c7052a22c17ee4@o227825.ingest.sentry.io/4504436808089600",
+        "project": "two-mail",
+      },
+      "org": "disruptive-labs",
+      "release": "",
+      "token": "",
+      "url": "https://sentry.io/",
+      "web": {
+        "csp": "https://o227825.ingest.sentry.io/api/4504436810645504/security/?sentry_key=e498c215051d44b6b2c775ec6fbbbb93",
+        "dsn": "https://e498c215051d44b6b2c775ec6fbbbb93@o227825.ingest.sentry.io/4504436810645504",
+        "project": "two-web",
+      },
+    },
+    "slack": {
+      "alerts": "https://hooks.slack.com/services/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",
+    },
+    "subscriptionsPlans": {
+      "free": {
+        "jobs": 1,
+        "uncloak": 3,
+      },
+    },
+    "uploads": {
+      "default": {
+        "bucket": "thewayout-production-uploads",
+        "url": "https://usercontent.thewayouthelps.com",
+      },
+    },
+    "urls": {
+      "api": "https://www.thewayouthelps.com/api",
+      "mail": "https://mail-assets.thewayouthelps.com",
+      "web": "https://www.thewayouthelps.com",
+    },
+  },
+}
+`;
+
+exports[`config initializes staging environment config 1`] = `
+Manager {
+  "internalConfig": {
+    "__ENV": {
+      "CONFIG_ENV": "staging",
+      "IGNORE_ENV_FILES": "true",
+      "NODE_ENV": "staging",
+    },
+    "analytics": {
+      "segment": {
+        "api": "",
+        "app": "",
+        "web": "",
+      },
+    },
+    "clients": {
+      "web": {
+        "id": "00afc736-b9d2-11ec-b7bf-d3b5ee15ea0b",
+        "secret": "CaaYnc5o4o3xLWk/J4u2H9zJQCcmZSDcwEykPiJ3+Og=",
+      },
+    },
+    "company": {
+      "address": "PO Box 70620",
+      "city": "Milwaukee",
+      "colorPrimary": "#4C51BF",
+      "description": "The Way Out is a comprehensive anti-bias job platform, that aligns employers with qualified Justice Involved Job Seekers (JIJS).",
+      "emailFromAddress": "support@thewayouthelps.com",
+      "emailFromName": "The Way Out",
+      "facebookUrl": "",
+      "instagramUrl": "",
+      "legalName": "The Way Out, Inc.",
+      "linkedInUrl": "",
+      "name": "The Way Out",
+      "postalCode": "53207",
+      "region": "WI",
+      "shortName": "TWO",
+      "supportEmail": "support@thewayouthelps.com",
+      "twitterUrl": "",
+      "youtubeUrl": "",
+    },
+    "rsp": {
+      "employMilwaukee": undefined,
+      "myWayOut": "018c3bd7-f947-7fad-bacc-dcfc7dd40a04",
+      "wowWorks": undefined,
+    },
+    "sentry": {
+      "api": {
+        "dsn": "https://ef99954d3d7d469f8bf555f042c62ce9@o227825.ingest.sentry.io/4504436804878336",
+        "project": "two-api",
+      },
+      "mail": {
+        "dsn": "https://2b6e405cbe974ab397c7052a22c17ee4@o227825.ingest.sentry.io/4504436808089600",
+        "project": "two-mail",
+      },
+      "org": "disruptive-labs",
+      "release": "",
+      "token": "",
+      "url": "https://sentry.io/",
+      "web": {
+        "csp": "https://o227825.ingest.sentry.io/api/4504436810645504/security/?sentry_key=e498c215051d44b6b2c775ec6fbbbb93",
+        "dsn": "https://e498c215051d44b6b2c775ec6fbbbb93@o227825.ingest.sentry.io/4504436810645504",
+        "project": "two-web",
+      },
+    },
+    "slack": {
+      "alerts": "https://hooks.slack.com/services/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",
+    },
+    "subscriptionsPlans": {
+      "free": {
+        "jobs": 1,
+        "uncloak": 3,
+      },
+    },
+    "uploads": {
+      "default": {
+        "bucket": "thewayout-staging-uploads",
+        "url": "https://usercontent.thewayout.dev",
+      },
+    },
+    "urls": {
+      "api": "https://www.thewayout.dev/api",
+      "mail": "https://mail-assets.thewayout.dev",
+      "web": "https://www.thewayout.dev",
+    },
+  },
+}
+`;

@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgTagsOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M16.296 12.296l-5.71-5.71M6 6H5a2 2 0 00-2 2v4.172a2 2 0 00.586 1.414l5.71 5.71a2.41 2.41 0 003.408 0l3.278-3.278M18 19l.496-.496M20.384 16.367a4.822 4.822 0 00-.792-5.775L15 6M7 10h-.01M3 3l18 18" }));
+export default SvgTagsOff;

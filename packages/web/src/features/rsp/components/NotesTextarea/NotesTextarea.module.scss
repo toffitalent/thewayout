@@ -1,0 +1,13 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.notes {
+  border-width: 0;
+  &:focus-within {
+    box-shadow: unset !important;
+  }
+
+  textarea {
+    padding: 1.2rem 0 !important;
+  }
+}

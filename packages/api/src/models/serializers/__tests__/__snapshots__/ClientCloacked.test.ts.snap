@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientCloakedSerializer displays cloaked information 1`] = `
+{
+  "address": "*****",
+  "city": "*****",
+  "education": [
+    {
+      "areaOfStudy": "Test",
+      "degree": "Test",
+      "description": "Voluptatem quasi natus corporis minus vel ullam non autem. Corrupti quas cupiditate doloremque beatae velit vel. Ad earum cupiditate iusto debitis illo.",
+      "schoolIssuer": "Test",
+      "startYear": "2010",
+      "yearEarned": "2015",
+    },
+  ],
+  "experience": [
+    "carpentry",
+    "education",
+  ],
+  "firstName": "G****",
+  "id": Any<String>,
+  "languages": [
+    {
+      "language": "english",
+      "level": "professional",
+    },
+    {
+      "language": "spanish",
+      "level": "basic",
+    },
+  ],
+  "lastName": "W****",
+  "license": [
+    {
+      "expirationAtMonth": null,
+      "expirationAtYear": null,
+      "issueAtMonth": "5",
+      "issueAtYear": "2015",
+      "issuingOrganization": "Test",
+      "licenseName": "Test",
+    },
+  ],
+  "personalStrengths": [
+    "creative",
+    "dealsWellWithChange",
+    "goodWithTechnology",
+    "peoplePerson",
+    "managesTimeWell",
+  ],
+  "personalSummary": "sit",
+  "postalCode": "*****",
+  "relativeExperience": [
+    {
+      "company": "*****",
+      "description": "A quos animi veritatis voluptatum. At quibusdam ipsam temporibus.",
+      "endAtMonth": "3",
+      "endAtYear": "2018",
+      "location": "Location",
+      "startAtMonth": "3",
+      "startAtYear": "2015",
+      "title": "Test",
+    },
+  ],
+  "state": "*****",
+  "updatedAt": "<Date>",
+  "veteranOrJustice": [
+    "justiceImpacted",
+  ],
+}
+`;

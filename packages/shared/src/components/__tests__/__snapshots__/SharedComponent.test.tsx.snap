@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SharedComponent renders correctly 1`] = `
+<div>
+  <div
+    class="bgcolor-grey-200 paddingTop-5 paddingRight-5 paddingBottom-5 paddingLeft-5"
+  >
+    <p
+      class="text"
+    >
+      Shared component test
+    </p>
+  </div>
+</div>
+`;

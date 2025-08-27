@@ -1,0 +1,4 @@
+{
+  "app": "./node_modules/.bin/tsc -b tsconfig.build.json && node build/index.js",
+  "context": {}
+}

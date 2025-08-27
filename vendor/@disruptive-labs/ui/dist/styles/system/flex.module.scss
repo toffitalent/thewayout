@@ -1,0 +1,108 @@
+@use '@styles/theme';
+
+$alignContent: (center, flex-start, flex-end, stretch, space-between, space-around);
+$flexAlign: (flex-start, flex-end, center, stretch, baseline);
+$flexDirection: (row, column, row-reverse, column-reverse);
+$flexWrap: (wrap, nowrap, wrap-reverse);
+$flexValues: (0, 1, 2, 3, 4);
+$justifyContent: (center, flex-start, flex-end, space-between, space-around, space-evenly);
+
+@each $value in $alignContent {
+  .alignContent-#{$value} {
+    align-content: $value !important;
+  }
+}
+
+@each $value in $flexAlign {
+  .alignItems-#{$value} {
+    align-items: $value !important;
+  }
+
+  .alignSelf-#{$value} {
+    align-self: $value !important;
+  }
+}
+
+.alignSelf-auto {
+  align-self: auto !important;
+}
+
+@each $value in $flexDirection {
+  .flexDirection-#{$value} {
+    display: flex;
+    flex-direction: $value !important;
+  }
+}
+
+@each $value in $flexWrap {
+  .flexWrap-#{$value} {
+    flex-wrap: $value !important;
+  }
+}
+
+@each $value in $justifyContent {
+  .justifyContent-#{$value} {
+    justify-content: $value !important;
+  }
+}
+
+@each $value in $flexValues {
+  .flex-#{$value} {
+    flex: $value !important;
+  }
+
+  .flexGrow-#{$value} {
+    flex-grow: $value !important;
+  }
+
+  .flexShrink-#{$value} {
+    flex-shrink: $value !important;
+  }
+}
+
+.flexBasis {
+  &-auto {
+    flex-basis: auto !important;
+  }
+
+  &-0 {
+    flex-basis: 0 !important;
+  }
+
+  &-1\/2 {
+    flex-basis: 50% !important;
+  }
+  &-1\/3 {
+    flex-basis: 33.333333% !important;
+  }
+  &-2\/3 {
+    flex-basis: 66.666667% !important;
+  }
+  &-1\/4 {
+    flex-basis: 25% !important;
+  }
+  &-3\/4 {
+    flex-basis: 75% !important;
+  }
+  &-1\/5 {
+    flex-basis: 20% !important;
+  }
+  &-2\/5 {
+    flex-basis: 40% !important;
+  }
+  &-3\/5 {
+    flex-basis: 60% !important;
+  }
+  &-4\/5 {
+    flex-basis: 80% !important;
+  }
+  &-1\/6 {
+    flex-basis: 16.666667% !important;
+  }
+  &-5\/6 {
+    flex-basis: 83.333333% !important;
+  }
+  &-full {
+    flex-basis: 100% !important;
+  }
+}

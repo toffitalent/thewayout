@@ -1,0 +1,15 @@
+extends ../templates/base.pug
+include ../templates/mixins.pug
+
+block content
+  hi Dear #{client.firstName},
+  p 
+    | Your application to #{offerTitle} has been submitted.
+    |
+  p
+    | You can check on the status of your application via your dashboard.
+    |
+  +action
+    +button(dashboardPageUrl) View Dashboard
+
+  +trouble(dashboardPageUrl)

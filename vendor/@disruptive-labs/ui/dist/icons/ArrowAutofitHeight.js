@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgArrowAutofitHeight = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M12 20H6a2 2 0 01-2-2V6a2 2 0 012-2h6M18 14v7M18 3v7M15 18l3 3 3-3M15 6l3-3 3 3" }));
+export default SvgArrowAutofitHeight;

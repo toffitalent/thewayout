@@ -1,0 +1,763 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrganizationSettingsTab renders correctly 1`] = `
+<div>
+  <div
+    class="container flexDirection-row marginTop-8 paddingBottom-5"
+  >
+    <div
+      class="item bp-xs-12 bp-md-4 marginBottom-8 paddingRight-5"
+    >
+      <p
+        class="text fontSize-xl fontWeight-700"
+      >
+        Organization Information
+      </p>
+    </div>
+    <div
+      class="item bp-xs-12 bp-md-8"
+    >
+      <form>
+        <div
+          class="flexDirection-row marginBottom-10"
+        >
+          <div
+            class="avatar s-2xl"
+          >
+            <div
+              aria-label="Test"
+              class="initials"
+            >
+              T
+            </div>
+          </div>
+          <div
+            class="marginTop-5 marginLeft-5"
+          >
+            <button
+              class="button md outline c-primary marginBottom-2"
+              type="button"
+            >
+              Edit Picture
+            </button>
+            <input
+              accept="image/jpg, image/png, image/gif"
+              hidden=""
+              type="file"
+            />
+            <p
+              class="text color-grey-600 fontSize-sm"
+            >
+              JPG, GIF or PNG. 1MB max.
+            </p>
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingRight-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r0:"
+          >
+            Organization Name
+          </label>
+          <div
+            class="root primary md fluid md"
+          >
+            <input
+              class="input"
+              id=":r0:"
+              name="name"
+              type="text"
+              value="Test"
+            />
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingLeft-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r1:"
+          >
+            Industry
+          </label>
+          <div
+            class="root primary md fluid md"
+          >
+            <select
+              class="input"
+              id=":r1:"
+              name="industry"
+            >
+              <option
+                value="Accounting"
+              >
+                Accounting
+              </option>
+              <option
+                value="Agriculture / Landscaping"
+              >
+                Agriculture / Landscaping
+              </option>
+              <option
+                value="Automobile dealer"
+              >
+                Automobile dealer
+              </option>
+              <option
+                value="Construction"
+              >
+                Construction
+              </option>
+              <option
+                value="Consulting"
+              >
+                Consulting
+              </option>
+              <option
+                value="Contracting"
+              >
+                Contracting
+              </option>
+              <option
+                value="Education"
+              >
+                Education
+              </option>
+              <option
+                value="Elderly Services"
+              >
+                Elderly Services
+              </option>
+              <option
+                value="Engineering"
+              >
+                Engineering
+              </option>
+              <option
+                value="Finance"
+              >
+                Finance
+              </option>
+              <option
+                value="Government"
+              >
+                Government
+              </option>
+              <option
+                value="Grocery"
+              >
+                Grocery
+              </option>
+              <option
+                value="Hospitality"
+              >
+                Hospitality
+              </option>
+              <option
+                value="Legal Services"
+              >
+                Legal Services
+              </option>
+              <option
+                value="Manufacturing"
+              >
+                Manufacturing
+              </option>
+              <option
+                value="Medical"
+              >
+                Medical
+              </option>
+              <option
+                value="Merchant Wholesaler"
+              >
+                Merchant Wholesaler
+              </option>
+              <option
+                value="Plumbing & HVAC"
+              >
+                Plumbing & HVAC
+              </option>
+              <option
+                value="Real Estate"
+              >
+                Real Estate
+              </option>
+              <option
+                value="Restaurant"
+              >
+                Restaurant
+              </option>
+              <option
+                value="Retail"
+              >
+                Retail
+              </option>
+              <option
+                value="Social Service"
+              >
+                Social Service
+              </option>
+              <option
+                value="Technology"
+              >
+                Technology
+              </option>
+              <option
+                value="Truck Transportation"
+              >
+                Truck Transportation
+              </option>
+              <option
+                value="Warehousing / Storage"
+              >
+                Warehousing / Storage
+              </option>
+            </select>
+            <div
+              class="icon"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="control"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r2:"
+          >
+            Organization Description
+          </label>
+          <div
+            class="root primary md fluid md multiline"
+          >
+            <textarea
+              aria-describedby=":r2:-helptext"
+              class="input"
+              id=":r2:"
+              name="description"
+              rows="4"
+              type="text"
+            />
+          </div>
+          <div
+            aria-live="polite"
+            class="helperText"
+            id=":r2:-helptext"
+          >
+            Max 1,000 characters.
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingRight-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r3:"
+          >
+            Years in Business
+          </label>
+          <div
+            class="root primary md fluid md"
+          >
+            <select
+              class="input"
+              id=":r3:"
+              name="yearsInBusiness"
+            >
+              <option
+                value="0-3"
+              >
+                0-3 years
+              </option>
+              <option
+                value="3-5"
+              >
+                3-5 years
+              </option>
+              <option
+                value="5-10"
+              >
+                5-10 years
+              </option>
+              <option
+                value="10+"
+              >
+                10+ years
+              </option>
+            </select>
+            <div
+              class="icon"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingLeft-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r4:"
+          >
+            Number of Employees
+          </label>
+          <div
+            class="root primary md fluid md"
+          >
+            <select
+              class="input"
+              id=":r4:"
+              name="numberOfEmployees"
+            >
+              <option
+                value="1-50"
+              >
+                1-50
+              </option>
+              <option
+                value="51-200"
+              >
+                51-200
+              </option>
+              <option
+                value="201-500"
+              >
+                201-500
+              </option>
+              <option
+                value="501-1000"
+              >
+                501-1000
+              </option>
+              <option
+                value="1001-5000"
+              >
+                1001-5000
+              </option>
+              <option
+                value="5001-10000"
+              >
+                5001-10000
+              </option>
+              <option
+                value="10000+"
+              >
+                10000+
+              </option>
+            </select>
+            <div
+              class="icon"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingRight-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r5:"
+          >
+            Business Address
+          </label>
+          <div
+            class="root primary md fluid md fieldHalfWidth"
+          >
+            <input
+              class="input"
+              id=":r5:"
+              name="address"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingLeft-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r6:"
+          >
+            Town / City
+          </label>
+          <div
+            class="root primary md fluid md fieldHalfWidth"
+          >
+            <input
+              class="input"
+              id=":r6:"
+              name="city"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingRight-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r7:"
+          >
+            State
+          </label>
+          <div
+            class="root primary md fluid md fieldHalfWidth"
+          >
+            <select
+              class="input"
+              id=":r7:"
+              name="state"
+            >
+              <option
+                value="AL"
+              >
+                Alabama
+              </option>
+              <option
+                value="AK"
+              >
+                Alaska
+              </option>
+              <option
+                value="AZ"
+              >
+                Arizona
+              </option>
+              <option
+                value="AR"
+              >
+                Arkansas
+              </option>
+              <option
+                value="CA"
+              >
+                California
+              </option>
+              <option
+                value="CO"
+              >
+                Colorado
+              </option>
+              <option
+                value="CT"
+              >
+                Connecticut
+              </option>
+              <option
+                value="DE"
+              >
+                Delaware
+              </option>
+              <option
+                value="DC"
+              >
+                District Of Columbia
+              </option>
+              <option
+                value="FL"
+              >
+                Florida
+              </option>
+              <option
+                value="GA"
+              >
+                Georgia
+              </option>
+              <option
+                value="HI"
+              >
+                Hawaii
+              </option>
+              <option
+                value="ID"
+              >
+                Idaho
+              </option>
+              <option
+                value="IL"
+              >
+                Illinois
+              </option>
+              <option
+                value="IN"
+              >
+                Indiana
+              </option>
+              <option
+                value="IA"
+              >
+                Iowa
+              </option>
+              <option
+                value="KS"
+              >
+                Kansas
+              </option>
+              <option
+                value="KY"
+              >
+                Kentucky
+              </option>
+              <option
+                value="LA"
+              >
+                Louisiana
+              </option>
+              <option
+                value="ME"
+              >
+                Maine
+              </option>
+              <option
+                value="MD"
+              >
+                Maryland
+              </option>
+              <option
+                value="MA"
+              >
+                Massachusetts
+              </option>
+              <option
+                value="MI"
+              >
+                Michigan
+              </option>
+              <option
+                value="MN"
+              >
+                Minnesota
+              </option>
+              <option
+                value="MS"
+              >
+                Mississippi
+              </option>
+              <option
+                value="MO"
+              >
+                Missouri
+              </option>
+              <option
+                value="MT"
+              >
+                Montana
+              </option>
+              <option
+                value="NE"
+              >
+                Nebraska
+              </option>
+              <option
+                value="NV"
+              >
+                Nevada
+              </option>
+              <option
+                value="NH"
+              >
+                New Hampshire
+              </option>
+              <option
+                value="NJ"
+              >
+                New Jersey
+              </option>
+              <option
+                value="NM"
+              >
+                New Mexico
+              </option>
+              <option
+                value="NY"
+              >
+                New York
+              </option>
+              <option
+                value="NC"
+              >
+                North Carolina
+              </option>
+              <option
+                value="ND"
+              >
+                North Dakota
+              </option>
+              <option
+                value="OH"
+              >
+                Ohio
+              </option>
+              <option
+                value="OK"
+              >
+                Oklahoma
+              </option>
+              <option
+                value="OR"
+              >
+                Oregon
+              </option>
+              <option
+                value="PA"
+              >
+                Pennsylvania
+              </option>
+              <option
+                value="RI"
+              >
+                Rhode Island
+              </option>
+              <option
+                value="SC"
+              >
+                South Carolina
+              </option>
+              <option
+                value="SD"
+              >
+                South Dakota
+              </option>
+              <option
+                value="TN"
+              >
+                Tennessee
+              </option>
+              <option
+                value="TX"
+              >
+                Texas
+              </option>
+              <option
+                value="UT"
+              >
+                Utah
+              </option>
+              <option
+                value="VT"
+              >
+                Vermont
+              </option>
+              <option
+                value="VA"
+              >
+                Virginia
+              </option>
+              <option
+                value="WA"
+              >
+                Washington
+              </option>
+              <option
+                value="WV"
+              >
+                West Virginia
+              </option>
+              <option
+                value="WI"
+              >
+                Wisconsin
+              </option>
+              <option
+                value="WY"
+              >
+                Wyoming
+              </option>
+            </select>
+            <div
+              class="icon"
+            >
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingLeft-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r8:"
+          >
+            Postcode / Zipcode
+          </label>
+          <div
+            class="root primary md fluid md fieldHalfWidth"
+          >
+            <input
+              class="input"
+              id=":r8:"
+              name="postalCode"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <button
+          class="button md solid c-primary disabled marginTop-8"
+          disabled=""
+          type="submit"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

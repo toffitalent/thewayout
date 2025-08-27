@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditCaseManagerPageWithLayout renders correctly 1`] = `
+<div>
+  <div
+    class="width-full"
+  >
+    <h2
+      class="text marginBottom-8"
+    >
+      Edit Case Manager
+    </h2>
+    <div
+      class="flexDirection-row"
+    >
+      <div
+        class="width-1/3"
+      >
+        <p
+          class="text fontSize-xl fontWeight-700"
+        >
+          Personal Information
+        </p>
+        <p
+          class="text color-grey-600"
+        >
+          Use a permanent address where you can receive mail.
+        </p>
+      </div>
+      <div
+        class="width-2/3 marginLeft-8"
+      >
+        <form
+          class="formWrapper"
+        >
+          <div
+            class="control display-inline-block width-1/2 paddingRight-1"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r0:"
+            >
+              First Name
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <input
+                class="input"
+                id=":r0:"
+                name="firstName"
+                placeholder="First Name"
+                type="text"
+                value="Leonard"
+              />
+            </div>
+          </div>
+          <div
+            class="control display-inline-block width-1/2 marginTop-0 paddingLeft-1"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r1:"
+            >
+              Last Name
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <input
+                class="input"
+                id=":r1:"
+                name="lastName"
+                placeholder="Last Name"
+                type="text"
+                value="Krasner"
+              />
+            </div>
+          </div>
+          <div
+            class="control display-inline-block width-1/2 paddingRight-1"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r2:"
+            >
+              Email
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <input
+                class="input"
+                id=":r2:"
+                name="email"
+                placeholder="Email"
+                type="email"
+                value="leonard.k@example.com"
+              />
+            </div>
+          </div>
+          <div
+            class="control display-inline-block width-1/2 paddingLeft-1"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r3:"
+            >
+              Phone
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <input
+                class="input"
+                id=":r3:"
+                maxlength="14"
+                name="phone"
+                placeholder="Phone"
+                type="text"
+                value="(123) 123-1234"
+              />
+            </div>
+          </div>
+          <button
+            class="button md solid c-primary disabled marginTop-8"
+            disabled=""
+            type="submit"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

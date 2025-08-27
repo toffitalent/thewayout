@@ -1,0 +1,1242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rsp > Reducer handles acceptClient fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": {
+    "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i",
+    "rspId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+    "status": "active",
+    "user": {
+      "client": {
+        "address": "111 Street",
+        "age": "16-24",
+        "city": "Los Angeles",
+        "disability": false,
+        "education": [],
+        "email": "test@example.com",
+        "ethnicity": "eastAsian",
+        "experience": [],
+        "firstName": "Test",
+        "gender": "female",
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06c",
+        "justiceStatus": "freeWorld",
+        "languages": [],
+        "lastName": "User",
+        "license": [],
+        "maritalStatus": "single",
+        "offense": [
+          "arson",
+        ],
+        "orientation": "heterosexual",
+        "personalStrengths": [],
+        "personalSummary": "personal summary",
+        "postalCode": "90887",
+        "referredBy": "familyFriends",
+        "relativeExperience": [],
+        "releasedAt": "releasedAt01",
+        "religion": "christianity",
+        "sbn": false,
+        "sexualOffenderRegistry": false,
+        "state": "CA",
+        "stateOrFederal": "federal",
+        "support": [
+          "resume",
+        ],
+        "timeServed": "timeServed01",
+        "updatedAt": 2023-01-01T00:00:00.000Z,
+        "veteranOrJustice": [
+          "justiceImpacted",
+        ],
+        "veteranStatus": "notVeteran",
+      },
+      "createdAt": "2020-01-01T00:00:00.000Z",
+      "email": "test@example.com",
+      "firstName": "Test",
+      "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+      "lastName": "User",
+      "type": "client",
+      "updatedAt": "2020-01-01T00:00:00.000Z",
+    },
+    "userId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+  },
+  "clients": {
+    "entities": {
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i": {
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i",
+        "rspId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+        "status": "active",
+        "user": {
+          "client": {
+            "address": "111 Street",
+            "age": "16-24",
+            "city": "Los Angeles",
+            "disability": false,
+            "education": [],
+            "email": "test@example.com",
+            "ethnicity": "eastAsian",
+            "experience": [],
+            "firstName": "Test",
+            "gender": "female",
+            "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06c",
+            "justiceStatus": "freeWorld",
+            "languages": [],
+            "lastName": "User",
+            "license": [],
+            "maritalStatus": "single",
+            "offense": [
+              "arson",
+            ],
+            "orientation": "heterosexual",
+            "personalStrengths": [],
+            "personalSummary": "personal summary",
+            "postalCode": "90887",
+            "referredBy": "familyFriends",
+            "relativeExperience": [],
+            "releasedAt": "releasedAt01",
+            "religion": "christianity",
+            "sbn": false,
+            "sexualOffenderRegistry": false,
+            "state": "CA",
+            "stateOrFederal": "federal",
+            "support": [
+              "resume",
+            ],
+            "timeServed": "timeServed01",
+            "updatedAt": 2023-01-01T00:00:00.000Z,
+            "veteranOrJustice": [
+              "justiceImpacted",
+            ],
+            "veteranStatus": "notVeteran",
+          },
+          "createdAt": "2020-01-01T00:00:00.000Z",
+          "email": "test@example.com",
+          "firstName": "Test",
+          "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+          "lastName": "User",
+          "type": "client",
+          "updatedAt": "2020-01-01T00:00:00.000Z",
+        },
+        "userId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+      },
+    },
+    "ids": [
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i",
+    ],
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles createRsp fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": {
+    "address": "1010 Maple Dr",
+    "city": "West Allis",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "email": "hello@em.com",
+    "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+    "justiceStatus": [
+      "freeWorld",
+      "halfwayHouse",
+    ],
+    "name": "Employ Milwaukee",
+    "offenses": [
+      "possession",
+      "burglary",
+    ],
+    "phone": "3101231234",
+    "postalCode": "53227",
+    "servicesArea": [
+      "County Name",
+    ],
+    "state": "WI",
+    "support": [
+      "employment",
+    ],
+    "veteranOrJustice": [
+      "justiceImpacted",
+    ],
+  },
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles declineClient fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": {
+    "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i",
+    "rspId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+    "status": "closed",
+    "user": {
+      "client": {
+        "address": "111 Street",
+        "age": "16-24",
+        "city": "Los Angeles",
+        "disability": false,
+        "education": [],
+        "email": "test@example.com",
+        "ethnicity": "eastAsian",
+        "experience": [],
+        "firstName": "Test",
+        "gender": "female",
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06c",
+        "justiceStatus": "freeWorld",
+        "languages": [],
+        "lastName": "User",
+        "license": [],
+        "maritalStatus": "single",
+        "offense": [
+          "arson",
+        ],
+        "orientation": "heterosexual",
+        "personalStrengths": [],
+        "personalSummary": "personal summary",
+        "postalCode": "90887",
+        "referredBy": "familyFriends",
+        "relativeExperience": [],
+        "releasedAt": "releasedAt01",
+        "religion": "christianity",
+        "sbn": false,
+        "sexualOffenderRegistry": false,
+        "state": "CA",
+        "stateOrFederal": "federal",
+        "support": [
+          "resume",
+        ],
+        "timeServed": "timeServed01",
+        "updatedAt": 2023-01-01T00:00:00.000Z,
+        "veteranOrJustice": [
+          "justiceImpacted",
+        ],
+        "veteranStatus": "notVeteran",
+      },
+      "createdAt": "2020-01-01T00:00:00.000Z",
+      "email": "test@example.com",
+      "firstName": "Test",
+      "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+      "lastName": "User",
+      "type": "client",
+      "updatedAt": "2020-01-01T00:00:00.000Z",
+    },
+    "userId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+  },
+  "clients": {
+    "entities": {
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i": {
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i",
+        "rspId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+        "status": "closed",
+        "user": {
+          "client": {
+            "address": "111 Street",
+            "age": "16-24",
+            "city": "Los Angeles",
+            "disability": false,
+            "education": [],
+            "email": "test@example.com",
+            "ethnicity": "eastAsian",
+            "experience": [],
+            "firstName": "Test",
+            "gender": "female",
+            "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06c",
+            "justiceStatus": "freeWorld",
+            "languages": [],
+            "lastName": "User",
+            "license": [],
+            "maritalStatus": "single",
+            "offense": [
+              "arson",
+            ],
+            "orientation": "heterosexual",
+            "personalStrengths": [],
+            "personalSummary": "personal summary",
+            "postalCode": "90887",
+            "referredBy": "familyFriends",
+            "relativeExperience": [],
+            "releasedAt": "releasedAt01",
+            "religion": "christianity",
+            "sbn": false,
+            "sexualOffenderRegistry": false,
+            "state": "CA",
+            "stateOrFederal": "federal",
+            "support": [
+              "resume",
+            ],
+            "timeServed": "timeServed01",
+            "updatedAt": 2023-01-01T00:00:00.000Z,
+            "veteranOrJustice": [
+              "justiceImpacted",
+            ],
+            "veteranStatus": "notVeteran",
+          },
+          "createdAt": "2020-01-01T00:00:00.000Z",
+          "email": "test@example.com",
+          "firstName": "Test",
+          "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+          "lastName": "User",
+          "type": "client",
+          "updatedAt": "2020-01-01T00:00:00.000Z",
+        },
+        "userId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+      },
+    },
+    "ids": [
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i",
+    ],
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles fetchUser fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": {
+    "address": "1010 Maple Dr",
+    "city": "West Allis",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "email": "hello@em.com",
+    "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+    "justiceStatus": [
+      "freeWorld",
+      "halfwayHouse",
+    ],
+    "name": "Employ Milwaukee",
+    "offenses": [
+      "possession",
+      "burglary",
+    ],
+    "phone": "3101231234",
+    "postalCode": "53227",
+    "servicesArea": [
+      "County Name",
+    ],
+    "state": "WI",
+    "support": [
+      "employment",
+    ],
+    "veteranOrJustice": [
+      "justiceImpacted",
+    ],
+  },
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles getStatistics fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": {
+    "result": {
+      "basicHygieneSupport": 1,
+      "basicTechSkills": 2,
+      "childCare": 1,
+      "clothing": 1,
+    },
+    "total": 6,
+  },
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles listCaseManagers fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06i": {
+        "caseLoad": 1,
+        "email": "leonard.k@example.com",
+        "firstName": "Leonard",
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06i",
+        "isProfileFilled": true,
+        "lastName": "Krasner",
+        "phone": "1231231234",
+        "position": "caseManager",
+        "role": "member",
+        "rsp": {
+          "address": "1010 Maple Dr",
+          "city": "West Allis",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "email": "hello@em.com",
+          "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+          "justiceStatus": [
+            "freeWorld",
+            "halfwayHouse",
+          ],
+          "name": "Employ Milwaukee",
+          "offenses": [
+            "possession",
+            "burglary",
+          ],
+          "phone": "3101231234",
+          "postalCode": "53227",
+          "servicesArea": [
+            "County Name",
+          ],
+          "state": "WI",
+          "support": [
+            "employment",
+          ],
+          "veteranOrJustice": [
+            "justiceImpacted",
+          ],
+        },
+        "rspId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+        "userId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06i",
+      },
+    },
+    "ids": [
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06i",
+    ],
+    "total": 1,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles listCaseManagersNames fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [
+    {
+      "firstName": "Leonard",
+      "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06i",
+      "lastName": "Krasner",
+    },
+  ],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles listClients fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i": {
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i",
+        "rspId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+        "status": "pending",
+        "user": {
+          "client": {
+            "address": "111 Street",
+            "age": "16-24",
+            "city": "Los Angeles",
+            "disability": false,
+            "education": [],
+            "email": "test@example.com",
+            "ethnicity": "eastAsian",
+            "experience": [],
+            "firstName": "Test",
+            "gender": "female",
+            "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06c",
+            "justiceStatus": "freeWorld",
+            "languages": [],
+            "lastName": "User",
+            "license": [],
+            "maritalStatus": "single",
+            "offense": [
+              "arson",
+            ],
+            "orientation": "heterosexual",
+            "personalStrengths": [],
+            "personalSummary": "personal summary",
+            "postalCode": "90887",
+            "referredBy": "familyFriends",
+            "relativeExperience": [],
+            "releasedAt": "releasedAt01",
+            "religion": "christianity",
+            "sbn": false,
+            "sexualOffenderRegistry": false,
+            "state": "CA",
+            "stateOrFederal": "federal",
+            "support": [
+              "resume",
+            ],
+            "timeServed": "timeServed01",
+            "updatedAt": 2023-01-01T00:00:00.000Z,
+            "veteranOrJustice": [
+              "justiceImpacted",
+            ],
+            "veteranStatus": "notVeteran",
+          },
+          "createdAt": "2020-01-01T00:00:00.000Z",
+          "email": "test@example.com",
+          "firstName": "Test",
+          "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+          "lastName": "User",
+          "type": "client",
+          "updatedAt": "2020-01-01T00:00:00.000Z",
+        },
+        "userId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+      },
+    },
+    "ids": [
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i",
+    ],
+    "total": 1,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles listInvitations fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a03i": {
+        "email": "first.last@email.com",
+        "firstName": "First",
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a03i",
+        "lastName": "Last",
+        "phone": "3342223333",
+        "rspId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+      },
+    },
+    "ids": [
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a03i",
+    ],
+    "total": 1,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles listStatisticsClients fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i": {
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i",
+        "rspId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+        "status": "pending",
+        "user": {
+          "client": {
+            "address": "111 Street",
+            "age": "16-24",
+            "city": "Los Angeles",
+            "disability": false,
+            "education": [],
+            "email": "test@example.com",
+            "ethnicity": "eastAsian",
+            "experience": [],
+            "firstName": "Test",
+            "gender": "female",
+            "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06c",
+            "justiceStatus": "freeWorld",
+            "languages": [],
+            "lastName": "User",
+            "license": [],
+            "maritalStatus": "single",
+            "offense": [
+              "arson",
+            ],
+            "orientation": "heterosexual",
+            "personalStrengths": [],
+            "personalSummary": "personal summary",
+            "postalCode": "90887",
+            "referredBy": "familyFriends",
+            "relativeExperience": [],
+            "releasedAt": "releasedAt01",
+            "religion": "christianity",
+            "sbn": false,
+            "sexualOffenderRegistry": false,
+            "state": "CA",
+            "stateOrFederal": "federal",
+            "support": [
+              "resume",
+            ],
+            "timeServed": "timeServed01",
+            "updatedAt": 2023-01-01T00:00:00.000Z,
+            "veteranOrJustice": [
+              "justiceImpacted",
+            ],
+            "veteranStatus": "notVeteran",
+          },
+          "createdAt": "2020-01-01T00:00:00.000Z",
+          "email": "test@example.com",
+          "firstName": "Test",
+          "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+          "lastName": "User",
+          "type": "client",
+          "updatedAt": "2020-01-01T00:00:00.000Z",
+        },
+        "userId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+      },
+    },
+    "ids": [
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i",
+    ],
+    "listUpdatedAt": "",
+    "total": 1,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles listStatisticsClients pending actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles removeCaseManager fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles removeInvitation fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles retrieveClient fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": {
+    "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a08i",
+    "rspId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+    "status": "pending",
+    "user": {
+      "client": {
+        "address": "111 Street",
+        "age": "16-24",
+        "city": "Los Angeles",
+        "disability": false,
+        "education": [],
+        "email": "test@example.com",
+        "ethnicity": "eastAsian",
+        "experience": [],
+        "firstName": "Test",
+        "gender": "female",
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06c",
+        "justiceStatus": "freeWorld",
+        "languages": [],
+        "lastName": "User",
+        "license": [],
+        "maritalStatus": "single",
+        "offense": [
+          "arson",
+        ],
+        "orientation": "heterosexual",
+        "personalStrengths": [],
+        "personalSummary": "personal summary",
+        "postalCode": "90887",
+        "referredBy": "familyFriends",
+        "relativeExperience": [],
+        "releasedAt": "releasedAt01",
+        "religion": "christianity",
+        "sbn": false,
+        "sexualOffenderRegistry": false,
+        "state": "CA",
+        "stateOrFederal": "federal",
+        "support": [
+          "resume",
+        ],
+        "timeServed": "timeServed01",
+        "updatedAt": 2023-01-01T00:00:00.000Z,
+        "veteranOrJustice": [
+          "justiceImpacted",
+        ],
+        "veteranStatus": "notVeteran",
+      },
+      "createdAt": "2020-01-01T00:00:00.000Z",
+      "email": "test@example.com",
+      "firstName": "Test",
+      "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+      "lastName": "User",
+      "type": "client",
+      "updatedAt": "2020-01-01T00:00:00.000Z",
+    },
+    "userId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06f",
+  },
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles retrieveRspAccount fulfilled actions 1`] = `
+{
+  "account": {
+    "caseLoad": 1,
+    "email": "leonard.k@example.com",
+    "firstName": "Leonard",
+    "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06i",
+    "isProfileFilled": true,
+    "lastName": "Krasner",
+    "phone": "1231231234",
+    "position": "caseManager",
+    "role": "member",
+    "rsp": {
+      "address": "1010 Maple Dr",
+      "city": "West Allis",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "email": "hello@em.com",
+      "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+      "justiceStatus": [
+        "freeWorld",
+        "halfwayHouse",
+      ],
+      "name": "Employ Milwaukee",
+      "offenses": [
+        "possession",
+        "burglary",
+      ],
+      "phone": "3101231234",
+      "postalCode": "53227",
+      "servicesArea": [
+        "County Name",
+      ],
+      "state": "WI",
+      "support": [
+        "employment",
+      ],
+      "veteranOrJustice": [
+        "justiceImpacted",
+      ],
+    },
+    "rspId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+    "userId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06i",
+  },
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles updateCaseManager fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06i": {
+        "caseLoad": 1,
+        "email": "leonard.k@example.com",
+        "firstName": "Test",
+        "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06i",
+        "isProfileFilled": true,
+        "lastName": "Krasner",
+        "phone": "1231231234",
+        "position": "caseManager",
+        "role": "member",
+        "rsp": {
+          "address": "1010 Maple Dr",
+          "city": "West Allis",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "email": "hello@em.com",
+          "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+          "justiceStatus": [
+            "freeWorld",
+            "halfwayHouse",
+          ],
+          "name": "Employ Milwaukee",
+          "offenses": [
+            "possession",
+            "burglary",
+          ],
+          "phone": "3101231234",
+          "postalCode": "53227",
+          "servicesArea": [
+            "County Name",
+          ],
+          "state": "WI",
+          "support": [
+            "employment",
+          ],
+          "veteranOrJustice": [
+            "justiceImpacted",
+          ],
+        },
+        "rspId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+        "userId": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06i",
+      },
+    },
+    "ids": [
+      "10b8b8cf-601b-475b-ba0b-a05bc9a3a06i",
+    ],
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer handles updateRsp fulfilled actions 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": {
+    "address": "1010 Maple Dr",
+    "city": "West Allis",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "email": "hello@em.com",
+    "id": "10b8b8cf-601b-475b-ba0b-a05bc9a3a06h",
+    "justiceStatus": [
+      "freeWorld",
+      "halfwayHouse",
+    ],
+    "name": "Test",
+    "offenses": [
+      "possession",
+      "burglary",
+    ],
+    "phone": "3101231234",
+    "postalCode": "53227",
+    "servicesArea": [
+      "County Name",
+    ],
+    "state": "WI",
+    "support": [
+      "employment",
+    ],
+    "veteranOrJustice": [
+      "justiceImpacted",
+    ],
+  },
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;
+
+exports[`Rsp > Reducer returns empty initial state 1`] = `
+{
+  "account": null,
+  "caseManagers": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "caseManagersNames": [],
+  "client": null,
+  "clients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "invitations": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+  "rsp": null,
+  "statistic": null,
+  "statisticsClients": {
+    "entities": {},
+    "ids": [],
+    "listUpdatedAt": "",
+    "total": 0,
+  },
+}
+`;

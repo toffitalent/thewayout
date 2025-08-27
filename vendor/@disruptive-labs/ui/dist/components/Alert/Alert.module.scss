@@ -1,0 +1,52 @@
+@use '@styles/theme';
+
+.alert {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding: theme.$alert-padding;
+  border-radius: theme.$alert-border-radius;
+  font-size: theme.$alert-font-size;
+  font-weight: theme.$alert-font-weight;
+}
+
+.danger {
+  background: theme.$alert-danger-bg;
+  color: theme.$alert-danger-color;
+}
+
+.info {
+  background: theme.$alert-info-bg;
+  color: theme.$alert-info-color;
+}
+
+.success {
+  background: theme.$alert-success-bg;
+  color: theme.$alert-success-color;
+}
+
+.warning {
+  background: theme.$alert-warning-bg;
+  color: theme.$alert-warning-color;
+}
+
+.icon {
+  width: theme.$alert-icon-size;
+  height: theme.$alert-icon-size;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-right: theme.$alert-icon-margin;
+}
+
+.icon svg {
+  fill: transparent;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.title {
+  margin-bottom: theme.$alert-title-margin;
+  font-size: theme.$alert-title-font-size;
+  font-weight: theme.$alert-title-font-weight;
+  line-height: theme.$alert-icon-size;
+}

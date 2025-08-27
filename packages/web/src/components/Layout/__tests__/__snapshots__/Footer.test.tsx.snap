@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<div>
+  <footer
+    class="footer"
+  >
+    <div
+      class="container"
+    >
+      <p
+        class="text color-grey-500 fontWeight-700"
+      >
+        The Way Out, Inc. © 
+        2024
+        <a
+          href="/terms"
+        >
+          Terms
+        </a>
+        <a
+          href="/privacy"
+        >
+          Privacy
+        </a>
+      </p>
+    </div>
+  </footer>
+</div>
+`;

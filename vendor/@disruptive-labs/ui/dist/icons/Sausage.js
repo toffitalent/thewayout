@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgSausage = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M5.5 5.5A2.5 2.5 0 003 8c0 7.18 5.82 13 13 13a2.5 2.5 0 100-5 8 8 0 01-8-8 2.5 2.5 0 00-2.5-2.5z" }), React.createElement("path", { d: "M5.195 5.519L3.952 3.53A1 1 0 014.8 2h1.392a1 1 0 01.848 1.53L5.795 5.52M18.482 18.225l1.989-1.243a1 1 0 011.53.848v1.392a1 1 0 01-1.53.848l-1.991-1.245" }));
+export default SvgSausage;

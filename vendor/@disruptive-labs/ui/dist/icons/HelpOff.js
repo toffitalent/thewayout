@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgHelpOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M5.641 5.631A9 9 0 1018.36 18.369m1.68-2.318A9 9 0 007.966 3.953M12 17v.01" }), React.createElement("path", { d: "M12 13.5a1.5 1.5 0 01.394-1.1m2.106-1.9a2.6 2.6 0 00-3.347-3.361M3 3l18 18" }));
+export default SvgHelpOff;

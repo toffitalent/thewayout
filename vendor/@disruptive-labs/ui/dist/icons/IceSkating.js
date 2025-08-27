@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgIceSkating = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M5.905 5h3.418a1 1 0 01.928.629l1.143 2.856a3 3 0 002.207 1.83l4.717.926A2.084 2.084 0 0120 13.286V14a1 1 0 01-1 1H5.105a1 1 0 01-1-1.1l.8-8a1 1 0 011-.9zM3 19h17a1 1 0 001-1M9 15v4M15 15v4" }));
+export default SvgIceSkating;

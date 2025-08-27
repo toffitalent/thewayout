@@ -1,0 +1,28 @@
+@use '@styles/theme';
+
+.group {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  &.inline {
+    flex-direction: row;
+  }
+}
+
+.item {
+  display: block;
+
+  & + & {
+    margin-top: theme.$checkbox-group-margin;
+
+    .inline & {
+      margin-top: 0;
+      margin-left: theme.$checkbox-group-margin-inline;
+    }
+  }
+}

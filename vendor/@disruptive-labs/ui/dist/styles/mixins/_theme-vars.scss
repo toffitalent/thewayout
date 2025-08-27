@@ -1,0 +1,296 @@
+@use 'sass:color';
+@use '@styles/theme';
+
+@mixin theme-vars() {
+  :root {
+    --color-black: #{theme.$color-black};
+    --color-white: #{theme.$color-white};
+    --color-transparent: #{theme.$color-transparent};
+
+    --color-bg: #{theme.$color-bg_light};
+    --color-caption: #{theme.$color-caption_light};
+    --color-dark: #{theme.$color-dark_light};
+    --color-light: #{theme.$color-light_light};
+    --color-text: #{theme.$color-text_light};
+
+    --color-primary: #{theme.$color-primary_light};
+    --color-primary-100: #{theme.$color-primary-100_light};
+    --color-primary-200: #{theme.$color-primary-200_light};
+    --color-primary-300: #{theme.$color-primary-300_light};
+    --color-primary-400: #{theme.$color-primary-400_light};
+    --color-primary-500: #{theme.$color-primary-500_light};
+    --color-primary-600: #{theme.$color-primary-600_light};
+    --color-primary-700: #{theme.$color-primary-700_light};
+    --color-primary-800: #{theme.$color-primary-800_light};
+    --color-primary-900: #{theme.$color-primary-900_light};
+
+    --color-secondary: #{theme.$color-secondary_light};
+    --color-secondary-100: #{theme.$color-secondary-100_light};
+    --color-secondary-200: #{theme.$color-secondary-200_light};
+    --color-secondary-300: #{theme.$color-secondary-300_light};
+    --color-secondary-400: #{theme.$color-secondary-400_light};
+    --color-secondary-500: #{theme.$color-secondary-500_light};
+    --color-secondary-600: #{theme.$color-secondary-600_light};
+    --color-secondary-700: #{theme.$color-secondary-700_light};
+    --color-secondary-800: #{theme.$color-secondary-800_light};
+    --color-secondary-900: #{theme.$color-secondary-900_light};
+
+    --color-grey: #{theme.$color-grey-default_light};
+    --color-grey-100: #{theme.$color-grey-100_light};
+    --color-grey-200: #{theme.$color-grey-200_light};
+    --color-grey-300: #{theme.$color-grey-300_light};
+    --color-grey-400: #{theme.$color-grey-400_light};
+    --color-grey-500: #{theme.$color-grey-500_light};
+    --color-grey-600: #{theme.$color-grey-600_light};
+    --color-grey-700: #{theme.$color-grey-700_light};
+    --color-grey-800: #{theme.$color-grey-800_light};
+    --color-grey-900: #{theme.$color-grey-900_light};
+
+    --color-red: #{theme.$color-red-default_light};
+    --color-red-100: #{theme.$color-red-100_light};
+    --color-red-200: #{theme.$color-red-200_light};
+    --color-red-300: #{theme.$color-red-300_light};
+    --color-red-400: #{theme.$color-red-400_light};
+    --color-red-500: #{theme.$color-red-500_light};
+    --color-red-600: #{theme.$color-red-600_light};
+    --color-red-700: #{theme.$color-red-700_light};
+    --color-red-800: #{theme.$color-red-800_light};
+    --color-red-900: #{theme.$color-red-900_light};
+
+    --color-orange: #{theme.$color-orange-default_light};
+    --color-orange-100: #{theme.$color-orange-100_light};
+    --color-orange-200: #{theme.$color-orange-200_light};
+    --color-orange-300: #{theme.$color-orange-300_light};
+    --color-orange-400: #{theme.$color-orange-400_light};
+    --color-orange-500: #{theme.$color-orange-500_light};
+    --color-orange-600: #{theme.$color-orange-600_light};
+    --color-orange-700: #{theme.$color-orange-700_light};
+    --color-orange-800: #{theme.$color-orange-800_light};
+    --color-orange-900: #{theme.$color-orange-900_light};
+
+    --color-yellow: #{theme.$color-yellow-default_light};
+    --color-yellow-100: #{theme.$color-yellow-100_light};
+    --color-yellow-200: #{theme.$color-yellow-200_light};
+    --color-yellow-300: #{theme.$color-yellow-300_light};
+    --color-yellow-400: #{theme.$color-yellow-400_light};
+    --color-yellow-500: #{theme.$color-yellow-500_light};
+    --color-yellow-600: #{theme.$color-yellow-600_light};
+    --color-yellow-700: #{theme.$color-yellow-700_light};
+    --color-yellow-800: #{theme.$color-yellow-800_light};
+    --color-yellow-900: #{theme.$color-yellow-900_light};
+
+    --color-green: #{theme.$color-green-default_light};
+    --color-green-100: #{theme.$color-green-100_light};
+    --color-green-200: #{theme.$color-green-200_light};
+    --color-green-300: #{theme.$color-green-300_light};
+    --color-green-400: #{theme.$color-green-400_light};
+    --color-green-500: #{theme.$color-green-500_light};
+    --color-green-600: #{theme.$color-green-600_light};
+    --color-green-700: #{theme.$color-green-700_light};
+    --color-green-800: #{theme.$color-green-800_light};
+    --color-green-900: #{theme.$color-green-900_light};
+
+    --color-teal: #{theme.$color-teal-default_light};
+    --color-teal-100: #{theme.$color-teal-100_light};
+    --color-teal-200: #{theme.$color-teal-200_light};
+    --color-teal-300: #{theme.$color-teal-300_light};
+    --color-teal-400: #{theme.$color-teal-400_light};
+    --color-teal-500: #{theme.$color-teal-500_light};
+    --color-teal-600: #{theme.$color-teal-600_light};
+    --color-teal-700: #{theme.$color-teal-700_light};
+    --color-teal-800: #{theme.$color-teal-800_light};
+    --color-teal-900: #{theme.$color-teal-900_light};
+
+    --color-blue: #{theme.$color-blue-default_light};
+    --color-blue-100: #{theme.$color-blue-100_light};
+    --color-blue-200: #{theme.$color-blue-200_light};
+    --color-blue-300: #{theme.$color-blue-300_light};
+    --color-blue-400: #{theme.$color-blue-400_light};
+    --color-blue-500: #{theme.$color-blue-500_light};
+    --color-blue-600: #{theme.$color-blue-600_light};
+    --color-blue-700: #{theme.$color-blue-700_light};
+    --color-blue-800: #{theme.$color-blue-800_light};
+    --color-blue-900: #{theme.$color-blue-900_light};
+
+    --color-indigo: #{theme.$color-indigo-default_light};
+    --color-indigo-100: #{theme.$color-indigo-100_light};
+    --color-indigo-200: #{theme.$color-indigo-200_light};
+    --color-indigo-300: #{theme.$color-indigo-300_light};
+    --color-indigo-400: #{theme.$color-indigo-400_light};
+    --color-indigo-500: #{theme.$color-indigo-500_light};
+    --color-indigo-600: #{theme.$color-indigo-600_light};
+    --color-indigo-700: #{theme.$color-indigo-700_light};
+    --color-indigo-800: #{theme.$color-indigo-800_light};
+    --color-indigo-900: #{theme.$color-indigo-900_light};
+
+    --color-purple: #{theme.$color-purple-default_light};
+    --color-purple-100: #{theme.$color-purple-100_light};
+    --color-purple-200: #{theme.$color-purple-200_light};
+    --color-purple-300: #{theme.$color-purple-300_light};
+    --color-purple-400: #{theme.$color-purple-400_light};
+    --color-purple-500: #{theme.$color-purple-500_light};
+    --color-purple-600: #{theme.$color-purple-600_light};
+    --color-purple-700: #{theme.$color-purple-700_light};
+    --color-purple-800: #{theme.$color-purple-800_light};
+    --color-purple-900: #{theme.$color-purple-900_light};
+
+    --color-pink: #{theme.$color-pink-default_light};
+    --color-pink-100: #{theme.$color-pink-100_light};
+    --color-pink-200: #{theme.$color-pink-200_light};
+    --color-pink-300: #{theme.$color-pink-300_light};
+    --color-pink-400: #{theme.$color-pink-400_light};
+    --color-pink-500: #{theme.$color-pink-500_light};
+    --color-pink-600: #{theme.$color-pink-600_light};
+    --color-pink-700: #{theme.$color-pink-700_light};
+    --color-pink-800: #{theme.$color-pink-800_light};
+    --color-pink-900: #{theme.$color-pink-900_light};
+
+    --focus-shadow-color: #{theme.$focus-shadow-color_light};
+  }
+
+  @if theme.$dark-mode-enabled {
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #{theme.$color-bg_dark};
+        --color-caption: #{theme.$color-caption_dark};
+        --color-text: #{theme.$color-text_dark};
+        --color-dark: #{theme.$color-dark_dark};
+        --color-light: #{theme.$color-light_dark};
+
+        --color-primary: #{theme.$color-primary_dark};
+        --color-primary-100: #{theme.$color-primary-100_dark};
+        --color-primary-200: #{theme.$color-primary-200_dark};
+        --color-primary-300: #{theme.$color-primary-300_dark};
+        --color-primary-400: #{theme.$color-primary-400_dark};
+        --color-primary-500: #{theme.$color-primary-500_dark};
+        --color-primary-600: #{theme.$color-primary-600_dark};
+        --color-primary-700: #{theme.$color-primary-700_dark};
+        --color-primary-800: #{theme.$color-primary-800_dark};
+        --color-primary-900: #{theme.$color-primary-900_dark};
+
+        --color-secondary: #{theme.$color-secondary_dark};
+        --color-secondary-100: #{theme.$color-secondary-100_dark};
+        --color-secondary-200: #{theme.$color-secondary-200_dark};
+        --color-secondary-300: #{theme.$color-secondary-300_dark};
+        --color-secondary-400: #{theme.$color-secondary-400_dark};
+        --color-secondary-500: #{theme.$color-secondary-500_dark};
+        --color-secondary-600: #{theme.$color-secondary-600_dark};
+        --color-secondary-700: #{theme.$color-secondary-700_dark};
+        --color-secondary-800: #{theme.$color-secondary-800_dark};
+        --color-secondary-900: #{theme.$color-secondary-900_dark};
+
+        --color-grey: #{theme.$color-grey-default_dark};
+        --color-grey-100: #{theme.$color-grey-100_dark};
+        --color-grey-200: #{theme.$color-grey-200_dark};
+        --color-grey-300: #{theme.$color-grey-300_dark};
+        --color-grey-400: #{theme.$color-grey-400_dark};
+        --color-grey-500: #{theme.$color-grey-500_dark};
+        --color-grey-600: #{theme.$color-grey-600_dark};
+        --color-grey-700: #{theme.$color-grey-700_dark};
+        --color-grey-800: #{theme.$color-grey-800_dark};
+        --color-grey-900: #{theme.$color-grey-900_dark};
+
+        --color-red: #{theme.$color-red-default_dark};
+        --color-red-100: #{theme.$color-red-100_dark};
+        --color-red-200: #{theme.$color-red-200_dark};
+        --color-red-300: #{theme.$color-red-300_dark};
+        --color-red-400: #{theme.$color-red-400_dark};
+        --color-red-500: #{theme.$color-red-500_dark};
+        --color-red-600: #{theme.$color-red-600_dark};
+        --color-red-700: #{theme.$color-red-700_dark};
+        --color-red-800: #{theme.$color-red-800_dark};
+        --color-red-900: #{theme.$color-red-900_dark};
+
+        --color-orange: #{theme.$color-orange-default_dark};
+        --color-orange-100: #{theme.$color-orange-100_dark};
+        --color-orange-200: #{theme.$color-orange-200_dark};
+        --color-orange-300: #{theme.$color-orange-300_dark};
+        --color-orange-400: #{theme.$color-orange-400_dark};
+        --color-orange-500: #{theme.$color-orange-500_dark};
+        --color-orange-600: #{theme.$color-orange-600_dark};
+        --color-orange-700: #{theme.$color-orange-700_dark};
+        --color-orange-800: #{theme.$color-orange-800_dark};
+        --color-orange-900: #{theme.$color-orange-900_dark};
+
+        --color-yellow: #{theme.$color-yellow-default_dark};
+        --color-yellow-100: #{theme.$color-yellow-100_dark};
+        --color-yellow-200: #{theme.$color-yellow-200_dark};
+        --color-yellow-300: #{theme.$color-yellow-300_dark};
+        --color-yellow-400: #{theme.$color-yellow-400_dark};
+        --color-yellow-500: #{theme.$color-yellow-500_dark};
+        --color-yellow-600: #{theme.$color-yellow-600_dark};
+        --color-yellow-700: #{theme.$color-yellow-700_dark};
+        --color-yellow-800: #{theme.$color-yellow-800_dark};
+        --color-yellow-900: #{theme.$color-yellow-900_dark};
+
+        --color-green: #{theme.$color-green-default_dark};
+        --color-green-100: #{theme.$color-green-100_dark};
+        --color-green-200: #{theme.$color-green-200_dark};
+        --color-green-300: #{theme.$color-green-300_dark};
+        --color-green-400: #{theme.$color-green-400_dark};
+        --color-green-500: #{theme.$color-green-500_dark};
+        --color-green-600: #{theme.$color-green-600_dark};
+        --color-green-700: #{theme.$color-green-700_dark};
+        --color-green-800: #{theme.$color-green-800_dark};
+        --color-green-900: #{theme.$color-green-900_dark};
+
+        --color-teal: #{theme.$color-teal-default_dark};
+        --color-teal-100: #{theme.$color-teal-100_dark};
+        --color-teal-200: #{theme.$color-teal-200_dark};
+        --color-teal-300: #{theme.$color-teal-300_dark};
+        --color-teal-400: #{theme.$color-teal-400_dark};
+        --color-teal-500: #{theme.$color-teal-500_dark};
+        --color-teal-600: #{theme.$color-teal-600_dark};
+        --color-teal-700: #{theme.$color-teal-700_dark};
+        --color-teal-800: #{theme.$color-teal-800_dark};
+        --color-teal-900: #{theme.$color-teal-900_dark};
+
+        --color-blue: #{theme.$color-blue-default_dark};
+        --color-blue-100: #{theme.$color-blue-100_dark};
+        --color-blue-200: #{theme.$color-blue-200_dark};
+        --color-blue-300: #{theme.$color-blue-300_dark};
+        --color-blue-400: #{theme.$color-blue-400_dark};
+        --color-blue-500: #{theme.$color-blue-500_dark};
+        --color-blue-600: #{theme.$color-blue-600_dark};
+        --color-blue-700: #{theme.$color-blue-700_dark};
+        --color-blue-800: #{theme.$color-blue-800_dark};
+        --color-blue-900: #{theme.$color-blue-900_dark};
+
+        --color-indigo: #{theme.$color-indigo-default_dark};
+        --color-indigo-100: #{theme.$color-indigo-100_dark};
+        --color-indigo-200: #{theme.$color-indigo-200_dark};
+        --color-indigo-300: #{theme.$color-indigo-300_dark};
+        --color-indigo-400: #{theme.$color-indigo-400_dark};
+        --color-indigo-500: #{theme.$color-indigo-500_dark};
+        --color-indigo-600: #{theme.$color-indigo-600_dark};
+        --color-indigo-700: #{theme.$color-indigo-700_dark};
+        --color-indigo-800: #{theme.$color-indigo-800_dark};
+        --color-indigo-900: #{theme.$color-indigo-900_dark};
+
+        --color-purple: #{theme.$color-purple-default_dark};
+        --color-purple-100: #{theme.$color-purple-100_dark};
+        --color-purple-200: #{theme.$color-purple-200_dark};
+        --color-purple-300: #{theme.$color-purple-300_dark};
+        --color-purple-400: #{theme.$color-purple-400_dark};
+        --color-purple-500: #{theme.$color-purple-500_dark};
+        --color-purple-600: #{theme.$color-purple-600_dark};
+        --color-purple-700: #{theme.$color-purple-700_dark};
+        --color-purple-800: #{theme.$color-purple-800_dark};
+        --color-purple-900: #{theme.$color-purple-900_dark};
+
+        --color-pink: #{theme.$color-pink-default_dark};
+        --color-pink-100: #{theme.$color-pink-100_dark};
+        --color-pink-200: #{theme.$color-pink-200_dark};
+        --color-pink-300: #{theme.$color-pink-300_dark};
+        --color-pink-400: #{theme.$color-pink-400_dark};
+        --color-pink-500: #{theme.$color-pink-500_dark};
+        --color-pink-600: #{theme.$color-pink-600_dark};
+        --color-pink-700: #{theme.$color-pink-700_dark};
+        --color-pink-800: #{theme.$color-pink-800_dark};
+        --color-pink-900: #{theme.$color-pink-900_dark};
+
+        --focus-shadow-color: #{theme.$focus-shadow-color_dark};
+      }
+    }
+  }
+}

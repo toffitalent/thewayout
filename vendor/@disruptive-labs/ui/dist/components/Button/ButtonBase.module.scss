@@ -1,0 +1,197 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '@styles/theme';
+@use '../../styles/functions' as fn;
+
+@mixin button-variant(
+  $theme-color,
+  $background: var(--color-#{$theme-color}-700),
+  $color: var(--color-light),
+  $hover-background: var(--color-#{$theme-color}-800),
+  $active-background: var(--color-#{$theme-color}-900),
+  $outline-hover: var(--color-#{$theme-color}-100),
+  $outline-active: var(--color-#{$theme-color}-200)
+) {
+  border-color: $background;
+  color: $background;
+
+  &.solid {
+    color: $color;
+    background: $background;
+
+    &:hover {
+      background: $hover-background;
+    }
+
+    &:active {
+      background: $active-background;
+    }
+  }
+
+  &.clear,
+  &.outline {
+    &:hover {
+      background: $outline-hover;
+    }
+
+    &:active {
+      background: $outline-active;
+    }
+  }
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 0;
+  border-radius: theme.$button-border-radius;
+  color: inherit;
+  font-family: inherit;
+  font-weight: theme.$button-font-weight;
+  line-height: theme.$line-height;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 250ms;
+  white-space: nowrap;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none !important;
+
+  &.disabled,
+  &:disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: theme.$button-disabled-opacity;
+  }
+
+  &::-moz-focus-inner {
+    border-style: none;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: var(--focus-shadow-color) 0 0 0 theme.$focus-shadow-width;
+
+    &:not(:focus-visible) {
+      box-shadow: none;
+    }
+  }
+
+  .spinner {
+    width: 1em;
+    height: 1em;
+    margin-right: 1rem;
+    color: currentColor !important;
+  }
+
+  .spinnerLoading {
+    position: absolute;
+    margin-right: 0;
+  }
+}
+
+.fluid {
+  width: 100%;
+}
+
+.accessoryLeft,
+.accessoryRight {
+  display: inline-flex;
+  align-self: center;
+}
+
+.loadingText {
+  opacity: 0;
+}
+
+.outline {
+  border-style: solid;
+  border-width: theme.$button-border-width;
+}
+
+@each $color in theme.$colors {
+  .c-#{$color} {
+    @include button-variant($color);
+  }
+}
+
+.c-black {
+  @include button-variant(
+    'black',
+    var(--color-black),
+    var(--color-white),
+    var(--color-grey-900),
+    var(--color-grey-800),
+    rgba(0, 0, 0, 0.08),
+    rgba(0, 0, 0, 0.16)
+  );
+}
+
+.c-white {
+  @include button-variant(
+    'white',
+    var(--color-white),
+    var(--color-black),
+    var(--color-grey-100),
+    var(--color-grey-200),
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.16)
+  );
+}
+
+.c-dark {
+  @include button-variant(
+    'dark',
+    var(--color-dark),
+    var(--color-light),
+    var(--color-grey-900),
+    var(--color-grey-800),
+    rgba(0, 0, 0, 0.08),
+    rgba(0, 0, 0, 0.16)
+  );
+}
+
+.c-light {
+  @include button-variant(
+    'light',
+    var(--color-light),
+    var(--color-dark),
+    var(--color-grey-100),
+    var(--color-grey-200),
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.16)
+  );
+}
+
+@each $button-size, $size in theme.$button-sizes {
+  .#{$button-size} {
+    min-width: map.get($size, 'size');
+    min-height: map.get($size, 'size');
+    padding-left: map.get($size, 'padding');
+    padding-right: map.get($size, 'padding');
+    font-size: map.get($size, 'font');
+
+    &.text {
+      min-width: 0;
+      min-height: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .accessoryLeft {
+      margin-right: math.div(map.get($size, 'padding'), 2);
+      font-size: map.get($size, 'font') * 1.25;
+    }
+
+    .accessoryRight {
+      margin-left: math.div(map.get($size, 'padding'), 2);
+      font-size: map.get($size, 'font') * 1.25;
+    }
+  }
+}

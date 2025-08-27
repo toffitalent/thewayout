@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgSeedingOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M11.412 7.407a6.025 6.025 0 00-2.82-2.82M4 4H3v2a6 6 0 006 6h3M12 14a6 6 0 01.255-1.736m1.51-2.514A5.981 5.981 0 0118 8h3v1c0 2.158-1.14 4.05-2.85 5.107M15 15h-3M12 20v-8M3 3l18 18" }));
+export default SvgSeedingOff;

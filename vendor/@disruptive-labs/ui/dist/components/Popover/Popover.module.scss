@@ -1,0 +1,50 @@
+@use '@styles/theme';
+@use '../../styles/mixins';
+
+.popover {
+  z-index: 50;
+}
+
+.content {
+  position: relative;
+  background: theme.$menu-bg;
+  border-radius: theme.$menu-border-radius;
+  box-shadow: theme.$menu-shadow;
+
+  &:focus {
+    outline: 0;
+    box-shadow: theme.$menu-shadow, var(--focus-shadow-color) 0 0 0 theme.$focus-shadow-width;
+
+    &:not(:focus-visible) {
+      box-shadow: theme.$menu-shadow;
+    }
+  }
+}
+
+.arrow {
+  color: theme.$menu-bg;
+
+  [data-popper-placement^='top'] > * > & {
+    @include mixins.css-triangle(currentColor, down);
+    bottom: -6px;
+    margin-top: 0;
+  }
+
+  [data-popper-placement^='bottom'] > * > & {
+    @include mixins.css-triangle(currentColor, up);
+    top: -6px;
+    margin-bottom: 0;
+  }
+
+  [data-popper-placement^='left'] > * > & {
+    @include mixins.css-triangle(currentColor, right);
+    right: -6px;
+    margin-right: 0;
+  }
+
+  [data-popper-placement^='right'] > * > & {
+    @include mixins.css-triangle(currentColor, left);
+    left: -6px;
+    margin-left: 0;
+  }
+}

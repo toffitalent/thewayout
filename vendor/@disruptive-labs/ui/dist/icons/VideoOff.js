@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgVideoOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M3 3l18 18M15 11v-1l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-.675.946" }), React.createElement("path", { d: "M10 6h3a2 2 0 012 2v3m0 4v1a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h1" }));
+export default SvgVideoOff;

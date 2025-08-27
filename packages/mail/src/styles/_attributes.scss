@@ -1,0 +1,19 @@
+@use 'colors' as *;
+
+.attributes {
+  margin: 0 0 21px;
+
+  &__content {
+    background-color: $color-grey-100;
+    padding: 16px;
+  }
+
+  &__item {
+    padding: 0;
+  }
+
+  &__code {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}

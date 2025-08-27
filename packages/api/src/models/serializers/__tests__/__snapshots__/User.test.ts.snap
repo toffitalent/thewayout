@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserSerializer only displays email property to self or admins 1`] = `
+{
+  "createdAt": "<Date>",
+  "firstName": "Heidi",
+  "id": "01817e24-0d42-7176-b613-889fe94905f0",
+  "lastName": "Marks",
+  "type": "client",
+  "updatedAt": "<Date>",
+}
+`;
+
+exports[`UserSerializer only displays email property to self or admins 2`] = `
+{
+  "createdAt": "<Date>",
+  "email": "heidi_marks@example.com",
+  "firstName": "Heidi",
+  "id": "01817e24-0d42-7176-b613-889fe94905f0",
+  "lastName": "Marks",
+  "type": "client",
+  "updatedAt": "<Date>",
+}
+`;
+
+exports[`UserSerializer only displays email property to self or admins 3`] = `
+{
+  "createdAt": "<Date>",
+  "email": "heidi_marks@example.com",
+  "firstName": "Heidi",
+  "id": "01817e24-0d42-7176-b613-889fe94905f0",
+  "lastName": "Marks",
+  "roles": [
+    "client",
+  ],
+  "type": "client",
+  "updatedAt": "<Date>",
+}
+`;
+
+exports[`UserSerializer only displays roles property to admins 1`] = `
+{
+  "createdAt": "<Date>",
+  "firstName": "Heidi",
+  "id": "01817e24-0d42-7176-b613-889fe94905f0",
+  "lastName": "Marks",
+  "type": "client",
+  "updatedAt": "<Date>",
+}
+`;
+
+exports[`UserSerializer only displays roles property to admins 2`] = `
+{
+  "createdAt": "<Date>",
+  "email": "heidi_marks@example.com",
+  "firstName": "Heidi",
+  "id": "01817e24-0d42-7176-b613-889fe94905f0",
+  "lastName": "Marks",
+  "roles": [
+    "client",
+  ],
+  "type": "client",
+  "updatedAt": "<Date>",
+}
+`;

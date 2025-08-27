@@ -1,0 +1,33 @@
+@use '../core' as *;
+
+$checkbox-border-color: var(--color-grey-400) !default;
+$checkbox-border-radius: 5px !default;
+$checkbox-border-width: $border-width !default;
+$checkbox-disabled-opacity: 0.5 !default;
+$checkbox-error-color: var(--color-red) !default;
+$checkbox-label-margin: $spacing-2_5 !default;
+
+$checkbox-group-margin: $spacing-1 !default;
+$checkbox-group-margin-inline: $spacing-6 !default;
+
+$checkbox-size-sm: $spacing-3 !default;
+$checkbox-size-sm-font-size: $font-size-sm !default;
+$checkbox-size-md: $spacing-4_5 !default;
+$checkbox-size-md-font-size: $font-size-md !default;
+$checkbox-size-lg: $spacing-5 !default;
+$checkbox-size-lg-font-size: $font-size-lg !default;
+
+$checkbox-sizes: (
+  'sm': (
+    'font': $checkbox-size-sm-font-size,
+    'size': $checkbox-size-sm,
+  ),
+  'md': (
+    'font': $checkbox-size-md-font-size,
+    'size': $checkbox-size-md,
+  ),
+  'lg': (
+    'font': $checkbox-size-lg-font-size,
+    'size': $checkbox-size-lg,
+  ),
+);

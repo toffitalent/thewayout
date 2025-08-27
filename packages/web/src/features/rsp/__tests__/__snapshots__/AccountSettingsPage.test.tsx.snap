@@ -1,0 +1,358 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountSettingsPage renders correctly 1`] = `
+<div>
+  <div
+    class="formWrapper width-full"
+  >
+    <h2
+      class="text fontSize-3xl"
+    >
+      Account Settings
+    </h2>
+    <p
+      class="text color-grey-600 marginTop-2"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <div
+      class="list default marginTop-5"
+      id=":r0:-tabs"
+      role="tablist"
+    >
+      <button
+        aria-controls=":r0:-tabs-account-panel"
+        aria-selected="true"
+        class="item itemActive"
+        id=":r0:-tabs-account"
+        role="tab"
+        tabindex="0"
+        type="button"
+      >
+        Account
+      </button>
+      <button
+        aria-controls=":r0:-tabs-organization-panel"
+        aria-selected="false"
+        class="item"
+        id=":r0:-tabs-organization"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Organization
+      </button>
+    </div>
+    <div
+      aria-hidden="true"
+      class="listSelect"
+    >
+      <div
+        class="control"
+        role="group"
+      >
+        <div
+          class="root primary md fluid md"
+        >
+          <select
+            class="input"
+            data-testid="tabs-select"
+            id=":r1:"
+          >
+            <option
+              value="account"
+            >
+              Account
+            </option>
+            <option
+              value="organization"
+            >
+              Organization
+            </option>
+          </select>
+          <div
+            class="icon"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby=":r0:-tabs-account"
+      class=""
+      id=":r0:-tabs-account-panel"
+      role="tabpanel"
+    >
+      <div
+        class="container borderBottom flexDirection-row marginTop-8 paddingBottom-5"
+      >
+        <div
+          class="item bp-xs-12 bp-md-4 marginBottom-8 paddingRight-5"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Personal Information
+          </p>
+          <p
+            class="text color-grey-600 fontSize-sm"
+          >
+            Use a permanent address where you can receive mail.
+          </p>
+        </div>
+        <div
+          class="item bp-xs-12 bp-md-8"
+        >
+          <form>
+            <div
+              class="flexDirection-row marginBottom-10"
+            >
+              <div
+                class="avatar s-2xl"
+              >
+                <div
+                  aria-label="undefined undefined"
+                  class="initials"
+                >
+                  uu
+                </div>
+              </div>
+              <div
+                class="marginTop-5 marginLeft-5"
+              >
+                <button
+                  class="button md outline c-primary marginBottom-2"
+                  type="button"
+                >
+                  Edit Picture
+                </button>
+                <input
+                  accept="image/jpg, image/png, image/gif"
+                  hidden=""
+                  type="file"
+                />
+                <p
+                  class="text color-grey-600 fontSize-sm"
+                >
+                  JPG, GIF or PNG. 1MB max.
+                </p>
+              </div>
+            </div>
+            <div
+              class="control display-inline-block width-1/2 paddingRight-1"
+              role="group"
+            >
+              <label
+                class="label"
+                for=":r2:"
+              >
+                First Name
+              </label>
+              <div
+                class="root primary md fluid md"
+              >
+                <input
+                  class="input"
+                  id=":r2:"
+                  name="firstName"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="control display-inline-block width-1/2 paddingLeft-1"
+              role="group"
+            >
+              <label
+                class="label"
+                for=":r3:"
+              >
+                Last Name
+              </label>
+              <div
+                class="root primary md fluid md"
+              >
+                <input
+                  class="input"
+                  id=":r3:"
+                  name="lastName"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="control display-inline-block width-1/2 paddingRight-1"
+              role="group"
+            >
+              <label
+                class="label"
+                for=":r4:"
+              >
+                Email
+              </label>
+              <div
+                class="root primary md fluid md"
+              >
+                <input
+                  class="input"
+                  id=":r4:"
+                  name="email"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="control display-inline-block width-1/2 paddingLeft-1"
+              role="group"
+            >
+              <label
+                class="label"
+                for=":r5:"
+              >
+                Phone
+              </label>
+              <div
+                class="root primary md fluid md"
+              >
+                <input
+                  class="input"
+                  id=":r5:"
+                  maxlength="14"
+                  name="phone"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <button
+              class="button md solid c-primary disabled marginTop-8"
+              disabled=""
+              type="submit"
+            >
+              Save
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="container flexDirection-row marginTop-8"
+      >
+        <div
+          class="item bp-xs-12 bp-md-4 marginBottom-8 paddingRight-5"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Security
+          </p>
+          <p
+            class="text color-grey-600 fontSize-sm"
+          >
+            Enter your account password.
+          </p>
+        </div>
+        <div
+          class="item bp-xs-12 bp-md-4"
+        >
+          <form>
+            <div
+              class="control"
+              role="group"
+            >
+              <label
+                class="label"
+                for=":r6:"
+              >
+                Current Password
+              </label>
+              <div
+                class="root primary md fluid md"
+              >
+                <input
+                  class="input"
+                  id=":r6:"
+                  name="password"
+                  type="password"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="control display-inline-block width-1/2 paddingRight-1"
+              role="group"
+            >
+              <label
+                class="label"
+                for=":r7:"
+              >
+                New Password
+              </label>
+              <div
+                class="root primary md fluid md"
+              >
+                <input
+                  class="input"
+                  id=":r7:"
+                  name="newPassword"
+                  type="password"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              class="control display-inline-block width-1/2 paddingLeft-1"
+              role="group"
+            >
+              <label
+                class="label"
+                for=":r8:"
+              >
+                Confirm Password
+              </label>
+              <div
+                class="root primary md fluid md"
+              >
+                <input
+                  class="input"
+                  id=":r8:"
+                  name="confirm"
+                  type="password"
+                  value=""
+                />
+              </div>
+            </div>
+            <button
+              class="button md solid c-primary disabled marginTop-8"
+              disabled=""
+              type="submit"
+            >
+              Save
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby=":r0:-tabs-organization"
+      class=""
+      hidden=""
+      id=":r0:-tabs-organization-panel"
+      role="tabpanel"
+    />
+  </div>
+</div>
+`;

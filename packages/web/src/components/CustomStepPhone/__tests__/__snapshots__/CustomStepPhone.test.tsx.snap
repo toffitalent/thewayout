@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomStepPhone renders correctly 1`] = `
+<div>
+  <div
+    class="maxWidth-96 marginRight-auto marginLeft-auto"
+  >
+    <form>
+      <div
+        class="control"
+        role="group"
+      >
+        <label
+          class="label"
+          for=":r0:"
+        >
+          Phone
+        </label>
+        <div
+          class="root primary md fluid md"
+        >
+          <input
+            class="input"
+            id=":r0:"
+            maxlength="14"
+            name="phone"
+            placeholder="Phone"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <button
+        class="button md solid c-primary fluid maxWidth-96 marginTop-8"
+        type="submit"
+      >
+        Save & Next
+      </button>
+    </form>
+  </div>
+</div>
+`;

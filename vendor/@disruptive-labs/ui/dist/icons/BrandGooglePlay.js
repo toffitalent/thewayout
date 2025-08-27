@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgBrandGooglePlay = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M4 3.71v16.58a.7.7 0 001.05.606l14.622-8.42a.55.55 0 000-.953L5.05 3.104A.7.7 0 004 3.711zM15 9L4.5 20.5M4.5 3.5L15 15" }));
+export default SvgBrandGooglePlay;

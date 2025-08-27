@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgFlagCancel = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M13.342 14.941A4.993 4.993 0 0112 14a5 5 0 00-7 0V5a5 5 0 017 0 5 5 0 007 0v7M5 21v-7M16 19a3 3 0 106 0 3 3 0 10-6 0M17 21l4-4" }));
+export default SvgFlagCancel;

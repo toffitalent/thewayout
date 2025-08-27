@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgMagnetOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M7 3a2 2 0 012 2m0 4v4a3 3 0 005.552 1.578M15 11V5a2 2 0 012-2h1a2 2 0 012 2v8a7.99 7.99 0 01-.424 2.577m-1.463 2.584A8 8 0 014 13V5c0-.297.065-.58.181-.833M4 8h4M15 8h4M3 3l18 18" }));
+export default SvgMagnetOff;

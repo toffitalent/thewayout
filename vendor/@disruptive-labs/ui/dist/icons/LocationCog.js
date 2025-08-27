@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgLocationCog = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M12 18l-2-4-7-3.5a.55.55 0 010-1L21 3l-3.14 8.697M17.001 19a2 2 0 104 0 2 2 0 10-4 0M19.001 15.5V17M19.001 21v1.5M22.032 17.25l-1.299.75M17.27 20l-1.3.75M15.97 17.25l1.3.75M20.733 20l1.3.75" }));
+export default SvgLocationCog;

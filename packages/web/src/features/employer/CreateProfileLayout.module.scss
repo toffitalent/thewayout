@@ -1,0 +1,36 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0 2rem;
+
+  @include mq(md) {
+    padding: 8rem 0 2rem;
+  }
+
+  .logo {
+    width: 16rem;
+    height: 2.5rem;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.content {
+  @include container();
+  max-width: 90rem !important;
+  padding-top: 2rem;
+  text-align: center;
+
+  header {
+    button {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+  }
+}
+

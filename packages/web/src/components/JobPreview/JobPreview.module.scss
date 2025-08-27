@@ -1,0 +1,25 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.skills {
+  &Title {
+    display: flex;
+    flex-direction: column;
+
+    @include mq(md) {
+      flex-direction: row;
+    }
+
+    &Text {
+      @include mq(md, max) {
+        padding-bottom: 18px;
+      }
+    }
+  }
+}
+
+.buttonApply {
+  @include mq(md, max) {
+    width: 100%;
+  }
+}

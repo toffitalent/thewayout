@@ -1,0 +1,71 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '@styles/theme';
+
+.accessory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: theme.$input-placeholder-color;
+  white-space: nowrap;
+}
+
+.input {
+  width: 100%;
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: theme.$input-color;
+  font-family: theme.$input-font-family;
+  font-weight: theme.$input-font-weight;
+  line-height: theme.$input-line-height;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  appearance: none;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &::placeholder {
+    color: theme.$input-placeholder-color;
+  }
+
+  .multiline & {
+    resize: theme.$input-multiline-resize;
+  }
+}
+
+@each $input-size, $size in theme.$input-sizes {
+  $padding: map.get($size, 'padding');
+
+  .#{$input-size} {
+    .input {
+      padding-left: $padding;
+      padding-right: $padding;
+    }
+
+    &.multiline .input {
+      padding-top: math.div($padding, 2);
+      padding-bottom: math.div($padding, 2);
+    }
+
+    .accessory {
+      $margin: math.div(map.get($size, 'padding'), 2);
+
+      font-size: map.get($size, 'font') * 1.25;
+      margin-left: $margin;
+      margin-right: $margin;
+
+      &:first-child {
+        margin-right: $margin * -1;
+      }
+
+      &:last-child {
+        margin-left: $margin * -1;
+      }
+    }
+  }
+}

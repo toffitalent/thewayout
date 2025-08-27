@@ -1,0 +1,71 @@
+{
+  "name": "@two/aws",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "author": "Disruptive Labs",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "bootstrap": "tsc -b tsconfig.build.json && node build/commands/index.js bootstrap",
+    "build": "tsc -b tsconfig.build.json",
+    "clean": "rimraf build coverage cdk.out",
+    "deploy:prod": "cdk deploy -c env=production",
+    "deploy:staging": "cdk deploy -c env=staging",
+    "secrets": "tsc -b tsconfig.build.json && node build/commands/index.js secrets",
+    "synth:prod": "cdk synth -c env=production",
+    "synth:staging": "cdk synth -c env=staging",
+    "test": "jest --coverage",
+    "type-check": "tsc -b tsconfig.build.json",
+    "watch": "tsc -b --watch tsconfig.build.json"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigatewayv2-alpha": "2.106.0-alpha.0",
+    "@aws-cdk/aws-apigatewayv2-integrations-alpha": "2.106.0-alpha.0",
+    "@disruptive-labs/aws": "file:../../vendor/@disruptive-labs/aws",
+    "@disruptive-labs/config": "file:../../vendor/@disruptive-labs/config",
+    "@two/config": "*",
+    "aws-cdk": "2.106.0",
+    "aws-cdk-lib": "2.106.0",
+    "chalk": "^4.1.2",
+    "constructs": "^10.2.62",
+    "inquirer": "^8.2.5",
+    "source-map-support": "^0.5.20",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.2.6",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^18.16.18",
+    "jest": "^29.5.0",
+    "jest-junit": "^16.0.0",
+    "rimraf": "^3.0.2",
+    "snapshot-diff": "^0.10.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "jest": {
+    "clearMocks": true,
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{js,ts}"
+    ],
+    "globalSetup": "<rootDir>/test/setup.js",
+    "moduleNameMapper": {
+      "^@test$": "<rootDir>/test/index.ts"
+    },
+    "preset": "ts-jest",
+    "setupFilesAfterEnv": [
+      "<rootDir>/test/jest.setup.js"
+    ],
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "<rootDir>/build/",
+      "<rootDir>/cdk.out/",
+      "<rootDir>/node_modules/"
+    ]
+  },
+  "jest-junit": {
+    "outputDirectory": "./artifacts/jest",
+    "outputName": "results.xml"
+  }
+}

@@ -1,0 +1,24 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.wrapper {
+  &:last-child {
+    border-bottom: unset;
+  }
+
+  @include mq(sm, max) {
+    > div > form {
+      div[class*='layout_width-1__2'] {
+        width: 100% !important;
+        padding-left: unset !important;
+        padding-right: unset !important;
+      }
+    }
+  }
+
+  .titleSection {
+    @include mq(md, max) {
+      padding-bottom: 2rem;
+    }
+  }
+}

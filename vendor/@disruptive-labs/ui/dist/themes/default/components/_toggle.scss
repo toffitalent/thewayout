@@ -1,0 +1,37 @@
+@use '../core' as *;
+
+$toggle-border-width: 0.2rem !default;
+$toggle-disabled-opacity: 0.5 !default;
+$toggle-error-color: var(--color-red) !default;
+$toggle-label-margin: $spacing-2 !default;
+$toggle-thumb-color: var(--color-light) !default;
+$toggle-thumb-shadow: 1px 2px 3px rgba(0, 0, 0, 0.16) !default;
+$toggle-track-color: var(--color-grey-300) !default;
+
+$toggle-size-sm-width: $spacing-10 !default;
+$toggle-size-sm-height: $spacing-6 !default;
+$toggle-size-sm-font-size: $font-size-sm !default;
+$toggle-size-md-width: $spacing-12 !default;
+$toggle-size-md-height: $spacing-7 !default;
+$toggle-size-md-font-size: $font-size-md !default;
+$toggle-size-lg-width: $spacing-14 !default;
+$toggle-size-lg-height: $spacing-8 !default;
+$toggle-size-lg-font-size: $font-size-lg !default;
+
+$toggle-sizes: (
+  'sm': (
+    'width': $toggle-size-sm-width,
+    'height': $toggle-size-sm-height,
+    'font': $toggle-size-sm-font-size,
+  ),
+  'md': (
+    'width': $toggle-size-md-width,
+    'height': $toggle-size-md-height,
+    'font': $toggle-size-md-font-size,
+  ),
+  'lg': (
+    'width': $toggle-size-lg-width,
+    'height': $toggle-size-lg-height,
+    'font': $toggle-size-lg-font-size,
+  ),
+);

@@ -1,0 +1,13 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.footer {
+  padding: 2.9rem 0;
+  color: var(--color-grey-500);
+  text-align: center;
+
+  a {
+    padding-left: 3rem;
+    color: var(--color-grey-700);
+  }
+}

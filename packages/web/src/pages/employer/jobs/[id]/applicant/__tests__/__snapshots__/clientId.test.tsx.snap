@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientPageWithLayout renders correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="item bp-xs-12 bp-md-4 flexDirection-column display-flex"
+      style="gap: 2rem;"
+    >
+      <div
+        class="avatar s-2xl"
+      >
+        <div
+          aria-label="Test User"
+          class="initials"
+        >
+          TU
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-3xl fontWeight-700"
+          >
+            Test User
+          </p>
+        </div>
+        <div
+          class="readMore inline"
+        >
+          <p
+            class="text numLines-2 whiteSpace-pre-line"
+          >
+            personal summary
+          </p>
+        </div>
+      </div>
+      <div
+        class="item"
+      >
+        <div
+          class="container spacing-2"
+        >
+          <div
+            class="item width-1/2"
+          >
+            <button
+              class="button md solid c-primary fluid maxHeight-10"
+              type="button"
+            >
+              Interview
+              <span
+                aria-hidden="true"
+                class="accessoryRight"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  focusable="false"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M5 12l5 5L20 7"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div
+            class="item width-1/2"
+          >
+            <button
+              class="button md outline c-grey fluid maxHeight-10"
+              type="button"
+            >
+              Not a Fit
+              <span
+                aria-hidden="true"
+                class="accessoryRight"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  focusable="false"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M18 6L6 18M6 6l12 12"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Languages
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          />
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Personal Strengths
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          />
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Skills
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="rightColumn item bp-xs-12 bp-md-8"
+    >
+      <div
+        class="marginBottom-10"
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Work Experience
+          </p>
+        </div>
+      </div>
+      <div
+        class="marginBottom-10"
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Education
+          </p>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Licenses / Certifications
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

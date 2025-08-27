@@ -1,0 +1,122 @@
+@use '@styles/theme';
+
+$display: (block, flex, inline, inline-block, inline-flex, none);
+$overflow: (auto, hidden, visible);
+$visibility: (hidden, visible);
+
+@each $value in $display {
+  .display-#{$value} {
+    display: $value !important;
+  }
+}
+
+@each $value in $overflow {
+  .overflow-#{$value} {
+    overflow: $value !important;
+  }
+}
+
+@each $value in $visibility {
+  .visibility-#{$value} {
+    visibility: $value !important;
+  }
+}
+
+$dimensions: (
+  width: width,
+  height: height,
+  maxHeight: max-height,
+  maxWidth: max-width,
+  minHeight: min-height,
+  minWidth: min-width,
+);
+
+@each $dimension, $dimensionProp in $dimensions {
+  @each $s, $size in theme.$spacing {
+    .#{$dimension}-#{$s} {
+      #{$dimensionProp}: $size !important;
+    }
+  }
+
+  .#{$dimension}-1\/2 {
+    #{$dimensionProp}: 50% !important;
+  }
+  .#{$dimension}-1\/3 {
+    #{$dimensionProp}: 33.333333% !important;
+  }
+  .#{$dimension}-2\/3 {
+    #{$dimensionProp}: 66.666667% !important;
+  }
+  .#{$dimension}-1\/4 {
+    #{$dimensionProp}: 25% !important;
+  }
+  .#{$dimension}-3\/4 {
+    #{$dimensionProp}: 75% !important;
+  }
+  .#{$dimension}-1\/5 {
+    #{$dimensionProp}: 20% !important;
+  }
+  .#{$dimension}-2\/5 {
+    #{$dimensionProp}: 40% !important;
+  }
+  .#{$dimension}-3\/5 {
+    #{$dimensionProp}: 60% !important;
+  }
+  .#{$dimension}-4\/5 {
+    #{$dimensionProp}: 80% !important;
+  }
+  .#{$dimension}-1\/6 {
+    #{$dimensionProp}: 16.666667% !important;
+  }
+  .#{$dimension}-5\/6 {
+    #{$dimensionProp}: 83.333333% !important;
+  }
+  .#{$dimension}-full {
+    #{$dimensionProp}: 100% !important;
+  }
+}
+
+.height {
+  &-auto {
+    height: auto !important;
+  }
+  &-screen {
+    height: 100vh !important;
+  }
+}
+
+.width {
+  &-auto {
+    width: auto !important;
+  }
+  &-screen {
+    width: 100vw !important;
+  }
+}
+
+.maxHeight {
+  &-screen {
+    max-height: 100vh !important;
+  }
+}
+
+.maxWidth {
+  &-none {
+    max-width: none !important;
+  }
+  &-max {
+    max-width: max-content !important;
+  }
+  &-min {
+    max-width: min-content !important;
+  }
+}
+
+.minWidth {
+  &-max {
+    min-width: max-content !important;
+  }
+  &-min {
+    min-width: min-content !important;
+  }
+}

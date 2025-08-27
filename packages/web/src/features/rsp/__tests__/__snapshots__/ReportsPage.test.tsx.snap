@@ -1,0 +1,1323 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReportsPage hides related to justice impacted tabs when organization not allowed those applicants 1`] = `
+<div>
+  <div
+    class="flexDirection-column width-full"
+  >
+    <h2
+      class="text height-12"
+    >
+      Reports
+    </h2>
+    <div
+      class="list default marginBottom-8"
+      id=":ru:-tabs"
+      role="tablist"
+    >
+      <button
+        aria-controls=":ru:-tabs-services-panel"
+        aria-selected="true"
+        class="item itemActive"
+        id=":ru:-tabs-services"
+        role="tab"
+        tabindex="0"
+        type="button"
+      >
+        Services
+      </button>
+      <button
+        aria-controls=":ru:-tabs-gender-panel"
+        aria-selected="false"
+        class="item"
+        id=":ru:-tabs-gender"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Gender
+      </button>
+      <button
+        aria-controls=":ru:-tabs-age-panel"
+        aria-selected="false"
+        class="item"
+        id=":ru:-tabs-age"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Age
+      </button>
+      <button
+        aria-controls=":ru:-tabs-ethnicity-panel"
+        aria-selected="false"
+        class="item"
+        id=":ru:-tabs-ethnicity"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Ethnicity
+      </button>
+      <button
+        aria-controls=":ru:-tabs-veteran-panel"
+        aria-selected="false"
+        class="item"
+        id=":ru:-tabs-veteran"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Veteran
+      </button>
+      <button
+        aria-controls=":ru:-tabs-offense-panel"
+        aria-selected="false"
+        class="item display-none"
+        id=":ru:-tabs-offense"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Offense
+      </button>
+      <button
+        aria-controls=":ru:-tabs-stateFederal-panel"
+        aria-selected="false"
+        class="item display-none"
+        id=":ru:-tabs-stateFederal"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        State / Federal
+      </button>
+      <button
+        aria-controls=":ru:-tabs-release-panel"
+        aria-selected="false"
+        class="item display-none"
+        id=":ru:-tabs-release"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Release
+      </button>
+      <button
+        aria-controls=":ru:-tabs-zipCode-panel"
+        aria-selected="false"
+        class="item"
+        id=":ru:-tabs-zipCode"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Zip Code
+      </button>
+      <button
+        aria-controls=":ru:-tabs-status-panel"
+        aria-selected="false"
+        class="item"
+        id=":ru:-tabs-status"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Status
+      </button>
+    </div>
+    <div
+      aria-hidden="true"
+      class="listSelect"
+    >
+      <div
+        class="control"
+        role="group"
+      >
+        <div
+          class="root primary md fluid md"
+        >
+          <select
+            class="input"
+            data-testid="tabs-select"
+            id=":rv:"
+          >
+            <option
+              value="services"
+            >
+              Services
+            </option>
+            <option
+              value="gender"
+            >
+              Gender
+            </option>
+            <option
+              value="age"
+            >
+              Age
+            </option>
+            <option
+              value="ethnicity"
+            >
+              Ethnicity
+            </option>
+            <option
+              value="veteran"
+            >
+              Veteran
+            </option>
+            <option
+              value="offense"
+            >
+              Offense
+            </option>
+            <option
+              value="stateFederal"
+            >
+              State / Federal
+            </option>
+            <option
+              value="release"
+            >
+              Release
+            </option>
+            <option
+              value="zipCode"
+            >
+              Zip Code
+            </option>
+            <option
+              value="status"
+            >
+              Status
+            </option>
+          </select>
+          <div
+            class="icon"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby=":ru:-tabs-services"
+      class=""
+      id=":ru:-tabs-services-panel"
+      role="tabpanel"
+    >
+      <div
+        class="flexDirection-row overflow-auto"
+        style="min-height: 9.8rem;"
+      >
+        <div
+          class="borderRight minWidth-1/4 paddingRight-5 paddingLeft-5 paddingTop-4 paddingBottom-4"
+          style="cursor: pointer;"
+        >
+          <div
+            class="color-grey-500 flexDirection-row justifyContent-space-between fontSize-sm"
+          >
+            <p
+              class="text overflow-hidden whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              Basic Hygiene Support
+            </p>
+            <p
+              class="text"
+            >
+              17
+              %
+            </p>
+          </div>
+          <p
+            class="text height-10 marginTop-1 fontSize-4xl fontWeight-700 lineHeight-none"
+          >
+            1
+          </p>
+        </div>
+        <div
+          class="borderRight minWidth-1/4 paddingRight-5 paddingLeft-5 paddingTop-4 paddingBottom-4"
+          style="cursor: pointer;"
+        >
+          <div
+            class="color-grey-500 flexDirection-row justifyContent-space-between fontSize-sm"
+          >
+            <p
+              class="text overflow-hidden whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              Basic Tech Skills
+            </p>
+            <p
+              class="text"
+            >
+              33
+              %
+            </p>
+          </div>
+          <p
+            class="text height-10 marginTop-1 fontSize-4xl fontWeight-700 lineHeight-none"
+          >
+            2
+          </p>
+        </div>
+        <div
+          class="borderRight minWidth-1/4 paddingRight-5 paddingLeft-5 paddingTop-4 paddingBottom-4"
+          style="cursor: pointer;"
+        >
+          <div
+            class="color-grey-500 flexDirection-row justifyContent-space-between fontSize-sm"
+          >
+            <p
+              class="text overflow-hidden whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              Child Care
+            </p>
+            <p
+              class="text"
+            >
+              17
+              %
+            </p>
+          </div>
+          <p
+            class="text height-10 marginTop-1 fontSize-4xl fontWeight-700 lineHeight-none"
+          >
+            1
+          </p>
+        </div>
+        <div
+          class="borderRight minWidth-1/4 paddingRight-5 paddingLeft-5 paddingTop-4 paddingBottom-4"
+          style="cursor: pointer;"
+        >
+          <div
+            class="color-grey-500 flexDirection-row justifyContent-space-between fontSize-sm"
+          >
+            <p
+              class="text overflow-hidden whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              Clothing
+            </p>
+            <p
+              class="text"
+            >
+              17
+              %
+            </p>
+          </div>
+          <p
+            class="text height-10 marginTop-1 fontSize-4xl fontWeight-700 lineHeight-none"
+          >
+            1
+          </p>
+        </div>
+      </div>
+      <div
+        class="borderBottom flexDirection-row width-full marginTop-8 paddingTop-5 paddingBottom-5 fontWeight-700"
+      >
+        <p
+          class="text width-1/5"
+        >
+          Client Name
+        </p>
+        <p
+          class="text width-1/5"
+        >
+          Email
+        </p>
+        <p
+          class="text width-1/5"
+        >
+          Phone
+        </p>
+        <p
+          class="text width-1/5"
+        >
+          Case Manager
+        </p>
+        <p
+          class="text width-1/5"
+        >
+          Status
+        </p>
+        <div
+          class="width-12"
+        />
+      </div>
+      <div
+        class="infinite-scroll-component__outerdiv"
+      >
+        <div
+          class="infinite-scroll-component "
+          style="height: auto; overflow: auto;"
+        >
+          <div
+            class="borderBottom alignItems-center flexDirection-row"
+          >
+            <div
+              class="alignItems-center flexDirection-row width-1/5 paddingTop-5 paddingBottom-5"
+              style="cursor: pointer;"
+            >
+              <div
+                class="avatar s-xs marginRight-3"
+              >
+                <div
+                  aria-label="Test User"
+                  class="initials"
+                >
+                  TU
+                </div>
+              </div>
+              <p
+                class="text fontWeight-700"
+              >
+                Test User
+              </p>
+            </div>
+            <p
+              class="text overflow-hidden width-1/5 whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              test@example.com
+            </p>
+            <p
+              class="text width-1/5"
+            />
+            <p
+              class="text width-1/5"
+            />
+            <div
+              class="width-1/5"
+            >
+              <div
+                class="badge borderColor-yellow-200 bgcolor-yellow-200 color-yellow-800"
+              >
+                pending
+              </div>
+            </div>
+            <div
+              class="width-12"
+            >
+              <svg
+                aria-controls="menu-:r10:"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                aria-hidden="true"
+                class="icon width-6 height-6"
+                cursor="pointer"
+                data-testid="menu"
+                focusable="false"
+                id="menu-:r10:-trigger"
+                role="button"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  stroke="none"
+                />
+                <path
+                  d="M11 12a1 1 0 102 0 1 1 0 10-2 0M11 19a1 1 0 102 0 1 1 0 10-2 0M11 5a1 1 0 102 0 1 1 0 10-2 0"
+                />
+              </svg>
+              <div
+                class="menu"
+                data-popper-escaped="true"
+                data-popper-placement="bottom-start"
+                data-popper-reference-hidden="true"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; transform: translate(0px, 0px);"
+              >
+                <div
+                  aria-orientation="vertical"
+                  class="list"
+                  id="menu-:r10:"
+                  role="menu"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group"
+                    role="group"
+                  >
+                    <button
+                      class="button md text c-primary item minWidth-40"
+                      role="menuitem"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      <a
+                        class="text color-text"
+                        href="mailto:test@example.com"
+                      >
+                        Email
+                      </a>
+                    </button>
+                    <button
+                      class="button md text c-primary item minWidth-40"
+                      role="menuitem"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="borderBottom alignItems-center flexDirection-row"
+          >
+            <div
+              class="alignItems-center flexDirection-row width-1/5 paddingTop-5 paddingBottom-5"
+              style="cursor: pointer;"
+            >
+              <div
+                class="avatar s-xs marginRight-3"
+              >
+                <div
+                  aria-label="Test User"
+                  class="initials"
+                >
+                  TU
+                </div>
+              </div>
+              <p
+                class="text fontWeight-700"
+              >
+                Test User
+              </p>
+            </div>
+            <p
+              class="text overflow-hidden width-1/5 whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              test1@example.com
+            </p>
+            <p
+              class="text width-1/5"
+            />
+            <p
+              class="text width-1/5"
+            />
+            <div
+              class="width-1/5"
+            >
+              <div
+                class="badge borderColor-yellow-200 bgcolor-yellow-200 color-yellow-800"
+              >
+                pending
+              </div>
+            </div>
+            <div
+              class="width-12"
+            >
+              <svg
+                aria-controls="menu-:r13:"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                aria-hidden="true"
+                class="icon width-6 height-6"
+                cursor="pointer"
+                data-testid="menu"
+                focusable="false"
+                id="menu-:r13:-trigger"
+                role="button"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  stroke="none"
+                />
+                <path
+                  d="M11 12a1 1 0 102 0 1 1 0 10-2 0M11 19a1 1 0 102 0 1 1 0 10-2 0M11 5a1 1 0 102 0 1 1 0 10-2 0"
+                />
+              </svg>
+              <div
+                class="menu"
+                data-popper-escaped="true"
+                data-popper-placement="bottom-start"
+                data-popper-reference-hidden="true"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; transform: translate(0px, 0px);"
+              >
+                <div
+                  aria-orientation="vertical"
+                  class="list"
+                  id="menu-:r13:"
+                  role="menu"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group"
+                    role="group"
+                  >
+                    <button
+                      class="button md text c-primary item minWidth-40"
+                      role="menuitem"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      <a
+                        class="text color-text"
+                        href="mailto:test1@example.com"
+                      >
+                        Email
+                      </a>
+                    </button>
+                    <button
+                      class="button md text c-primary item minWidth-40"
+                      role="menuitem"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby=":ru:-tabs-gender"
+      class=""
+      hidden=""
+      id=":ru:-tabs-gender-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":ru:-tabs-age"
+      class=""
+      hidden=""
+      id=":ru:-tabs-age-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":ru:-tabs-ethnicity"
+      class=""
+      hidden=""
+      id=":ru:-tabs-ethnicity-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":ru:-tabs-veteran"
+      class=""
+      hidden=""
+      id=":ru:-tabs-veteran-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":ru:-tabs-offense"
+      class="display-none"
+      hidden=""
+      id=":ru:-tabs-offense-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":ru:-tabs-stateFederal"
+      class="display-none"
+      hidden=""
+      id=":ru:-tabs-stateFederal-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":ru:-tabs-release"
+      class="display-none"
+      hidden=""
+      id=":ru:-tabs-release-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":ru:-tabs-zipCode"
+      class=""
+      hidden=""
+      id=":ru:-tabs-zipCode-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":ru:-tabs-status"
+      class=""
+      hidden=""
+      id=":ru:-tabs-status-panel"
+      role="tabpanel"
+    />
+  </div>
+</div>
+`;
+
+exports[`ReportsPage renders correctly 1`] = `
+<div>
+  <div
+    class="flexDirection-column width-full"
+  >
+    <h2
+      class="text height-12"
+    >
+      Reports
+    </h2>
+    <div
+      class="list default marginBottom-8"
+      id=":r0:-tabs"
+      role="tablist"
+    >
+      <button
+        aria-controls=":r0:-tabs-services-panel"
+        aria-selected="true"
+        class="item itemActive"
+        id=":r0:-tabs-services"
+        role="tab"
+        tabindex="0"
+        type="button"
+      >
+        Services
+      </button>
+      <button
+        aria-controls=":r0:-tabs-gender-panel"
+        aria-selected="false"
+        class="item"
+        id=":r0:-tabs-gender"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Gender
+      </button>
+      <button
+        aria-controls=":r0:-tabs-age-panel"
+        aria-selected="false"
+        class="item"
+        id=":r0:-tabs-age"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Age
+      </button>
+      <button
+        aria-controls=":r0:-tabs-ethnicity-panel"
+        aria-selected="false"
+        class="item"
+        id=":r0:-tabs-ethnicity"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Ethnicity
+      </button>
+      <button
+        aria-controls=":r0:-tabs-veteran-panel"
+        aria-selected="false"
+        class="item"
+        id=":r0:-tabs-veteran"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Veteran
+      </button>
+      <button
+        aria-controls=":r0:-tabs-offense-panel"
+        aria-selected="false"
+        class="item"
+        id=":r0:-tabs-offense"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Offense
+      </button>
+      <button
+        aria-controls=":r0:-tabs-stateFederal-panel"
+        aria-selected="false"
+        class="item"
+        id=":r0:-tabs-stateFederal"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        State / Federal
+      </button>
+      <button
+        aria-controls=":r0:-tabs-release-panel"
+        aria-selected="false"
+        class="item"
+        id=":r0:-tabs-release"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Release
+      </button>
+      <button
+        aria-controls=":r0:-tabs-zipCode-panel"
+        aria-selected="false"
+        class="item"
+        id=":r0:-tabs-zipCode"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Zip Code
+      </button>
+      <button
+        aria-controls=":r0:-tabs-status-panel"
+        aria-selected="false"
+        class="item"
+        id=":r0:-tabs-status"
+        role="tab"
+        tabindex="-1"
+        type="button"
+      >
+        Status
+      </button>
+    </div>
+    <div
+      aria-hidden="true"
+      class="listSelect"
+    >
+      <div
+        class="control"
+        role="group"
+      >
+        <div
+          class="root primary md fluid md"
+        >
+          <select
+            class="input"
+            data-testid="tabs-select"
+            id=":r1:"
+          >
+            <option
+              value="services"
+            >
+              Services
+            </option>
+            <option
+              value="gender"
+            >
+              Gender
+            </option>
+            <option
+              value="age"
+            >
+              Age
+            </option>
+            <option
+              value="ethnicity"
+            >
+              Ethnicity
+            </option>
+            <option
+              value="veteran"
+            >
+              Veteran
+            </option>
+            <option
+              value="offense"
+            >
+              Offense
+            </option>
+            <option
+              value="stateFederal"
+            >
+              State / Federal
+            </option>
+            <option
+              value="release"
+            >
+              Release
+            </option>
+            <option
+              value="zipCode"
+            >
+              Zip Code
+            </option>
+            <option
+              value="status"
+            >
+              Status
+            </option>
+          </select>
+          <div
+            class="icon"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby=":r0:-tabs-services"
+      class=""
+      id=":r0:-tabs-services-panel"
+      role="tabpanel"
+    >
+      <div
+        class="flexDirection-row overflow-auto"
+        style="min-height: 9.8rem;"
+      >
+        <div
+          class="borderRight minWidth-1/4 paddingRight-5 paddingLeft-5 paddingTop-4 paddingBottom-4"
+          style="cursor: pointer;"
+        >
+          <div
+            class="color-grey-500 flexDirection-row justifyContent-space-between fontSize-sm"
+          >
+            <p
+              class="text overflow-hidden whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              Basic Hygiene Support
+            </p>
+            <p
+              class="text"
+            >
+              17
+              %
+            </p>
+          </div>
+          <p
+            class="text height-10 marginTop-1 fontSize-4xl fontWeight-700 lineHeight-none"
+          >
+            1
+          </p>
+        </div>
+        <div
+          class="borderRight minWidth-1/4 paddingRight-5 paddingLeft-5 paddingTop-4 paddingBottom-4"
+          style="cursor: pointer;"
+        >
+          <div
+            class="color-grey-500 flexDirection-row justifyContent-space-between fontSize-sm"
+          >
+            <p
+              class="text overflow-hidden whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              Basic Tech Skills
+            </p>
+            <p
+              class="text"
+            >
+              33
+              %
+            </p>
+          </div>
+          <p
+            class="text height-10 marginTop-1 fontSize-4xl fontWeight-700 lineHeight-none"
+          >
+            2
+          </p>
+        </div>
+        <div
+          class="borderRight minWidth-1/4 paddingRight-5 paddingLeft-5 paddingTop-4 paddingBottom-4"
+          style="cursor: pointer;"
+        >
+          <div
+            class="color-grey-500 flexDirection-row justifyContent-space-between fontSize-sm"
+          >
+            <p
+              class="text overflow-hidden whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              Child Care
+            </p>
+            <p
+              class="text"
+            >
+              17
+              %
+            </p>
+          </div>
+          <p
+            class="text height-10 marginTop-1 fontSize-4xl fontWeight-700 lineHeight-none"
+          >
+            1
+          </p>
+        </div>
+        <div
+          class="borderRight minWidth-1/4 paddingRight-5 paddingLeft-5 paddingTop-4 paddingBottom-4"
+          style="cursor: pointer;"
+        >
+          <div
+            class="color-grey-500 flexDirection-row justifyContent-space-between fontSize-sm"
+          >
+            <p
+              class="text overflow-hidden whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              Clothing
+            </p>
+            <p
+              class="text"
+            >
+              17
+              %
+            </p>
+          </div>
+          <p
+            class="text height-10 marginTop-1 fontSize-4xl fontWeight-700 lineHeight-none"
+          >
+            1
+          </p>
+        </div>
+      </div>
+      <div
+        class="borderBottom flexDirection-row width-full marginTop-8 paddingTop-5 paddingBottom-5 fontWeight-700"
+      >
+        <p
+          class="text width-1/5"
+        >
+          Client Name
+        </p>
+        <p
+          class="text width-1/5"
+        >
+          Email
+        </p>
+        <p
+          class="text width-1/5"
+        >
+          Phone
+        </p>
+        <p
+          class="text width-1/5"
+        >
+          Case Manager
+        </p>
+        <p
+          class="text width-1/5"
+        >
+          Status
+        </p>
+        <div
+          class="width-12"
+        />
+      </div>
+      <div
+        class="infinite-scroll-component__outerdiv"
+      >
+        <div
+          class="infinite-scroll-component "
+          style="height: auto; overflow: auto;"
+        >
+          <div
+            class="borderBottom alignItems-center flexDirection-row"
+          >
+            <div
+              class="alignItems-center flexDirection-row width-1/5 paddingTop-5 paddingBottom-5"
+              style="cursor: pointer;"
+            >
+              <div
+                class="avatar s-xs marginRight-3"
+              >
+                <div
+                  aria-label="Test User"
+                  class="initials"
+                >
+                  TU
+                </div>
+              </div>
+              <p
+                class="text fontWeight-700"
+              >
+                Test User
+              </p>
+            </div>
+            <p
+              class="text overflow-hidden width-1/5 whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              test@example.com
+            </p>
+            <p
+              class="text width-1/5"
+            />
+            <p
+              class="text width-1/5"
+            />
+            <div
+              class="width-1/5"
+            >
+              <div
+                class="badge borderColor-yellow-200 bgcolor-yellow-200 color-yellow-800"
+              >
+                pending
+              </div>
+            </div>
+            <div
+              class="width-12"
+            >
+              <svg
+                aria-controls="menu-:r2:"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                aria-hidden="true"
+                class="icon width-6 height-6"
+                cursor="pointer"
+                data-testid="menu"
+                focusable="false"
+                id="menu-:r2:-trigger"
+                role="button"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  stroke="none"
+                />
+                <path
+                  d="M11 12a1 1 0 102 0 1 1 0 10-2 0M11 19a1 1 0 102 0 1 1 0 10-2 0M11 5a1 1 0 102 0 1 1 0 10-2 0"
+                />
+              </svg>
+              <div
+                class="menu"
+                data-popper-escaped="true"
+                data-popper-placement="bottom-start"
+                data-popper-reference-hidden="true"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; transform: translate(0px, 0px);"
+              >
+                <div
+                  aria-orientation="vertical"
+                  class="list"
+                  id="menu-:r2:"
+                  role="menu"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group"
+                    role="group"
+                  >
+                    <button
+                      class="button md text c-primary item minWidth-40"
+                      role="menuitem"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      <a
+                        class="text color-text"
+                        href="mailto:test@example.com"
+                      >
+                        Email
+                      </a>
+                    </button>
+                    <button
+                      class="button md text c-primary item minWidth-40"
+                      role="menuitem"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="borderBottom alignItems-center flexDirection-row"
+          >
+            <div
+              class="alignItems-center flexDirection-row width-1/5 paddingTop-5 paddingBottom-5"
+              style="cursor: pointer;"
+            >
+              <div
+                class="avatar s-xs marginRight-3"
+              >
+                <div
+                  aria-label="Test User"
+                  class="initials"
+                >
+                  TU
+                </div>
+              </div>
+              <p
+                class="text fontWeight-700"
+              >
+                Test User
+              </p>
+            </div>
+            <p
+              class="text overflow-hidden width-1/5 whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              test1@example.com
+            </p>
+            <p
+              class="text width-1/5"
+            />
+            <p
+              class="text width-1/5"
+            />
+            <div
+              class="width-1/5"
+            >
+              <div
+                class="badge borderColor-yellow-200 bgcolor-yellow-200 color-yellow-800"
+              >
+                pending
+              </div>
+            </div>
+            <div
+              class="width-12"
+            >
+              <svg
+                aria-controls="menu-:r5:"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                aria-hidden="true"
+                class="icon width-6 height-6"
+                cursor="pointer"
+                data-testid="menu"
+                focusable="false"
+                id="menu-:r5:-trigger"
+                role="button"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  stroke="none"
+                />
+                <path
+                  d="M11 12a1 1 0 102 0 1 1 0 10-2 0M11 19a1 1 0 102 0 1 1 0 10-2 0M11 5a1 1 0 102 0 1 1 0 10-2 0"
+                />
+              </svg>
+              <div
+                class="menu"
+                data-popper-escaped="true"
+                data-popper-placement="bottom-start"
+                data-popper-reference-hidden="true"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; transform: translate(0px, 0px);"
+              >
+                <div
+                  aria-orientation="vertical"
+                  class="list"
+                  id="menu-:r5:"
+                  role="menu"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group"
+                    role="group"
+                  >
+                    <button
+                      class="button md text c-primary item minWidth-40"
+                      role="menuitem"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      <a
+                        class="text color-text"
+                        href="mailto:test1@example.com"
+                      >
+                        Email
+                      </a>
+                    </button>
+                    <button
+                      class="button md text c-primary item minWidth-40"
+                      role="menuitem"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-labelledby=":r0:-tabs-gender"
+      class=""
+      hidden=""
+      id=":r0:-tabs-gender-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":r0:-tabs-age"
+      class=""
+      hidden=""
+      id=":r0:-tabs-age-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":r0:-tabs-ethnicity"
+      class=""
+      hidden=""
+      id=":r0:-tabs-ethnicity-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":r0:-tabs-veteran"
+      class=""
+      hidden=""
+      id=":r0:-tabs-veteran-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":r0:-tabs-offense"
+      class=""
+      hidden=""
+      id=":r0:-tabs-offense-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":r0:-tabs-stateFederal"
+      class=""
+      hidden=""
+      id=":r0:-tabs-stateFederal-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":r0:-tabs-release"
+      class=""
+      hidden=""
+      id=":r0:-tabs-release-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":r0:-tabs-zipCode"
+      class=""
+      hidden=""
+      id=":r0:-tabs-zipCode-panel"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby=":r0:-tabs-status"
+      class=""
+      hidden=""
+      id=":r0:-tabs-status-panel"
+      role="tabpanel"
+    />
+  </div>
+</div>
+`;

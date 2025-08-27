@@ -1,0 +1,8 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.topics {
+  a {
+    color: inherit;
+  }
+}

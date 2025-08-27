@@ -1,0 +1,164 @@
+@use 'attributes' as *;
+@use 'button' as *;
+@use 'colors' as *;
+@use 'social' as *;
+@use 'text' as *;
+@use 'utils' as *;
+@use 'mixins';
+
+body {
+  width: 100% !important;
+  height: 100%;
+  margin: 0;
+  background-color: $color-grey-100;
+  color: $color-text;
+  -webkit-text-size-adjust: none;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  img {
+    border: none;
+  }
+
+  &.nocolor {
+    color: $color-text;
+  }
+}
+
+p {
+  color: $color-text;
+}
+
+td {
+  word-break: break-word;
+}
+
+.preheader {
+  display: none !important;
+  visibility: hidden;
+  mso-hide: all;
+  font-size: 1px;
+  line-height: 1px;
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.email__wrapper {
+  @include mixins.table-scale();
+  background-color: $color-grey-100;
+}
+
+.email__content {
+  @include mixins.table-scale();
+}
+
+.email__masthead {
+  padding: 25px 0;
+  text-align: center;
+
+  &__logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: $color-primary;
+    text-decoration: none;
+
+    img {
+      width: 120px;
+    }
+  }
+}
+
+.email__body {
+  @include mixins.table-scale();
+
+  &__inner {
+    @include mixins.table-scale($width: 570px, $margin: 0 auto);
+    background-color: $color-white;
+  }
+}
+
+.email__footer {
+  @include mixins.table-scale($width: 570px, $margin: 0 auto);
+  text-align: center;
+
+  a,
+  p {
+    color: $color-grey-400;
+    cursor: default;
+    text-decoration: none;
+  }
+}
+
+.body__action {
+  @include mixins.table-scale($margin: 30px auto);
+  text-align: center;
+}
+
+.body__sub {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid $color-grey-200;
+}
+
+.content {
+  padding: 45px;
+}
+
+@media only screen and (max-width: 600px) {
+  .email__body__inner,
+  .email__footer {
+    width: 100% !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body,
+  .email__body,
+  .email__content,
+  .email__wrapper,
+  .email__masthead {
+    background-color: $color-grey-900 !important;
+    color: $color-text-inverse !important;
+  }
+
+  .email__body__inner {
+    background-color: $color-grey-800 !important;
+    color: $color-text-inverse !important;
+  }
+
+  .email__footer {
+    background-color: $color-grey-900 !important;
+    color: $color-grey-400 !important;
+
+    a,
+    p {
+      color: $color-grey-400 !important;
+    }
+  }
+
+  p,
+  ul,
+  ol,
+  blockquote,
+  h1,
+  h2,
+  h3,
+  span,
+  a.nocolor {
+    color: $color-text-inverse !important;
+  }
+
+  .attributes__content {
+    background-color: $color-grey-700 !important;
+  }
+}
+
+:root {
+  color-scheme: light dark;
+  supported-color-schemes: light dark;
+}

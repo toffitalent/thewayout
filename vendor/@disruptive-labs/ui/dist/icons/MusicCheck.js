@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgMusicCheck = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M3 17a3 3 0 106 0 3 3 0 00-6 0M9 17V4h10v9.5M9 8h10M15 19l2 2 4-4" }));
+export default SvgMusicCheck;

@@ -1,0 +1,87 @@
+@use 'sass:map';
+@use '@styles/theme';
+@use '../../styles/mixins';
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: theme.$toggle-disabled-opacity;
+}
+
+.input {
+  @include mixins.visually-hidden;
+
+  &:not(:checked) {
+    & + .control {
+      background-color: theme.$toggle-track-color !important;
+    }
+  }
+
+  &:checked {
+    & + .control .thumb {
+      transform: translateX(1em);
+    }
+  }
+
+  &:focus {
+    & + .control {
+      box-shadow: var(--focus-shadow-color) 0 0 0 theme.$focus-shadow-width;
+    }
+
+    &:not(:focus-visible) + .control {
+      box-shadow: none;
+    }
+  }
+}
+
+.control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: theme.$toggle-track-color;
+  border-radius: 9999px;
+  padding: theme.$toggle-border-width;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  will-change: background-color, box-shadow;
+
+  .invalid & {
+    background-color: theme.$form-error-color !important;
+  }
+}
+
+.thumb {
+  background: theme.$toggle-thumb-color;
+  border-radius: 9999px;
+  box-shadow: theme.$toggle-thumb-shadow;
+  transition: transform 0.2s ease;
+  will-change: transform;
+}
+
+.label {
+  margin-left: theme.$toggle-label-margin;
+  user-select: none;
+}
+
+@each $toggle-size, $size in theme.$toggle-sizes {
+  .#{$toggle-size} {
+    font-size: map.get($size, 'font');
+
+    .control {
+      width: map.get($size, 'width');
+      height: map.get($size, 'height');
+      font-size: map.get($size, 'width') - map.get($size, 'height');
+    }
+
+    .thumb {
+      $thumb-size: map.get($size, 'height') - theme.$toggle-border-width * 2;
+
+      width: $thumb-size;
+      height: $thumb-size;
+    }
+  }
+}

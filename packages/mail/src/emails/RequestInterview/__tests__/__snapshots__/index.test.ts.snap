@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RequestInterview renders correctly 1`] = `
+{
+  "html": "pug-test-stub",
+  "subject": "pug-test-stub",
+  "text": "pug-test-stub",
+}
+`;
+
+exports[`RequestInterview renders correctly 2`] = `
+"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="x-apple-disable-message-reformatting"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="color-scheme" content="light dark"/><meta name="supported-color-schemes" content="light dark"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700&amp;display=swap"/><link rel="stylesheet" href="@app/styles/index.scss" data-inline="true"/><!--[if mso]><style type="text/css">.f-fallback {
+  font-family: Arial, sans-serif;
+}</style><![endif]--></head><body><span class="preheader"></span><table class="email__wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr><td align="center"><table class="email__content" width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr><td class="email__masthead"><a class="f-fallback email__masthead__logo" href="http://__WEB__"><img src="@app/assets/logo.png" alt="The Way Out"/></a></td></tr><tr><td class="email__body" width="570" cellpadding="0" cellspacing="0"><table class="email__body__inner" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation"><tr><td class="content"><div class="f-fallback"><h1>Congratulations Test,</h1><p>Your application for Test Job Title has moved to the next phase.
+</p><p>Stay tuned for a contact notification from the employer.
+</p></div></td></tr></table></td></tr><tr><td><table class="email__footer" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation"><tr><td class="content" align="center"><p class="f-fallback sub align-center">&copy; 2024 The Way Out. All rights reserved.</p><p class="f-fallback sub align-center">The Way Out, Inc.<br/><a href="#">PO Box 70620</a><br/><a href="#">Milwaukee, WI 53207</a></p></td></tr></table></td></tr></table></td></tr></table></body></html>"
+`;
+
+exports[`RequestInterview renders correctly 3`] = `"Job Application Response"`;
+
+exports[`RequestInterview renders correctly 4`] = `
+"Congratulations Test
+
+Your application for Test Job Title has moved to the next phase.
+
+Stay tuned for a contact notification from the employer.
+
+--
+© 2024 The Way Out. All rights reserved.
+
+The Way Out, Inc.
+PO Box 70620
+Milwaukee, WI 53207"
+`;

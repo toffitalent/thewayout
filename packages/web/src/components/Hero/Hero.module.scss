@@ -1,0 +1,67 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.hero {
+  min-height: 37.5rem;
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+  position: relative;
+  background-color: var(--color-grey-700);
+  color: var(--color-white);
+
+  @include mq(md) {
+    min-height: 44rem;
+  }
+
+  @include mq(lg) {
+    min-height: 71rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+}
+
+.container {
+  @include container();
+  position: relative;
+  z-index: 5;
+
+  > div {
+    height: 100%;
+  }
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+
+  > a + a {
+    margin-left: 1rem;
+  }
+}
+

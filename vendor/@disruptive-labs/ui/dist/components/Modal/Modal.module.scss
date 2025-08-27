@@ -1,0 +1,68 @@
+@use '@styles/theme';
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: theme.$modal-z-index;
+  overflow-x: auto;
+  overflow-y: auto;
+
+  @supports (height: -webkit-fill-available) {
+    height: -webkit-fill-available;
+  }
+
+  &.isCentered {
+    align-items: center;
+  }
+}
+
+.modal {
+  width: 100%;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: theme.$modal-z-index;
+  outline: 0;
+  margin: theme.$modal-margin;
+  background: theme.$modal-bg;
+  border-radius: theme.$modal-border-radius;
+  box-shadow: theme.$modal-shadow;
+
+  @each $modal-size, $size in theme.$modal-sizes {
+    &.#{$modal-size} {
+      max-width: $size;
+    }
+  }
+
+  &.full {
+    max-width: 100%;
+  }
+}
+
+.overlay {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: theme.$modal-z-index - 1;
+  background-color: theme.$modal-overlay-bg;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.blockScroll {
+  overflow: hidden;
+}

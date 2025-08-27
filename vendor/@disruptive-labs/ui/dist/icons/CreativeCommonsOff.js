@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgCreativeCommonsOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M5.638 5.634a9 9 0 1012.723 12.733m1.686-2.332A9 9 0 007.954 3.958" }), React.createElement("path", { d: "M10.5 10.5a2.187 2.187 0 00-2.914.116 1.928 1.928 0 000 2.768 2.188 2.188 0 002.914.116M16.5 10.5a2.194 2.194 0 00-2.309-.302M3 3l18 18" }));
+export default SvgCreativeCommonsOff;

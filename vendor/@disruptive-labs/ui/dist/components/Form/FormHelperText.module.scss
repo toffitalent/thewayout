@@ -1,0 +1,12 @@
+@use '@styles/theme';
+
+.helperText {
+  margin-top: theme.$form-caption-margin-top;
+  color: theme.$form-caption-color;
+  font-size: theme.$form-caption-font-size;
+  font-weight: theme.$form-caption-font-weight;
+}
+
+.invalid {
+  color: theme.$form-error-color;
+}

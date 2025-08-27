@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgDeviceComputerCameraOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M6.15 6.153a7 7 0 009.696 9.696m2-2a7 7 0 00-9.699-9.695" }), React.createElement("path", { d: "M9.13 9.122a3 3 0 003.743 3.749m2-2a3 3 0 00-3.737-3.736M8 16l-2.091 3.486A1 1 0 006.766 21h10.468a1 1 0 00.857-1.514L16 16M3 3l18 18" }));
+export default SvgDeviceComputerCameraOff;

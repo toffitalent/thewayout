@@ -1,0 +1,110 @@
+@use '@styles/theme';
+
+.toast {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: theme.$toast-margin;
+  padding: theme.$toast-padding;
+  overflow: hidden;
+  background: theme.$toast-bg;
+  border-radius: theme.$toast-border-radius;
+  color: theme.$toast-color;
+  font-size: theme.$toast-font-size;
+  font-weight: theme.$toast-font-weight;
+  pointer-events: auto;
+  text-align: left;
+  transition: opacity 250ms ease, transform 250ms ease;
+
+  &.appear {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  &.appearActive {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &.exit {
+    opacity: 1;
+  }
+
+  &.exitActive {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  .text {
+    flex: 1;
+    margin: 0 theme.$toast-text-margin;
+  }
+}
+
+.danger {
+  background: theme.$toast-danger-bg;
+  color: theme.$toast-danger-color;
+}
+
+.info {
+  background: theme.$toast-info-bg;
+  color: theme.$toast-info-color;
+}
+
+.success {
+  background: theme.$toast-success-bg;
+  color: theme.$toast-success-color;
+}
+
+.warning {
+  background: theme.$toast-warning-bg;
+  color: theme.$toast-warning-color;
+}
+
+.dismiss {
+  margin: 0 theme.$toast-icon-margin;
+
+  .text + .dismiss {
+    margin-left: theme.$toast-icon-margin - theme.$toast-text-margin;
+  }
+
+  .button {
+    padding: 0.6rem !important;
+    margin: -0.6rem !important;
+    background: none !important;
+    color: currentColor !important;
+    font-size: 1.6rem !important;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.2) !important;
+    }
+  }
+
+  .timer {
+    width: 100% !important;
+    height: 100% !important;
+
+    circle:first-child {
+      stroke: currentColor !important;
+      opacity: 0.26 !important;
+    }
+
+    circle:last-child {
+      stroke: currentColor !important;
+    }
+  }
+}
+
+.close {
+  width: 3.2rem;
+  height: 3.2rem;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  stroke-width: 3;
+}

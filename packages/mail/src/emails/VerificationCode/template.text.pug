@@ -1,0 +1,13 @@
+| !Hi !{user ? user.firstName : 'there'},
+|
+| Below is the verification code you requested. This code is only valid for 1 hour.
+|
+| Verification Code: !{code}
+|
+| If you did not request a verification code, please ignore this email or contact support (!{config.get('company.supportEmail')}) if you have questions.
+|
+| Thanks,
+| The !{config.get('company.name')} Team
+|
+|
+include ../templates/footer.text.pug

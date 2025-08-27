@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgLifebuoyOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M9.171 9.172a4 4 0 005.65 5.663M16 12a4 4 0 00-4-4" }), React.createElement("path", { d: "M5.64 5.632a9 9 0 1012.73 12.725m1.667-2.301A9 9 0 007.96 3.956M15 15l3.35 3.35M9 15l-3.35 3.35M5.65 5.65L9 9M18.35 5.65L15 9M3 3l18 18" }));
+export default SvgLifebuoyOff;

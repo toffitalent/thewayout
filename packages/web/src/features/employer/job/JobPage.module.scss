@@ -1,0 +1,13 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.listItemWrapper {
+  cursor: pointer;
+}
+
+.status {
+  @include mq(md, max) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

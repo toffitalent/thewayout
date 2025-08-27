@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhoneNumberInput renders correctly 1`] = `
+<div>
+  <div
+    class="control"
+    role="group"
+  >
+    <label
+      class="label"
+      for=":r0:"
+    >
+      Phone
+    </label>
+    <div
+      class="root primary md md"
+    >
+      <input
+        class="input"
+        id=":r0:"
+        maxlength="14"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PhoneNumberInput renders correctly when format number package not load 1`] = `
+<div>
+  <div
+    class="control"
+    role="group"
+  >
+    <label
+      class="label"
+      for=":r1:"
+    >
+      Phone
+    </label>
+    <div
+      class="root primary md md"
+    >
+      <input
+        class="input"
+        id=":r1:"
+        maxlength="10"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;

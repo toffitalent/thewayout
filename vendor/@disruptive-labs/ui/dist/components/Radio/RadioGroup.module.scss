@@ -1,0 +1,29 @@
+@use '@styles/theme';
+
+.group {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  &.inline div[role='radiogroup'] {
+    display: inline-flex;
+    flex-direction: row;
+  }
+}
+
+.item {
+  display: block;
+
+  & + & {
+    margin-top: theme.$radio-group-margin;
+
+    .inline & {
+      margin-top: 0;
+      margin-left: theme.$radio-group-margin-inline;
+    }
+  }
+}

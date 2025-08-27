@@ -1,0 +1,7 @@
+@use '../core' as *;
+
+$badge-border-radius: $border-radius !default;
+$badge-border-width: 1px !default;
+$badge-font-size: $font-size-xs !default;
+$badge-font-weight: 700 !default;
+$badge-padding: $spacing-0_5 $spacing-2 !default;

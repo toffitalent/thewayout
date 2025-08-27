@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > Users > User DELETE /api/v1/users/:userId does not allow requests from non-admins 1`] = `
+{
+  "code": "InsufficientScope",
+  "message": "Insufficient scope has been authorized for this request",
+  "status": 403,
+}
+`;
+
+exports[`Routes > Users > User DELETE /api/v1/users/:userId returns a resource conflict response for users with exiting linked resources 1`] = `
+{
+  "code": "ResourceConflict",
+  "message": "User 01817e24-0d42-7176-b613-889fe94905f0 owns existing resources",
+  "status": 409,
+}
+`;
+
+exports[`Routes > Users > User DELETE /api/v1/users/:userId returns a resource not found response for unknown users 1`] = `
+{
+  "code": "ResourceNotFound",
+  "message": "User 00000000-0000-0000-0000-000000000000 not found",
+  "status": 404,
+}
+`;
+
+exports[`Routes > Users > User GET /api/v1/user does not allow unauthenticated requests 1`] = `
+{
+  "code": "InvalidCredentials",
+  "message": "Authentication required",
+  "status": 401,
+}
+`;
+
+exports[`Routes > Users > User GET /api/v1/user retrieves the authenticated user 1`] = `
+{
+  "createdAt": "<Date>",
+  "email": "heidi_marks@example.com",
+  "firstName": "Heidi",
+  "id": "01817e24-0d42-7176-b613-889fe94905f0",
+  "lastName": "Marks",
+  "type": "client",
+  "updatedAt": "<Date>",
+}
+`;
+
+exports[`Routes > Users > User GET /api/v1/users/:userId does not allow unauthenticated requests 1`] = `
+{
+  "code": "InvalidCredentials",
+  "message": "Authentication required",
+  "status": 401,
+}
+`;
+
+exports[`Routes > Users > User GET /api/v1/users/:userId exposes full user data for admin requests 1`] = `
+{
+  "createdAt": "<Date>",
+  "email": "heidi_marks@example.com",
+  "firstName": "Heidi",
+  "id": "01817e24-0d42-7176-b613-889fe94905f0",
+  "lastName": "Marks",
+  "roles": [
+    "client",
+  ],
+  "type": "client",
+  "updatedAt": "<Date>",
+}
+`;
+
+exports[`Routes > Users > User GET /api/v1/users/:userId exposes full user data for owner 1`] = `
+{
+  "createdAt": "<Date>",
+  "email": "heidi_marks@example.com",
+  "firstName": "Heidi",
+  "id": "01817e24-0d42-7176-b613-889fe94905f0",
+  "lastName": "Marks",
+  "type": "client",
+  "updatedAt": "<Date>",
+}
+`;
+
+exports[`Routes > Users > User GET /api/v1/users/:userId retrieves a user 1`] = `
+{
+  "createdAt": "<Date>",
+  "firstName": "Heidi",
+  "id": "01817e24-0d42-7176-b613-889fe94905f0",
+  "lastName": "Marks",
+  "type": "client",
+  "updatedAt": "<Date>",
+}
+`;
+
+exports[`Routes > Users > User GET /api/v1/users/:userId returns a resource not found response for unknown users 1`] = `
+{
+  "code": "ResourceNotFound",
+  "message": "User 00000000-0000-0000-0000-000000000000 not found",
+  "status": 404,
+}
+`;
+
+exports[`Routes > Users > User PATCH /api/v1/user does not allow unauthenticated requests 1`] = `
+{
+  "code": "InvalidCredentials",
+  "message": "Authentication required",
+  "status": 401,
+}
+`;
+
+exports[`Routes > Users > User PATCH /api/v1/user updates the authenticated user 1`] = `
+{
+  "createdAt": "<Date>",
+  "email": "heidi_marks@example.com",
+  "firstName": "Hayley",
+  "id": "01817e24-0d42-7176-b613-889fe94905f0",
+  "lastName": "Zieme",
+  "type": "client",
+  "updatedAt": "<Date>",
+}
+`;
+
+exports[`Routes > Users > User PATCH /api/v1/users/:userId does not allow requests from users without permission 1`] = `
+{
+  "code": "NotAuthorized",
+  "message": "Not authorized to perform PATCH on resource /api/v1/users/01817e24-0d42-7176-b613-889fe94905f0",
+  "status": 403,
+}
+`;
+
+exports[`Routes > Users > User PATCH /api/v1/users/:userId does not allow unauthenticated requests 1`] = `
+{
+  "code": "InvalidCredentials",
+  "message": "Authentication required",
+  "status": 401,
+}
+`;
+
+exports[`Routes > Users > User PATCH /api/v1/users/:userId returns a resource conflict response for duplicate email addresses 1`] = `
+{
+  "code": "ResourceConflict",
+  "message": "Email heidi_marks@example.com already in use",
+  "status": 409,
+}
+`;
+
+exports[`Routes > Users > User PATCH /api/v1/users/:userId returns a resource not found response for unknown users 1`] = `
+{
+  "code": "ResourceNotFound",
+  "message": "User 00000000-0000-0000-0000-000000000000 not found",
+  "status": 404,
+}
+`;
+
+exports[`Routes > Users > User PATCH /api/v1/users/:userId returns an invalid parameter response for invalid passwords 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "password",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Password does not match",
+  "status": 400,
+}
+`;
+
+exports[`Routes > Users > User PATCH /api/v1/users/:userId updates a user 1`] = `
+{
+  "createdAt": "<Date>",
+  "email": "heidi_marks@example.com",
+  "firstName": "Hayley",
+  "id": "01817e24-0d42-7176-b613-889fe94905f0",
+  "lastName": "Zieme",
+  "type": "client",
+  "updatedAt": "<Date>",
+}
+`;

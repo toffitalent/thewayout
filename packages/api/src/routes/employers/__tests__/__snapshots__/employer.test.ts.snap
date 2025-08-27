@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > Employers > employer PATCH /api/v1/employers/:id does not allow update limit from non-admins 1`] = `
+{
+  "code": "InsufficientScope",
+  "message": "Insufficient scope has been authorized for this request",
+  "status": 403,
+}
+`;
+
+exports[`Routes > Employers > employer PATCH /api/v1/employers/:id updates employer limits by admin 1`] = `
+{
+  "address": "Wolff Spring",
+  "availableJobsCount": 10,
+  "availableProfilesUncloak": 10,
+  "avatar": null,
+  "city": "North Brooks",
+  "createdAt": "<Date>",
+  "description": "Eum eos laborum labore ipsam libero nobis. Earum maxime porro quas dicta vero. Occaecati impedit amet eaque doloribus. Veniam adipisci doloremque voluptas.",
+  "id": "01817e24-0d42-763f-b7ea-8f975994f864",
+  "industry": "Accounting",
+  "name": "Oberbrunner, Dare and Trantow",
+  "numberOfEmployees": "10000+",
+  "postalCode": "04674",
+  "state": "AK",
+  "updatedAt": "<Date>",
+  "yearsInBusiness": "0-3",
+}
+`;
+
+exports[`Routes > Employers > employer PATCH /api/v1/employers/:id updates employer profile 1`] = `
+{
+  "address": "Wolff Spring",
+  "availableJobsCount": 1,
+  "availableProfilesUncloak": 3,
+  "avatar": null,
+  "city": "North Brooks",
+  "createdAt": "<Date>",
+  "description": "Eum eos laborum labore ipsam libero nobis. Earum maxime porro quas dicta vero. Occaecati impedit amet eaque doloribus. Veniam adipisci doloremque voluptas.",
+  "id": "01817e24-0d42-763f-b7ea-8f975994f864",
+  "industry": "Accounting",
+  "name": "Test",
+  "numberOfEmployees": "10000+",
+  "postalCode": "04674",
+  "state": "AK",
+  "updatedAt": "<Date>",
+  "yearsInBusiness": "0-3",
+}
+`;

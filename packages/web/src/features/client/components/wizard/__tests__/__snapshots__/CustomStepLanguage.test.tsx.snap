@@ -1,0 +1,394 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomStepLanguage press next & save button 1`] = `
+<div>
+  <div
+    class="maxWidth-96 marginRight-auto marginLeft-auto"
+  >
+    <div
+      class="flexDirection-row justifyContent-center marginTop-8"
+    >
+      <button
+        class="button md outline c-primary paddingRight-5 paddingLeft-5"
+        type="button"
+      >
+        Add new
+      </button>
+      <button
+        class="button md solid c-primary flex-1 marginLeft-5"
+        type="button"
+      >
+        Save & Next
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CustomStepLanguage renders correctly 1`] = `
+<div>
+  <div
+    class="maxWidth-96 marginRight-auto marginLeft-auto"
+  >
+    <form>
+      <div
+        class="control"
+        role="group"
+      >
+        <label
+          class="label"
+          for=":r0:"
+        >
+          Language
+        </label>
+        <div
+          class="root primary md fluid md"
+        >
+          <select
+            class="input"
+            id=":r0:"
+            name="language"
+          >
+            <option
+              disabled=""
+              hidden=""
+              value=""
+            >
+              Select
+            </option>
+            <option
+              value="english"
+            >
+              English
+            </option>
+            <option
+              value="spanish"
+            >
+              Spanish
+            </option>
+            <option
+              value="french"
+            >
+              French
+            </option>
+            <option
+              value="chinese"
+            >
+              Chinese
+            </option>
+            <option
+              value="german"
+            >
+              German
+            </option>
+            <option
+              value="russian"
+            >
+              Russian
+            </option>
+            <option
+              value="vietnamese"
+            >
+              Vietnamese
+            </option>
+            <option
+              value="tagalog"
+            >
+              Tagalog
+            </option>
+            <option
+              value="arabic"
+            >
+              Arabic
+            </option>
+            <option
+              value="korean"
+            >
+              Korean
+            </option>
+          </select>
+          <div
+            class="icon"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="control"
+        role="group"
+      >
+        <label
+          class="label"
+          for=":r1:"
+        >
+          Level
+        </label>
+        <div
+          class="root primary md fluid md"
+        >
+          <select
+            class="input"
+            id=":r1:"
+            name="level"
+          >
+            <option
+              disabled=""
+              hidden=""
+              value=""
+            >
+              Select
+            </option>
+            <option
+              value="elementary"
+            >
+              Basic
+            </option>
+            <option
+              value="basic"
+            >
+              Conversational
+            </option>
+            <option
+              value="professional"
+            >
+              Proficient
+            </option>
+            <option
+              value="nativeBilingual"
+            >
+              Fluent
+            </option>
+          </select>
+          <div
+            class="icon"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flexDirection-row justifyContent-center marginTop-8"
+      >
+        <button
+          class="button md text c-primary paddingRight-5 paddingLeft-5"
+          type="button"
+        >
+          Skip
+        </button>
+        <button
+          class="button md solid c-primary disabled flex-1"
+          disabled=""
+          type="submit"
+        >
+          Save & Next
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`CustomStepLanguage skip step 1`] = `
+<div>
+  <div
+    class="maxWidth-96 marginRight-auto marginLeft-auto"
+  >
+    <form>
+      <div
+        class="control"
+        role="group"
+      >
+        <label
+          class="label"
+          for=":r2:"
+        >
+          Language
+        </label>
+        <div
+          class="root primary md fluid md"
+        >
+          <select
+            class="input"
+            id=":r2:"
+            name="language"
+          >
+            <option
+              disabled=""
+              hidden=""
+              value=""
+            >
+              Select
+            </option>
+            <option
+              value="english"
+            >
+              English
+            </option>
+            <option
+              value="spanish"
+            >
+              Spanish
+            </option>
+            <option
+              value="french"
+            >
+              French
+            </option>
+            <option
+              value="chinese"
+            >
+              Chinese
+            </option>
+            <option
+              value="german"
+            >
+              German
+            </option>
+            <option
+              value="russian"
+            >
+              Russian
+            </option>
+            <option
+              value="vietnamese"
+            >
+              Vietnamese
+            </option>
+            <option
+              value="tagalog"
+            >
+              Tagalog
+            </option>
+            <option
+              value="arabic"
+            >
+              Arabic
+            </option>
+            <option
+              value="korean"
+            >
+              Korean
+            </option>
+          </select>
+          <div
+            class="icon"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="control"
+        role="group"
+      >
+        <label
+          class="label"
+          for=":r3:"
+        >
+          Level
+        </label>
+        <div
+          class="root primary md fluid md"
+        >
+          <select
+            class="input"
+            id=":r3:"
+            name="level"
+          >
+            <option
+              disabled=""
+              hidden=""
+              value=""
+            >
+              Select
+            </option>
+            <option
+              value="elementary"
+            >
+              Basic
+            </option>
+            <option
+              value="basic"
+            >
+              Conversational
+            </option>
+            <option
+              value="professional"
+            >
+              Proficient
+            </option>
+            <option
+              value="nativeBilingual"
+            >
+              Fluent
+            </option>
+          </select>
+          <div
+            class="icon"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flexDirection-row justifyContent-center marginTop-8"
+      >
+        <button
+          class="button md text c-primary paddingRight-5 paddingLeft-5"
+          type="button"
+        >
+          Skip
+        </button>
+        <button
+          class="button md solid c-primary disabled flex-1"
+          disabled=""
+          type="submit"
+        >
+          Save & Next
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

@@ -1,0 +1,15 @@
+extends ../templates/base.pug
+include ../templates/mixins.pug
+
+block content
+  h1 Dear #{employer.firstName},
+  p
+    | An application for the role #{offerTitle} has been received.
+    |
+  p
+    | Head over to your dashboard to view applications.
+    |
+  +action
+    +button(dashboardPageUrl) View Dashboard
+  
+  +trouble(dashboardPageUrl)

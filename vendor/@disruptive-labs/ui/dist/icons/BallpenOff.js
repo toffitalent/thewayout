@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgBallpenOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M14 6l7 7-2 2M10 10l-4.172 4.172a2.828 2.828 0 104 4L14 14" }), React.createElement("path", { d: "M16 12l4.414-4.414a2 2 0 000-2.829l-1.171-1.171a2 2 0 00-2.829 0L12 8M4 20l1.768-1.768M3 3l18 18" }));
+export default SvgBallpenOff;

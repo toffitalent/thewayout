@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgCalendarOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M9 5h9a2 2 0 012 2v9m-.184 3.839A2 2 0 0118 21H6a2 2 0 01-2-2V7a2 2 0 011.158-1.815M16 3v4M8 3v1M4 11h7m4 0h5M3 3l18 18" }));
+export default SvgCalendarOff;

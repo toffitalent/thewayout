@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgRadioactive = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M13.5 14.6l3 5.19A9 9 0 0021 12h-6a3 3 0 01-1.5 2.6M13.5 9.4l3-5.19a9 9 0 00-9 0l3 5.19a3 3 0 013 0M10.5 14.6l-3 5.19A9 9 0 013 12h6a3 3 0 001.5 2.6" }));
+export default SvgRadioactive;

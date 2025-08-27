@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgMicroscope = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M5 21h14M6 18h2M7 18v3M9 11l3 3 6-6-3-3zM10.5 12.5L9 14M17 3l3 3M12 21a6 6 0 003.715-10.712" }));
+export default SvgMicroscope;

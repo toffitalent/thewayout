@@ -1,0 +1,18 @@
+@use 'sass:map';
+@use '../core' as *;
+
+$spinner-default-color: var(--color-grey) !default;
+$spinner-size-xs: $spacing-4 !default;
+$spinner-size-sm: $spacing-6 !default;
+$spinner-size-md: $spacing-8 !default;
+$spinner-size-lg: $spacing-10 !default;
+$spinner-size-xl: $spacing-12 !default;
+
+// Utilities
+$spinner-sizes: (
+  'xs': $spinner-size-xs,
+  'sm': $spinner-size-sm,
+  'md': $spinner-size-md,
+  'lg': $spinner-size-lg,
+  'xl': $spinner-size-xl,
+);

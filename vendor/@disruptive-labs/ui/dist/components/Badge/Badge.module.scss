@@ -1,0 +1,14 @@
+@use '@styles/theme';
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: theme.$badge-padding;
+  border-style: solid;
+  border-width: theme.$badge-border-width;
+  border-radius: theme.$badge-border-radius;
+  font-size: theme.$badge-font-size;
+  font-weight: theme.$badge-font-weight;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

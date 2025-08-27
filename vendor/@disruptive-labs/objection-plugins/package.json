@@ -1,0 +1,90 @@
+{
+  "name": "@disruptive-labs/objection-plugins",
+  "version": "3.0.0",
+  "description": "Objection.js plugins",
+  "main": "dist/index.js",
+  "repository": "https://github.com/disruptive-labs/objection-plugins.git",
+  "author": "Disruptive Labs",
+  "license": "UNLICENSED",
+  "private": false,
+  "files": [
+    "README.md",
+    "dist/"
+  ],
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit && eslint . --ext .js,.ts",
+    "prepare": "husky install",
+    "release": "release-it",
+    "test": "jest -i --coverage"
+  },
+  "peerDependencies": {
+    "knex": ">=0.95.0",
+    "objection": "^3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@faker-js/faker": "^6.0.0",
+    "@release-it/conventional-changelog": "^5.0.0",
+    "@types/jest": "^28.1.4",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "babel-jest": "^28.1.2",
+    "eslint": "8.19.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "jest": "^28.1.2",
+    "jest-junit": "^14.0.0",
+    "knex": "^2.1.0",
+    "objection": "^3.0.1",
+    "prettier": "^2.7.1",
+    "release-it": "^15.1.1",
+    "rimraf": "^3.0.2",
+    "sqlite3": "^5.0.8",
+    "typescript": "^4.7.4"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.{js,ts}"
+    ],
+    "roots": [
+      "<rootDir>/src"
+    ]
+  },
+  "jest-junit": {
+    "outputDirectory": "./artifacts/jest",
+    "outputName": "results.xml"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true,
+      "releaseName": "${version}"
+    },
+    "hooks": {
+      "after:bump": "rimraf dist && yarn build"
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "conventionalcommits"
+      }
+    }
+  }
+}

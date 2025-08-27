@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgHeadphonesFilled = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M21 18a3 3 0 01-2.824 2.995L18 21h-1a3 3 0 01-2.995-2.824L14 18v-3a3 3 0 012.824-2.995L17 12h1c.351 0 .688.06 1 .171V12a7 7 0 00-13.996-.24L5 12v.17c.25-.088.516-.144.791-.163L6 12h1a3 3 0 012.995 2.824L10 15v3a3 3 0 01-2.824 2.995L7 21H6a3 3 0 01-2.995-2.824L3 18v-6a9 9 0 0117.996-.265L21 12v6z", fill: "currentColor", stroke: "none" }));
+export default SvgHeadphonesFilled;

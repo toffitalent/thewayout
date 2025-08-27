@@ -1,0 +1,22 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.rightColumn {
+  @include mq(md, min) {
+    padding-left: 2rem;
+  }
+}
+
+.profileInfo {
+  @include mq(md, max) {
+    display: none;
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 4.4rem;
+  height: 4.4rem;
+}

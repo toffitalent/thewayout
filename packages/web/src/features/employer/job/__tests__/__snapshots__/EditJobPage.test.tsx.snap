@@ -1,0 +1,1953 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditJobPage renders correctly 1`] = `
+<div>
+  <div
+    class="flexDirection-column"
+  >
+    <h2
+      class="text fontSize-3xl"
+    >
+      Job Settings
+    </h2>
+    <p
+      class="text color-grey-600 marginTop-2"
+    >
+      Manage your job settings here.
+    </p>
+    <div
+      class="wizardWrapper container borderBottom flexDirection-row width-full marginTop-8 paddingBottom-5"
+      data-testid="details"
+    >
+      <div
+        class="item bp-xs-12 bp-md-4 marginBottom-8 paddingRight-5"
+      >
+        <p
+          class="text fontSize-xl fontWeight-700"
+        >
+          Job Details
+        </p>
+      </div>
+      <div
+        class="item bp-xs-12 bp-md-8"
+      >
+        <form>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r0:"
+            >
+              Job Title
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <input
+                class="input"
+                id=":r0:"
+                name="title"
+                placeholder="E.g. Car Wash Attendant"
+                type="text"
+                value="Car Wash Attendant"
+              />
+            </div>
+          </div>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r1:"
+            >
+              Short Description
+            </label>
+            <div
+              class="root primary md fluid md multiline"
+            >
+              <textarea
+                aria-describedby=":r1:-helptext"
+                class="input"
+                id=":r1:"
+                name="description"
+                placeholder="E.g. Wash attendants are responsible for performing the daily operational practices of running the car wash facility."
+                rows="4"
+                type="text"
+              >
+                Wash attendants are responsible for performing the daily operational practices of running the car wash facility.
+              </textarea>
+            </div>
+            <div
+              aria-live="polite"
+              class="helperText"
+              id=":r1:-helptext"
+            >
+              Max 1,000 characters.
+            </div>
+          </div>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r2:"
+            >
+              Department
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <input
+                class="input"
+                id=":r2:"
+                name="department"
+                placeholder="E.g. Customer Service"
+                type="text"
+                value="Customer Service"
+              />
+            </div>
+          </div>
+          <div
+            class="control display-inline-block width-1/2 paddingRight-2"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r3:"
+            >
+              Start Date
+            </label>
+            <div
+              class="root primary md fluid md fieldHalfWidth"
+            >
+              <select
+                class="input"
+                id=":r3:"
+                name="startAtMonth"
+              >
+                <option
+                  disabled=""
+                  hidden=""
+                  value=""
+                >
+                  Select month
+                </option>
+                <option
+                  value="1"
+                >
+                  Jan.
+                </option>
+                <option
+                  value="2"
+                >
+                  Feb.
+                </option>
+                <option
+                  value="3"
+                >
+                  Mar.
+                </option>
+                <option
+                  value="4"
+                >
+                  Apr.
+                </option>
+                <option
+                  value="5"
+                >
+                  May
+                </option>
+                <option
+                  value="6"
+                >
+                  June
+                </option>
+                <option
+                  value="7"
+                >
+                  July
+                </option>
+                <option
+                  value="8"
+                >
+                  Aug.
+                </option>
+                <option
+                  value="9"
+                >
+                  Sept.
+                </option>
+                <option
+                  value="10"
+                >
+                  Oct.
+                </option>
+                <option
+                  value="11"
+                >
+                  Nov.
+                </option>
+                <option
+                  value="12"
+                >
+                  Dec.
+                </option>
+              </select>
+              <div
+                class="icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="control display-inline-block width-1/2 paddingLeft-2"
+            role="group"
+          >
+            <div
+              class="root primary md fluid md fieldHalfWidth"
+            >
+              <select
+                class="input"
+                id=":r4:"
+                name="startAtYear"
+              >
+                <option
+                  disabled=""
+                  hidden=""
+                  value=""
+                >
+                  Select year
+                </option>
+                <option
+                  value="2024"
+                >
+                  2024
+                </option>
+                <option
+                  value="2025"
+                >
+                  2025
+                </option>
+                <option
+                  value="2026"
+                >
+                  2026
+                </option>
+              </select>
+              <div
+                class="icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r5:"
+            >
+              Work Location
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <select
+                class="input"
+                id=":r5:"
+                name="typeOfWork"
+              >
+                <option
+                  disabled=""
+                  hidden=""
+                  value=""
+                >
+                  Select
+                </option>
+                <option
+                  value="onsite"
+                >
+                  Onsite
+                </option>
+                <option
+                  value="remote"
+                >
+                  Remote
+                </option>
+                <option
+                  value="hybrid"
+                >
+                  Hybrid
+                </option>
+                <option
+                  value="inPerson"
+                >
+                  In-person
+                </option>
+              </select>
+              <div
+                class="icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r6:"
+            >
+              Employment Type
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <select
+                class="input"
+                id=":r6:"
+                name="workingTime"
+              >
+                <option
+                  disabled=""
+                  hidden=""
+                  value=""
+                >
+                  Select
+                </option>
+                <option
+                  value="fullTime"
+                >
+                  Full-time
+                </option>
+                <option
+                  value="partTime"
+                >
+                  Part-time
+                </option>
+                <option
+                  value="contractor"
+                >
+                  Contractor
+                </option>
+                <option
+                  value="seasonal"
+                >
+                  Seasonal
+                </option>
+              </select>
+              <div
+                class="icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r7:"
+            >
+              Number of Open Positions
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <input
+                class="input"
+                id=":r7:"
+                name="numberOfOpenPositions"
+                placeholder="E.g. 3"
+                type="number"
+                value="3"
+              />
+            </div>
+          </div>
+          <button
+            class="button md solid c-primary disabled marginTop-5"
+            disabled=""
+            type="submit"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="wizardWrapper container borderBottom flexDirection-row width-full marginTop-8 paddingBottom-5"
+      data-testid="veteranOrJustice"
+    >
+      <div
+        class="item bp-xs-12 bp-md-4 marginBottom-8 paddingRight-5"
+      >
+        <p
+          class="text fontSize-xl fontWeight-700"
+        >
+          Allowed Applicants
+        </p>
+        <p
+          class="text color-grey-600 fontSize-sm"
+        >
+          We will only recommend Test to candidates that meet the selected attribute(s).
+        </p>
+      </div>
+      <div
+        class="item bp-xs-12 bp-md-8"
+      >
+        <form>
+          <div
+            class="control control fluid paddingTop-3 paddingBottom-3"
+            role="group"
+          >
+            <fieldset
+              class="choices inline"
+            >
+              <div>
+                <div
+                  aria-checked="true"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Veteran
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="true"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Justice Impacted
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button
+            class="button md solid c-primary disabled marginTop-5"
+            disabled=""
+            type="submit"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="wizardWrapper container borderBottom flexDirection-row width-full marginTop-8 paddingBottom-5"
+      data-testid="offenses"
+    >
+      <div
+        class="item bp-xs-12 bp-md-4 marginBottom-8 paddingRight-5"
+      >
+        <p
+          class="text fontSize-xl fontWeight-700"
+        >
+          Allowed Offenses
+        </p>
+        <p
+          class="text color-grey-600 fontSize-sm"
+        >
+          We will only recommend Test to candidates that meet your allowable offenses (per State and Federal statutes).
+        </p>
+      </div>
+      <div
+        class="item bp-xs-12 bp-md-8"
+      >
+        <form>
+          <div
+            class="marginBottom-4"
+          >
+            <button
+              class="button md outline c-primary"
+              type="button"
+            >
+              Select All
+            </button>
+            <button
+              class="button md text c-primary marginLeft-1 paddingTop-4 paddingRight-4 paddingBottom-4 paddingLeft-4"
+              type="button"
+            >
+              Clear All
+            </button>
+          </div>
+          <div
+            class="control control fluid paddingTop-3 paddingBottom-3"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                Drugs
+              </legend>
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Distribution
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Possession
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="control control fluid paddingTop-3 paddingBottom-3"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                Motor Vehicle
+              </legend>
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    DUI and/or DWI
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Fleeing Police
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Hit & Run
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Vehicular Homicide
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Vehicular Manslaughter
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="control control fluid paddingTop-3 paddingBottom-3"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                Sexual
+              </legend>
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Pornography
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Sexual Assault 
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Statutory Rape
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="control control fluid paddingTop-3 paddingBottom-3"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                Violent
+              </legend>
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Battery
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Domestic Violence
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Homicide
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Manslaughter
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Reckless Endangerment
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="control control fluid paddingTop-3 paddingBottom-3"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                Theft
+              </legend>
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Burglary
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Identity Theft
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Robbery
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="control control fluid paddingTop-3 paddingBottom-3"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                Property Damage
+              </legend>
+              <div>
+                <div
+                  aria-checked="true"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Arson
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Vandalism
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div
+            class="control control fluid paddingTop-3 paddingBottom-3"
+            role="group"
+          >
+            <fieldset
+              class="choices inline offenseCategoryStep"
+            >
+              <legend
+                class="label"
+              >
+                White - collar
+              </legend>
+              <div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Bail Jumping
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Embezzlement
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Fraud 
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-disabled="false"
+                  class="choicesItem"
+                  role="checkbox"
+                  tabindex="0"
+                >
+                  <span
+                    class="choicesItemText"
+                  >
+                    Money-Laundering
+                  </span>
+                  <span
+                    class="choicesItemIcon"
+                  >
+                    <svg
+                      focusable="false"
+                      role="presentation"
+                      viewBox="0 0 24 24"
+                    >
+                      <polygon
+                        fill="currentColor"
+                        points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button
+            class="button md solid c-primary disabled marginTop-5"
+            disabled=""
+            type="submit"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="wizardWrapper container borderBottom flexDirection-row width-full marginTop-8 paddingBottom-5"
+      data-testid="responsibilities"
+    >
+      <div
+        class="item bp-xs-12 bp-md-4 marginBottom-8 paddingRight-5"
+      >
+        <p
+          class="text fontSize-xl fontWeight-700"
+        >
+          Responsibilities & Expectations
+        </p>
+      </div>
+      <div
+        class="item bp-xs-12 bp-md-8"
+      >
+        <form>
+          <div
+            class="width-full textAlign-left"
+          >
+            <div
+              class="marginBottom-3"
+            >
+              <div
+                class="flexDirection-row justifyContent-space-between marginBottom-3"
+              >
+                <p
+                  class="text fontWeight-700"
+                >
+                  Responsibility #1
+                </p>
+              </div>
+              <div
+                class="control"
+                role="group"
+              >
+                <div
+                  class="root primary md fluid md multiline"
+                >
+                  <textarea
+                    aria-describedby=":rg:-helptext"
+                    class="input"
+                    id=":rg:"
+                    name="responsibilities.0.value"
+                    placeholder="E.g. Always be ready to assist customers with menu options and payment."
+                    rows="4"
+                    type="text"
+                  />
+                </div>
+                <div
+                  aria-live="polite"
+                  class="helperText"
+                  id=":rg:-helptext"
+                >
+                  Max 1,000 characters.
+                </div>
+              </div>
+            </div>
+            <button
+              class="button md outline c-primary disabled marginTop-5"
+              disabled=""
+              type="button"
+            >
+              Add more
+            </button>
+          </div>
+          <button
+            class="button md solid c-primary disabled marginTop-5"
+            disabled=""
+            type="submit"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="wizardWrapper container borderBottom flexDirection-row width-full marginTop-8 paddingBottom-5"
+      data-testid="skills"
+    >
+      <div
+        class="item bp-xs-12 bp-md-4 marginBottom-8 paddingRight-5"
+      >
+        <p
+          class="text fontSize-xl fontWeight-700"
+        >
+          Skills & Experience
+        </p>
+      </div>
+      <div
+        class="item bp-xs-12 bp-md-8"
+      >
+        <form>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":rh:"
+            >
+              Experience
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <select
+                class="input"
+                id=":rh:"
+                name="experience"
+              >
+                <option
+                  disabled=""
+                  hidden=""
+                  value=""
+                >
+                  Select
+                </option>
+                <option
+                  value="low"
+                >
+                  Low
+                </option>
+                <option
+                  value="entry"
+                >
+                  Entry
+                </option>
+                <option
+                  value="mid"
+                >
+                  Mid
+                </option>
+                <option
+                  value="high"
+                >
+                  High
+                </option>
+                <option
+                  value="professional"
+                >
+                  Professional
+                </option>
+              </select>
+              <div
+                class="icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":ri:"
+            >
+              <div
+                class="alignItems-center display-inline-flex"
+              >
+                <p
+                  class="text marginRight-2 marginBottom-0 fontWeight-700"
+                >
+                  Skills - Description
+                </p>
+                <svg
+                  aria-controls="popover-:rj:"
+                  aria-expanded="false"
+                  aria-haspopup="dialog"
+                  aria-hidden="true"
+                  class="icon color-grey-500 width-7 height-7"
+                  focusable="false"
+                  id="popover-:rj:-trigger"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M3 12a9 9 0 1018 0 9 9 0 00-18 0M12 9h.01"
+                  />
+                  <path
+                    d="M11 12h1v4h1"
+                  />
+                </svg>
+                <div
+                  class="popover"
+                  data-popper-escaped="true"
+                  data-popper-placement="top"
+                  data-popper-reference-hidden="true"
+                  style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; bottom: 0px; transform: translate(0px, -8px);"
+                >
+                  <div
+                    class="content popoverWrapper rounded-xl"
+                    id="popover-:rj:"
+                    role="dialog"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="arrow popoverArrow"
+                      data-popper-arrow=""
+                      style="will-change: transform; position: absolute; left: 0px; transform: translate(0px, 0px);"
+                    />
+                    <div
+                      class="rounded-xl bgcolor-grey-100 maxWidth-96 paddingTop-5 paddingRight-5 paddingBottom-5 paddingLeft-5"
+                    >
+                      Explain the level of experience someone needs to be successful in this job.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </label>
+            <div
+              class="root primary md fluid md multiline"
+            >
+              <textarea
+                aria-describedby=":ri:-helptext"
+                class="input"
+                id=":ri:"
+                name="skillsDescription"
+                placeholder="E.g. The most successful and happy people have PMA – a Positive Mental Attitude! We are a huge believer in putting attitude above aptitude. We can always teach you how to do the job, but we can't teach a Positive Mental Attitude... You either have it or you don't!"
+                rows="4"
+                type="text"
+              >
+                The most successful and happy people have PMA – a Positive Mental Attitude! We are a huge believer in putting attitude above aptitude. We can always teach you how to do the job, but we can't teach a Positive Mental Attitude... You either have it or you don't!
+              </textarea>
+            </div>
+            <div
+              aria-live="polite"
+              class="helperText"
+              id=":ri:-helptext"
+            >
+              Max 1,000 characters.
+            </div>
+          </div>
+          <button
+            class="button md solid c-primary disabled marginTop-5"
+            disabled=""
+            type="submit"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="wizardWrapper container borderBottom flexDirection-row width-full marginTop-8 paddingBottom-5"
+      data-testid="pay"
+    >
+      <div
+        class="item bp-xs-12 bp-md-4 marginBottom-8 paddingRight-5"
+      >
+        <p
+          class="text fontSize-xl fontWeight-700"
+        >
+          Pay & Benefits
+        </p>
+      </div>
+      <div
+        class="item bp-xs-12 bp-md-8"
+      >
+        <div
+          class="salaryForm"
+        >
+          <form>
+            <div
+              class="control"
+              role="group"
+            >
+              <label
+                class="label"
+                for=":rk:"
+              >
+                Salary
+              </label>
+              <div
+                class="root primary md fluid md"
+              >
+                <select
+                  class="input"
+                  id=":rk:"
+                  name="salary"
+                >
+                  <option
+                    disabled=""
+                    hidden=""
+                    value=""
+                  >
+                    Select
+                  </option>
+                  <option
+                    value="yearly"
+                  >
+                    Yearly salary
+                  </option>
+                  <option
+                    value="hourly"
+                  >
+                    Hourly salary
+                  </option>
+                </select>
+                <div
+                  class="icon"
+                >
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div
+              class="control display-inline-block width-1/2 paddingRight-2"
+              role="group"
+            >
+              <label
+                class="label"
+                for=":rl:"
+              >
+                Min Salary
+              </label>
+              <div
+                class="root primary md md fieldHalfWidth"
+              >
+                <input
+                  class="input"
+                  id=":rl:"
+                  name="min"
+                  placeholder="Min salary"
+                  type="text"
+                  value="$15"
+                />
+              </div>
+            </div>
+            <div
+              class="control display-inline-block width-1/2 paddingLeft-2"
+              role="group"
+            >
+              <label
+                class="label"
+                for=":rm:"
+              >
+                Max Salary
+              </label>
+              <div
+                class="root primary md md fieldHalfWidth"
+              >
+                <input
+                  class="input"
+                  id=":rm:"
+                  name="max"
+                  placeholder="Max hourly salary"
+                  type="text"
+                  value="$30"
+                />
+              </div>
+            </div>
+            <div
+              class="control"
+              role="group"
+            >
+              <label
+                class="label"
+                for=":rn:"
+              >
+                <div
+                  class="alignItems-center display-inline-flex"
+                >
+                  <p
+                    class="text marginRight-2 marginBottom-0 fontWeight-700"
+                  >
+                    Pay Description
+                  </p>
+                  <svg
+                    aria-controls="popover-:ro:"
+                    aria-expanded="false"
+                    aria-haspopup="dialog"
+                    aria-hidden="true"
+                    class="icon color-grey-500 width-7 height-7"
+                    focusable="false"
+                    id="popover-:ro:-trigger"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      stroke="none"
+                    />
+                    <path
+                      d="M3 12a9 9 0 1018 0 9 9 0 00-18 0M12 9h.01"
+                    />
+                    <path
+                      d="M11 12h1v4h1"
+                    />
+                  </svg>
+                  <div
+                    class="popover"
+                    data-popper-escaped="true"
+                    data-popper-placement="top"
+                    data-popper-reference-hidden="true"
+                    style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; bottom: 0px; transform: translate(0px, -8px);"
+                  >
+                    <div
+                      class="content popoverWrapper rounded-xl"
+                      id="popover-:ro:"
+                      role="dialog"
+                      tabindex="-1"
+                    >
+                      <div
+                        class="arrow popoverArrow"
+                        data-popper-arrow=""
+                        style="will-change: transform; position: absolute; left: 0px; transform: translate(0px, 0px);"
+                      />
+                      <div
+                        class="rounded-xl bgcolor-grey-100 maxWidth-96 paddingTop-5 paddingRight-5 paddingBottom-5 paddingLeft-5"
+                      >
+                        Can include frequency of pay, when applicants can expect their first pay check, and any other helpful pay information
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </label>
+              <div
+                class="root primary md fluid md multiline"
+              >
+                <textarea
+                  aria-describedby=":rn:-helptext"
+                  class="input"
+                  id=":rn:"
+                  name="salaryDescription"
+                  placeholder="E.g. Starting wage is $13 per hour + tips, with an Employer Bonus after positive a 90 Day Review (provided by the employer)"
+                  rows="4"
+                  type="text"
+                >
+                  Starting wage is $13 per hour + tips, with an Employer Bonus after positive a 90 Day Review (provided by the employer)
+                </textarea>
+              </div>
+              <div
+                aria-live="polite"
+                class="helperText"
+                id=":rn:-helptext"
+              >
+                Max 1,000 characters.
+              </div>
+            </div>
+            <div
+              class="marginTop-4 textAlign-left"
+            >
+              <p
+                class="text marginBottom-2 fontWeight-700"
+              >
+                Add Bonus
+              </p>
+              <div
+                class="marginBottom-3"
+              >
+                <div
+                  class="justifyContent-flex-end display-flex marginBottom-1"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="icon color-primary width-6 height-6"
+                    focusable="false"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      stroke="none"
+                    />
+                    <path
+                      d="M4 7h16M10 11v6M14 11v6M5 7l1 12a2 2 0 002 2h8a2 2 0 002-2l1-12M9 7V4a1 1 0 011-1h4a1 1 0 011 1v3"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="control"
+                  role="group"
+                >
+                  <div
+                    class="root primary md fluid md multiline"
+                  >
+                    <textarea
+                      aria-describedby=":rp:-helptext"
+                      class="input"
+                      id=":rp:"
+                      name="bonuses.0.value"
+                      placeholder="Additional $100 Bonus for Positive 90 Day Review"
+                      rows="4"
+                      type="text"
+                    >
+                      Additional $100 Bonus for Positive 90 Day Review
+                    </textarea>
+                  </div>
+                  <div
+                    aria-live="polite"
+                    class="helperText"
+                    id=":rp:-helptext"
+                  >
+                    Max 1,000 characters.
+                  </div>
+                </div>
+              </div>
+              <button
+                class="button md outline c-primary marginTop-5"
+                type="button"
+              >
+                Add more
+              </button>
+            </div>
+            <button
+              class="button md solid c-primary disabled fluid maxWidth-96 marginTop-8"
+              disabled=""
+              type="submit"
+            >
+              Save
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="wizardWrapper container borderBottom flexDirection-row width-full marginTop-8 paddingBottom-5"
+      data-testid="questions"
+    >
+      <div
+        class="item bp-xs-12 bp-md-4 marginBottom-8 paddingRight-5"
+      >
+        <p
+          class="text fontSize-xl fontWeight-700"
+        >
+          Job Specific Questions
+        </p>
+      </div>
+      <div
+        class="item bp-xs-12 bp-md-8"
+      >
+        <form>
+          <div
+            class="width-full textAlign-left"
+          >
+            <div
+              class="marginBottom-3"
+            >
+              <div
+                class="flexDirection-row justifyContent-space-between marginBottom-3"
+              >
+                <p
+                  class="text fontWeight-700"
+                >
+                  Question #1
+                </p>
+              </div>
+              <div
+                class="control"
+                role="group"
+              >
+                <div
+                  class="root primary md fluid md multiline"
+                >
+                  <textarea
+                    aria-describedby=":rq:-helptext"
+                    class="input"
+                    id=":rq:"
+                    name="questions.0.value"
+                    placeholder="E.g. Do you have a driver license?"
+                    rows="4"
+                    type="text"
+                  />
+                </div>
+                <div
+                  aria-live="polite"
+                  class="helperText"
+                  id=":rq:-helptext"
+                >
+                  Max 1,000 characters.
+                </div>
+              </div>
+            </div>
+            <button
+              class="button md outline c-primary disabled marginTop-5"
+              disabled=""
+              type="button"
+            >
+              Add more
+            </button>
+          </div>
+          <button
+            class="button md solid c-primary disabled marginTop-5"
+            disabled=""
+            type="submit"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

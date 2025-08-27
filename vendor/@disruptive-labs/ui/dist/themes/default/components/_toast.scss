@@ -1,0 +1,24 @@
+@use 'sass:map';
+@use '../core' as *;
+
+$toast-bg: var(--color-grey) !default;
+$toast-border-radius: $border-radius !default;
+$toast-color: var(--color-light) !default;
+$toast-font-size: $font-p2-size !default;
+$toast-font-weight: $font-p2-weight !default;
+$toast-max-width: 44rem !default;
+$toast-margin: $spacing-2_5 $spacing-4 !default;
+$toast-padding: $spacing-2 0 !default;
+
+$toast-icon-margin: 2rem !default;
+$toast-text-margin: 2rem !default;
+
+// Statuses
+$toast-danger-bg: var(--color-red) !default;
+$toast-danger-color: var(--color-light) !default;
+$toast-info-bg: var(--color-blue) !default;
+$toast-info-color: var(--color-light) !default;
+$toast-success-bg: var(--color-green) !default;
+$toast-success-color: var(--color-light) !default;
+$toast-warning-bg: var(--color-yellow) !default;
+$toast-warning-color: var(--color-light) !default;

@@ -1,0 +1,166 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > OAuth > Token GET /api/v1/oauth/token does not allow unauthenticated requests 1`] = `
+{
+  "code": "InvalidCredentials",
+  "message": "Authentication required",
+  "status": 401,
+}
+`;
+
+exports[`Routes > OAuth > Token GET /api/v1/oauth/token returns token information 1`] = `
+{
+  "appId": "01817e24-0d42-79ee-bfde-bc16bf2b0e77",
+  "clientId": "01817e24-0d42-7adb-aa85-cd0c708ca3be",
+  "expiresAt": Any<Number>,
+  "expiresIn": Any<Number>,
+  "roles": [
+    "self",
+  ],
+  "scope": "self user",
+  "userId": "01817e24-0d42-7176-b613-889fe94905f0",
+}
+`;
+
+exports[`Routes > OAuth > Token POST /api/v1/oauth/token Authorization Code Grant returns a not authorized response for unauthorized apps 1`] = `
+{
+  "code": "NotAuthorized",
+  "message": Any<String>,
+  "status": 403,
+}
+`;
+
+exports[`Routes > OAuth > Token POST /api/v1/oauth/token Authorization Code Grant returns access and refresh tokens 1`] = `
+{
+  "accessToken": Any<String>,
+  "refreshToken": Any<String>,
+  "scope": "user",
+  "tokenType": "Bearer",
+}
+`;
+
+exports[`Routes > OAuth > Token POST /api/v1/oauth/token Authorization Code Grant returns an invalid parameter response for invalid codes 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "code",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Authorization code is invalid",
+  "status": 400,
+}
+`;
+
+exports[`Routes > OAuth > Token POST /api/v1/oauth/token Password Grant returns access and refresh tokens 1`] = `
+{
+  "accessToken": Any<String>,
+  "refreshToken": Any<String>,
+  "roles": [
+    "client",
+  ],
+  "scope": "self client",
+  "tokenType": "Bearer",
+}
+`;
+
+exports[`Routes > OAuth > Token POST /api/v1/oauth/token Password Grant returns an invalid credentials response for invalid usernames/passwords 1`] = `
+{
+  "code": "InvalidCredentials",
+  "message": "Invalid username/password",
+  "status": 401,
+}
+`;
+
+exports[`Routes > OAuth > Token POST /api/v1/oauth/token Refresh Token Grant only includes authorized scopes for non-password-grant tokens 1`] = `
+{
+  "accessToken": Any<String>,
+  "refreshToken": Any<String>,
+  "scope": "user",
+  "tokenType": "Bearer",
+}
+`;
+
+exports[`Routes > OAuth > Token POST /api/v1/oauth/token Refresh Token Grant returns access and refresh tokens 1`] = `
+{
+  "accessToken": Any<String>,
+  "refreshToken": Any<String>,
+  "roles": [
+    "client",
+  ],
+  "scope": "self client",
+  "tokenType": "Bearer",
+}
+`;
+
+exports[`Routes > OAuth > Token POST /api/v1/oauth/token Refresh Token Grant returns an invalid parameter response for invalid tokens 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "refreshToken",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Refresh token is invalid",
+  "status": 400,
+}
+`;
+
+exports[`Routes > OAuth > Token POST /api/v1/oauth/token returns an invalid parameter response for invalid client secrets 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "clientSecret",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Client secret does not match",
+  "status": 400,
+}
+`;
+
+exports[`Routes > OAuth > Token POST /api/v1/oauth/token returns an invalid parameter response for mismatched grant type 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "grantType",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Client not authorized for authorization_code grant",
+  "status": 400,
+}
+`;
+
+exports[`Routes > OAuth > Token POST /api/v1/oauth/token returns an invalid parameter response for unknown clients 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "clientId",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Client 00000000-0000-0000-0000-000000000000 not found",
+  "status": 400,
+}
+`;

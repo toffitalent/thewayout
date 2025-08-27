@@ -1,0 +1,36 @@
+@use 'sass:list';
+@use '@styles/theme';
+
+@each $color in theme.$colors {
+  .bgcolor-#{$color} {
+    background-color: var(--color-#{$color}) !important;
+  }
+
+  .color-#{$color} {
+    color: var(--color-#{$color}) !important;
+  }
+
+  @for $i from 1 through 9 {
+    .bgcolor-#{$color}-#{$i * 100} {
+      background-color: var(--color-#{$color}-#{$i * 100}) !important;
+    }
+
+    .color-#{$color}-#{$i * 100} {
+      color: var(--color-#{$color}-#{$i * 100}) !important;
+    }
+  }
+}
+
+@each $color in theme.$extra-colors {
+  .bgcolor-#{$color} {
+    background-color: var(--color-#{$color}) !important;
+  }
+
+  .color-#{$color} {
+    color: var(--color-#{$color}) !important;
+  }
+}
+
+.bg-color-transparent {
+  background-color: theme.$color-transparent;
+}

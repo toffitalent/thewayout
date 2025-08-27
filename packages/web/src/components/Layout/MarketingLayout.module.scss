@@ -1,0 +1,12 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.hero {
+  @include mq(lg) {
+    margin-top: calc(-5.8rem - 1px);
+  }
+}
+
+.isLoading {
+  opacity: 0.01;
+}

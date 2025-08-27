@@ -1,0 +1,22 @@
+@use '../core' as *;
+
+$menu-bg: var(--color-light) !default;
+$menu-border-radius: $border-radius !default;
+$menu-max-height: 40vh !default;
+$menu-padding: $spacing-2_5 !default;
+$menu-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2) !default;
+$menu-z-index: 100 !default;
+
+$menu-group-border-color: var(--color-grey-300) !default;
+$menu-group-border-width: $border-width !default;
+$menu-group-padding: $spacing_2 0 !default;
+$menu-group-title-color: var(--color-grey-600) !default;
+$menu-group-title-font-size: $font-p2-size !default;
+$menu-group-title-font-weight: 700 !default;
+$menu-group-title-padding: $spacing-2_5 $spacing-2_5 $spacing-1_5 !default;
+
+$menu-item-color: var(--color-text) !default;
+$menu-item-focused-bg: var(--color-grey-200) !default;
+$menu-item-font-size: $font-p1-size !default;
+$menu-item-font-weight: $font-p1-weight !default;
+$menu-item-padding: $spacing-2_5 $spacing-2_5 !default;

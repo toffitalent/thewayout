@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomStepAllowedOffense renders correctly 1`] = `
+<div>
+  <form>
+    <div
+      class="justifyContent-center marginBottom-5"
+    >
+      <button
+        class="button md outline c-primary"
+        type="button"
+      >
+        Select All
+      </button>
+      <button
+        class="button md text c-primary paddingRight-6 paddingLeft-6"
+        type="button"
+      >
+        Clear All
+      </button>
+    </div>
+    <button
+      class="button md solid c-primary fluid maxWidth-96 marginTop-8"
+      type="submit"
+    >
+      Save & Next
+    </button>
+  </form>
+</div>
+`;

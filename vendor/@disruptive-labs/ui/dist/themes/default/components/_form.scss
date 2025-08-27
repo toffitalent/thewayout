@@ -1,0 +1,14 @@
+@use '../core' as *;
+
+$form-error-color: var(--color-red) !default;
+
+$form-control-margin: $spacing-4 !default;
+
+$form-label-font-size: $font-label-size !default;
+$form-label-font-weight: $font-label-weight !default;
+$form-label-margin: 0 0 $spacing-1_5 !default;
+
+$form-caption-color: var(--color-caption) !default;
+$form-caption-font-size: $font-c1-size !default;
+$form-caption-font-weight: $font-c1-weight !default;
+$form-caption-margin-top: $spacing-1 !default;

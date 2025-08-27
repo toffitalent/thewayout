@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomStepReentryPipeline press next & save button 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="listItem listItemChosen paddingRight-5 paddingLeft-5 paddingTop-8 paddingBottom-8"
+    >
+      <p
+        class="text fontSize-2xl fontWeight-700 lineHeight-none"
+      >
+        Employ Milwaukee
+      </p>
+      <div
+        class="container spacing-1 marginTop-3 marginBottom-3"
+      >
+        <div
+          class="item"
+        >
+          <div
+            class="badge borderColor-grey-200 bgcolor-grey-200 color-grey-800"
+          >
+            County Name
+          </div>
+        </div>
+      </div>
+      <p
+        class="text"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <p
+        class="text listItemServices marginTop-2"
+      >
+        Services offered: 
+        employment
+      </p>
+    </div>
+  </div>
+  <button
+    class="button md solid c-primary fluid maxWidth-96 marginTop-12"
+    type="button"
+  >
+    Next
+  </button>
+</div>
+`;
+
+exports[`CustomStepReentryPipeline renders correctly 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="listItem paddingRight-5 paddingLeft-5 paddingTop-8 paddingBottom-8"
+    >
+      <p
+        class="text fontSize-2xl fontWeight-700 lineHeight-none"
+      >
+        Employ Milwaukee
+      </p>
+      <div
+        class="container spacing-1 marginTop-3 marginBottom-3"
+      >
+        <div
+          class="item"
+        >
+          <div
+            class="badge borderColor-grey-200 bgcolor-grey-200 color-grey-800"
+          >
+            County Name
+          </div>
+        </div>
+      </div>
+      <p
+        class="text"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <p
+        class="text listItemServices marginTop-2"
+      >
+        Services offered: 
+        employment
+      </p>
+    </div>
+  </div>
+  <button
+    class="button md solid c-primary fluid maxWidth-96 marginTop-12"
+    type="button"
+  >
+    Next
+  </button>
+</div>
+`;

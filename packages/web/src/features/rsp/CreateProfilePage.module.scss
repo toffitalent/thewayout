@@ -1,0 +1,24 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.wizardWrapper {
+  form > div[role='group'] {
+    text-align: left;
+
+    fieldset > div {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    fieldset[class*='offenseCategoryStep'] {
+      margin: unset;
+    }
+    fieldset[class*='offenseCategoryStep'] > legend {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+      line-height: 27px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.sidebar {
+  > div > div {
+    max-width: 12rem !important;
+  }
+  &Desktop {
+    @include mq(lg, max) {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  img {
+    width: 12rem !important;
+  }
+}
+
+.avatar {
+  min-width: 4.8rem;
+}

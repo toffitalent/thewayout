@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Crash renders correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="alert paddingTop-5 paddingRight-5 paddingBottom-5 paddingLeft-5"
+      role="alert"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon icon"
+        focusable="false"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          stroke="none"
+        />
+        <path
+          d="M12 9v4M10.363 3.591L2.257 17.125a1.914 1.914 0 001.636 2.871h16.214a1.914 1.914 0 001.636-2.87L13.637 3.59a1.914 1.914 0 00-3.274 0zM12 16h.01"
+        />
+      </svg>
+      <h1>
+        Oops!
+      </h1>
+      <p>
+        Something went wrong. Please refresh or try again later.
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`NotFound renders correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="alert paddingTop-5 paddingRight-5 paddingBottom-5 paddingLeft-5"
+      role="alert"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon icon"
+        focusable="false"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          stroke="none"
+        />
+        <path
+          d="M12 9v4M10.363 3.591L2.257 17.125a1.914 1.914 0 001.636 2.871h16.214a1.914 1.914 0 001.636-2.87L13.637 3.59a1.914 1.914 0 00-3.274 0zM12 16h.01"
+        />
+      </svg>
+      <h1>
+        404
+      </h1>
+      <p>
+        Oops. We can't seem to find the page you are looking for.
+      </p>
+      <div
+        class="marginTop-6"
+      >
+        <a
+          class="button md solid c-primary"
+          href="/"
+        >
+          Home
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M9 6l6 6-6 6"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

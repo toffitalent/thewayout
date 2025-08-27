@@ -1,0 +1,11 @@
+extends ../templates/base.pug
+include ../templates/mixins.pug
+
+block content
+  h1 Congratulations #{client.firstName},
+  p
+    | Your application for #{offerTitle} has moved to the next phase.
+    |
+  p
+    | Stay tuned for a contact notification from the employer.
+    |

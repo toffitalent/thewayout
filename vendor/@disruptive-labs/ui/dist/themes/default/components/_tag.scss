@@ -1,0 +1,44 @@
+@use '../core' as *;
+
+$tag-border-radius: $border-radius !default;
+$tag-border-width: $border-width !default;
+$tag-button-disabled-opacity: 0.5 !default;
+$tag-button-focus-shadow-opacity: 0.2 !default;
+$tag-font-weight: 700 !default;
+
+// Sizes
+$tag-size-xs: $spacing-6 !default;
+$tag-size-xs-font-size: $font-size-xs !default;
+$tag-size-xs-padding: $spacing-2 !default;
+$tag-size-sm: $spacing-8 !default;
+$tag-size-sm-font-size: $font-size-sm !default;
+$tag-size-sm-padding: $spacing-3 !default;
+$tag-size-md: $spacing-10 !default;
+$tag-size-md-font-size: $font-size-md !default;
+$tag-size-md-padding: $spacing-4 !default;
+$tag-size-lg: $spacing-12 !default;
+$tag-size-lg-font-size: $font-size-lg !default;
+$tag-size-lg-padding: $spacing-5 !default;
+
+$tag-sizes: (
+  'xs': (
+    'font': $tag-size-xs-font-size,
+    'padding': $tag-size-xs-padding,
+    'size': $tag-size-xs,
+  ),
+  'sm': (
+    'font': $tag-size-sm-font-size,
+    'padding': $tag-size-sm-padding,
+    'size': $tag-size-sm,
+  ),
+  'md': (
+    'font': $tag-size-md-font-size,
+    'padding': $tag-size-md-padding,
+    'size': $tag-size-md,
+  ),
+  'lg': (
+    'font': $tag-size-lg-font-size,
+    'padding': $tag-size-lg-padding,
+    'size': $tag-size-lg,
+  ),
+);

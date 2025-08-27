@@ -1,0 +1,45 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '@styles/theme';
+
+.avatar {
+  width: theme.$avatar-size-default;
+  height: theme.$avatar-size-default;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  background: theme.$avatar-bg;
+  border-radius: theme.$avatar-border-radius;
+  color: theme.$avatar-color;
+  font-size: math.div(theme.$avatar-size-default, 2.5);
+  line-height: theme.$avatar-size-default;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.initials {
+  font-weight: theme.$avatar-font-weight;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@each $avatar-size, $size in theme.$avatar-sizes {
+  .s-#{$avatar-size} {
+    width: $size;
+    height: $size;
+    font-size: math.div($size, 2.5);
+    line-height: $size;
+  }
+}
+
+.s-full {
+  width: 100%;
+  height: 100%;
+  line-height: unset;
+}

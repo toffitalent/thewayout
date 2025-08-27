@@ -1,0 +1,471 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomStepReferredBy press next & save button 1`] = `
+<div>
+  <form>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline"
+      >
+        <div
+          role="radiogroup"
+        >
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Case Manager / Reentry Service Provider
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Probation / Parole Officer / Social Worker
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="true"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Newsletter
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Social media
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              News / Media
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Family / Friends
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Other
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <button
+      class="button md solid c-primary fluid maxWidth-96 marginTop-8"
+      type="submit"
+    >
+      Submit
+      <span
+        aria-hidden="true"
+        class="accessoryRight"
+      >
+        <svg
+          aria-hidden="true"
+          class="icon"
+          focusable="false"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            stroke="none"
+          />
+          <path
+            d="M5 12h14M15 16l4-4M15 8l4 4"
+          />
+        </svg>
+      </span>
+    </button>
+  </form>
+</div>
+`;
+
+exports[`CustomStepReferredBy renders correctly 1`] = `
+<div>
+  <form>
+    <div
+      class="control control fluid"
+      role="group"
+    >
+      <fieldset
+        class="choices inline"
+      >
+        <div
+          role="radiogroup"
+        >
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Case Manager / Reentry Service Provider
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Probation / Parole Officer / Social Worker
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Newsletter
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Social media
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              News / Media
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="true"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Family / Friends
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+          <div
+            aria-checked="false"
+            aria-disabled="false"
+            class="choicesItem"
+            role="radio"
+            tabindex="0"
+          >
+            <span
+              class="choicesItemText"
+            >
+              Other
+            </span>
+            <span
+              class="choicesItemIcon"
+            >
+              <svg
+                focusable="false"
+                role="presentation"
+                viewBox="0 0 24 24"
+              >
+                <polygon
+                  fill="currentColor"
+                  points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+    <button
+      class="button md solid c-primary fluid maxWidth-96 marginTop-8"
+      type="submit"
+    >
+      Submit
+      <span
+        aria-hidden="true"
+        class="accessoryRight"
+      >
+        <svg
+          aria-hidden="true"
+          class="icon"
+          focusable="false"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            stroke="none"
+          />
+          <path
+            d="M5 12h14M15 16l4-4M15 8l4 4"
+          />
+        </svg>
+      </span>
+    </button>
+  </form>
+</div>
+`;

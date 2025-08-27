@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RspApplicationSupport renders correctly 1`] = `
+{
+  "html": "pug-test-stub",
+  "subject": "pug-test-stub",
+  "text": "pug-test-stub",
+}
+`;
+
+exports[`RspApplicationSupport renders correctly 2`] = `
+"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="x-apple-disable-message-reformatting"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="color-scheme" content="light dark"/><meta name="supported-color-schemes" content="light dark"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700&amp;display=swap"/><link rel="stylesheet" href="@app/styles/index.scss" data-inline="true"/><!--[if mso]><style type="text/css">.f-fallback {
+  font-family: Arial, sans-serif;
+}</style><![endif]--></head><body><span class="preheader"></span><table class="email__wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr><td align="center"><table class="email__content" width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr><td class="email__masthead"><a class="f-fallback email__masthead__logo" href="http://__WEB__"><img src="@app/assets/logo.png" alt="The Way Out"/></a></td></tr><tr><td class="email__body" width="570" cellpadding="0" cellspacing="0"><table class="email__body__inner" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation"><tr><td class="content"><div class="f-fallback"><h1>Hi Test,</h1><p> My Way Out has received a new client referral from The Way Out.
+Please respond to the applicant within two business days.</p><ul><li>Full name: Test Name</li><li>Address: 459 S Hewitt St, 90255 Los Angeles, CA</li><li>Email: test@test.com</li><li>Phone: (414) 213-3945</li><li>Support services needed: Support</li><li>Offense history: Offense</li></ul></div></td></tr></table></td></tr><tr><td><table class="email__footer" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation"><tr><td class="content" align="center"><p class="f-fallback sub align-center">&copy; 2024 The Way Out. All rights reserved.</p><p class="f-fallback sub align-center">The Way Out, Inc.<br/><a href="#">PO Box 70620</a><br/><a href="#">Milwaukee, WI 53207</a></p></td></tr></table></td></tr></table></td></tr></table></body></html>"
+`;
+
+exports[`RspApplicationSupport renders correctly 3`] = `"User Test Name has applied for RSP "`;
+
+exports[`RspApplicationSupport renders correctly 4`] = `
+"Hi Test,
+
+My Way Out has received a new client referral from The Way Out.
+Please respond to the applicant within two business days.
+
+- Full name: Test Name
+- Address: 459 S Hewitt St, 90255 Los Angeles, CA
+- Email: test@test.com
+- Phone: (414) 213-3945
+- Support services needed: Support
+- Offense history: Offense"
+`;
+
+exports[`RspApplicationSupport renders correctly for "Currently Incarcerated" client 1`] = `
+{
+  "html": "pug-test-stub",
+  "subject": "pug-test-stub",
+  "text": "pug-test-stub",
+}
+`;
+
+exports[`RspApplicationSupport renders correctly for "Currently Incarcerated" client 2`] = `
+"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="x-apple-disable-message-reformatting"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="color-scheme" content="light dark"/><meta name="supported-color-schemes" content="light dark"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,700&amp;display=swap"/><link rel="stylesheet" href="@app/styles/index.scss" data-inline="true"/><!--[if mso]><style type="text/css">.f-fallback {
+  font-family: Arial, sans-serif;
+}</style><![endif]--></head><body><span class="preheader"></span><table class="email__wrapper" width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr><td align="center"><table class="email__content" width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr><td class="email__masthead"><a class="f-fallback email__masthead__logo" href="http://__WEB__"><img src="@app/assets/logo.png" alt="The Way Out"/></a></td></tr><tr><td class="email__body" width="570" cellpadding="0" cellspacing="0"><table class="email__body__inner" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation"><tr><td class="content"><div class="f-fallback"><h1>Hi Test,</h1><p> My Way Out has received a new client referral from The Way Out.
+Please respond to the applicant within two business days.</p><ul><li>Full name: Test Name</li><li>Address: 459 S Hewitt St, 90255 Los Angeles, CA</li><li>Email: test@test.com</li><li>Phone: (414) 213-3945</li><li>Support services needed: Support</li><li>Offense history: Offense</li><li>Justice status: Currently Incarcerated</li><li>Current facility: Test</li><li>Release date: 2023-10-19</li></ul></div></td></tr></table></td></tr><tr><td><table class="email__footer" align="center" width="570" cellpadding="0" cellspacing="0" role="presentation"><tr><td class="content" align="center"><p class="f-fallback sub align-center">&copy; 2024 The Way Out. All rights reserved.</p><p class="f-fallback sub align-center">The Way Out, Inc.<br/><a href="#">PO Box 70620</a><br/><a href="#">Milwaukee, WI 53207</a></p></td></tr></table></td></tr></table></td></tr></table></body></html>"
+`;
+
+exports[`RspApplicationSupport renders correctly for "Currently Incarcerated" client 3`] = `"User Test Name has applied for RSP "`;
+
+exports[`RspApplicationSupport renders correctly for "Currently Incarcerated" client 4`] = `
+"Hi Test,
+
+My Way Out has received a new client referral from The Way Out.
+Please respond to the applicant within two business days.
+
+- Full name: Test Name
+- Address: 459 S Hewitt St, 90255 Los Angeles, CA
+- Email: test@test.com
+- Phone: (414) 213-3945
+- Support services needed: Support
+- Offense history: Offense- Justice status: Currently Incarcerated
+- Current facility: Test
+- Release date: 2023-10-19"
+`;

@@ -1,0 +1,28 @@
+@use '../core' as *;
+
+$avatar-bg: var(--color-grey-300) !default;
+$avatar-border-radius: 50% !default;
+$avatar-color: var(--color-grey-700) !default;
+$avatar-font-weight: 700 !default;
+
+$avatar-group-border-color: var(--color-light) !default;
+$avatar-group-border-width: 2px !default;
+
+$avatar-size-2xs: $spacing-4 !default;
+$avatar-size-xs: $spacing-6 !default;
+$avatar-size-sm: $spacing-8 !default;
+$avatar-size-md: $spacing-12 !default;
+$avatar-size-lg: $spacing-16 !default;
+$avatar-size-xl: $spacing-24 !default;
+$avatar-size-2xl: $spacing-32 !default;
+$avatar-size-default: $avatar-size-md !default;
+
+$avatar-sizes: (
+  '2xs': $avatar-size-2xs,
+  'xs': $avatar-size-xs,
+  'sm': $avatar-size-sm,
+  'md': $avatar-size-md,
+  'lg': $avatar-size-lg,
+  'xl': $avatar-size-xl,
+  '2xl': $avatar-size-2xl,
+);

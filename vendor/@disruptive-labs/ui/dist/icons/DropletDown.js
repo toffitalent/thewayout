@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgDropletDown = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M18.602 12.003a6.66 6.66 0 00-.538-1.126l-4.89-7.26c-.42-.625-1.287-.803-1.936-.397a1.376 1.376 0 00-.41.397l-4.893 7.26C4.24 13.715 4.9 17.318 7.502 19.423a7.159 7.159 0 004.972 1.564M19 16v6M22 19l-3 3-3-3" }));
+export default SvgDropletDown;

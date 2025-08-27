@@ -1,0 +1,8 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.listContainer {
+  > div > div[class*='infinite-scroll-component'] {
+    overflow: visible !important;
+  }
+}

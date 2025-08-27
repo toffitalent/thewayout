@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgGrill = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M19 8H5a6 6 0 006 6h2a6 6 0 006-5.775V8zM17 20a2 2 0 110-4 2 2 0 010 4zM15 14l1 2M9 14l-3 6M15 18H7M15 5V4M12 5V4M9 5V4" }));
+export default SvgGrill;

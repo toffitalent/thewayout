@@ -1,0 +1,32 @@
+@use '@styles/theme';
+
+$sides: (
+  'Top': 'top',
+  'Right': 'right',
+  'Bottom': 'bottom',
+  'Left': 'left',
+);
+
+.marginLeft-auto {
+  margin-left: auto !important;
+}
+
+.marginRight-auto {
+  margin-right: auto !important;
+}
+
+@each $s, $size in theme.$spacing {
+  @each $side, $value in $sides {
+    .margin#{$side}-#{$s} {
+      margin-#{$value}: $size !important;
+    }
+  }
+}
+
+@each $s, $size in theme.$spacing {
+  @each $side, $value in $sides {
+    .padding#{$side}-#{$s} {
+      padding-#{$value}: $size !important;
+    }
+  }
+}

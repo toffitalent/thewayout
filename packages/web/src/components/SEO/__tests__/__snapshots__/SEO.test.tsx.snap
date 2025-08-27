@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SEO renders correctly 1`] = `
+<div>
+  <title>
+    undefined
+  </title>
+  <link
+    href="/favicon.ico"
+    rel="icon"
+  />
+  <meta
+    name="description"
+  />
+  <meta
+    name="og:title"
+  />
+  <meta
+    name="og:description"
+  />
+  <meta
+    content="website"
+    name="og:type"
+  />
+  <meta
+    name="og:image"
+  />
+  <meta
+    content="1200"
+    name="og:image:width"
+  />
+  <meta
+    content="630"
+    name="og:image:height"
+  />
+  <meta
+    content="summary"
+    name="twitter:card"
+  />
+  <meta
+    content="@twoutapp"
+    name="twitter:site"
+  />
+  <meta
+    content="@twoutapp"
+    name="twitter:creator"
+  />
+  <meta
+    name="twitter:title"
+  />
+  <meta
+    name="twitter:description"
+  />
+  <meta
+    name="twitter:image"
+  />
+</div>
+`;

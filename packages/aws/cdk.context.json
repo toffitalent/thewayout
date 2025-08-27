@@ -1,0 +1,16 @@
+{
+  "availability-zones:account=114149725394:region=us-west-2": [
+    "us-west-2a",
+    "us-west-2b",
+    "us-west-2c",
+    "us-west-2d"
+  ],
+  "hosted-zone:account=114149725394:domainName=thewayout.dev:region=us-west-2": {
+    "Id": "/hostedzone/Z00237606T2W37PB9U95",
+    "Name": "thewayout.dev."
+  },
+  "hosted-zone:account=114149725394:domainName=thewayouthelps.com:region=us-west-2": {
+    "Id": "/hostedzone/Z0381919JLA6ER617EG3",
+    "Name": "thewayouthelps.com."
+  }
+}

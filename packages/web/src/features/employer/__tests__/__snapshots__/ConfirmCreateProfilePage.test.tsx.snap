@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmCreateProfilePage renders correctly 1`] = `
+<div>
+  <div
+    class="maxWidth-96 marginRight-auto marginLeft-auto"
+  >
+    <p
+      class="text fontSize-2xl fontWeight-700"
+    >
+      Employer added!
+    </p>
+    <button
+      class="button md solid c-primary fluid marginTop-10"
+      type="button"
+    >
+      Done!
+    </button>
+  </div>
+</div>
+`;

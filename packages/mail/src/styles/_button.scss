@@ -1,0 +1,38 @@
+@use 'colors' as *;
+
+$button-padding-x: 20px;
+$button-padding-y: 13px;
+$button-border-radius: 5px;
+$button-font-weight: 700;
+
+@mixin button-fill($bg: $color-primary) {
+  background-color: $bg;
+  border-top: $button-padding-y solid $bg;
+  border-right: $button-padding-x solid $bg;
+  border-bottom: $button-padding-y solid $bg;
+  border-left: $button-padding-x solid $bg;
+}
+
+.button {
+  @include button-fill();
+
+  display: inline-block;
+  color: $color-white;
+  border-radius: $button-border-radius;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-weight: 700;
+  text-decoration: none;
+  -webkit-text-size-adjust: none;
+
+  &--secondary {
+    @include button-fill($color-secondary);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .button {
+    width: 100% !important;
+    text-align: center !important;
+  }
+}

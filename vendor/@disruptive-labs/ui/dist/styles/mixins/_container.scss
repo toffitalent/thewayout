@@ -1,0 +1,16 @@
+@use 'sass:map';
+@use '@styles/theme';
+
+@mixin container() {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: theme.$container-padding;
+  padding-right: theme.$container-padding;
+
+  @each $bp, $size in theme.$breakpoints {
+    @media (min-width: $size) {
+      max-width: map.get(theme.$container-sizes, $bp);
+    }
+  }
+}

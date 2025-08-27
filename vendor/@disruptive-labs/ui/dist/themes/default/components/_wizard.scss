@@ -1,0 +1,24 @@
+@use 'sass:map';
+@use '../core' as *;
+
+$wizard-back-border-color: var(--color-grey-500) !default;
+$wizard-back-color: var(--color-grey-500) !default;
+$wizard-back-margin: 2rem !default;
+$wizard-form-max-width: $spacing-96 !default;
+$wizard-header-margin: 4rem !default;
+$wizard-submit-margin: 4rem !default;
+
+$wizard-choice-color: var(--color-secondary) !default;
+$wizard-choice-color-inverse: var(--color-light) !default;
+$wizard-choice-color-active: var(--color-secondary-200) !default;
+$wizard-choice-color-hover: var(--color-secondary-100) !default;
+$wizard-choice-item-border-radius: $border-radius !default;
+$wizard-choice-item-border-width: 1px !default;
+$wizard-choice-item-disabled-opacity: 0.5 !default;
+$wizard-choice-item-font-size: $font-size-md !default;
+$wizard-choice-item-margin: 1rem !default;
+$wizard-choice-item-padding: 2rem !default;
+$wizard-choice-item-size: $spacing-12 !default;
+$wizard-choice-group-font-size: $font-s2-size !default;
+$wizard-choice-group-font-weight: $font-s2-weight !default;
+$wizard-choice-group-margin: 2rem !default;

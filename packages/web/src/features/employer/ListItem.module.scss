@@ -1,0 +1,14 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.listItemWrapper {
+  cursor: pointer;
+}
+
+.rightColumnWrapper {
+  text-align: left;
+
+  @include mq(md) {
+    text-align: right;
+  }
+}

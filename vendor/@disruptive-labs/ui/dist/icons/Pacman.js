@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgPacman = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M5.636 5.636a9 9 0 0113.397.747L13.414 12l5.619 5.617A9 9 0 115.636 5.636z" }), React.createElement("circle", { cx: 11.5, cy: 7.5, r: 1, fill: "currentColor" }));
+export default SvgPacman;

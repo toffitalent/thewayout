@@ -1,0 +1,28 @@
+@use '@styles/theme';
+
+.skipNav {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  color: theme.$skip-nav-color;
+  text-decoration: none;
+
+  &:focus {
+    width: auto;
+    height: auto;
+    clip: auto;
+    z-index: 999;
+    top: theme.$skip-nav-top;
+    left: theme.$skip-nav-left;
+    padding: theme.$skip-nav-padding;
+    background: theme.$skip-nav-bg;
+    border: none;
+    border-radius: theme.$skip-nav-border-radius;
+    outline: 0;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "incremental": true,
+    "noEmit": true,
+    "outDir": "./build",
+    "rootDir": "./src",
+    "tsBuildInfoFile": "./build/.tsbuildinfo"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "src/**/*.test.ts", "test"],
+  "references": [
+    { "path": "../config" },
+    { "path": "../mail/tsconfig.build.json" },
+    { "path": "../shared/tsconfig.build.json" }
+  ]
+}

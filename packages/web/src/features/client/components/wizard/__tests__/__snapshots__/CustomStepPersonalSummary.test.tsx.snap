@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomStepOffenseCategory press next & save button 1`] = `
+<div>
+  <div
+    class="maxWidth-96 marginRight-auto marginLeft-auto"
+  >
+    <form>
+      <div
+        class="control"
+        role="group"
+      >
+        <div
+          class="root primary md fluid md multiline"
+        >
+          <textarea
+            aria-describedby=":r1:-helptext"
+            class="input"
+            id=":r1:"
+            name="personalSummary"
+            placeholder="Your summary goes here."
+            rows="4"
+            type="text"
+          >
+            personalSummary
+          </textarea>
+        </div>
+        <div
+          aria-live="polite"
+          class="helperText"
+          id=":r1:-helptext"
+        >
+          Max 1,000 characters.
+        </div>
+      </div>
+      <div
+        class="flexDirection-row justifyContent-center marginTop-8"
+      >
+        <button
+          class="button md text c-primary paddingRight-5 paddingLeft-5"
+          type="button"
+        >
+          Skip
+        </button>
+        <button
+          class="button md solid c-primary fluid maxWidth-96"
+          type="submit"
+        >
+          Save & Next
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`CustomStepOffenseCategory renders correctly 1`] = `
+<div>
+  <div
+    class="maxWidth-96 marginRight-auto marginLeft-auto"
+  >
+    <form>
+      <div
+        class="control"
+        role="group"
+      >
+        <div
+          class="root primary md fluid md multiline"
+        >
+          <textarea
+            aria-describedby=":r0:-helptext"
+            class="input"
+            id=":r0:"
+            name="personalSummary"
+            placeholder="Your summary goes here."
+            rows="4"
+            type="text"
+          />
+        </div>
+        <div
+          aria-live="polite"
+          class="helperText"
+          id=":r0:-helptext"
+        >
+          Max 1,000 characters.
+        </div>
+      </div>
+      <div
+        class="flexDirection-row justifyContent-center marginTop-8"
+      >
+        <button
+          class="button md text c-primary paddingRight-5 paddingLeft-5"
+          type="button"
+        >
+          Skip
+        </button>
+        <button
+          class="button md solid c-primary fluid maxWidth-96"
+          type="submit"
+        >
+          Save & Next
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

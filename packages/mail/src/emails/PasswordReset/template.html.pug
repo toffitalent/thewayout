@@ -1,0 +1,29 @@
+extends ../templates/base.pug
+include ../templates/mixins.pug
+
+block preheader
+  | We received a request to reset the password for your !{config.get('company.name')} account associated with #{user.username}.
+
+block content
+  h1 Hi #{user.firstName}
+  p
+    | We received a request to reset the password for your !{config.get('company.name')} account associated with
+    |
+    a(href="#" class="nocolor") #{user.username}
+    | .
+    |
+    strong This link will expire in 1 hour.
+  +action
+    +button(url) Reset Password
+  p
+    | If you did not request a password reset, please ignore this email or
+    |
+    a(href=`mailto:${config.get('company.supportEmail')}`) contact support
+    |
+    | if you have questions.
+  p
+    | Thanks,
+    br
+    | The !{config.get('company.name')} Team
+
+  +trouble(url)

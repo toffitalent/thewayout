@@ -1,0 +1,8 @@
+@use '../core' as *;
+
+$skip-nav-bg: var(--color-primary) !default;
+$skip-nav-border-radius: 0 !default;
+$skip-nav-color: var(--color-light) !default;
+$skip-nav-top: 0 !default;
+$skip-nav-left: 0 !default;
+$skip-nav-padding: $spacing-4 !default;

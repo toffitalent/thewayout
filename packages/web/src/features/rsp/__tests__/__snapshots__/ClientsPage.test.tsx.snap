@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientsPage renders correctly 1`] = `
+<div>
+  <div
+    class="flexDirection-column width-full"
+  >
+    <h2
+      class="text marginBottom-8"
+    >
+      Clients
+    </h2>
+    <div
+      class="borderBottom flexDirection-row width-full paddingTop-5 paddingBottom-5 fontWeight-700"
+    >
+      <p
+        class="text width-1/5"
+      >
+        Client Name
+      </p>
+      <p
+        class="text width-1/5"
+      >
+        Email
+      </p>
+      <p
+        class="text width-1/5"
+      >
+        Phone
+      </p>
+      <p
+        class="text width-1/5"
+      >
+        Case Manager
+      </p>
+      <p
+        class="text width-1/5"
+      >
+        Status
+      </p>
+      <div
+        class="width-12"
+      />
+    </div>
+    <div
+      class=""
+    >
+      <div
+        class="infinite-scroll-component__outerdiv"
+      >
+        <div
+          class="infinite-scroll-component "
+          style="height: auto; overflow: auto;"
+        >
+          <div
+            class="borderBottom alignItems-center flexDirection-row"
+          >
+            <div
+              class="alignItems-center flexDirection-row width-1/5 paddingTop-5 paddingBottom-5"
+              style="cursor: pointer;"
+            >
+              <div
+                class="avatar s-xs marginRight-3"
+              >
+                <div
+                  aria-label="Test User"
+                  class="initials"
+                >
+                  TU
+                </div>
+              </div>
+              <p
+                class="text fontWeight-700"
+              >
+                Test User
+              </p>
+            </div>
+            <p
+              class="text overflow-hidden width-1/5 whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              test@example.com
+            </p>
+            <p
+              class="text width-1/5"
+            />
+            <p
+              class="text width-1/5"
+            />
+            <div
+              class="width-1/5"
+            >
+              <div
+                class="badge borderColor-yellow-200 bgcolor-yellow-200 color-yellow-800"
+              >
+                pending
+              </div>
+            </div>
+            <div
+              class="width-12"
+            >
+              <svg
+                aria-controls="menu-:r0:"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                aria-hidden="true"
+                class="icon width-6 height-6"
+                cursor="pointer"
+                data-testid="menu"
+                focusable="false"
+                id="menu-:r0:-trigger"
+                role="button"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  stroke="none"
+                />
+                <path
+                  d="M11 12a1 1 0 102 0 1 1 0 10-2 0M11 19a1 1 0 102 0 1 1 0 10-2 0M11 5a1 1 0 102 0 1 1 0 10-2 0"
+                />
+              </svg>
+              <div
+                class="menu"
+                data-popper-escaped="true"
+                data-popper-placement="bottom-start"
+                data-popper-reference-hidden="true"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; transform: translate(0px, 0px);"
+              >
+                <div
+                  aria-orientation="vertical"
+                  class="list"
+                  id="menu-:r0:"
+                  role="menu"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group"
+                    role="group"
+                  >
+                    <button
+                      class="button md text c-primary item minWidth-40"
+                      role="menuitem"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      <a
+                        class="text color-text"
+                        href="mailto:test@example.com"
+                      >
+                        Email
+                      </a>
+                    </button>
+                    <button
+                      class="button md text c-primary item minWidth-40"
+                      role="menuitem"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="borderBottom alignItems-center flexDirection-row"
+          >
+            <div
+              class="alignItems-center flexDirection-row width-1/5 paddingTop-5 paddingBottom-5"
+              style="cursor: pointer;"
+            >
+              <div
+                class="avatar s-xs marginRight-3"
+              >
+                <div
+                  aria-label="Test User"
+                  class="initials"
+                >
+                  TU
+                </div>
+              </div>
+              <p
+                class="text fontWeight-700"
+              >
+                Test User
+              </p>
+            </div>
+            <p
+              class="text overflow-hidden width-1/5 whiteSpace-nowrap"
+              style="text-overflow: ellipsis;"
+            >
+              test1@example.com
+            </p>
+            <p
+              class="text width-1/5"
+            />
+            <p
+              class="text width-1/5"
+            />
+            <div
+              class="width-1/5"
+            >
+              <div
+                class="badge borderColor-yellow-200 bgcolor-yellow-200 color-yellow-800"
+              >
+                pending
+              </div>
+            </div>
+            <div
+              class="width-12"
+            >
+              <svg
+                aria-controls="menu-:r3:"
+                aria-expanded="false"
+                aria-haspopup="menu"
+                aria-hidden="true"
+                class="icon width-6 height-6"
+                cursor="pointer"
+                data-testid="menu"
+                focusable="false"
+                id="menu-:r3:-trigger"
+                role="button"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  stroke="none"
+                />
+                <path
+                  d="M11 12a1 1 0 102 0 1 1 0 10-2 0M11 19a1 1 0 102 0 1 1 0 10-2 0M11 5a1 1 0 102 0 1 1 0 10-2 0"
+                />
+              </svg>
+              <div
+                class="menu"
+                data-popper-escaped="true"
+                data-popper-placement="bottom-start"
+                data-popper-reference-hidden="true"
+                style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; transform: translate(0px, 0px);"
+              >
+                <div
+                  aria-orientation="vertical"
+                  class="list"
+                  id="menu-:r3:"
+                  role="menu"
+                  tabindex="-1"
+                >
+                  <div
+                    class="group"
+                    role="group"
+                  >
+                    <button
+                      class="button md text c-primary item minWidth-40"
+                      role="menuitem"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      <a
+                        class="text color-text"
+                        href="mailto:test1@example.com"
+                      >
+                        Email
+                      </a>
+                    </button>
+                    <button
+                      class="button md text c-primary item minWidth-40"
+                      role="menuitem"
+                      tabindex="-1"
+                      type="button"
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

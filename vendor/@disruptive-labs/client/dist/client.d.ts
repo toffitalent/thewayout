@@ -1,0 +1,32 @@
+import { AxiosInstance } from 'axios';
+import EventEmitter from 'eventemitter3';
+import { ClientEvents, ClientConfig, ClientLock, ClientProvider, ClientStore, SessionBase } from './types';
+export declare class Client<User = any, Session extends SessionBase<User> = SessionBase<User>, Credentials = any> {
+    protected client: AxiosInstance;
+    protected cookie?: ClientStore;
+    protected cookieName: string;
+    protected emitter: EventEmitter<ClientEvents<User, Session>>;
+    protected lock?: ClientLock;
+    protected provider: ClientProvider<User, Session, Credentials>;
+    protected store: ClientStore;
+    get: AxiosInstance['get'];
+    delete: AxiosInstance['delete'];
+    head: AxiosInstance['head'];
+    options: AxiosInstance['options'];
+    post: AxiosInstance['post'];
+    put: AxiosInstance['put'];
+    patch: AxiosInstance['patch'];
+    constructor(config: ClientConfig<User, Session, Credentials>);
+    getSession: () => Promise<Session | null>;
+    protected saveSession: (session: Session | null) => Promise<void>;
+    getToken: () => Promise<string | null>;
+    getUser: () => Promise<Session['user'] | null>;
+    isAuthenticated: () => Promise<boolean>;
+    checkSession: () => Promise<boolean>;
+    login: (credentials: Credentials) => Promise<void>;
+    logout: () => Promise<void>;
+    refreshToken: () => Promise<void>;
+    protected emit: <T extends keyof ClientEvents<User, Session>>(eventName: T, ...args: ClientEvents<User, Session>[T]) => void;
+    addListener: <T extends keyof ClientEvents<any, SessionBase<any>>>(eventName: T, listener: (...args: ClientEvents<User, Session>[T]) => void) => (() => void);
+    removeListener: <T extends keyof ClientEvents<any, SessionBase<any>>>(eventName: T, listener: (...args: ClientEvents<User, Session>[T]) => void) => void;
+}

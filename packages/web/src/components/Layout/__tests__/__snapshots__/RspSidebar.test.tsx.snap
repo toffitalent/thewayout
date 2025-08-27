@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RspSidebar renders correctly 1`] = `
+<div>
+  <div
+    class="sidebar grey sidebarDesktop"
+  >
+    <div
+      class="navbar"
+    >
+      <button
+        aria-haspopup="dialog"
+        aria-label="Open sidebar navigation"
+        class="button sm clear c-grey iconButton sm round fontSize-2xl"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          class="icon"
+          focusable="false"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </button>
+    </div>
+    <nav
+      class="sidebarNav"
+    >
+      <div
+        class="section"
+      >
+        <ul
+          class="sectionList"
+        >
+          <a
+            class="logo"
+            href="/"
+          >
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                alt=""
+                data-nimg="intrinsic"
+                decoding="async"
+                src="/_next/image?url=%2Ftest-file-stub&w=16&q=75"
+                srcset="/_next/image?url=%2Ftest-file-stub&w=16&q=75 1x"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </a>
+        </ul>
+      </div>
+      <div
+        class="section"
+      >
+        <ul
+          class="sectionList"
+        >
+          <li
+            class="item"
+          >
+            <span
+              class="itemWrapper"
+            >
+              <span
+                class="itemAccessory"
+              >
+                <div
+                  class="avatar avatar"
+                >
+                  <div
+                    aria-label="Employ Milwaukee"
+                    class="initials"
+                  >
+                    EM
+                  </div>
+                </div>
+              </span>
+              Employ Milwaukee
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="section fontSize-lg"
+      >
+        <ul
+          class="sectionList"
+        >
+          <li
+            class="item"
+          >
+            <a
+              class="itemWrapper"
+              href="/ssp/case-managers"
+            >
+              <span
+                class="itemAccessory"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  focusable="false"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M5 7a4 4 0 108 0 4 4 0 10-8 0M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2M16 3.13a4 4 0 010 7.75M21 21v-2a4 4 0 00-3-3.85"
+                  />
+                </svg>
+              </span>
+              Case Managers
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="itemWrapper"
+              href="/ssp/clients"
+            >
+              <span
+                class="itemAccessory"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  focusable="false"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M5 4h4l3 3h7a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2"
+                  />
+                </svg>
+              </span>
+              Clients
+            </a>
+          </li>
+          <li
+            class="item"
+          >
+            <a
+              class="itemWrapper"
+              href="/ssp/reports"
+            >
+              <span
+                class="itemAccessory"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  focusable="false"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M10 3.2A9 9 0 1020.8 14a1 1 0 00-1-1H13a2 2 0 01-2-2V4a.9.9 0 00-1-.8"
+                  />
+                  <path
+                    d="M15 3.5A9 9 0 0120.5 9H16a1 1 0 01-1-1V3.5"
+                  />
+                </svg>
+              </span>
+              Reports
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="section sectionSeparated"
+      >
+        <ul
+          class="sectionList"
+        >
+          <li
+            class="item"
+          >
+            <span
+              class="itemWrapper"
+            >
+              <span
+                class="itemAccessory"
+              >
+                <div
+                  class="avatar s-sm"
+                >
+                  <div
+                    aria-label="undefined undefined"
+                    class="initials"
+                  >
+                    uu
+                  </div>
+                </div>
+              </span>
+              undefined undefined
+              <span
+                class="itemAccessory itemAccessoryRight"
+              >
+                <svg
+                  aria-controls="menu-:r1:"
+                  aria-expanded="false"
+                  aria-haspopup="menu"
+                  aria-hidden="true"
+                  class="icon width-6 height-6"
+                  cursor="pointer"
+                  focusable="false"
+                  id="menu-:r1:-trigger"
+                  role="button"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M11 12a1 1 0 102 0 1 1 0 10-2 0M11 19a1 1 0 102 0 1 1 0 10-2 0M11 5a1 1 0 102 0 1 1 0 10-2 0"
+                  />
+                </svg>
+                <div
+                  class="menu"
+                  data-popper-escaped="true"
+                  data-popper-placement="bottom-start"
+                  data-popper-reference-hidden="true"
+                  style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; transform: translate(0px, 0px);"
+                >
+                  <div
+                    aria-orientation="vertical"
+                    class="list"
+                    id="menu-:r1:"
+                    role="menu"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="group"
+                      role="group"
+                    >
+                      <button
+                        class="button md text c-primary item minWidth-40"
+                        role="menuitem"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        Account settings
+                      </button>
+                      <button
+                        class="button md text c-primary item minWidth-40"
+                        role="menuitem"
+                        tabindex="-1"
+                        type="button"
+                      >
+                        Logout
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+`;

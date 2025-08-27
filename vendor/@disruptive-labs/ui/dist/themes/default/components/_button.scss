@@ -1,0 +1,44 @@
+@use 'sass:map';
+@use '../core' as *;
+
+$button-border-radius: $border-radius !default;
+$button-border-width: $border-width !default;
+$button-disabled-opacity: 0.5 !default;
+$button-font-weight: 700 !default;
+
+// Sizes
+$button-size-xs: $spacing-8 !default;
+$button-size-xs-font-size: $font-size-xs !default;
+$button-size-xs-padding: $spacing-3_5 !default;
+$button-size-sm: $spacing-10 !default;
+$button-size-sm-font-size: $font-size-sm !default;
+$button-size-sm-padding: $spacing-4 !default;
+$button-size-md: $spacing-12 !default;
+$button-size-md-font-size: $font-size-md !default;
+$button-size-md-padding: $spacing-4_5 !default;
+$button-size-lg: $spacing-14 !default;
+$button-size-lg-font-size: $font-size-lg !default;
+$button-size-lg-padding: $spacing-6 !default;
+
+$button-sizes: (
+  'xs': (
+    'font': $button-size-xs-font-size,
+    'padding': $button-size-xs-padding,
+    'size': $button-size-xs,
+  ),
+  'sm': (
+    'font': $button-size-sm-font-size,
+    'padding': $button-size-sm-padding,
+    'size': $button-size-sm,
+  ),
+  'md': (
+    'font': $button-size-md-font-size,
+    'padding': $button-size-md-padding,
+    'size': $button-size-md,
+  ),
+  'lg': (
+    'font': $button-size-lg-font-size,
+    'padding': $button-size-lg-padding,
+    'size': $button-size-lg,
+  ),
+);

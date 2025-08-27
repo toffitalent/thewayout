@@ -1,0 +1,13 @@
+extends ../templates/base.pug
+include ../templates/mixins.pug
+
+block content
+  h1 Exciting news #{firstName}!
+  p #{rspName} has assigned you a new client to support: #{client.firstName} #{client.lastName}
+  p Please click the button below to access #{client.firstName}'s contact and background information.
+  +action
+    +button(url) Access Client's Information
+  p Please don't hesitate to reach out to your Organization Admin if you have any questions.
+  p Have a great day!
+
+  +trouble(url)

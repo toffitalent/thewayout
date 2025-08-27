@@ -1,0 +1,1337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClientProfile renders correctly for client 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="item bp-xs-12 bp-md-4 flexDirection-column display-flex"
+      style="gap: 2rem;"
+    >
+      <div
+        class="avatar s-2xl"
+      >
+        <div
+          aria-label="Test User"
+          class="initials"
+        >
+          TU
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-3xl fontWeight-700"
+          >
+            Test User
+          </p>
+          <svg
+            aria-hidden="true"
+            class="icon color-primary width-6 height-6 marginLeft-3"
+            cursor="pointer"
+            data-testid="cloaked"
+            focusable="false"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              stroke="none"
+            />
+            <path
+              d="M10.585 10.587a2 2 0 002.829 2.828M16.681 16.673A8.717 8.717 0 0112 18c-3.6 0-6.6-2-9-6 1.272-2.12 2.712-3.678 4.32-4.674m2.86-1.146A9.055 9.055 0 0112 6c3.6 0 6.6 2 9 6-.666 1.11-1.379 2.067-2.138 2.87M3 3l18 18"
+            />
+          </svg>
+        </div>
+        <div
+          class="readMore inline"
+        >
+          <p
+            class="text numLines-2 whiteSpace-pre-line"
+          >
+            personal summary
+          </p>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Personal Details
+            </p>
+            <svg
+              aria-hidden="true"
+              class="icon color-primary width-6 height-6 marginLeft-3"
+              cursor="pointer"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M4 20h4L18.5 9.5a2.828 2.828 0 10-4-4L4 16v4M13.5 6.5l4 4"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-2"
+          >
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Email
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                test@example.com
+              </p>
+            </div>
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Address
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                111 Street, 
+ Los Angeles CA 90887
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Offense History
+            </p>
+            <svg
+              aria-hidden="true"
+              class="icon color-primary width-6 height-6 marginLeft-3"
+              cursor="pointer"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M4 20h4L18.5 9.5a2.828 2.828 0 10-4-4L4 16v4M13.5 6.5l4 4"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-2"
+          >
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Justice Status
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                Free World
+              </p>
+            </div>
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Nature of Offense
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                Arson
+              </p>
+            </div>
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Time Served
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                Less than 1 year
+              </p>
+            </div>
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Completed Sentence
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                Less than 1 year
+              </p>
+            </div>
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                State or Federal
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                Federal
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Languages
+            </p>
+            <svg
+              aria-hidden="true"
+              class="icon color-primary width-6 height-6 marginLeft-3"
+              cursor="pointer"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M3 12a9 9 0 1018 0 9 9 0 00-18 0M9 12h6M12 9v6"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          />
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Personal Strengths
+            </p>
+            <svg
+              aria-hidden="true"
+              class="icon color-primary width-6 height-6 marginLeft-3"
+              cursor="pointer"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M3 12a9 9 0 1018 0 9 9 0 00-18 0M9 12h6M12 9v6"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          />
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Skills
+            </p>
+            <svg
+              aria-hidden="true"
+              class="icon color-primary width-6 height-6 marginLeft-3"
+              cursor="pointer"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M3 12a9 9 0 1018 0 9 9 0 00-18 0M9 12h6M12 9v6"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          />
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Support Needed
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          >
+            <div
+              class="item"
+            >
+              <div
+                class="badge borderColor-indigo-200 bgcolor-indigo-200 color-indigo-800 marginRight-2"
+              >
+                Resume
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rightColumn item bp-xs-12 bp-md-8"
+    >
+      <div
+        class="marginBottom-10"
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Work Experience
+          </p>
+          <svg
+            aria-hidden="true"
+            class="icon color-primary width-6 height-6 marginLeft-3"
+            cursor="pointer"
+            focusable="false"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              stroke="none"
+            />
+            <path
+              d="M4 20h4L18.5 9.5a2.828 2.828 0 10-4-4L4 16v4M13.5 6.5l4 4"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="marginBottom-10"
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Education
+          </p>
+          <svg
+            aria-hidden="true"
+            class="icon color-primary width-6 height-6 marginLeft-3"
+            cursor="pointer"
+            focusable="false"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              stroke="none"
+            />
+            <path
+              d="M4 20h4L18.5 9.5a2.828 2.828 0 10-4-4L4 16v4M13.5 6.5l4 4"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Licenses / Certifications
+          </p>
+          <svg
+            aria-hidden="true"
+            class="icon color-primary width-6 height-6 marginLeft-3"
+            cursor="pointer"
+            focusable="false"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              stroke="none"
+            />
+            <path
+              d="M4 20h4L18.5 9.5a2.828 2.828 0 10-4-4L4 16v4M13.5 6.5l4 4"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ClientProfile renders correctly for employer 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="item bp-xs-12 bp-md-4 flexDirection-column display-flex"
+      style="gap: 2rem;"
+    >
+      <div
+        class="avatar s-2xl"
+      >
+        <div
+          aria-label="Test User"
+          class="initials"
+        >
+          TU
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-3xl fontWeight-700"
+          >
+            Test User
+          </p>
+        </div>
+        <div
+          class="readMore inline"
+        >
+          <p
+            class="text numLines-2 whiteSpace-pre-line"
+          >
+            personal summary
+          </p>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Client Details
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-2"
+          >
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Email
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                test@example.com
+              </p>
+            </div>
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Address
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                111 Street, 
+ Los Angeles CA 90887
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Languages
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          />
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Personal Strengths
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          />
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Skills
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="rightColumn item bp-xs-12 bp-md-8"
+    >
+      <div
+        class="marginBottom-10"
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Work Experience
+          </p>
+        </div>
+      </div>
+      <div
+        class="marginBottom-10"
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Education
+          </p>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Licenses / Certifications
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ClientProfile renders correctly for rsp 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="item bp-xs-12 bp-md-4 flexDirection-column display-flex"
+      style="gap: 2rem;"
+    >
+      <div
+        class="avatar s-2xl"
+      >
+        <div
+          aria-label="Test User"
+          class="initials"
+        >
+          TU
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-3xl fontWeight-700"
+          >
+            Test User
+          </p>
+        </div>
+        <div
+          class="readMore inline"
+        >
+          <p
+            class="text numLines-2 whiteSpace-pre-line"
+          >
+            personal summary
+          </p>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Client Details
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-2"
+          >
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Email
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                test@example.com
+              </p>
+            </div>
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Address
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                111 Street, 
+ Los Angeles CA 90887
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Offense History
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-2"
+          >
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Justice Status
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                Free World
+              </p>
+            </div>
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Nature of Offense
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                Arson
+              </p>
+            </div>
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Time Served
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                Less than 1 year
+              </p>
+            </div>
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                Completed Sentence
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                Less than 1 year
+              </p>
+            </div>
+            <div
+              class="item flexDirection-row width-full"
+            >
+              <p
+                class="text color-grey-700 width-1/2"
+              >
+                State or Federal
+              </p>
+              <p
+                class="text width-1/2"
+                style="overflow-wrap: break-word;"
+              >
+                Federal
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Languages
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          />
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Personal Strengths
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          />
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Skills
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          />
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="container flexDirection-row"
+        >
+          <div
+            class="item bp-xs-12 bp-md-8 alignItems-center flexDirection-row"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              cursor="pointer"
+              data-testid="icon-up"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M6 15l6-6 6 6"
+              />
+            </svg>
+            <p
+              class="text marginLeft-2 fontSize-xl fontWeight-700"
+            >
+              Support Needed
+            </p>
+          </div>
+        </div>
+        <div
+          class="paddingTop-4"
+        >
+          <div
+            class="container spacing-1"
+          >
+            <div
+              class="item"
+            >
+              <div
+                class="badge borderColor-indigo-200 bgcolor-indigo-200 color-indigo-800 marginRight-2"
+              >
+                Resume
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="rightColumn item bp-xs-12 bp-md-8"
+    >
+      <div
+        class="marginBottom-10"
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Work Experience
+          </p>
+        </div>
+      </div>
+      <div
+        class="marginBottom-10"
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Education
+          </p>
+        </div>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class="alignItems-center flexDirection-row"
+        >
+          <p
+            class="text fontSize-xl fontWeight-700"
+          >
+            Licenses / Certifications
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

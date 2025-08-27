@@ -1,0 +1,12 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.title {
+  font-size: 3.4rem;
+}
+
+.infoItem {
+  &:last-child {
+    border-bottom: unset;
+  }
+}

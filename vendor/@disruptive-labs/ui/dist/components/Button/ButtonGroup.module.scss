@@ -1,0 +1,44 @@
+@use '@styles/theme';
+
+.group {
+  display: flex;
+}
+
+.item {
+  border-radius: 0 !important;
+
+  &:first-child {
+    border-top-left-radius: theme.$button-border-radius !important;
+    border-bottom-left-radius: theme.$button-border-radius !important;
+  }
+
+  &:last-child {
+    border-top-right-radius: theme.$button-border-radius !important;
+    border-bottom-right-radius: theme.$button-border-radius !important;
+  }
+
+  .solid & + & {
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
+}
+
+.outline {
+  .item + .item {
+    border-left-color: transparent;
+  }
+}
+
+.solid {
+  .item + .item {
+    border-left-color: var(--color-light);
+  }
+
+  &.black .item + .item {
+    border-left-color: var(--color-white);
+  }
+
+  &.white .item + .item {
+    border-left-color: var(--color-black);
+  }
+}

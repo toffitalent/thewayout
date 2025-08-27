@@ -1,0 +1,13 @@
+{
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": ["tsconfig.json", "packages/config/tsconfig.json"]
+      }
+    }
+  },
+  "rules": {
+    "global-require": "off",
+    "import/no-dynamic-require": "off"
+  }
+}

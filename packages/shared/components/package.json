@@ -1,0 +1,4 @@
+{
+  "main": "../build/components/index.js",
+  "types": "../build/components/index.d.ts"
+}

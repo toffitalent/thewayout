@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomStepServicesArea renders chosen options 1`] = `
+<div>
+  <div
+    class="formWrapper"
+  >
+    <div
+      class="control"
+      role="group"
+    >
+      <div
+        class="combobox width-96"
+      >
+        <label
+          class="label"
+          for=":r2:-input"
+          id=":r2:-label"
+        >
+          Search Area
+        </label>
+        <div
+          class="input"
+        >
+          <div
+            class="root primary md md width-96"
+          >
+            <input
+              aria-activedescendant=""
+              aria-autocomplete="list"
+              aria-controls=":r2:-menu"
+              aria-expanded="false"
+              aria-labelledby=":r2:-label"
+              autocomplete="off"
+              class="input"
+              id=":r2:-input"
+              name="servicesArea"
+              role="combobox"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="menu"
+        data-popper-escaped="true"
+        data-popper-placement="bottom-start"
+        data-popper-reference-hidden="true"
+        role="presentation"
+        style="position: absolute; top: 0px; left: 0px; will-change: transform, visibility; transform: translate(0px, 5px); width: 0px;"
+      >
+        <ul
+          aria-labelledby=":r2:-label"
+          class="list combobox"
+          id=":r2:-menu"
+          role="listbox"
+        />
+      </div>
+    </div>
+    <div
+      class=""
+    >
+      <p
+        class="text marginTop-10 marginBottom-4 fontSize-xl fontWeight-700"
+      >
+        Selected Service Areas
+      </p>
+      <div
+        class="container spacing-4 flexDirection-row flexWrap-wrap"
+      >
+        <div
+          class="item"
+        >
+          <span
+            class="tag grey sm outline borderColor-grey bgcolor-grey color-grey"
+          >
+            <span
+              class="label"
+            >
+              Washington
+            </span>
+            <button
+              class="button"
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                class="icon"
+                focusable="false"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  stroke="none"
+                />
+                <path
+                  d="M18 6L6 18M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <button
+      class="button md solid c-primary fluid width-96 marginTop-8"
+      type="button"
+    />
+  </div>
+</div>
+`;
+
+exports[`CustomStepServicesArea renders correctly 1`] = `
+<div>
+  <div
+    class="formWrapper"
+  >
+    <div
+      class="control"
+      role="group"
+    >
+      <div
+        class="combobox width-96"
+      >
+        <label
+          class="label"
+          for=":r0:-input"
+          id=":r0:-label"
+        >
+          Search Area
+        </label>
+        <div
+          class="input"
+        >
+          <div
+            class="root primary md md width-96"
+          >
+            <input
+              aria-activedescendant=""
+              aria-autocomplete="list"
+              aria-controls=":r0:-menu"
+              aria-expanded="false"
+              aria-labelledby=":r0:-label"
+              autocomplete="off"
+              class="input"
+              id=":r0:-input"
+              name="servicesArea"
+              role="combobox"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="menu"
+        data-popper-escaped="true"
+        data-popper-placement="bottom-start"
+        data-popper-reference-hidden="true"
+        role="presentation"
+        style="position: absolute; top: 0px; left: 0px; will-change: transform, visibility; transform: translate(0px, 5px); width: 0px;"
+      >
+        <ul
+          aria-labelledby=":r0:-label"
+          class="list combobox"
+          id=":r0:-menu"
+          role="listbox"
+        />
+      </div>
+    </div>
+    <button
+      class="button md solid c-primary disabled fluid width-96 marginTop-8"
+      disabled=""
+      type="button"
+    />
+  </div>
+</div>
+`;
+
+exports[`CustomStepServicesArea renders list 1`] = `
+<div>
+  <div
+    class="formWrapper"
+  >
+    <div
+      class="control"
+      role="group"
+    >
+      <div
+        class="combobox width-96"
+      >
+        <label
+          class="label"
+          for=":r1:-input"
+          id=":r1:-label"
+        >
+          Search Area
+        </label>
+        <div
+          class="input"
+        >
+          <div
+            class="root primary md md width-96"
+          >
+            <input
+              aria-activedescendant=""
+              aria-autocomplete="list"
+              aria-controls=":r1:-menu"
+              aria-expanded="true"
+              aria-labelledby=":r1:-label"
+              autocomplete="off"
+              class="input"
+              id=":r1:-input"
+              name="servicesArea"
+              role="combobox"
+              type="text"
+              value="W"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="menu isOpen"
+        data-popper-escaped="true"
+        data-popper-placement="bottom-start"
+        data-popper-reference-hidden="true"
+        role="presentation"
+        style="position: absolute; top: 0px; left: 0px; will-change: transform, visibility; transform: translate(0px, 5px); width: 0px;"
+      >
+        <ul
+          aria-labelledby=":r1:-label"
+          class="list combobox"
+          id=":r1:-menu"
+          role="listbox"
+        >
+          <li
+            aria-selected="false"
+            class="item"
+            id=":r1:-item-0"
+            role="option"
+          >
+            Walworth
+          </li>
+          <li
+            aria-selected="false"
+            class="item"
+            id=":r1:-item-1"
+            role="option"
+          >
+            Washburn
+          </li>
+          <li
+            aria-selected="false"
+            class="item"
+            id=":r1:-item-2"
+            role="option"
+          >
+            Washington
+          </li>
+          <li
+            aria-selected="false"
+            class="item"
+            id=":r1:-item-3"
+            role="option"
+          >
+            Waukesha
+          </li>
+          <li
+            aria-selected="false"
+            class="item"
+            id=":r1:-item-4"
+            role="option"
+          >
+            Waupaca
+          </li>
+          <li
+            aria-selected="false"
+            class="item"
+            id=":r1:-item-5"
+            role="option"
+          >
+            Waushara
+          </li>
+          <li
+            aria-selected="false"
+            class="item"
+            id=":r1:-item-6"
+            role="option"
+          >
+            Winnebago
+          </li>
+          <li
+            aria-selected="false"
+            class="item"
+            id=":r1:-item-7"
+            role="option"
+          >
+            Wood
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button
+      class="button md solid c-primary disabled fluid width-96 marginTop-8"
+      disabled=""
+      type="button"
+    />
+  </div>
+</div>
+`;

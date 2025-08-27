@@ -1,0 +1,49 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '@styles/theme';
+
+.group {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.item {
+  margin-left: math.div(theme.$avatar-size-default, -5);
+  border: theme.$avatar-group-border-width solid theme.$avatar-group-border-color;
+}
+
+.item:last-child {
+  margin-left: 0 !important;
+}
+
+.excess {
+  width: theme.$avatar-size-default;
+  height: theme.$avatar-size-default;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: math.div(theme.$avatar-size-default, -5);
+  border-radius: theme.$avatar-border-radius;
+  background: theme.$avatar-bg;
+  border: theme.$avatar-group-border-width solid theme.$avatar-group-border-color;
+  color: theme.$avatar-color;
+  font-size: math.div(theme.$avatar-size-default, 2.5);
+  font-weight: theme.$avatar-font-weight;
+  line-height: theme.$avatar-size-default;
+}
+
+@each $avatar-size, $size in theme.$avatar-sizes {
+  .s-#{$avatar-size} .item {
+    margin-left: math.div($size, -5);
+  }
+
+  .s-#{$avatar-size} .excess {
+    width: $size;
+    height: $size;
+    margin-left: math.div($size, -5);
+    font-size: math.div($size, 2.5);
+    line-height: $size;
+  }
+}

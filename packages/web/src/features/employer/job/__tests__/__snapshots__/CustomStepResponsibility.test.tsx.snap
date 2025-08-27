@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomStepResponsibilities renders correctly 1`] = `
+<div>
+  <form>
+    <div
+      class="maxWidth-96 marginRight-auto marginLeft-auto textAlign-left"
+    >
+      <div
+        class="marginBottom-3"
+      >
+        <div
+          class="flexDirection-row justifyContent-space-between marginBottom-3"
+        >
+          <p
+            class="text fontWeight-700"
+          >
+            Responsibility #1
+          </p>
+        </div>
+        <div
+          class="control"
+          role="group"
+        >
+          <div
+            class="root primary md fluid md multiline"
+          >
+            <textarea
+              aria-describedby=":r0:-helptext"
+              class="input"
+              id=":r0:"
+              name="responsibilities.0.value"
+              placeholder="E.g. Always be ready to assist customers with menu options and payment."
+              rows="4"
+              type="text"
+            />
+          </div>
+          <div
+            aria-live="polite"
+            class="helperText"
+            id=":r0:-helptext"
+          >
+            Max 1,000 characters.
+          </div>
+        </div>
+      </div>
+      <button
+        class="button md outline c-primary disabled marginTop-5"
+        disabled=""
+        type="button"
+      >
+        Add more
+      </button>
+    </div>
+    <button
+      class="button md solid c-primary fluid maxWidth-96 marginTop-8"
+      type="submit"
+    >
+      Save & Next
+    </button>
+  </form>
+</div>
+`;

@@ -1,0 +1,6 @@
+@use '@styles/theme';
+@use '../mixins';
+
+.visuallyHidden {
+  @include mixins.visually-hidden;
+}

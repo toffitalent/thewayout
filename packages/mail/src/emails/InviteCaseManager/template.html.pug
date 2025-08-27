@@ -1,0 +1,11 @@
+extends ../templates/base.pug
+include ../templates/mixins.pug
+
+block content
+  h1 Hi #{firstName},
+  p Your company admin has invited you to create a case manager account for #{rspName} on The Way Out.
+
+  +action
+    +button(url) Sign Up
+  
+  +trouble(url)

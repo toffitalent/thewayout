@@ -1,0 +1,33 @@
+@use 'sass:map';
+@use '@styles/theme';
+
+@mixin bp($width, $type: min) {
+  @if map.has-key(theme.$breakpoints, $width) {
+    $width: map.get(theme.$breakpoints, $width);
+    @if $type == max {
+      $width: $width - 0.001em;
+    }
+    @media only screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin mq($args...) {
+  @include bp($args...) {
+    @content;
+  }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

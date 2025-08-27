@@ -1,0 +1,55 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.wrapper {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @include mq(md) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.modal {
+  &Wrapper {
+    max-width: 60rem;
+
+    @include mq(md, max) {
+      margin-left: 1.8rem;
+      margin-right: 1.8rem;
+    }
+  }
+
+  &Buttons {
+    flex-direction: column;
+
+    @include mq(md) {
+      flex-direction: row;
+    }
+  }
+
+  &Button {
+    margin-top: 1.6rem;
+    margin-left: unset;
+
+    @include mq(md) {
+      margin-left: 1rem;
+      margin-top: unset;
+    }
+  }
+
+  &CloseButton {
+    top: 3.5rem;
+    right: 3rem;
+    min-height: unset;
+    min-width: unset;
+  }
+}
+
+.infoButton {
+  cursor: auto;
+  &:hover {
+    background: transparent !important;
+  }
+}

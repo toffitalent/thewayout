@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgNotebookOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M8 4h9a2 2 0 012 2v9m-.179 3.828A2 2 0 0117 20H6a1 1 0 01-1-1V5m4-1v1m0 4v13M13 8h2M3 3l18 18" }));
+export default SvgNotebookOff;

@@ -1,0 +1,35 @@
+@use '@styles/theme';
+
+.progress {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  &.rounded {
+    border-radius: theme.$progress-border-radius;
+  }
+
+  &.trackColor {
+    background-color: theme.$progress-track-color;
+  }
+}
+
+.track {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transform-origin: left;
+  transition: transform 0.4s linear;
+
+  .rounded & {
+    border-radius: theme.$progress-border-radius;
+  }
+}
+
+@each $progress-size, $size in theme.$progress-sizes {
+  .#{$progress-size} {
+    height: $size;
+  }
+}

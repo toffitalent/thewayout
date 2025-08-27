@@ -1,0 +1,31 @@
+@use '../core' as *;
+
+$progress-border-radius: 9999px !default;
+$progress-track-color: var(--color-grey-300) !default;
+
+// Sizes
+$progress-size-xs: $spacing-0_5 !default;
+$progress-size-sm: $spacing-1 !default;
+$progress-size-md: $spacing-1_5 !default;
+$progress-size-lg: $spacing-2 !default;
+
+$progress-circular-size-xs: $spacing-4 !default;
+$progress-circular-size-sm: $spacing-6 !default;
+$progress-circular-size-md: $spacing-8 !default;
+$progress-circular-size-lg: $spacing-9 !default;
+$progress-circular-size-xl: $spacing-10 !default;
+
+$progress-sizes: (
+  'xs': $progress-size-xs,
+  'sm': $progress-size-sm,
+  'md': $progress-size-md,
+  'lg': $progress-size-lg,
+);
+
+$progress-circular-sizes: (
+  'xs': $progress-circular-size-xs,
+  'sm': $progress-circular-size-sm,
+  'md': $progress-circular-size-md,
+  'lg': $progress-circular-size-lg,
+  'xl': $progress-circular-size-xl,
+);

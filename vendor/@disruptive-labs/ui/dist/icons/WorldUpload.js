@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgWorldUpload = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M21 12a9 9 0 10-9 9M3.6 9h16.8M3.6 15H12M11.578 3a17 17 0 000 18M12.5 3c1.719 2.755 2.5 5.876 2.5 9" }), React.createElement("path", { d: "M18 21v-7m3 3l-3-3-3 3" }));
+export default SvgWorldUpload;

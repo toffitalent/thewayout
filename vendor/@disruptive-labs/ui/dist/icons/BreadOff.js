@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgBreadOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M8 4l10 .005V4a3 3 0 012 5.235V16m-.59 3.418c-.36.36-.86.582-1.41.582H6a2 2 0 01-2-2V9.236a3 3 0 01.418-4.785M3 3l18 18" }));
+export default SvgBreadOff;

@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgCalculatorFilled = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M18 2a3 3 0 013 3v14a3 3 0 01-3 3H6a3 3 0 01-3-3V5a3 3 0 013-3zM8 17a1 1 0 00-1 1l.007.127A1 1 0 009 18.01l-.007-.127A1 1 0 008 17zm4 0a1 1 0 00-1 1l.007.127A1 1 0 0013 18.01l-.007-.127A1 1 0 0012 17zm4 0a1 1 0 00-1 1l.007.127A1 1 0 0017 18.01l-.007-.127A1 1 0 0016 17zm-8-4a1 1 0 00-1 1l.007.127A1 1 0 009 14.01l-.007-.127A1 1 0 008 13zm4 0a1 1 0 00-1 1l.007.127A1 1 0 0013 14.01l-.007-.127A1 1 0 0012 13zm4 0a1 1 0 00-1 1l.007.127A1 1 0 0017 14.01l-.007-.127A1 1 0 0016 13zm-1-7H9a2 2 0 00-2 2v1a2 2 0 002 2h6a2 2 0 002-2V8a2 2 0 00-2-2z", fill: "currentColor", stroke: "none" }));
+export default SvgCalculatorFilled;

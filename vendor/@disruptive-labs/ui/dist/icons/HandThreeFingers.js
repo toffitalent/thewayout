@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgHandThreeFingers = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M8 13V4.5a1.5 1.5 0 013 0V12" }), React.createElement("path", { d: "M17 11.5a1.5 1.5 0 013 0V16a6 6 0 01-6 6h-2 .208a6 6 0 01-5.012-2.7A69.74 69.74 0 017 19c-.312-.479-1.407-2.388-3.286-5.728a1.5 1.5 0 01.536-2.022 1.867 1.867 0 012.28.28L8 13" }), React.createElement("path", { d: "M11 5.5v-2a1.5 1.5 0 113 0V12M14 5.5a1.5 1.5 0 013 0V12" }));
+export default SvgHandThreeFingers;

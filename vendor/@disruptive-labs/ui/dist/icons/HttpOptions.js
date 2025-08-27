@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgHttpOptions = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M5 8a2 2 0 012 2v4a2 2 0 11-4 0v-4a2 2 0 012-2zM10 12h2a2 2 0 100-4h-2v8M17 8h4M19 8v8" }));
+export default SvgHttpOptions;

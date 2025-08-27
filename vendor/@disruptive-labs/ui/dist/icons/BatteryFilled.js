@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgBatteryFilled = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M17 6a3 3 0 012.995 2.824L20 9v.086l.052.019a1.5 1.5 0 01.941 1.25L21 10.5v3a1.5 1.5 0 01-.948 1.395l-.052.018V15a3 3 0 01-2.824 2.995L17 18H6a3 3 0 01-2.995-2.824L3 15V9a3 3 0 012.824-2.995L6 6h11z", fill: "currentColor", stroke: "none" }));
+export default SvgBatteryFilled;

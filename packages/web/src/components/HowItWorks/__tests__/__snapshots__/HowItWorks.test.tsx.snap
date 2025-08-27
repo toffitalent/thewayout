@@ -1,0 +1,333 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HowItWorks renders correctly for employer 1`] = `
+<div>
+  <h2
+    class="text title marginBottom-2"
+  >
+    How it works?
+  </h2>
+  <div
+    class=""
+  >
+    <div
+      class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+    >
+      <p
+        class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+      >
+        1
+      </p>
+      <div
+        class="marginLeft-8"
+      >
+        <p
+          class="text marginBottom-2 fontSize-xl fontWeight-700"
+        >
+          Create Your Profile
+        </p>
+        <p
+          class="text color-grey-600"
+        >
+          Choose a subscription package and begin creating your employer profile by adding your company details.
+        </p>
+      </div>
+    </div>
+    <div
+      class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+    >
+      <p
+        class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+      >
+        2
+      </p>
+      <div
+        class="marginLeft-8"
+      >
+        <p
+          class="text marginBottom-2 fontSize-xl fontWeight-700"
+        >
+          Identify Ideal Candidate
+        </p>
+        <p
+          class="text color-grey-600"
+        >
+          Identify your ideal candidate qualifications based on federal and state guidelines for each job you post.
+        </p>
+      </div>
+    </div>
+    <div
+      class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+    >
+      <p
+        class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+      >
+        3
+      </p>
+      <div
+        class="marginLeft-8"
+      >
+        <p
+          class="text marginBottom-2 fontSize-xl fontWeight-700"
+        >
+          Hire Qualified Candidates
+        </p>
+        <p
+          class="text color-grey-600"
+        >
+          Search and review qualified cloaked candidates and set up interviews. Once an interview is scheduled, the applicant's full profile will be made available.
+        </p>
+      </div>
+    </div>
+  </div>
+  <a
+    class="button md solid c-primary"
+    href="/signup"
+  >
+    List a Job
+    <span
+      aria-hidden="true"
+      class="accessoryRight"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon"
+        focusable="false"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          stroke="none"
+        />
+        <path
+          d="M5 12h14M15 16l4-4M15 8l4 4"
+        />
+      </svg>
+    </span>
+  </a>
+</div>
+`;
+
+exports[`HowItWorks renders correctly for job seeker 1`] = `
+<div>
+  <h2
+    class="text title marginBottom-2"
+  >
+    How it works?
+  </h2>
+  <p
+    class="text color-grey-600 fontSize-xl fontWeight-700"
+  >
+    Life can be harder upon your return. Our platform makes it easier.
+  </p>
+  <div
+    class=""
+  >
+    <div
+      class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+    >
+      <p
+        class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+      >
+        1
+      </p>
+      <div
+        class="marginLeft-8"
+      >
+        <p
+          class="text marginBottom-2 fontSize-xl fontWeight-700"
+        >
+          Create Your Profile
+        </p>
+        <p
+          class="text color-grey-600"
+        >
+          Our platform creates a blind, contextual profile that removes your name, address, employment gaps and other information that traditionally cause biases from employers.
+        </p>
+      </div>
+    </div>
+    <div
+      class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+    >
+      <p
+        class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+      >
+        2
+      </p>
+      <div
+        class="marginLeft-8"
+      >
+        <p
+          class="text marginBottom-2 fontSize-xl fontWeight-700"
+        >
+          Identify Additional Support Needs
+        </p>
+        <p
+          class="text color-grey-600"
+        >
+          We'll match you with a Supportive Services Provider (SSP) in your area that can help with your personal and professional journey. You can manage your personalized journey in our dashboard.
+        </p>
+      </div>
+    </div>
+    <div
+      class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+    >
+      <p
+        class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+      >
+        3
+      </p>
+      <div
+        class="marginLeft-8"
+      >
+        <p
+          class="text marginBottom-2 fontSize-xl fontWeight-700"
+        >
+          Apply For Jobs
+        </p>
+        <p
+          class="text color-grey-600"
+        >
+          Our platform is designed for job seekers who've recently reentered the workforce.
+        </p>
+      </div>
+    </div>
+  </div>
+  <a
+    class="button md solid c-primary"
+    href="/signup"
+  >
+    Find jobs
+    <span
+      aria-hidden="true"
+      class="accessoryRight"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon"
+        focusable="false"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          stroke="none"
+        />
+        <path
+          d="M5 12h14M15 16l4-4M15 8l4 4"
+        />
+      </svg>
+    </span>
+  </a>
+</div>
+`;
+
+exports[`HowItWorks renders correctly for service providers 1`] = `
+<div>
+  <h2
+    class="text title marginBottom-2"
+  >
+    How it works?
+  </h2>
+  <div
+    class=""
+  >
+    <div
+      class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+    >
+      <p
+        class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+      >
+        1
+      </p>
+      <div
+        class="marginLeft-8"
+      >
+        <p
+          class="text marginBottom-2 fontSize-xl fontWeight-700"
+        >
+          Create Your Profile
+        </p>
+        <p
+          class="text color-grey-600"
+        >
+          Add your organization's details; name, location, services provided, and contact info.
+        </p>
+      </div>
+    </div>
+    <div
+      class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+    >
+      <p
+        class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+      >
+        2
+      </p>
+      <div
+        class="marginLeft-8"
+      >
+        <p
+          class="text marginBottom-2 fontSize-xl fontWeight-700"
+        >
+          Receive Client Referrals
+        </p>
+        <p
+          class="text color-grey-600"
+        >
+          Our algorithm matches you with clients seeking supportive services in your area.
+        </p>
+      </div>
+    </div>
+    <div
+      class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+    >
+      <p
+        class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+      >
+        3
+      </p>
+      <div
+        class="marginLeft-8"
+      >
+        <p
+          class="text marginBottom-2 fontSize-xl fontWeight-700"
+        >
+          Manage Client Journey
+        </p>
+        <p
+          class="text color-grey-600"
+        >
+          Utilize our dashboard to help manage your client's personal and professional journey.
+        </p>
+      </div>
+    </div>
+  </div>
+  <a
+    class="button md solid c-primary"
+    href="mailto:support@twout.org"
+  >
+    Register Organization
+    <span
+      aria-hidden="true"
+      class="accessoryRight"
+    >
+      <svg
+        aria-hidden="true"
+        class="icon"
+        focusable="false"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          stroke="none"
+        />
+        <path
+          d="M5 12h14M15 16l4-4M15 8l4 4"
+        />
+      </svg>
+    </span>
+  </a>
+</div>
+`;

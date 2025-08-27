@@ -1,0 +1,194 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.layout {
+  width: 100%;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: theme.$wizard-header-margin;
+}
+
+.progress {
+  max-width: 90%;
+  margin: 0 auto theme.$wizard-header-margin;
+
+  @include mq(lg) {
+    max-width: 75%;
+  }
+}
+
+.back {
+  align-self: flex-start;
+  margin-bottom: theme.$wizard-back-margin;
+  border-color: theme.$wizard-back-border-color !important;
+  color: theme.$wizard-back-color !important;
+
+  &Hidden {
+    visibility: hidden;
+  }
+}
+
+.title {
+  margin: 0 auto;
+
+  @include mq(lg) {
+    max-width: 83.333333%;
+  }
+}
+
+.description {
+  margin: 1rem auto 0;
+
+  @include mq(lg) {
+    max-width: 83.333333%;
+  }
+}
+
+.form {
+  > div[role='group'],
+  > button {
+    max-width: theme.$wizard-form-max-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.submit {
+  margin-top: theme.$wizard-submit-margin;
+}
+
+.control {
+  &.fluid {
+    max-width: unset !important;
+  }
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+  margin: (theme.$wizard-choice-item-margin * -1) 0 0 0;
+  padding: 0;
+  border: 0;
+
+  &.inline {
+    flex-wrap: wrap;
+  }
+
+  &Item {
+    flex: 1 0 100%;
+    display: flex;
+    align-items: center;
+    min-width: theme.$wizard-choice-item-size;
+    min-height: theme.$wizard-choice-item-size;
+    padding-left: theme.$wizard-choice-item-padding;
+    padding-right: 0;
+    margin: theme.$wizard-choice-item-margin 0 0;
+    background-color: transparent;
+    border: theme.$wizard-choice-item-border-width solid theme.$wizard-choice-color;
+    border-radius: theme.$wizard-choice-item-border-radius;
+    color: theme.$wizard-choice-color;
+    font-size: theme.$wizard-choice-item-font-size;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 250ms ease, color 250ms ease;
+    white-space: nowrap;
+    user-select: none;
+    vertical-align: middle;
+
+    &Text {
+      flex: 1;
+      padding: 0;
+      text-align: left;
+      transition: padding 250ms ease;
+
+      .inline & {
+        padding: 0 0 0 2.6rem - theme.$wizard-choice-item-padding;
+      }
+
+      .inline [aria-checked='true'] & {
+        padding: 0 2.6rem - theme.$wizard-choice-item-padding 0 0;
+      }
+    }
+
+    &Icon {
+      flex-shrink: 0;
+      display: flex;
+      margin: 0 0.8rem 0 0.8rem;
+      color: theme.$wizard-choice-color-inverse;
+      opacity: 0;
+      transition: opacity 250ms ease;
+
+      .inline & {
+        margin-left: 0.2rem;
+      }
+
+      [aria-checked='true'] & {
+        opacity: 1;
+      }
+
+      svg {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+
+    &.disabled,
+    &:disabled,
+    &[aria-disabled='true'] {
+      cursor: default;
+      pointer-events: none;
+      opacity: theme.$wizard-choice-item-disabled-opacity;
+    }
+
+    &::-moz-focus-inner {
+      border-style: none;
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: var(--focus-shadow-color) 0 0 0 theme.$focus-shadow-width;
+
+      &:not(:focus-visible) {
+        box-shadow: none;
+      }
+    }
+
+    &:hover {
+      background-color: theme.$wizard-choice-color-hover;
+    }
+
+    &:active {
+      background-color: theme.$wizard-choice-color-active;
+    }
+
+    &[aria-checked='true'] {
+      background-color: theme.$wizard-choice-color;
+      color: theme.$wizard-choice-color-inverse;
+    }
+
+    .inline & {
+      flex: 0 0 auto;
+      display: inline-flex;
+      margin-left: 0.4rem;
+      margin-right: 0.4rem;
+    }
+  }
+
+  &Group {
+    & + & {
+      margin-top: theme.$wizard-choice-group-margin;
+    }
+
+    &Title {
+      font-size: theme.$wizard-choice-group-font-size;
+      font-weight: theme.$wizard-choice-group-font-weight;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgMessage2Up = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M8 9h8M8 13h6M12.354 20.646L12 21l-3-3H6a3 3 0 01-3-3V7a3 3 0 013-3h12a3 3 0 013 3v5.5M19 22v-6M22 19l-3-3-3 3" }));
+export default SvgMessage2Up;

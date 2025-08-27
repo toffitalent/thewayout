@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgMapSouth = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M3 12a9 9 0 1018 0 9 9 0 10-18 0" }), React.createElement("path", { d: "M10 14.25c0 .414.336.75.75.75H13a1 1 0 001-1v-1a1 1 0 00-1-1h-2a1 1 0 01-1-1v-1a1 1 0 011-1h2.25a.75.75 0 01.75.75" }));
+export default SvgMapSouth;

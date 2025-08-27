@@ -1,0 +1,13 @@
+$screen-sm: 40em !default;
+$screen-md: 48em !default;
+$screen-lg: 64em !default;
+$screen-xl: 80em !default;
+$screen-2xl: 96em !default;
+
+$breakpoints: (
+  'sm': $screen-sm,
+  'md': $screen-md,
+  'lg': $screen-lg,
+  'xl': $screen-xl,
+  '2xl': $screen-2xl,
+) !default;

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`config loadConfig() loads configuration 1`] = `
+{
+  "account": "114149725394",
+  "deploy": {
+    "mail": false,
+    "web": false,
+  },
+  "hostnames": {
+    "api": "example.com",
+    "mail": "example.com",
+    "web": "example.com",
+  },
+  "region": "us-west-2",
+  "secrets": {},
+}
+`;
+
+exports[`config loadConfig() loads deployment info from context 1`] = `
+{
+  "account": "114149725394",
+  "deploy": {
+    "mail": true,
+    "web": true,
+  },
+  "hostnames": {
+    "api": "example.com",
+    "mail": "example.com",
+    "web": "example.com",
+  },
+  "region": "us-west-2",
+  "secrets": {},
+}
+`;

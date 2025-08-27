@@ -1,0 +1,274 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobPreview renders correctly 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="borderBottom paddingBottom-5"
+    >
+      <p
+        class="text fontSize-3xl fontWeight-700"
+      >
+        Car Wash Attendant
+      </p>
+      <div
+        class="color-grey-600 flexWrap-wrap display-flex fontSize-sm"
+      >
+        <p
+          class="text"
+        >
+          Hybrid (Full-time)
+        </p>
+        <p
+          class="text"
+        >
+           • 
+          $15 - $30/hour
+        </p>
+        <p
+          class="text"
+        >
+           • 
+          0 Applicants
+        </p>
+      </div>
+      <div
+        class="container spacing-2 paddingTop-6 paddingBottom-6"
+      >
+        <div
+          class="item"
+        >
+          <div
+            class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+          >
+            NO DRUGS OFFENSES
+          </div>
+        </div>
+        <div
+          class="item"
+        >
+          <div
+            class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+          >
+            NO MOTOR VEHICLE OFFENSES
+          </div>
+        </div>
+        <div
+          class="item"
+        >
+          <div
+            class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+          >
+            NO SEXUAL OFFENSES
+          </div>
+        </div>
+        <div
+          class="item"
+        >
+          <div
+            class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+          >
+            NO VIOLENT OFFENSES
+          </div>
+        </div>
+        <div
+          class="item"
+        >
+          <div
+            class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+          >
+            NO THEFT OFFENSES
+          </div>
+        </div>
+        <div
+          class="item"
+        >
+          <div
+            class="badge borderColor-blue-200 bgcolor-blue-200 color-blue-800"
+          >
+            NO WHITE - COLLAR OFFENSES
+          </div>
+        </div>
+      </div>
+      <button
+        class="button md solid c-primary buttonApply"
+        type="button"
+      >
+        Apply now
+        <span
+          aria-hidden="true"
+          class="accessoryRight"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon"
+            focusable="false"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              stroke="none"
+            />
+            <path
+              d="M5 12h14M15 16l4-4M15 8l4 4"
+            />
+          </svg>
+        </span>
+      </button>
+      <p
+        class="text marginTop-5"
+      >
+        Wash attendants are responsible for performing the daily operational practices of running the car wash facility.
+      </p>
+    </div>
+    <div
+      class="justifyContent-space-between marginTop-10 textAlign-left"
+    >
+      <div
+        class="paddingBottom-4 fontSize-xl fontWeight-700"
+      >
+        Responsibilities & Expectations
+      </div>
+      <div
+        class="container spacing-4 flexDirection-column"
+      />
+    </div>
+    <div
+      class="justifyContent-space-between marginTop-10 textAlign-left"
+    >
+      <div
+        class="paddingBottom-4 fontSize-xl fontWeight-700"
+      >
+        <div
+          class="skillsTitle"
+        >
+          <p
+            class="text skillsTitleText marginRight-4"
+          >
+            Skills & Experience
+          </p>
+          <div
+            class="alignItems-center flexDirection-row display-flex"
+          >
+            <p
+              class="text marginRight-2 fontSize-xs fontWeight-700"
+            >
+              MID
+            </p>
+            <div
+              class="rounded-3xl bgcolor-primary width-4 height-4 marginRight-1"
+            />
+            <div
+              class="rounded-3xl bgcolor-primary width-4 height-4 marginRight-1"
+            />
+            <div
+              class="rounded-3xl bgcolor-primary width-4 height-4 marginRight-1"
+            />
+            <div
+              class="rounded-3xl bgcolor-grey-200 width-4 height-4 marginRight-1"
+            />
+            <div
+              class="rounded-3xl bgcolor-grey-200 width-4 height-4 marginRight-1"
+            />
+          </div>
+        </div>
+      </div>
+      <p
+        class="text"
+      >
+        The most successful and happy people have PMA – a Positive Mental Attitude! We are a huge believer in putting attitude above aptitude. We can always teach you how to do the job, but we can't teach a Positive Mental Attitude... You either have it or you don't!
+      </p>
+    </div>
+    <div
+      class="justifyContent-space-between marginTop-10 textAlign-left"
+    >
+      <div
+        class="paddingBottom-4 fontSize-xl fontWeight-700"
+      >
+        Pay & Benefits
+      </div>
+      <div
+        class="container spacing-4 flexDirection-column marginTop-1"
+      >
+        <div
+          class="item flexDirection-row"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon color-grey width-6 height-6 marginRight-4"
+            focusable="false"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              stroke="none"
+            />
+            <path
+              d="M5 12l5 5L20 7"
+            />
+          </svg>
+          <p
+            class="text"
+          >
+            Starting wage is $13 per hour + tips, with an Employer Bonus after positive a 90 Day Review (provided by the employer)
+          </p>
+        </div>
+        <div
+          class="item flexDirection-row"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon color-grey width-6 height-6 marginRight-4"
+            focusable="false"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              stroke="none"
+            />
+            <path
+              d="M5 12l5 5L20 7"
+            />
+          </svg>
+          <p
+            class="text"
+          >
+            Additional $100 Bonus for Positive 90 Day Review
+          </p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="button md solid c-primary buttonApply marginTop-5"
+      type="button"
+    >
+      Apply now
+      <span
+        aria-hidden="true"
+        class="accessoryRight"
+      >
+        <svg
+          aria-hidden="true"
+          class="icon"
+          focusable="false"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 0h24v24H0z"
+            stroke="none"
+          />
+          <path
+            d="M5 12h14M15 16l4-4M15 8l4 4"
+          />
+        </svg>
+      </span>
+    </button>
+  </div>
+</div>
+`;

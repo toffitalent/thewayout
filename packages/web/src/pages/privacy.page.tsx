@@ -1,0 +1,590 @@
+import { Box, Content, Flex, Heading } from '@disruptive-labs/ui';
+import { DefaultLayout } from '@app/components/Layout';
+import { SEO } from '@app/components/SEO';
+import { NextPageWithLayout } from '@app/types';
+import styles from './privacy.module.scss';
+
+const PrivacyPage: NextPageWithLayout = () => (
+  <>
+    <SEO title="Privacy Notice" description="TWO privacy notice" />
+    <Content pv={20} ph={5} display="flex" justifyContent="center">
+      <Flex xs={12} md={10} lg={8}>
+        <Box as="section" mb={12}>
+          <Heading as="h1" mb={5}>
+            Privacy Notice
+          </Heading>
+          <p>
+            Effective Date: April 30, 2023
+            <br />
+            Notice Version: 1.0
+          </p>
+          <Heading mv={5}>Data Controller Contact Information:</Heading>
+          <p>
+            The Way Out, INC.
+            <br />
+            PO Box 70620, Milwaukee, WI 53207-0620
+            <br />
+            <a href="mailto:support@twout.org">support@twout.org</a>
+          </p>
+          <p>
+            Our privacy notice governs the privacy practices of our website thewayouthelps.com. Our
+            privacy notice tells you what personal data and nonpersonal data we collect from you,
+            how we collect them, how we protect them, how we share them, how you can access and
+            change them, and how you can limit our sharing of them. Our privacy notice also explains
+            certain legal rights that you have concerning your personal data. Any capitalized terms
+            not defined herein will have the same meaning as where they are defined elsewhere on our
+            website.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12}>
+          <Heading mb={5}>Definitions</Heading>
+          <p>
+            <b>NONPERSONAL DATA (NPD)</b> is information that is in no way personally identifiable.
+          </p>
+          <p>
+            <b>PERSONAL DATA (PD)</b> means any information relating to an identified or
+            identifiable natural person (data subject); an identifiable natural person is one who
+            can be identified directly or indirectly by reference to an identifier such as a name,
+            an identification number, location data, an online identifier, or to one or more factors
+            specific to the physical, physiological, genetic, mental, economic, cultural, or social
+            identity of that natural person. PD is in many ways the same as Personally Identifiable
+            Information (PII). However, PD is broader in scope and covers more data. (GDPR) means
+            General Data Protection Regulation. (CCPA) means California Consumer Privacy Act. (LGPD)
+            means Brazilian General Data Protection Law.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12} className={styles.topics}>
+          <Heading mb={5}>Topics Covered in Our Privacy Notice</Heading>
+          <a href="#your-rights">YOUR RIGHTS</a>
+          <br />
+          <a href="#information-collect">INFORMATION WE COLLECT AND HOW WE COLLECT IT</a>
+          <br />
+          <a href="#information-shared">HOW YOUR INFORMATION IS USED AND SHARED</a>
+          <br />
+          <a href="#retaining-destroying-pd">RETAINING AND DESTROYING YOUR PD </a>
+          <br />
+          <a href="#updating-pd">UPDATING YOUR PD</a>
+          <br />
+          <a href="#protect">PROTECTING THE PRIVACY RIGHTS OF THIRD PARTIES</a>
+          <br />
+          <a href="#track-settings">DO NOT TRACK SETTINGS</a>
+          <br />
+          <a href="#links">LINKS TO OTHER WEBSITES</a>
+          <br />
+          <a href="#children-privacy">PROTECTING CHILDREN&apos;S PRIVACY</a>
+          <br />
+          <a href="#email-policy">OUR EMAIL POLICY</a>
+          <br />
+          <a href="#security-policy">OUR SECURITY POLICY</a>
+          <br />
+          <a href="#credit-card">USE OF YOUR CREDIT CARD</a>
+          <br />
+          <a href="#changes">CHANGES TO OUR PRIVACY NOTICE</a>
+          <br />
+        </Box>
+
+        <Box as="section" mb={12} id="your-rights">
+          <Heading mb={5}>YOUR RIGHTS</Heading>
+          <p>
+            Contact us using the information at the top of this privacy notice to exercise any of
+            your legal rights contained within this privacy notice.
+          </p>
+          <p>
+            <b>
+              Our policy is that we do not sell our users and customers PD except in the sale or
+              merger of our business. See the section about “Disclosures to Successors” in this
+              privacy notice. The provision below is only here because it is required by law that we
+              include it.
+            </b>
+            <br />
+            You have the right to request that we do not sell any of your personal information.
+            Personal information for this section means but is not limited to a natural
+            person&apos;s first name or first initial and last name in combination with any one or
+            more of the following data elements when they are not encrypted: social security number,
+            driver&apos;s license number, driver authorization card number, or identification card
+            number. Account number, credit card, or debit card number, in combination with any
+            required security code, access code, or password that would permit access to the
+            person&apos;s financial account. If you wish to make this request, you can email us at
+            <a href="mailto:support@twout.org"> support@twout.org</a> telling us that you do not
+            want to have any of your personal information sold. Include enough personal information
+            so that we can reasonably verify your identity. We will respond to your request within
+            30 days after receiving it.
+          </p>
+          <p>
+            <b>Your Privacy Rights Under the CCPA</b>
+            <br />
+            Californian consumers have certain rights under the CCPA. For us to comply with some of
+            these rights, we must be able to reasonably verify a consumer&apos;s identity. These
+            rights include:
+          </p>
+          <ol>
+            <li>
+              The right of Californians to know what personal information is being collected about
+              them.
+            </li>
+            <li>
+              The right of Californians to know whether their personal information is sold or
+              disclosed and to whom.
+            </li>
+            <li>The right of Californians to say no to the sale of their personal information.</li>
+            <li>The right of Californians to access their personal information.</li>
+            <li>
+              The right to data portability. Californians have the right to request their personal
+              information that they provided to us and use them for their own purposes. We will
+              provide Californians their personal information within 30 days of their request.
+            </li>
+            <li>The right of Californians to the deletion of their personal information.</li>
+            <li>
+              The right of Californians to equal service, price, and not being discriminated against
+              even if they exercise their privacy rights.
+            </li>
+            <li>
+              One or more designated means for Californian consumers to submit requests under the
+              CACPA including (at minimum) a toll-free telephone number, and if the business
+              maintains an Internet website, a website address.
+            </li>
+            <li>
+              The right of Californians to designate an authorized agent to request on their behalf.
+              When designating an authorized agent, you must provide a valid power of attorney, the
+              requester&apos;s valid government-issued identification, and the authorized
+              agent&apos;s valid government-issued identification.
+            </li>
+          </ol>
+          <p>Personal information includes:</p>
+          <ul>
+            <li>
+              categories of personal information that a business collected about the consumer;
+            </li>
+            <li>categories of sources from which the personal information was collected;</li>
+            <li>
+              specific pieces of personal information that the business has collected about
+              consumers;
+            </li>
+            <li>categories of third parties with whom the business shares personal information;</li>
+            <li>
+              the business or commercial purpose of collecting or selling personal information
+            </li>
+            <li>*categories of personal information sold; </li>
+            <li>
+              *categories of third parties to whom the personal information was sold, by category or
+              categories of personal information sold for each third-party to whom the personal
+              information was sold;
+            </li>
+            <li>*categories of personal information disclosed for a business purpose; </li>
+            <li>
+              *categories of personal information that the business sold about the consumer in the
+              preceding 12 months, or a statement that it has not sold any personal information;
+            </li>
+            <li>
+              *categories of personal information about the consumer that the business disclosed for
+              a business purpose in the preceding 12 months, or a statement that it has not
+              disclosed any personal information for business purposes.
+            </li>
+          </ul>
+        </Box>
+
+        <Box as="section" mb={12} id="information-collect">
+          <Heading mb={5}>INFORMATION WE COLLECT AND HOW WE COLLECT IT</Heading>
+          <p>
+            Generally, you control the amount and type of information that you provide to us when
+            using our website.
+          </p>
+          <p>
+            <b>Google API</b>
+            <br />
+            By using our website, you are subject to the
+            <a href="https://policies.google.com/privacy?hl=en"> Google Privacy Policy</a> and
+            <a href="https://policies.google.com/terms?hl=en-US"> Terms of Service</a>. When
+            collecting and processing user data, including PD from Google APIs, we will follow
+            <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">
+              {' '}
+              Google API Services User Data Policy
+            </a>
+            . We also require that our employees, contractors, agents, and successors comply with
+            the Google API Services User Data Policy.
+          </p>
+          <p>
+            <b>Automatic Information</b>
+            <br />
+            We automatically receive information from your web browser or mobile device. This
+            information may include the IP address of your computer/the proxy server you use to
+            access the Internet, your Internet service provider&apos;s name, your web browser type,
+            the type of mobile device, your computer operating system, and data about your browsing
+            activity when using our website. We use all this information to analyze trends among our
+            users to help improve our website.
+          </p>
+          <p>
+            <b>When Entering and Using Our Website</b>
+            <br />
+            When you enter and use our website and agree to accept cookies, some of these cookies
+            may contain your PD.
+          </p>
+          <p>
+            <b>Our Use of Cookies</b>
+            <br />
+            Our website uses cookies. A cookie is a small piece of data or a text file that is
+            downloaded to your computer or mobile device when you access certain websites. Cookies
+            may contain text that can be read by the web server that delivered the cookie to you.
+            The text contained in the cookie generally consists of a sequence of letters and numbers
+            that uniquely identifies your computer or mobile device; it may contain other
+            information as well.
+          </p>
+          <p>
+            By agreeing to accept our use of cookies you are giving us and the third parties with
+            which we partner permission to place, store, and access some or all the cookies
+            described below on your computer and or mobile device.
+          </p>
+          <ul>
+            <li>
+              Strictly Necessary Cookies - These cookies are necessary for the proper functioning of
+              the website, such as displaying content, logging in, validating your session,
+              responding to your request for services, and other functions. Most web browsers can be
+              set to disable the use of cookies.
+            </li>
+            <li>
+              Performance Cookies - These cookies collect information about the use of the website,
+              such as pages visited, traffic sources, users&apos; interests, content management, and
+              other website measurements.
+            </li>
+            <li>
+              Functional Cookies - These cookies enable the website to remember users&apos; choices,
+              such as their language, usernames, and other choices while using the website. They can
+              also be used to deliver services, such as letting a user create a blog post, listen to
+              audios, or watch videos on the website.
+            </li>
+            <li>
+              Media Cookies - These cookies can be used to improve a website&apos;s performance and
+              provide special features and content. They can be placed by us or third parties who
+              provide services to us.
+            </li>
+            <li>
+              Advertising or Targeting Cookies - These cookies are usually placed and used by
+              advertising companies to develop a profile of your browsing interests and serve
+              advertisements on other websites that are related to your interests. You will see less
+              advertising if you disable these cookies.
+            </li>
+            <li>
+              Session Cookies - These cookies allow websites to link the actions of a user during a
+              browser session. They may be used for a variety of purposes, such as remembering what
+              a user has put in their shopping cart as they browse a website. Session cookies also
+              permit users to be recognized as they navigate a website so that any item or page
+              changes they make are remembered from page to page. Session cookies expire after a
+              browser session; they are not stored long term.
+            </li>
+            <li>
+              Persistent Cookies - These cookies are stored on a user&apos;s device between browser
+              sessions, which allows the user&apos;s preferences or actions across a website or
+              across different websites to be remembered. Persistent cookies may be used for several
+              purposes, including remembering users&apos; choices and preferences when using a
+              website or target advertising to them.
+            </li>
+            <li>
+              We may also use cookies for:
+              <ul>
+                <li> identifying the areas of our website that you have visited;</li>
+                <li>personalizing the content that you see on our website;</li>
+                <li>our website analytics;</li>
+                <li>remarketing our products or services to you;</li>
+                <li>remembering your preferences, settings, and login details;</li>
+                <li>targeted advertising and serving ads relevant to your interests;</li>
+                <li>affiliate marketing;</li>
+                <li>allowing you to post comments;</li>
+                <li>allowing you to share content with social networks.</li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            Most web browsers can be set to disable the use of cookies. However, if you disable
+            cookies, you may not be able to access features on our website correctly or at all.
+          </p>
+          <p>
+            <b>Web Beacons</b>
+            <br />
+            We may also use a technology called web beacons to collect general information about
+            your use of our website and your use of special promotions or newsletters. The
+            information we collect by web beacons allows us to statistically monitor the number of
+            people who open our emails. Web beacons also help us to understand the behavior of our
+            customers and users.
+          </p>
+          <p>
+            <b>At User Registration</b>
+            <br />
+            When you register as a user, we collect your name and email address.
+          </p>
+          <p>
+            <b>When Buying Products or Services</b>
+            <br />
+            If you buy products or services from us, we collect your first and last name, email
+            address, physical address, credit card or other payment information, phone number, and
+            other information listed.
+          </p>
+          <p>
+            <b>Collecting Information About Your Physical Location</b>
+            <br />
+            When you use our services, we may collect and process information about your actual
+            physical location. We use several technologies such as GPS and IP tracking to determine
+            your location. These technologies may also give us information about nearby cell towers,
+            Wi-Fi access points, and other devices.
+          </p>
+          <p>
+            <b>Website Chat Software or Contact Forms</b>
+            <br />
+            Our website contains chat software or contact forms that enable visitors to communicate
+            with us live online or offline by email. In some cases, visitors can communicate with us
+            without buying our products and services. When you use our chat software or contact
+            forms, we may collect some or all the following information: your email address, first
+            name, last name, location, and any other information you willingly choose to give us.
+            You should limit the information you give to us to one that is necessary to answer your
+            questions.
+          </p>
+          <p>
+            <b>Analytics</b>
+            <br />
+            Our website uses analytics and crash reporting services from several companies to
+            collect information about the use of our website. Analytics collects information such as
+            how often users visit our website, what pages they visit, when they do so, what other
+            websites they used before coming to our website, and their IP addresses. We use the
+            information we get from analytics to improve our services.
+          </p>
+          <p>
+            <b>What Happens If You Don&apos;t Give Us Your PD</b>
+            <br />
+            If you do not provide us with enough PD, we may not be able to provide you with all our
+            products and services. However, you can access and use some parts of our website without
+            giving us your PD.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12} id="information-shared">
+          <Heading mb={5}>HOW YOUR INFORMATION IS USED AND SHARED</Heading>
+          <p> We use the information we receive from you to:</p>
+          <ul>
+            <li>provide our products and services you have requested or purchased from us;</li>
+            <li>personalize and customize our content; </li>
+            <li>make improvements to our website;</li>
+            <li>contact you with updates to our website, products, and services;</li>
+            <li>resolve problems and disputes;</li>
+            <li>
+              contact you with marketing and advertising that we believe may be of interest to you.
+            </li>
+          </ul>
+          <p>
+            <b>Communications and Emails</b>
+            <br />
+            When we communicate with you about our website, we will use the email address you
+            provided when you registered as a user or customer. We may also send you emails with
+            promotional information about our website or offers from us or our affiliates unless you
+            have opted out of receiving such information. You can change your contact preferences at
+            any time through your account or by contacting us using the contact information at the
+            top of this privacy notice.
+          </p>
+
+          <p>
+            <b>Sharing Information with Third Parties</b>
+            <br />
+            We do not sell or rent your PD to third parties for marketing purposes. However, for
+            data aggregation purposes we may use your NPD, which might be sold to other parties at
+            our discretion. Any such data aggregation would not contain any of your PD. At times we
+            give your PD to third-party service providers whom we hire to provide services to us.
+            These third-party service providers may include but are not limited to payment
+            processors, web analytics companies, advertising networks, call centers, data management
+            services, help desk providers, accountants, law firms, auditors, shopping cart and email
+            service providers, and shipping companies.
+          </p>
+
+          <p>
+            <b>Sharing Information With Business Partners</b>
+            <br />
+            We may share your PD with our business partners. The business partners include general
+            business partners, affiliates, and joint venture partners. We share this information
+            with them so that they can send you information about our products and services as well
+            as their own products and services. When you choose to take part in our services, you
+            are authorizing us to provide your email address and other PD to our business partners.
+            Please understand that when we share your PD with our business partners, your PD becomes
+            subject to our business partners&apos; as well as our privacy notice.
+          </p>
+
+          <p>
+            <b>Sharing Your PD With Other Users</b>
+            <br />
+            Some of your PD, including your location, first and last name, business type, social
+            media profiles, current place of work, job position, business name, business address,
+            profile picture, email address, friend connections, spoken languages, business phone
+            number, mobile number, business URL, username, and any image or video content that you
+            have uploaded to our website may be displayed to other users to help user interaction
+            within our services or address your request for our services.
+          </p>
+          <p>
+            Your privacy settings in your account may let you limit which users can see your PD in
+            your user profile and what information in your profile is visible to others. You
+            understand that any content you upload to your public user profile, including PD, or
+            content that you disclose online in a way that other users can see, including discussion
+            boards, messaging, or other communication mechanisms becomes publicly accessible and can
+            be used by anyone. If you post on these discussion boards or other communication
+            devices, you should use care when exposing any PD, as such information is not protected
+            by our privacy notice nor are we liable if you disclose your PD through such postings.
+          </p>
+          <p>
+            <b>Text Messaging, SMS, Push Notifications, Telephone Calls, and Email</b>
+            <br />
+            If you provide an email address, mobile telephone number, or landline telephone number
+            to us, you are giving your express consent and authorize us or a third-party to contact
+            you by using any of these communication methods. You are not required to give us your
+            consent to contact you through these communication methods. However, withholding your
+            consent may interfere or prevent us from providing some or all of our services to you.
+            You can stop receiving emails, text messages, push notifications, and telephone calls at
+            any time by contacting us or using one of our opt-out methods.
+          </p>
+
+          <p>
+            <b>Legally Required Releases of Information</b>
+            <br />
+            We may be legally required to disclose your PD if such disclosure is (a) required by
+            subpoena, law, or other legal processes; (b) necessary to assist law enforcement
+            officials or government enforcement agencies; (c) necessary to investigate violations of
+            or otherwise enforce our terms and conditions; (d) necessary to protect us from legal
+            action or claims from third parties, including you and or other users; or (e) necessary
+            to protect the legal rights, personal and or real property, or the personal safety of
+            our company, users, employees, and affiliates.
+          </p>
+
+          <p>
+            <b>Disclosures to Successors</b>
+            <br />
+            If our business is sold or merges in whole or in part with another business that would
+            become responsible for providing the website to you, we retain the right to transfer
+            your PD to the new business. The new business would retain the right to use your PD
+            according to the terms of this privacy notice as well as to any changes to this privacy
+            notice as instituted by the new business. We also retain the right to transfer your PD
+            if our company files for bankruptcy and some or all of our assets are sold to another
+            individual or business.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12} id="retaining-destroying-pd">
+          <Heading mb={5}>RETAINING AND DESTROYING YOUR PD</Heading>
+          <p>
+            We retain information that we collect from you (including your PD) only for as long as
+            we need it for legal, business, or tax purposes. Your information may be retained in
+            electronic, paper, or a combination of both forms. When your information is no longer
+            needed, we will destroy, delete, or erase it.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12} id="updating-pd">
+          <Heading mb={5}>UPDATING YOUR PD</Heading>
+          <p>
+            You can update your PD using services found on our website. If no such services exist,
+            you can contact us using the contact information found at the top of this privacy notice
+            and we will help you. However, we may keep your PD as needed to enforce our agreements
+            and to comply with any legal obligations.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12} id="protect">
+          <Heading mb={5}>PROTECTING THE PRIVACY RIGHTS OF THIRD PARTIES</Heading>
+          <p>
+            If any postings you make on our Website contain information about third parties, you
+            agree to make sure that you have permission to include that information. While we are
+            not legally liable for the actions of our users, we will remove any postings about which
+            we are notified, if such postings violate the privacy rights of others.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12} id="track-settings">
+          <Heading mb={5}>DO NOT TRACK SETTINGS</Heading>
+          <p>
+            Some web browsers have settings that enable you to request that our website not track
+            your movement within our website. Our website does not obey such settings when
+            transmitted to and detected by our website. You can turn off tracking features and other
+            security settings in your browser by referring to your browser&apos;s user manual.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12} id="links">
+          <Heading mb={5}>LINKS TO OTHER WEBSITES</Heading>
+          <p>
+            Our website may contain links to other websites. These websites are not under our
+            control and are not subject to our privacy notice. These websites will likely have their
+            own privacy notices. We have no responsibility for these websites and we provide links
+            to these websites solely for your convenience. You acknowledge that your use of and
+            access to these websites are solely at your risk. It is your responsibility to check the
+            privacy notices of these websites to see how they treat your PD.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12} id="children-privacy">
+          <Heading mb={5}>PROTECTING CHILDREN&apos;S PRIVACY</Heading>
+          <p>
+            Even though our website is not designed for use by anyone under the age of 16, we
+            realize that a child under the age of 16 may attempt to access our website. We do not
+            knowingly collect PD from children under the age of 16. If you are a parent or guardian
+            and believe that your child is using our website, please contact us. Before we remove
+            any information we may ask for proof of identification to prevent malicious removal of
+            account information. If we discover that a child is accessing our website, we will
+            delete his/her information within a reasonable period of time. You acknowledge that we
+            do not verify the age of our users nor have any liability to do so.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12} id="email-policy">
+          <Heading mb={5}>OUR EMAIL POLICY</Heading>
+          <p>
+            You can always opt-out of receiving email correspondence from us or our affiliates. We
+            will not sell, rent, or trade your email address to any unaffiliated third-party without
+            your permission except in the sale or transfer of our company, or if our company files
+            for bankruptcy.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12} id="security-policy">
+          <Heading mb={5}>OUR SECURITY POLICY</Heading>
+          <p>
+            We have built our website using industry-standard security measures and authentication
+            tools to protect the security of your PD. We and the third parties who provide services
+            to us also maintain technical and physical safeguards to protect your PD. Unfortunately,
+            we cannot guarantee the prevention of loss or misuse of your PD or secure data
+            transmission over the Internet because of its nature. We strongly urge you to protect
+            any password you may have for our website and not share it with anyone.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12} id="credit-card">
+          <Heading mb={5}>USE OF YOUR CREDIT CARD</Heading>
+          <p>
+            You may have to provide a credit card to buy products and services from our website. We
+            use third-party billing services and have no control over them. We use commercially
+            reasonable efforts to ensure that your credit card number is kept strictly confidential
+            by using only third-party billing services that use industry-standard encryption
+            technology to protect your credit card number from unauthorized use. However, you
+            understand and agree that we are in no way responsible for any misuse of your credit
+            card number.
+          </p>
+        </Box>
+
+        <Box as="section" mb={12} id="changes">
+          <Heading mb={5}>CHANGES TO OUR PRIVACY NOTICE</Heading>
+          <p>
+            We reserve the right to change this privacy notice at any time. If our company decides
+            to change this privacy notice, we will post those changes on our website so that our
+            users and customers are always aware of what information we collect, use, and disclose.
+            If at any time we decide to disclose or use your PD in a method different from that
+            specified at the time it was collected, we will provide advance notice by email sent to
+            the email address on file in your account. Otherwise, we will use and disclose our
+            users&apos; and customers&apos; PD in agreement with the privacy notice in effect when
+            the information was collected. In all cases, your continued use of our website,
+            services, and products after any change to this privacy notice will constitute your
+            acceptance of such change. If you have questions about our privacy notice, please
+            contact us through the information at the top of this privacy notice.
+          </p>
+        </Box>
+      </Flex>
+    </Content>
+  </>
+);
+
+PrivacyPage.getLayout = (page) => <DefaultLayout>{page}</DefaultLayout>;
+
+export default PrivacyPage;

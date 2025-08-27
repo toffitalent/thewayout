@@ -1,0 +1,96 @@
+@use 'sass:math';
+@use '@styles/theme';
+@use 'functions' as fn;
+@use 'mixins' as mixins;
+@import '~normalize.css';
+
+$heading-margin: 0 0 theme.$spacing-3_5 !default;
+$paragraph-margin: 0 0 theme.$spacing-2_5 !default;
+
+@include mixins.theme-vars();
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: math.percentage(math.div(fn.stripUnit(theme.$scaling-factor), 16));
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  font-family: theme.$font-family;
+  font-size: theme.$font-p1-size;
+  font-weight: theme.$font-p1-weight;
+  line-height: theme.$line-height;
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: $heading-margin;
+  font-family: theme.$font-family-heading;
+  line-height: theme.$line-height-heading;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+  font-size: theme.$font-h1-size;
+  font-weight: theme.$font-h1-weight;
+}
+h2 {
+  font-size: theme.$font-h2-size;
+  font-weight: theme.$font-h2-weight;
+}
+h3 {
+  font-size: theme.$font-h3-size;
+  font-weight: theme.$font-h3-weight;
+}
+h4 {
+  font-size: theme.$font-h4-size;
+  font-weight: theme.$font-h4-weight;
+}
+h5 {
+  font-size: theme.$font-h5-size;
+  font-weight: theme.$font-h5-weight;
+}
+h6 {
+  font-size: theme.$font-h6-size;
+  font-weight: theme.$font-h6-weight;
+}
+
+a,
+area,
+button,
+[role='button'],
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
+a {
+  cursor: pointer;
+  color: var(--color-primary);
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+p {
+  margin: $paragraph-margin;
+}

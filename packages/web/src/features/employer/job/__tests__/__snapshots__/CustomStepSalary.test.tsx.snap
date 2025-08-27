@@ -1,0 +1,249 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomStepSalary renders correctly 1`] = `
+<div>
+  <div
+    class="maxWidth-96 marginRight-auto marginLeft-auto"
+  >
+    <form>
+      <div
+        class="control"
+        role="group"
+      >
+        <label
+          class="label"
+          for=":r0:"
+        >
+          Salary
+        </label>
+        <div
+          class="root primary md fluid md"
+        >
+          <select
+            class="input"
+            id=":r0:"
+            name="salary"
+          >
+            <option
+              disabled=""
+              hidden=""
+              value=""
+            >
+              Select
+            </option>
+            <option
+              value="yearly"
+            >
+              Yearly salary
+            </option>
+            <option
+              value="hourly"
+            >
+              Hourly salary
+            </option>
+          </select>
+          <div
+            class="icon"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="control display-inline-block width-1/2 paddingRight-2"
+        role="group"
+      >
+        <label
+          class="label"
+          for=":r1:"
+        >
+          Min Salary
+        </label>
+        <div
+          class="root primary md md fieldHalfWidth"
+        >
+          <input
+            class="input"
+            id=":r1:"
+            name="min"
+            placeholder="Min salary"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="control display-inline-block width-1/2 paddingLeft-2"
+        role="group"
+      >
+        <label
+          class="label"
+          for=":r2:"
+        >
+          Max Salary
+        </label>
+        <div
+          class="root primary md md fieldHalfWidth"
+        >
+          <input
+            class="input"
+            id=":r2:"
+            name="max"
+            placeholder="Max  salary"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="control"
+        role="group"
+      >
+        <label
+          class="label"
+          for=":r3:"
+        >
+          <div
+            class="alignItems-center display-inline-flex"
+          >
+            <p
+              class="text marginRight-2 marginBottom-0 fontWeight-700"
+            >
+              Pay Description
+            </p>
+            <svg
+              aria-controls="popover-:r4:"
+              aria-expanded="false"
+              aria-haspopup="dialog"
+              aria-hidden="true"
+              class="icon color-grey-500 width-7 height-7"
+              focusable="false"
+              id="popover-:r4:-trigger"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M3 12a9 9 0 1018 0 9 9 0 00-18 0M12 9h.01"
+              />
+              <path
+                d="M11 12h1v4h1"
+              />
+            </svg>
+            <div
+              class="popover"
+              data-popper-escaped="true"
+              data-popper-placement="top"
+              data-popper-reference-hidden="true"
+              style="visibility: hidden; position: absolute; top: 0px; left: 0px; min-width: max-content; will-change: transform, visibility; bottom: 0px; transform: translate(0px, -8px);"
+            >
+              <div
+                class="content popoverWrapper rounded-xl"
+                id="popover-:r4:"
+                role="dialog"
+                tabindex="-1"
+              >
+                <div
+                  class="arrow popoverArrow"
+                  data-popper-arrow=""
+                  style="will-change: transform; position: absolute; left: 0px; transform: translate(0px, 0px);"
+                />
+                <div
+                  class="rounded-xl bgcolor-grey-100 maxWidth-96 paddingTop-5 paddingRight-5 paddingBottom-5 paddingLeft-5"
+                >
+                  Can include frequency of pay, when applicants can expect their first pay check, and any other helpful pay information
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+        <div
+          class="root primary md fluid md multiline"
+        >
+          <textarea
+            aria-describedby=":r3:-helptext"
+            class="input"
+            id=":r3:"
+            name="salaryDescription"
+            placeholder="E.g. Starting wage is $13 per hour + tips, with an Employer Bonus after positive a 90 Day Review (provided by the employer)"
+            rows="4"
+            type="text"
+          />
+        </div>
+        <div
+          aria-live="polite"
+          class="helperText"
+          id=":r3:-helptext"
+        >
+          Max 1,000 characters.
+        </div>
+      </div>
+      <div
+        class="marginTop-4 textAlign-left"
+      >
+        <p
+          class="text marginBottom-2 fontWeight-700"
+        >
+          Add Bonus
+        </p>
+        <div
+          class="marginBottom-3"
+        >
+          <div
+            class="control"
+            role="group"
+          >
+            <div
+              class="root primary md fluid md multiline"
+            >
+              <textarea
+                aria-describedby=":r5:-helptext"
+                class="input"
+                id=":r5:"
+                name="bonuses.0.value"
+                placeholder="Additional $100 Bonus for Positive 90 Day Review"
+                rows="4"
+                type="text"
+              />
+            </div>
+            <div
+              aria-live="polite"
+              class="helperText"
+              id=":r5:-helptext"
+            >
+              Max 1,000 characters.
+            </div>
+          </div>
+        </div>
+        <button
+          class="button md outline c-primary disabled marginTop-5"
+          disabled=""
+          type="button"
+        >
+          Add more
+        </button>
+      </div>
+      <button
+        class="button md solid c-primary disabled fluid maxWidth-96 marginTop-8"
+        disabled=""
+        type="submit"
+      >
+        Save & Next
+      </button>
+    </form>
+  </div>
+</div>
+`;

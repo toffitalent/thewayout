@@ -1,0 +1,6 @@
+@use '@styles/theme';
+@use '../../styles/mixins';
+
+.container {
+  @include mixins.container();
+}

@@ -1,0 +1,47 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.companyInfo {
+  margin-top: 3rem;
+  height: fit-content;
+
+  @include mq(md) {
+    margin-top: 9rem;
+  }
+
+  &Edit {
+    text-align: right;
+    @include mq(md, max) {
+      text-align: left;
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+.listContainer {
+  @include mq(md, min) {
+    padding-right: 30px;
+  }
+
+  > div[class*='infinite-scroll-component'] {
+    width: 100%;
+  }
+
+  > div > div[class*='infinite-scroll-component'] {
+    overflow: hidden !important;
+  }
+}
+.listItem {
+  &:last-child {
+    margin-bottom: unset !important;
+  }
+}
+
+.postJob {
+  display: flex;
+  justify-content: right;
+  @include mq(sm, max) {
+    justify-content: left;
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PATCH /api/v1/jobs/:jobId updates job 1`] = `
+{
+  "applicationsCount": 3,
+  "createdAt": "<Date>",
+  "department": "Customer Service",
+  "description": "Delectus pariatur quae accusantium rerum consequatur. Veritatis id quisquam debitis temporibus quibusdam placeat ex saepe. Consequatur cum sint iusto sequi ducimus autem blanditiis libero. Itaque asperiores laudantium cumque. Ab molestias assumenda illum quas iste assumenda odit. Optio fuga reiciendis fuga.",
+  "employer": {
+    "address": "Wolff Spring",
+    "availableJobsCount": 1,
+    "availableProfilesUncloak": 3,
+    "avatar": null,
+    "city": "North Brooks",
+    "createdAt": "<Date>",
+    "description": "Eum eos laborum labore ipsam libero nobis. Earum maxime porro quas dicta vero. Occaecati impedit amet eaque doloribus. Veniam adipisci doloremque voluptas.",
+    "id": "01817e24-0d42-763f-b7ea-8f975994f864",
+    "industry": "Accounting",
+    "name": "Oberbrunner, Dare and Trantow",
+    "numberOfEmployees": "10000+",
+    "postalCode": "04674",
+    "state": "AK",
+    "updatedAt": "<Date>",
+    "yearsInBusiness": "0-3",
+  },
+  "experience": "entry",
+  "hiredApplicationsCount": 0,
+  "id": "01817e24-0d42-7b06-943b-43c05c9d4a6e",
+  "location": null,
+  "numberOfOpenPositions": 3,
+  "offenses": [
+    "distribution",
+    "diuDwi",
+    "battery",
+    "burglary",
+    "arson",
+    "bailJumping",
+  ],
+  "offensesTypes": [
+    "drugs",
+    "motorVehicle",
+    "propertyDamage",
+    "theft",
+    "violent",
+    "whiteCollar",
+  ],
+  "questions": null,
+  "responsibilities": [
+    "Repudiandae iste ipsa officiis.
+Molestias inventore sit blanditiis quibusdam rerum veniam dolorem nihil earum.
+Aperiam a voluptates.
+Corrupti voluptatum soluta ab at quaerat.
+Delectus suscipit nesciunt aspernatur animi quisquam.",
+    "Laborum ullam rerum modi.",
+  ],
+  "salaryOptions": {
+    "bonuses": [],
+    "description": "quo",
+    "max": "40",
+    "min": "30",
+    "salary": "hourly",
+  },
+  "skillsDescription": "Ex vel minima. Aspernatur tenetur commodi beatae perferendis perferendis. Cum asperiores mollitia omnis excepturi tempore delectus. Voluptatem explicabo tempora necessitatibus eveniet.
+Reiciendis id ratione. Ipsa ipsum et facilis aspernatur quisquam vitae officia rem. Maxime recusandae suscipit exercitationem nisi delectus atque. Placeat voluptates voluptate delectus cumque asperiores veniam maxime voluptates magnam. Est minima voluptatibus vel quod numquam. Magnam pariatur nam consectetur.
+Dolore quisquam quisquam. Qui ad ab est. Ullam nostrum placeat. Tempora dignissimos id facere beatae aliquam doloremque voluptates. Omnis deleniti iusto iste asperiores dolorum ullam.",
+  "startDate": "10.2022",
+  "status": "paused",
+  "title": "Central Quality Liaison",
+  "typeOfWork": "hybrid",
+  "updatedAt": "<Date>",
+  "veteranOrJustice": [
+    "justiceImpacted",
+    "veteran",
+  ],
+  "workingTime": "fullTime",
+}
+`;

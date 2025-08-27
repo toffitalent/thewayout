@@ -1,0 +1,28 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.formWrapper {
+  div[class*='fieldHalfWidth'] {
+    + div[id*='helptext'] {
+      position: absolute;
+      margin-top: 0;
+    }
+  }
+
+  div[class*='serviceAreaForm'] {
+    p {
+      margin-left: unset !important;
+      font-size: 1.6rem !important;
+    }
+
+    button {
+      width: unset !important;
+    }
+  }
+
+  div[class*='offensesSection'] {
+    button {
+      width: unset !important;
+    }
+  }
+}

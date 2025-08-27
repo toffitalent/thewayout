@@ -1,0 +1,23 @@
+@use 'sass:map';
+@use '../core' as *;
+
+$alert-border-radius: $border-radius !default;
+$alert-font-size: $font-p1-size !default;
+$alert-font-weight: $font-p1-weight !default;
+$alert-icon-margin: $spacing-2_5 !default;
+$alert-icon-size: $spacing-6 !default;
+$alert-padding: $spacing-2_5 $spacing-5 !default;
+
+$alert-title-font-size: $font-s2-size !default;
+$alert-title-font-weight: $font-s2-weight !default;
+$alert-title-margin: $spacing-1 !default;
+
+// Statuses
+$alert-danger-bg: var(--color-red-200) !default;
+$alert-danger-color: var(--color-red-800) !default;
+$alert-info-bg: var(--color-blue-200) !default;
+$alert-info-color: var(--color-blue-800) !default;
+$alert-success-bg: var(--color-green-200) !default;
+$alert-success-color: var(--color-green-800) !default;
+$alert-warning-bg: var(--color-yellow-200) !default;
+$alert-warning-color: var(--color-yellow-800) !default;

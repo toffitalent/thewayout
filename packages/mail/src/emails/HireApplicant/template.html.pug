@@ -1,0 +1,15 @@
+extends ../templates/base.pug
+include ../templates/mixins.pug
+
+block content
+  h1 Congratulations #{client.firstName},
+  p
+    | You've been hired as #{offerTitle} with #{company.name}!
+    |
+  p
+    | Reach out to your recruiter for your next steps.
+    |
+  +action
+    +button(dashboardPageUrl) View Dashboard
+  
+  +trouble(dashboardPageUrl)

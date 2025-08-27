@@ -1,0 +1,4 @@
+{
+  "main": "../dist/layouts/index.js",
+  "module": "../dist/layouts/index.js"
+}

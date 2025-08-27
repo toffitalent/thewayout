@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgBlur = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M12 21a9.01 9.01 0 002.32-.302 9 9 0 001.74-16.733A9 9 0 1012 21zM12 3v17M12 12h9M12 9h8M12 6h6M12 18h6M12 15h8" }));
+export default SvgBlur;

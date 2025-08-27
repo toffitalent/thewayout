@@ -1,0 +1,11 @@
+@use '@styles/theme';
+@use '../../styles/mixins';
+
+.content {
+  padding-top: theme.$sidebar-mobile-height;
+
+  @include mixins.mq(lg) {
+    padding-top: 0;
+    padding-left: theme.$sidebar-width;
+  }
+}

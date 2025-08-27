@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgNavigationFilled = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M11.092 2.581a1 1 0 011.754-.116l.062.116 8.005 17.365c.198.566.05 1.196-.378 1.615a1.53 1.53 0 01-1.459.393l-7.077-2.398L5.1 21.894a1.535 1.535 0 01-1.52-.231l-.112-.1c-.398-.386-.556-.954-.393-1.556l.047-.15 7.97-17.276z", fill: "currentColor", stroke: "none" }));
+export default SvgNavigationFilled;

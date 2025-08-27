@@ -1,0 +1,251 @@
+@use '@styles/mixins' as *;
+@use '@styles/theme';
+
+.header {
+  width: 100%;
+  height: 5.8rem;
+  height: calc(5.8rem + 1px);
+  padding: 0.4rem 1.5rem;
+  position: relative;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-grey-300);
+  color: var(--color-text);
+  z-index: 49;
+
+  @include mq(lg) {
+    padding: 0.4rem 3rem;
+
+    &.transparent {
+      background-color: transparent;
+      border-bottom-color: transparent;
+      color: var(--color-white);
+    }
+  }
+}
+
+.lockScroll {
+  @include mq(lg, max) {
+    overflow: hidden;
+  }
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @include mq(lg) {
+    flex-wrap: nowrap;
+  }
+}
+
+.logo {
+  height: 100%;
+  flex: 0 0 15rem;
+  background-image: url('../../assets/images/logo.png');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include mq(lg) {
+    .header:is(.transparent) & {
+      background-image: url('../../assets/images/logo-white.png');
+    }
+  }
+}
+
+.toggle {
+  display: inline-flex;
+  color: var(--color-text);
+  background-color: transparent;
+  margin-left: auto;
+  padding: 1rem 0.2rem;
+  border: 0;
+  position: relative;
+  z-index: 50;
+
+  @include mq(lg) {
+    display: none;
+  }
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.links {
+  flex: 1 0 100%;
+  display: none;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 0;
+  padding: 1rem 0;
+  justify-content: right;
+
+  @include mq(lg) {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .renderedLinks {
+    margin-left: unset;
+    margin-right: unset;
+
+    @include mq(lg) {
+      display: flex;
+      flex-direction: row;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+    margin: 0 0 0.5rem;
+    padding: 0;
+
+    @include mq(lg) {
+      margin: 0 0 0 2rem;
+    }
+  }
+}
+
+.link {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem 0;
+  color: var(--color-text);
+  font-size: 1.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+  max-height: 4.5rem;
+
+  @include mq(lg) {
+    width: auto;
+    padding: 0.8rem 1rem;
+
+    .header:is(.transparent) & {
+      color: var(--color-white);
+    }
+  }
+
+  &Active {
+    color: var(--color-primary);
+  }
+}
+
+.linkButton {
+  margin-top: 0.5rem;
+
+  @include mq(md) {
+    margin-top: 1rem;
+  }
+
+  @include mq(lg) {
+    margin-left: 1rem;
+    margin-top: 0;
+
+    .header:is(.transparent) & {
+      border-color: var(--color-white) !important;
+      color: var(--color-white) !important;
+    }
+  }
+}
+
+.menuOpen {
+  @include mq(lg, max) {
+    .wrapper {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      height: calc(100vh - 5.8rem);
+      top: 5.8rem;
+      left: 0;
+      right: 0;
+      padding: 0 1.5rem;
+      background-color: var(--color-white);
+      z-index: 48;
+    }
+
+    .links {
+      display: flex;
+    }
+  }
+}
+
+.hamburger {
+  width: 2.2rem;
+  height: 1.8rem;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburgerInner,
+.hamburgerInner::before,
+.hamburgerInner::after {
+  width: 2.2rem;
+  height: 0.2rem;
+  display: block;
+  background-color: var(--color-text);
+  border-radius: 0.2rem;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburgerInner {
+  top: 50%;
+  margin-top: -0.1rem;
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburgerInner::before {
+  content: '';
+  top: -0.8rem;
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+.hamburgerInner::after {
+  content: '';
+  bottom: -0.8rem;
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.menuOpen .hamburgerInner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.menuOpen .hamburgerInner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+
+.menuOpen .hamburgerInner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.loggedUserMenu {
+  display: none;
+
+  @include mq(lg) {
+    display: block;
+  }
+}
+
+.loggedUserMainMenuItem {
+  @include mq(lg) {
+    display: none;
+  }
+}

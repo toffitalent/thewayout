@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountSettingsTab renders correctly 1`] = `
+<div>
+  <div
+    class="container borderBottom flexDirection-row marginTop-8 paddingBottom-5"
+  >
+    <div
+      class="item bp-xs-12 bp-md-4 marginBottom-8 paddingRight-5"
+    >
+      <p
+        class="text fontSize-xl fontWeight-700"
+      >
+        Personal Information
+      </p>
+      <p
+        class="text color-grey-600 fontSize-sm"
+      >
+        Use a permanent address where you can receive mail.
+      </p>
+    </div>
+    <div
+      class="item bp-xs-12 bp-md-8"
+    >
+      <form>
+        <div
+          class="flexDirection-row marginBottom-10"
+        >
+          <div
+            class="avatar s-2xl"
+          >
+            <div
+              aria-label="undefined undefined"
+              class="initials"
+            >
+              uu
+            </div>
+          </div>
+          <div
+            class="marginTop-5 marginLeft-5"
+          >
+            <button
+              class="button md outline c-primary marginBottom-2"
+              type="button"
+            >
+              Edit Picture
+            </button>
+            <input
+              accept="image/jpg, image/png, image/gif"
+              hidden=""
+              type="file"
+            />
+            <p
+              class="text color-grey-600 fontSize-sm"
+            >
+              JPG, GIF or PNG. 1MB max.
+            </p>
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingRight-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r0:"
+          >
+            First Name
+          </label>
+          <div
+            class="root primary md fluid md"
+          >
+            <input
+              class="input"
+              id=":r0:"
+              name="firstName"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingLeft-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r1:"
+          >
+            Last Name
+          </label>
+          <div
+            class="root primary md fluid md"
+          >
+            <input
+              class="input"
+              id=":r1:"
+              name="lastName"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingRight-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r2:"
+          >
+            Email
+          </label>
+          <div
+            class="root primary md fluid md"
+          >
+            <input
+              class="input"
+              id=":r2:"
+              name="email"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingLeft-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r3:"
+          >
+            Phone
+          </label>
+          <div
+            class="root primary md fluid md"
+          >
+            <input
+              class="input"
+              id=":r3:"
+              maxlength="14"
+              name="phone"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <button
+          class="button md solid c-primary disabled marginTop-8"
+          disabled=""
+          type="submit"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+  <div
+    class="container flexDirection-row marginTop-8"
+  >
+    <div
+      class="item bp-xs-12 bp-md-4 marginBottom-8 paddingRight-5"
+    >
+      <p
+        class="text fontSize-xl fontWeight-700"
+      >
+        Security
+      </p>
+      <p
+        class="text color-grey-600 fontSize-sm"
+      >
+        Enter your account password.
+      </p>
+    </div>
+    <div
+      class="item bp-xs-12 bp-md-4"
+    >
+      <form>
+        <div
+          class="control"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r4:"
+          >
+            Current Password
+          </label>
+          <div
+            class="root primary md fluid md"
+          >
+            <input
+              class="input"
+              id=":r4:"
+              name="password"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingRight-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r5:"
+          >
+            New Password
+          </label>
+          <div
+            class="root primary md fluid md"
+          >
+            <input
+              class="input"
+              id=":r5:"
+              name="newPassword"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="control display-inline-block width-1/2 paddingLeft-1"
+          role="group"
+        >
+          <label
+            class="label"
+            for=":r6:"
+          >
+            Confirm Password
+          </label>
+          <div
+            class="root primary md fluid md"
+          >
+            <input
+              class="input"
+              id=":r6:"
+              name="confirm"
+              type="password"
+              value=""
+            />
+          </div>
+        </div>
+        <button
+          class="button md solid c-primary disabled marginTop-8"
+          disabled=""
+          type="submit"
+        >
+          Save
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

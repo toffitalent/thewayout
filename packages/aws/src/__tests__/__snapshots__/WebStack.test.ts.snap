@@ -1,0 +1,1499 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WebStack creates web stack 1`] = `
+"{
+  "Parameters": {
+    "webImageTag": {
+      "Type": "String",
+      "Default": "latest-production",
+      "Description": "ECR repository image tags to deploy"
+    },
+    "BootstrapVersion": {
+      "Type": "AWS::SSM::Parameter::Value<String>",
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
+    }
+  },
+  "Resources": {
+    "EcsDefaultClusterVpc95221ACA": {
+      "Type": "AWS::ECS::Cluster"
+    },
+    "TaskDefTaskRole1EDB4A67": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ecs-tasks.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      }
+    },
+    "TaskDef54694570": {
+      "Type": "AWS::ECS::TaskDefinition",
+      "Properties": {
+        "ContainerDefinitions": [
+          {
+            "Environment": [
+              {
+                "Name": "NODE_ENV",
+                "Value": "production"
+              },
+              {
+                "Name": "APP_ENV",
+                "Value": "production"
+              },
+              {
+                "Name": "PORT",
+                "Value": "3000"
+              },
+              {
+                "Name": "PUBLIC_URL",
+                "Value": "www.example.com"
+              }
+            ],
+            "Essential": true,
+            "Image": {
+              "Fn::Join": [
+                "",
+                [
+                  "1111111111.dkr.ecr.us-west-2.",
+                  {
+                    "Ref": "AWS::URLSuffix"
+                  },
+                  "/web:",
+                  {
+                    "Ref": "webImageTag"
+                  }
+                ]
+              ]
+            },
+            "LogConfiguration": {
+              "LogDriver": "awslogs",
+              "Options": {
+                "awslogs-group": {
+                  "Ref": "TaskDefwebLogGroupC89AAFBC"
+                },
+                "awslogs-stream-prefix": "WebStack",
+                "awslogs-region": "us-west-2"
+              }
+            },
+            "Name": "web",
+            "PortMappings": [
+              {
+                "ContainerPort": 3000,
+                "Protocol": "tcp"
+              }
+            ],
+            "Secrets": [
+              {
+                "Name": "SOME_SECRET_ENV",
+                "ValueFrom": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":secretsmanager:us-west-2:1111111111:secret:SomeSecret"
+                    ]
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "Cpu": "512",
+        "ExecutionRoleArn": {
+          "Fn::GetAtt": [
+            "TaskDefExecutionRoleB4775C97",
+            "Arn"
+          ]
+        },
+        "Family": "WebStackTaskDef2605A6F5",
+        "Memory": "1024",
+        "NetworkMode": "awsvpc",
+        "RequiresCompatibilities": [
+          "FARGATE"
+        ],
+        "RuntimePlatform": {
+          "CpuArchitecture": "ARM64",
+          "OperatingSystemFamily": "LINUX"
+        },
+        "TaskRoleArn": {
+          "Fn::GetAtt": [
+            "TaskDefTaskRole1EDB4A67",
+            "Arn"
+          ]
+        }
+      }
+    },
+    "TaskDefwebLogGroupC89AAFBC": {
+      "Type": "AWS::Logs::LogGroup",
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain"
+    },
+    "TaskDefExecutionRoleB4775C97": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ecs-tasks.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      }
+    },
+    "TaskDefExecutionRoleDefaultPolicy0DBB737A": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:GetDownloadUrlForLayer",
+                "ecr:BatchGetImage"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":ecr:us-west-2:1111111111:repository/web"
+                  ]
+                ]
+              }
+            },
+            {
+              "Action": "ecr:GetAuthorizationToken",
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "TaskDefwebLogGroupC89AAFBC",
+                  "Arn"
+                ]
+              }
+            },
+            {
+              "Action": [
+                "secretsmanager:GetSecretValue",
+                "secretsmanager:DescribeSecret"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":secretsmanager:us-west-2:1111111111:secret:SomeSecret-??????"
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "TaskDefExecutionRoleDefaultPolicy0DBB737A",
+        "Roles": [
+          {
+            "Ref": "TaskDefExecutionRoleB4775C97"
+          }
+        ]
+      }
+    },
+    "WebService7F8A1763": {
+      "Type": "AWS::ECS::Service",
+      "Properties": {
+        "Cluster": {
+          "Ref": "EcsDefaultClusterVpc95221ACA"
+        },
+        "DeploymentConfiguration": {
+          "Alarms": {
+            "AlarmNames": [],
+            "Enable": false,
+            "Rollback": false
+          },
+          "MaximumPercent": 200,
+          "MinimumHealthyPercent": 50
+        },
+        "EnableECSManagedTags": false,
+        "HealthCheckGracePeriodSeconds": 60,
+        "LaunchType": "FARGATE",
+        "LoadBalancers": [
+          {
+            "ContainerName": "web",
+            "ContainerPort": 3000,
+            "TargetGroupArn": {
+              "Ref": "WebServiceTargetGroup21394FFE"
+            }
+          }
+        ],
+        "NetworkConfiguration": {
+          "AwsvpcConfiguration": {
+            "AssignPublicIp": "DISABLED",
+            "SecurityGroups": [
+              {
+                "Fn::GetAtt": [
+                  "WebServiceSecurityGroupE736A6BB",
+                  "GroupId"
+                ]
+              }
+            ],
+            "Subnets": [
+              {
+                "Fn::ImportValue": "UtilsStack:ExportsOutputRefVpcPrivateSubnet1Subnet536B997AFD4CC940"
+              },
+              {
+                "Fn::ImportValue": "UtilsStack:ExportsOutputRefVpcPrivateSubnet2Subnet3788AAA1380949A3"
+              },
+              {
+                "Fn::ImportValue": "UtilsStack:ExportsOutputRefVpcPrivateSubnet3SubnetF258B56EC7CF32DD"
+              }
+            ]
+          }
+        },
+        "TaskDefinition": {
+          "Ref": "TaskDef54694570"
+        }
+      },
+      "DependsOn": [
+        "TaskDefTaskRole1EDB4A67",
+        "WebServiceServiceRuleFCCB4F94"
+      ]
+    },
+    "WebServiceSecurityGroupE736A6BB": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "WebStack/WebService/SecurityGroup",
+        "SecurityGroupEgress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "Allow all outbound traffic by default",
+            "IpProtocol": "-1"
+          }
+        ],
+        "VpcId": {
+          "Fn::ImportValue": "UtilsStack:ExportsOutputRefVpc8378EB38272D6E3A"
+        }
+      },
+      "DependsOn": [
+        "TaskDefTaskRole1EDB4A67"
+      ]
+    },
+    "WebServiceSecurityGroupfromUtilsStackLBSecurityGroup56B38222300098A7172C": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "Properties": {
+        "Description": "Load balancer to target",
+        "FromPort": 3000,
+        "GroupId": {
+          "Fn::GetAtt": [
+            "WebServiceSecurityGroupE736A6BB",
+            "GroupId"
+          ]
+        },
+        "IpProtocol": "tcp",
+        "SourceSecurityGroupId": {
+          "Fn::ImportValue": "UtilsStack:ExportsOutputFnGetAttLBSecurityGroup8A41EA2BGroupId851EE1F6"
+        },
+        "ToPort": 3000
+      },
+      "DependsOn": [
+        "TaskDefTaskRole1EDB4A67"
+      ]
+    },
+    "WebServiceSecurityGroupUtilsStackLBSecurityGroup56B382223000fromDA077CB5": {
+      "Type": "AWS::EC2::SecurityGroupEgress",
+      "Properties": {
+        "Description": "Load balancer to target",
+        "DestinationSecurityGroupId": {
+          "Fn::GetAtt": [
+            "WebServiceSecurityGroupE736A6BB",
+            "GroupId"
+          ]
+        },
+        "FromPort": 3000,
+        "GroupId": {
+          "Fn::ImportValue": "UtilsStack:ExportsOutputFnGetAttLBSecurityGroup8A41EA2BGroupId851EE1F6"
+        },
+        "IpProtocol": "tcp",
+        "ToPort": 3000
+      },
+      "DependsOn": [
+        "TaskDefTaskRole1EDB4A67"
+      ]
+    },
+    "WebServiceTaskCountTarget578D9A62": {
+      "Type": "AWS::ApplicationAutoScaling::ScalableTarget",
+      "Properties": {
+        "MaxCapacity": 8,
+        "MinCapacity": 2,
+        "ResourceId": {
+          "Fn::Join": [
+            "",
+            [
+              "service/",
+              {
+                "Ref": "EcsDefaultClusterVpc95221ACA"
+              },
+              "/",
+              {
+                "Fn::GetAtt": [
+                  "WebService7F8A1763",
+                  "Name"
+                ]
+              }
+            ]
+          ]
+        },
+        "RoleARN": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":iam::1111111111:role/aws-service-role/ecs.application-autoscaling.amazonaws.com/AWSServiceRoleForApplicationAutoScaling_ECSService"
+            ]
+          ]
+        },
+        "ScalableDimension": "ecs:service:DesiredCount",
+        "ServiceNamespace": "ecs"
+      },
+      "DependsOn": [
+        "TaskDefTaskRole1EDB4A67"
+      ]
+    },
+    "WebServiceTaskCountTargetCpuScaling6B0DEDC8": {
+      "Type": "AWS::ApplicationAutoScaling::ScalingPolicy",
+      "Properties": {
+        "PolicyName": "WebStackWebServiceTaskCountTargetCpuScalingF6429D7D",
+        "PolicyType": "TargetTrackingScaling",
+        "ScalingTargetId": {
+          "Ref": "WebServiceTaskCountTarget578D9A62"
+        },
+        "TargetTrackingScalingPolicyConfiguration": {
+          "PredefinedMetricSpecification": {
+            "PredefinedMetricType": "ECSServiceAverageCPUUtilization"
+          },
+          "TargetValue": 50
+        }
+      },
+      "DependsOn": [
+        "TaskDefTaskRole1EDB4A67"
+      ]
+    },
+    "WebServiceTaskCountTargetMemoryScalingF3C45B6A": {
+      "Type": "AWS::ApplicationAutoScaling::ScalingPolicy",
+      "Properties": {
+        "PolicyName": "WebStackWebServiceTaskCountTargetMemoryScaling3F0D03A7",
+        "PolicyType": "TargetTrackingScaling",
+        "ScalingTargetId": {
+          "Ref": "WebServiceTaskCountTarget578D9A62"
+        },
+        "TargetTrackingScalingPolicyConfiguration": {
+          "PredefinedMetricSpecification": {
+            "PredefinedMetricType": "ECSServiceAverageMemoryUtilization"
+          },
+          "TargetValue": 75
+        }
+      },
+      "DependsOn": [
+        "TaskDefTaskRole1EDB4A67"
+      ]
+    },
+    "WebServiceTargetGroup21394FFE": {
+      "Type": "AWS::ElasticLoadBalancingV2::TargetGroup",
+      "Properties": {
+        "HealthCheckIntervalSeconds": 10,
+        "HealthCheckPort": "traffic-port",
+        "HealthCheckTimeoutSeconds": 5,
+        "HealthyThresholdCount": 2,
+        "Matcher": {
+          "HttpCode": "200-299"
+        },
+        "Port": 80,
+        "Protocol": "HTTP",
+        "ProtocolVersion": "HTTP1",
+        "TargetGroupAttributes": [
+          {
+            "Key": "deregistration_delay.timeout_seconds",
+            "Value": "10"
+          },
+          {
+            "Key": "stickiness.enabled",
+            "Value": "false"
+          }
+        ],
+        "TargetType": "ip",
+        "VpcId": {
+          "Fn::ImportValue": "UtilsStack:ExportsOutputRefVpc8378EB38272D6E3A"
+        }
+      },
+      "DependsOn": [
+        "TaskDefTaskRole1EDB4A67"
+      ]
+    },
+    "WebServiceServiceRuleFCCB4F94": {
+      "Type": "AWS::ElasticLoadBalancingV2::ListenerRule",
+      "Properties": {
+        "Actions": [
+          {
+            "TargetGroupArn": {
+              "Ref": "WebServiceTargetGroup21394FFE"
+            },
+            "Type": "forward"
+          }
+        ],
+        "Conditions": [
+          {
+            "Field": "path-pattern",
+            "PathPatternConfig": {
+              "Values": [
+                "/*"
+              ]
+            }
+          }
+        ],
+        "ListenerArn": {
+          "Fn::ImportValue": "UtilsStack:ExportsOutputRefLBListener49E825B45EB41560"
+        },
+        "Priority": 10
+      },
+      "DependsOn": [
+        "TaskDefTaskRole1EDB4A67"
+      ]
+    },
+    "CdnBucket0DC12795": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "aws-cdk:auto-delete-objects",
+            "Value": "true"
+          }
+        ],
+        "WebsiteConfiguration": {
+          "ErrorDocument": "index.html",
+          "IndexDocument": "index.html"
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "CdnBucketPolicyDF9F4914": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "CdnBucket0DC12795"
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": "*"
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "CdnBucket0DC12795",
+                        "Arn"
+                      ]
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            },
+            {
+              "Action": [
+                "s3:PutBucketPolicy",
+                "s3:GetBucket*",
+                "s3:List*",
+                "s3:DeleteObject*"
+              ],
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": {
+                  "Fn::GetAtt": [
+                    "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092",
+                    "Arn"
+                  ]
+                }
+              },
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "CdnBucket0DC12795",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "CdnBucket0DC12795",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      }
+    },
+    "CdnBucketAutoDeleteObjectsCustomResource025D98C4": {
+      "Type": "Custom::S3AutoDeleteObjects",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F",
+            "Arn"
+          ]
+        },
+        "BucketName": {
+          "Ref": "CdnBucket0DC12795"
+        }
+      },
+      "DependsOn": [
+        "CdnBucketPolicyDF9F4914"
+      ],
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "CdnCertificateCertificateRequestorFunctionServiceRole6C785673": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "CdnCertificateCertificateRequestorFunctionServiceRoleDefaultPolicyD307B699": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "acm:RequestCertificate",
+                "acm:DescribeCertificate",
+                "acm:DeleteCertificate",
+                "acm:AddTagsToCertificate"
+              ],
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": "route53:GetChange",
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": "route53:changeResourceRecordSets",
+              "Condition": {
+                "ForAllValues:StringEquals": {
+                  "route53:ChangeResourceRecordSetsRecordTypes": [
+                    "CNAME"
+                  ],
+                  "route53:ChangeResourceRecordSetsActions": [
+                    "UPSERT"
+                  ]
+                },
+                "ForAllValues:StringLike": {
+                  "route53:ChangeResourceRecordSetsNormalizedRecordNames": [
+                    "*.www.example.com",
+                    "*.example.com"
+                  ]
+                }
+              },
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":route53:::hostedzone/DUMMY"
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "CdnCertificateCertificateRequestorFunctionServiceRoleDefaultPolicyD307B699",
+        "Roles": [
+          {
+            "Ref": "CdnCertificateCertificateRequestorFunctionServiceRole6C785673"
+          }
+        ]
+      }
+    },
+    "CdnCertificateCertificateRequestorFunction4FBE17BB": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-1111111111-us-west-2",
+          "S3Key": "d4c47643615e33c32aac58169698a692fa1d1f3e0da0dd6c4bf1c0e6af68d757.zip"
+        },
+        "Handler": "index.certificateRequestHandler",
+        "Role": {
+          "Fn::GetAtt": [
+            "CdnCertificateCertificateRequestorFunctionServiceRole6C785673",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs18.x",
+        "Timeout": 900
+      },
+      "DependsOn": [
+        "CdnCertificateCertificateRequestorFunctionServiceRoleDefaultPolicyD307B699",
+        "CdnCertificateCertificateRequestorFunctionServiceRole6C785673"
+      ]
+    },
+    "CdnCertificateCertificateRequestorResource283E4F9C": {
+      "Type": "AWS::CloudFormation::CustomResource",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CdnCertificateCertificateRequestorFunction4FBE17BB",
+            "Arn"
+          ]
+        },
+        "DomainName": "www.example.com",
+        "SubjectAlternativeNames": [
+          "example.com"
+        ],
+        "HostedZoneId": "DUMMY",
+        "Region": "us-east-1"
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "CdnLogBucket75337C09": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "aws-cdk:auto-delete-objects",
+            "Value": "true"
+          }
+        ]
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "CdnLogBucketPolicyA7D18B51": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "CdnLogBucket75337C09"
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:PutBucketPolicy",
+                "s3:GetBucket*",
+                "s3:List*",
+                "s3:DeleteObject*"
+              ],
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": {
+                  "Fn::GetAtt": [
+                    "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092",
+                    "Arn"
+                  ]
+                }
+              },
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "CdnLogBucket75337C09",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "CdnLogBucket75337C09",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      }
+    },
+    "CdnLogBucketAutoDeleteObjectsCustomResourceD633E78D": {
+      "Type": "Custom::S3AutoDeleteObjects",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F",
+            "Arn"
+          ]
+        },
+        "BucketName": {
+          "Ref": "CdnLogBucket75337C09"
+        }
+      },
+      "DependsOn": [
+        "CdnLogBucketPolicyA7D18B51"
+      ],
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "CdnDistribution149FA6C8": {
+      "Type": "AWS::CloudFront::Distribution",
+      "Properties": {
+        "DistributionConfig": {
+          "Aliases": [
+            "www.example.com"
+          ],
+          "CacheBehaviors": [
+            {
+              "AllowedMethods": [
+                "GET",
+                "HEAD",
+                "OPTIONS",
+                "PUT",
+                "PATCH",
+                "POST",
+                "DELETE"
+              ],
+              "CachePolicyId": "4135ea2d-6df8-44a3-9df3-4b5a84be39ad",
+              "CachedMethods": [
+                "GET",
+                "HEAD",
+                "OPTIONS"
+              ],
+              "Compress": true,
+              "OriginRequestPolicyId": "216adef6-5c7f-47e4-b989-5492eafa07d3",
+              "PathPattern": "/api*",
+              "TargetOriginId": "WebStackCdnDistributionOrigin241A0F705",
+              "ViewerProtocolPolicy": "redirect-to-https"
+            },
+            {
+              "AllowedMethods": [
+                "GET",
+                "HEAD"
+              ],
+              "CachePolicyId": {
+                "Ref": "CachePolicyNextImageE7270A88"
+              },
+              "CachedMethods": [
+                "GET",
+                "HEAD"
+              ],
+              "Compress": true,
+              "PathPattern": "/_next/image*",
+              "TargetOriginId": "WebStackCdnDistributionOrigin241A0F705",
+              "ViewerProtocolPolicy": "redirect-to-https"
+            },
+            {
+              "AllowedMethods": [
+                "GET",
+                "HEAD"
+              ],
+              "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+              "CachedMethods": [
+                "GET",
+                "HEAD"
+              ],
+              "Compress": true,
+              "PathPattern": "/_next/static*",
+              "TargetOriginId": "WebStackCdnDistributionOrigin335BC0E80",
+              "ViewerProtocolPolicy": "redirect-to-https"
+            },
+            {
+              "AllowedMethods": [
+                "GET",
+                "HEAD"
+              ],
+              "CachePolicyId": {
+                "Ref": "CachePolicy26D8A535"
+              },
+              "CachedMethods": [
+                "GET",
+                "HEAD"
+              ],
+              "Compress": true,
+              "PathPattern": "/*",
+              "TargetOriginId": "WebStackCdnDistributionOrigin241A0F705",
+              "ViewerProtocolPolicy": "redirect-to-https"
+            }
+          ],
+          "DefaultCacheBehavior": {
+            "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+            "Compress": true,
+            "TargetOriginId": "WebStackCdnDistributionOrigin135730D58",
+            "ViewerProtocolPolicy": "redirect-to-https"
+          },
+          "Enabled": true,
+          "HttpVersion": "http2",
+          "IPV6Enabled": true,
+          "Logging": {
+            "Bucket": {
+              "Fn::GetAtt": [
+                "CdnLogBucket75337C09",
+                "RegionalDomainName"
+              ]
+            },
+            "IncludeCookies": false
+          },
+          "Origins": [
+            {
+              "CustomOriginConfig": {
+                "OriginProtocolPolicy": "http-only",
+                "OriginSSLProtocols": [
+                  "TLSv1.2"
+                ]
+              },
+              "DomainName": {
+                "Fn::Select": [
+                  2,
+                  {
+                    "Fn::Split": [
+                      "/",
+                      {
+                        "Fn::GetAtt": [
+                          "CdnBucket0DC12795",
+                          "WebsiteURL"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "Id": "WebStackCdnDistributionOrigin135730D58"
+            },
+            {
+              "CustomOriginConfig": {
+                "OriginProtocolPolicy": "https-only",
+                "OriginSSLProtocols": [
+                  "TLSv1.2"
+                ]
+              },
+              "DomainName": {
+                "Fn::ImportValue": "UtilsStack:ExportsOutputRefLBDNS5BB6478BF6BD8A9F"
+              },
+              "Id": "WebStackCdnDistributionOrigin241A0F705"
+            },
+            {
+              "CustomOriginConfig": {
+                "OriginProtocolPolicy": "http-only",
+                "OriginSSLProtocols": [
+                  "TLSv1.2"
+                ]
+              },
+              "DomainName": {
+                "Fn::Select": [
+                  2,
+                  {
+                    "Fn::Split": [
+                      "/",
+                      {
+                        "Fn::GetAtt": [
+                          "CdnBucket0DC12795",
+                          "WebsiteURL"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "Id": "WebStackCdnDistributionOrigin335BC0E80"
+            }
+          ],
+          "Restrictions": {
+            "GeoRestriction": {
+              "Locations": [
+                "CN",
+                "KP",
+                "RU"
+              ],
+              "RestrictionType": "blacklist"
+            }
+          },
+          "ViewerCertificate": {
+            "AcmCertificateArn": {
+              "Fn::GetAtt": [
+                "CdnCertificateCertificateRequestorResource283E4F9C",
+                "Arn"
+              ]
+            },
+            "MinimumProtocolVersion": "TLSv1.2_2021",
+            "SslSupportMethod": "sni-only"
+          }
+        }
+      }
+    },
+    "CdnARecord34E08735": {
+      "Type": "AWS::Route53::RecordSet",
+      "Properties": {
+        "AliasTarget": {
+          "DNSName": {
+            "Fn::GetAtt": [
+              "CdnDistribution149FA6C8",
+              "DomainName"
+            ]
+          },
+          "HostedZoneId": {
+            "Fn::FindInMap": [
+              "AWSCloudFrontPartitionHostedZoneIdMap",
+              {
+                "Ref": "AWS::Partition"
+              },
+              "zoneId"
+            ]
+          }
+        },
+        "HostedZoneId": "DUMMY",
+        "Name": "www.example.com.",
+        "Type": "A"
+      }
+    },
+    "CdnAAAARecordFF7BFA13": {
+      "Type": "AWS::Route53::RecordSet",
+      "Properties": {
+        "AliasTarget": {
+          "DNSName": {
+            "Fn::GetAtt": [
+              "CdnDistribution149FA6C8",
+              "DomainName"
+            ]
+          },
+          "HostedZoneId": {
+            "Fn::FindInMap": [
+              "AWSCloudFrontPartitionHostedZoneIdMap",
+              {
+                "Ref": "AWS::Partition"
+              },
+              "zoneId"
+            ]
+          }
+        },
+        "HostedZoneId": "DUMMY",
+        "Name": "www.example.com.",
+        "Type": "AAAA"
+      }
+    },
+    "CdnRedirectRedirectBucketA0128783": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true
+        },
+        "WebsiteConfiguration": {
+          "RedirectAllRequestsTo": {
+            "HostName": "www.example.com",
+            "Protocol": "https"
+          }
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "CdnRedirectRedirectDistributionF5A06ABE": {
+      "Type": "AWS::CloudFront::Distribution",
+      "Properties": {
+        "DistributionConfig": {
+          "Aliases": [
+            "example.com"
+          ],
+          "Comment": "Redirect to www.example.com from example.com",
+          "DefaultCacheBehavior": {
+            "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+            "Compress": true,
+            "TargetOriginId": "WebStackCdnRedirectRedirectDistributionOrigin145ABFF87",
+            "ViewerProtocolPolicy": "redirect-to-https"
+          },
+          "DefaultRootObject": "",
+          "Enabled": true,
+          "HttpVersion": "http2",
+          "IPV6Enabled": true,
+          "Origins": [
+            {
+              "CustomOriginConfig": {
+                "OriginProtocolPolicy": "http-only",
+                "OriginSSLProtocols": [
+                  "TLSv1.2"
+                ]
+              },
+              "DomainName": {
+                "Fn::Select": [
+                  2,
+                  {
+                    "Fn::Split": [
+                      "/",
+                      {
+                        "Fn::GetAtt": [
+                          "CdnRedirectRedirectBucketA0128783",
+                          "WebsiteURL"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "Id": "WebStackCdnRedirectRedirectDistributionOrigin145ABFF87"
+            }
+          ],
+          "PriceClass": "PriceClass_All",
+          "ViewerCertificate": {
+            "AcmCertificateArn": {
+              "Fn::GetAtt": [
+                "CdnCertificateCertificateRequestorResource283E4F9C",
+                "Arn"
+              ]
+            },
+            "MinimumProtocolVersion": "TLSv1.2_2021",
+            "SslSupportMethod": "sni-only"
+          }
+        }
+      }
+    },
+    "CdnRedirectRedirectAliasRecord5ababdF87B37A7": {
+      "Type": "AWS::Route53::RecordSet",
+      "Properties": {
+        "AliasTarget": {
+          "DNSName": {
+            "Fn::GetAtt": [
+              "CdnRedirectRedirectDistributionF5A06ABE",
+              "DomainName"
+            ]
+          },
+          "HostedZoneId": {
+            "Fn::FindInMap": [
+              "AWSCloudFrontPartitionHostedZoneIdMap",
+              {
+                "Ref": "AWS::Partition"
+              },
+              "zoneId"
+            ]
+          }
+        },
+        "HostedZoneId": "DUMMY",
+        "Name": "example.com.",
+        "Type": "A"
+      }
+    },
+    "CdnRedirectRedirectAliasRecordSix5ababd49CB2C94": {
+      "Type": "AWS::Route53::RecordSet",
+      "Properties": {
+        "AliasTarget": {
+          "DNSName": {
+            "Fn::GetAtt": [
+              "CdnRedirectRedirectDistributionF5A06ABE",
+              "DomainName"
+            ]
+          },
+          "HostedZoneId": {
+            "Fn::FindInMap": [
+              "AWSCloudFrontPartitionHostedZoneIdMap",
+              {
+                "Ref": "AWS::Partition"
+              },
+              "zoneId"
+            ]
+          }
+        },
+        "HostedZoneId": "DUMMY",
+        "Name": "example.com.",
+        "Type": "AAAA"
+      }
+    },
+    "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ]
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Sub": "arn:\${AWS::Partition}:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+          }
+        ]
+      }
+    },
+    "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-1111111111-us-west-2",
+          "S3Key": "b7f33614a69548d6bafe224d751a7ef238cde19097415e553fe8b63a4c8fd8a6.zip"
+        },
+        "Timeout": 900,
+        "MemorySize": 128,
+        "Handler": "index.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs18.x",
+        "Description": {
+          "Fn::Join": [
+            "",
+            [
+              "Lambda function for auto-deleting objects in ",
+              {
+                "Ref": "CdnBucket0DC12795"
+              },
+              " S3 bucket."
+            ]
+          ]
+        }
+      },
+      "DependsOn": [
+        "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+      ]
+    },
+    "CachePolicyNextImageE7270A88": {
+      "Type": "AWS::CloudFront::CachePolicy",
+      "Properties": {
+        "CachePolicyConfig": {
+          "DefaultTTL": 60,
+          "MaxTTL": 31536000,
+          "MinTTL": 0,
+          "Name": "WebStackCachePolicyNextImage87E183F2-us-west-2",
+          "ParametersInCacheKeyAndForwardedToOrigin": {
+            "CookiesConfig": {
+              "CookieBehavior": "none"
+            },
+            "EnableAcceptEncodingBrotli": true,
+            "EnableAcceptEncodingGzip": true,
+            "HeadersConfig": {
+              "HeaderBehavior": "none"
+            },
+            "QueryStringsConfig": {
+              "QueryStringBehavior": "all"
+            }
+          }
+        }
+      }
+    },
+    "CachePolicy26D8A535": {
+      "Type": "AWS::CloudFront::CachePolicy",
+      "Properties": {
+        "CachePolicyConfig": {
+          "DefaultTTL": 0,
+          "MaxTTL": 31536000,
+          "MinTTL": 0,
+          "Name": "WebStackCachePolicyD57E54F7-us-west-2",
+          "ParametersInCacheKeyAndForwardedToOrigin": {
+            "CookiesConfig": {
+              "CookieBehavior": "none"
+            },
+            "EnableAcceptEncodingBrotli": true,
+            "EnableAcceptEncodingGzip": true,
+            "HeadersConfig": {
+              "HeaderBehavior": "none"
+            },
+            "QueryStringsConfig": {
+              "QueryStringBehavior": "none"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Mappings": {
+    "AWSCloudFrontPartitionHostedZoneIdMap": {
+      "aws": {
+        "zoneId": "Z2FDTNDATAQYW2"
+      },
+      "aws-cn": {
+        "zoneId": "Z3RFFRIM2A3IF5"
+      }
+    }
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  {
+                    "Ref": "BootstrapVersion"
+                  }
+                ]
+              }
+            ]
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI."
+        }
+      ]
+    }
+  }
+}"
+`;
+
+exports[`WebStack handles non-www domain name 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -88,11 +88,11 @@
+                "zoneId",
+              ],
+            },
+          },
+          "HostedZoneId": "DUMMY",
+-         "Name": "www.example.com.",
++         "Name": "example.com.",
+          "Type": "AAAA",
+        },
+        "Type": "AWS::Route53::RecordSet",
+      },
+      "CdnARecord34E08735": Object {
+@@ -113,11 +113,11 @@
+                "zoneId",
+              ],
+            },
+          },
+          "HostedZoneId": "DUMMY",
+-         "Name": "www.example.com.",
++         "Name": "example.com.",
+          "Type": "A",
+        },
+        "Type": "AWS::Route53::RecordSet",
+      },
+      "CdnBucket0DC12795": Object {
+@@ -312,12 +312,12 @@
+                      "CNAME",
+                    ],
+                  },
+                  "ForAllValues:StringLike": Object {
+                    "route53:ChangeResourceRecordSetsNormalizedRecordNames": Array [
++                     "*.example.com",
+                      "*.www.example.com",
+-                     "*.example.com",
+                    ],
+                  },
+                },
+                "Effect": "Allow",
+                "Resource": Object {
+@@ -346,31 +346,31 @@
+        "Type": "AWS::IAM::Policy",
+      },
+      "CdnCertificateCertificateRequestorResource283E4F9C": Object {
+        "DeletionPolicy": "Delete",
+        "Properties": Object {
+-         "DomainName": "www.example.com",
++         "DomainName": "example.com",
+          "HostedZoneId": "DUMMY",
+          "Region": "us-east-1",
+          "ServiceToken": Object {
+            "Fn::GetAtt": Array [
+              "CdnCertificateCertificateRequestorFunction4FBE17BB",
+              "Arn",
+            ],
+          },
+          "SubjectAlternativeNames": Array [
+-           "example.com",
++           "www.example.com",
+          ],
+        },
+        "Type": "AWS::CloudFormation::CustomResource",
+        "UpdateReplacePolicy": "Delete",
+      },
+      "CdnDistribution149FA6C8": Object {
+        "Properties": Object {
+          "DistributionConfig": Object {
+            "Aliases": Array [
+-             "www.example.com",
++             "example.com",
+            ],
+            "CacheBehaviors": Array [
+              Object {
+                "AllowedMethods": Array [
+                  "GET",
+@@ -631,11 +631,11 @@
+            "Version": "2012-10-17",
+          },
+        },
+        "Type": "AWS::S3::BucketPolicy",
+      },
+-     "CdnRedirectRedirectAliasRecord5ababdF87B37A7": Object {
++     "CdnRedirectRedirectAliasRecord7c17670FB049EE": Object {
+        "Properties": Object {
+          "AliasTarget": Object {
+            "DNSName": Object {
+              "Fn::GetAtt": Array [
+                "CdnRedirectRedirectDistributionF5A06ABE",
+@@ -651,16 +651,16 @@
+                "zoneId",
+              ],
+            },
+          },
+          "HostedZoneId": "DUMMY",
+-         "Name": "example.com.",
++         "Name": "www.example.com.",
+          "Type": "A",
+        },
+        "Type": "AWS::Route53::RecordSet",
+      },
+-     "CdnRedirectRedirectAliasRecordSix5ababd49CB2C94": Object {
++     "CdnRedirectRedirectAliasRecordSix7c1767C4601526": Object {
+        "Properties": Object {
+          "AliasTarget": Object {
+            "DNSName": Object {
+              "Fn::GetAtt": Array [
+                "CdnRedirectRedirectDistributionF5A06ABE",
+@@ -676,11 +676,11 @@
+                "zoneId",
+              ],
+            },
+          },
+          "HostedZoneId": "DUMMY",
+-         "Name": "example.com.",
++         "Name": "www.example.com.",
+          "Type": "AAAA",
+        },
+        "Type": "AWS::Route53::RecordSet",
+      },
+      "CdnRedirectRedirectBucketA0128783": Object {
+@@ -692,11 +692,11 @@
+            "IgnorePublicAcls": true,
+            "RestrictPublicBuckets": true,
+          },
+          "WebsiteConfiguration": Object {
+            "RedirectAllRequestsTo": Object {
+-             "HostName": "www.example.com",
++             "HostName": "example.com",
+              "Protocol": "https",
+            },
+          },
+        },
+        "Type": "AWS::S3::Bucket",
+@@ -704,13 +704,13 @@
+      },
+      "CdnRedirectRedirectDistributionF5A06ABE": Object {
+        "Properties": Object {
+          "DistributionConfig": Object {
+            "Aliases": Array [
+-             "example.com",
++             "www.example.com",
+            ],
+-           "Comment": "Redirect to www.example.com from example.com",
++           "Comment": "Redirect to example.com from www.example.com",
+            "DefaultCacheBehavior": Object {
+              "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+              "Compress": true,
+              "TargetOriginId": "WebStackCdnRedirectRedirectDistributionOrigin145ABFF87",
+              "ViewerProtocolPolicy": "redirect-to-https",
+@@ -837,11 +837,11 @@
+                  "Name": "PORT",
+                  "Value": "3000",
+                },
+                Object {
+                  "Name": "PUBLIC_URL",
+-                 "Value": "www.example.com",
++                 "Value": "example.com",
+                },
+              ],
+              "Essential": true,
+              "Image": Object {
+                "Fn::Join": Array ["
+`;

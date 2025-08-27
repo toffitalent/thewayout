@@ -1,0 +1,340 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > Employers > jobs GET /api/v1/employers/:id/jobs return jobs 1`] = `
+[
+  {
+    "applicationsCount": 1,
+    "createdAt": "<Date>",
+    "department": "Customer Service",
+    "description": "distinctio iure deserunt",
+    "id": "01817e24-0d42-7c78-8c7b-6f6b5529a2d9",
+    "location": null,
+    "offensesTypes": [
+      "drugs",
+      "motorVehicle",
+      "propertyDamage",
+      "sexual",
+      "theft",
+      "violent",
+    ],
+    "pendingApplicationsCount": 1,
+    "salaryOptions": {
+      "bonuses": [],
+      "description": "Nemo eveniet pariatur temporibus aperiam aliquam. Nostrum dignissimos dolorum ipsum facilis sit autem soluta pariatur. Repellendus adipisci officiis veniam adipisci est temporibus necessitatibus. Repellat repellendus quas temporibus libero. Explicabo exercitationem porro dignissimos rerum. Dolorum voluptatem sunt tenetur eum.
+Ab beatae doloribus. Quia molestias itaque fugiat quae aspernatur inventore tempore. Reiciendis sunt aperiam reprehenderit. Cum repellat quas quas recusandae iure. Reprehenderit reiciendis officia minus pariatur unde inventore ad. Ipsam aperiam quisquam quam rerum atque sapiente accusamus vel.
+Animi non ipsam quo sapiente in veritatis quidem nostrum aliquam. Ad eligendi expedita iusto corporis ad magnam magnam. Ut sit impedit. Voluptatibus ducimus perferendis id recusandae culpa.",
+      "max": "40",
+      "min": "30",
+      "salary": "hourly",
+    },
+    "status": "active",
+    "title": "Dynamic Optimization Supervisor",
+    "typeOfWork": "hybrid",
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+      "veteran",
+    ],
+    "workingTime": "fullTime",
+  },
+  {
+    "applicationsCount": 1,
+    "createdAt": "<Date>",
+    "department": "Customer Service",
+    "description": "Fuga necessitatibus quam assumenda aperiam eaque.",
+    "id": "01817e24-0d42-7bb3-b8f7-a5f897774d1a",
+    "location": null,
+    "offensesTypes": [
+      "drugs",
+      "propertyDamage",
+      "sexual",
+      "theft",
+      "whiteCollar",
+    ],
+    "pendingApplicationsCount": 1,
+    "salaryOptions": {
+      "bonuses": [],
+      "description": "Eius et corrupti odit cumque magni modi cupiditate voluptates culpa.",
+      "max": "40",
+      "min": "30",
+      "salary": "hourly",
+    },
+    "status": "active",
+    "title": "Regional Infrastructure Strategist",
+    "typeOfWork": "hybrid",
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+      "veteran",
+    ],
+    "workingTime": "fullTime",
+  },
+  {
+    "applicationsCount": 1,
+    "createdAt": "<Date>",
+    "department": "Customer Service",
+    "description": "Voluptatibus est officia.",
+    "id": "01817e24-0d42-7b85-8607-60e9802e5cb4",
+    "location": null,
+    "offensesTypes": [
+      "motorVehicle",
+      "propertyDamage",
+      "theft",
+      "violent",
+      "whiteCollar",
+    ],
+    "pendingApplicationsCount": 1,
+    "salaryOptions": {
+      "bonuses": [],
+      "description": "Ab sint corporis corporis fugit quidem. Praesentium illo tempore. Velit adipisci ab eius nisi nisi cum corporis.",
+      "max": "40",
+      "min": "30",
+      "salary": "hourly",
+    },
+    "status": "active",
+    "title": "Senior Factors Designer",
+    "typeOfWork": "hybrid",
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+      "veteran",
+    ],
+    "workingTime": "fullTime",
+  },
+  {
+    "applicationsCount": 3,
+    "createdAt": "<Date>",
+    "department": "Customer Service",
+    "description": "Delectus pariatur quae accusantium rerum consequatur. Veritatis id quisquam debitis temporibus quibusdam placeat ex saepe. Consequatur cum sint iusto sequi ducimus autem blanditiis libero. Itaque asperiores laudantium cumque. Ab molestias assumenda illum quas iste assumenda odit. Optio fuga reiciendis fuga.",
+    "id": "01817e24-0d42-7b06-943b-43c05c9d4a6e",
+    "location": null,
+    "offensesTypes": [
+      "drugs",
+      "motorVehicle",
+      "propertyDamage",
+      "theft",
+      "violent",
+      "whiteCollar",
+    ],
+    "pendingApplicationsCount": 3,
+    "salaryOptions": {
+      "bonuses": [],
+      "description": "quo",
+      "max": "40",
+      "min": "30",
+      "salary": "hourly",
+    },
+    "status": "active",
+    "title": "Central Quality Liaison",
+    "typeOfWork": "hybrid",
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+      "veteran",
+    ],
+    "workingTime": "fullTime",
+  },
+]
+`;
+
+exports[`Routes > Employers > jobs GET /api/v1/employers/:id/jobs/:jobId/applications returns job applications 1`] = `
+[
+  {
+    "clientId": "01817e24-0d43-7c3d-aafb-617689d4b482",
+    "email": "k****@*****.***",
+    "firstName": "K****",
+    "id": "01817e24-0d43-7c7c-b0ae-ac2a3be5cfa3",
+    "jobId": "01817e24-0d42-7b06-943b-43c05c9d4a6e",
+    "lastName": "B****",
+    "status": "applied",
+  },
+  {
+    "clientId": "01817e24-0d43-7c27-badf-253771388861",
+    "email": "a****@*****.***",
+    "firstName": "A****",
+    "id": "01817e24-0d43-7c78-b13a-16bc4a5d1dcb",
+    "jobId": "01817e24-0d42-7b06-943b-43c05c9d4a6e",
+    "lastName": "H****",
+    "status": "applied",
+  },
+  {
+    "clientId": "01817e24-0d42-764f-8380-cabc31603866",
+    "email": "a****@*****.***",
+    "firstName": "G****",
+    "id": "01817e24-0d42-7ce0-83e7-a85d4ca11747",
+    "jobId": "01817e24-0d42-7b06-943b-43c05c9d4a6e",
+    "lastName": "W****",
+    "status": "applied",
+  },
+]
+`;
+
+exports[`Routes > Employers > jobs GET /api/v1/employers/:id/jobs/:jobId/applications returns job applications with page 1`] = `[]`;
+
+exports[`Routes > Employers > jobs GET /api/v1/employers/:id/jobs/:jobId/applications/:clientId returns client information 1`] = `
+{
+  "address": "*****",
+  "applicationId": "01817e24-0d42-7ce0-83e7-a85d4ca11747",
+  "applicationStatus": "applied",
+  "city": "*****",
+  "education": [
+    {
+      "areaOfStudy": "Test",
+      "degree": "Test",
+      "description": "Voluptatem quasi natus corporis minus vel ullam non autem. Corrupti quas cupiditate doloremque beatae velit vel. Ad earum cupiditate iusto debitis illo.",
+      "schoolIssuer": "Test",
+      "startYear": "2010",
+      "yearEarned": "2015",
+    },
+  ],
+  "email": "a****@*****.***",
+  "experience": [
+    "carpentry",
+    "education",
+  ],
+  "firstName": "G****",
+  "id": "01817e24-0d42-764f-8380-cabc31603866",
+  "languages": [
+    {
+      "language": "english",
+      "level": "professional",
+    },
+    {
+      "language": "spanish",
+      "level": "basic",
+    },
+  ],
+  "lastName": "W****",
+  "license": [
+    {
+      "expirationAtMonth": null,
+      "expirationAtYear": null,
+      "issueAtMonth": "5",
+      "issueAtYear": "2015",
+      "issuingOrganization": "Test",
+      "licenseName": "Test",
+    },
+  ],
+  "personalStrengths": [
+    "creative",
+    "dealsWellWithChange",
+    "goodWithTechnology",
+    "peoplePerson",
+    "managesTimeWell",
+  ],
+  "personalSummary": "sit",
+  "postalCode": "*****",
+  "questions": null,
+  "relativeExperience": [
+    {
+      "company": "*****",
+      "description": "A quos animi veritatis voluptatum. At quibusdam ipsam temporibus.",
+      "endAtMonth": "3",
+      "endAtYear": "2018",
+      "location": "Location",
+      "startAtMonth": "3",
+      "startAtYear": "2015",
+      "title": "Test",
+    },
+  ],
+  "state": "*****",
+  "updatedAt": "<Date>",
+  "veteranOrJustice": [
+    "justiceImpacted",
+  ],
+}
+`;
+
+exports[`Routes > Employers > jobs PATCH /api/v1/employers/:id/jobs/:jobId/applications/:clientId change application status 1`] = `
+{
+  "client": {
+    "address": "Lynch Island",
+    "age": "25-34",
+    "city": "South Madgeside",
+    "disability": false,
+    "education": [
+      {
+        "areaOfStudy": "Test",
+        "degree": "Test",
+        "description": "Voluptatem quasi natus corporis minus vel ullam non autem. Corrupti quas cupiditate doloremque beatae velit vel. Ad earum cupiditate iusto debitis illo.",
+        "schoolIssuer": "Test",
+        "startYear": "2010",
+        "yearEarned": "2015",
+      },
+    ],
+    "ethnicity": "eastAsian",
+    "experience": [
+      "carpentry",
+      "education",
+    ],
+    "firstName": "Gilbert",
+    "gender": "female",
+    "id": "01817e24-0d42-764f-8380-cabc31603866",
+    "justiceStatus": "freeWorld",
+    "languages": [
+      {
+        "language": "english",
+        "level": "professional",
+      },
+      {
+        "language": "spanish",
+        "level": "basic",
+      },
+    ],
+    "lastName": "Witting",
+    "license": [
+      {
+        "expirationAtMonth": null,
+        "expirationAtYear": null,
+        "issueAtMonth": "5",
+        "issueAtYear": "2015",
+        "issuingOrganization": "Test",
+        "licenseName": "Test",
+      },
+    ],
+    "maritalStatus": "married",
+    "orientation": "heterosexual",
+    "personalStrengths": [
+      "creative",
+      "dealsWellWithChange",
+      "goodWithTechnology",
+      "peoplePerson",
+      "managesTimeWell",
+    ],
+    "personalSummary": "sit",
+    "phone": null,
+    "postalCode": "98638",
+    "referredBy": "newsMedia",
+    "relativeExperience": [
+      {
+        "company": "Test",
+        "description": "A quos animi veritatis voluptatum. At quibusdam ipsam temporibus.",
+        "endAtMonth": "3",
+        "endAtYear": "2018",
+        "location": "Location",
+        "startAtMonth": "3",
+        "startAtYear": "2015",
+        "title": "Test",
+      },
+    ],
+    "religion": "noReligion",
+    "state": "AK",
+    "support": [
+      "basicTechSkills",
+      "basicHygieneSupport",
+    ],
+    "updatedAt": "<Date>",
+    "userId": "01817e24-0d42-7570-b157-986b4086c921",
+    "veteranOrJustice": [
+      "justiceImpacted",
+    ],
+    "veteranStatus": "notVeteran",
+  },
+  "clientId": "01817e24-0d42-764f-8380-cabc31603866",
+  "createdAt": "<Date>",
+  "id": "01817e24-0d42-7ce0-83e7-a85d4ca11747",
+  "jobId": "01817e24-0d42-7b06-943b-43c05c9d4a6e",
+  "status": "interview",
+  "updatedAt": "<Date>",
+}
+`;

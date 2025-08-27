@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RspSignupPage renders correctly 1`] = `
+<div>
+  <h1
+    class="text marginBottom-2-5 font-h2"
+  >
+    Sign Up
+  </h1>
+  <p
+    class="text marginBottom-10"
+  >
+    Welcome to The Way Out. Sign up with an email and password to get started on your journey today.
+  </p>
+  <form>
+    <div
+      class="control"
+      role="group"
+    >
+      <label
+        class="label"
+        for=":r0:"
+      >
+        Email
+      </label>
+      <div
+        class="root primary md fluid md"
+      >
+        <input
+          class="input"
+          id=":r0:"
+          name="email"
+          placeholder="Your email address"
+          type="email"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="control"
+      role="group"
+    >
+      <label
+        class="label"
+        for=":r1:"
+      >
+        Password
+      </label>
+      <div
+        class="root primary md fluid md"
+      >
+        <input
+          class="input"
+          id=":r1:"
+          name="password"
+          placeholder="Enter your password"
+          type="password"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="flexDirection-row marginTop-4 marginBottom-4"
+    >
+      <div
+        class="control width-1/2 marginRight-4"
+        role="group"
+      >
+        <label
+          class="label"
+          for=":r2:"
+        >
+          First Name
+        </label>
+        <div
+          class="root primary md md"
+        >
+          <input
+            autocapitalize="words"
+            class="input"
+            id=":r2:"
+            name="firstName"
+            placeholder="Your first name"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="control width-1/2 marginTop-0"
+        role="group"
+      >
+        <label
+          class="label"
+          for=":r3:"
+        >
+          Last Name
+        </label>
+        <div
+          class="root primary md md"
+        >
+          <input
+            autocapitalize="words"
+            class="input"
+            id=":r3:"
+            name="lastName"
+            placeholder="Your last name"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="control"
+      role="group"
+    >
+      <label
+        class="checkbox primary md"
+      >
+        <input
+          class="input"
+          id=":r4:"
+          name="terms"
+          type="checkbox"
+          value=""
+        />
+        <div
+          aria-hidden="true"
+          class="control borderColor-primary bgcolor-primary"
+        >
+          <svg
+            class="icon"
+            focusable="false"
+            role="presentation"
+            viewBox="0 0 24 24"
+          >
+            <polygon
+              fill="currentColor"
+              points="9.3,19 3,12.8 5.3,10.4 9.3,14.3 18.7,5 21,7.3 "
+            />
+          </svg>
+        </div>
+        <div
+          class="label"
+        >
+          By signing up, I agree to the 
+          <a
+            href="/terms"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <p
+              class="text display-inline fontWeight-700"
+            >
+              Terms of Service
+            </p>
+          </a>
+           and 
+          <a
+            href="/privacy"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <p
+              class="text display-inline fontWeight-700"
+            >
+              Privacy Policy
+            </p>
+          </a>
+          .
+        </div>
+      </label>
+    </div>
+    <button
+      class="button md solid c-primary disabled fluid marginTop-10"
+      disabled=""
+      type="submit"
+    >
+      Sign Up
+    </button>
+  </form>
+  <div
+    class="marginTop-5"
+  >
+    Already using The Way Out? 
+    <a
+      class="text fontWeight-700"
+    >
+      Log In
+    </a>
+  </div>
+</div>
+`;

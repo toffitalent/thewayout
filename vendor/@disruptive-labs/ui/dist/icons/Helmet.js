@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgHelmet = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M12 4a9 9 0 015.656 16H6.344A9 9 0 0112 4z" }), React.createElement("path", { d: "M20 9h-8.8a1 1 0 00-.968 1.246c.507 2 1.596 3.418 3.268 4.254 2 1 4.333 1.5 7 1.5" }));
+export default SvgHelmet;

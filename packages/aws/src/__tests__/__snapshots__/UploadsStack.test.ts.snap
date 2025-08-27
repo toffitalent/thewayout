@@ -1,0 +1,593 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UploadsStack creates media stack 1`] = `
+"{
+  "Resources": {
+    "Bucket83908E77": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": "uploads-bucket",
+        "CorsConfiguration": {
+          "CorsRules": [
+            {
+              "AllowedHeaders": [
+                "*"
+              ],
+              "AllowedMethods": [
+                "GET",
+                "HEAD",
+                "POST",
+                "PUT"
+              ],
+              "AllowedOrigins": [
+                "*"
+              ]
+            }
+          ]
+        }
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain"
+    },
+    "BucketPolicyE9A3008A": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "Bucket83908E77"
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "CanonicalUser": {
+                  "Fn::GetAtt": [
+                    "DistributionOrigin1S3Origin5F5C0696",
+                    "S3CanonicalUserId"
+                  ]
+                }
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "Bucket83908E77",
+                        "Arn"
+                      ]
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      }
+    },
+    "CertificateCertificateRequestorFunctionServiceRoleC04C13DA": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "CertificateCertificateRequestorFunctionServiceRoleDefaultPolicy3C8845BC": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "acm:RequestCertificate",
+                "acm:DescribeCertificate",
+                "acm:DeleteCertificate",
+                "acm:AddTagsToCertificate"
+              ],
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": "route53:GetChange",
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": "route53:changeResourceRecordSets",
+              "Condition": {
+                "ForAllValues:StringEquals": {
+                  "route53:ChangeResourceRecordSetsRecordTypes": [
+                    "CNAME"
+                  ],
+                  "route53:ChangeResourceRecordSetsActions": [
+                    "UPSERT"
+                  ]
+                },
+                "ForAllValues:StringLike": {
+                  "route53:ChangeResourceRecordSetsNormalizedRecordNames": [
+                    "*.uploads.example.com"
+                  ]
+                }
+              },
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":route53:::hostedzone/DUMMY"
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "CertificateCertificateRequestorFunctionServiceRoleDefaultPolicy3C8845BC",
+        "Roles": [
+          {
+            "Ref": "CertificateCertificateRequestorFunctionServiceRoleC04C13DA"
+          }
+        ]
+      }
+    },
+    "CertificateCertificateRequestorFunction5E845413": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": "cdk-hnb659fds-assets-1111111111-us-west-2",
+          "S3Key": "d4c47643615e33c32aac58169698a692fa1d1f3e0da0dd6c4bf1c0e6af68d757.zip"
+        },
+        "Handler": "index.certificateRequestHandler",
+        "Role": {
+          "Fn::GetAtt": [
+            "CertificateCertificateRequestorFunctionServiceRoleC04C13DA",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs18.x",
+        "Timeout": 900
+      },
+      "DependsOn": [
+        "CertificateCertificateRequestorFunctionServiceRoleDefaultPolicy3C8845BC",
+        "CertificateCertificateRequestorFunctionServiceRoleC04C13DA"
+      ]
+    },
+    "CertificateCertificateRequestorResource2890C6B7": {
+      "Type": "AWS::CloudFormation::CustomResource",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CertificateCertificateRequestorFunction5E845413",
+            "Arn"
+          ]
+        },
+        "DomainName": "uploads.example.com",
+        "HostedZoneId": "DUMMY",
+        "Region": "us-east-1"
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "DefaultCachePolicyDDFA5BDC": {
+      "Type": "AWS::CloudFront::CachePolicy",
+      "Properties": {
+        "CachePolicyConfig": {
+          "DefaultTTL": 604800,
+          "MaxTTL": 31536000,
+          "MinTTL": 1,
+          "Name": "UploadsStackDefaultCachePolicy1E22002A-us-west-2",
+          "ParametersInCacheKeyAndForwardedToOrigin": {
+            "CookiesConfig": {
+              "CookieBehavior": "none"
+            },
+            "EnableAcceptEncodingBrotli": true,
+            "EnableAcceptEncodingGzip": true,
+            "HeadersConfig": {
+              "HeaderBehavior": "none"
+            },
+            "QueryStringsConfig": {
+              "QueryStringBehavior": "none"
+            }
+          }
+        }
+      }
+    },
+    "DistributionOrigin1S3Origin5F5C0696": {
+      "Type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
+      "Properties": {
+        "CloudFrontOriginAccessIdentityConfig": {
+          "Comment": "Identity for UploadsStackDistributionOrigin1C6420FC5"
+        }
+      }
+    },
+    "Distribution830FAC52": {
+      "Type": "AWS::CloudFront::Distribution",
+      "Properties": {
+        "DistributionConfig": {
+          "Aliases": [
+            "uploads.example.com"
+          ],
+          "DefaultCacheBehavior": {
+            "AllowedMethods": [
+              "GET",
+              "HEAD",
+              "OPTIONS"
+            ],
+            "CachePolicyId": {
+              "Ref": "DefaultCachePolicyDDFA5BDC"
+            },
+            "CachedMethods": [
+              "GET",
+              "HEAD",
+              "OPTIONS"
+            ],
+            "Compress": true,
+            "TargetOriginId": "UploadsStackDistributionOrigin1C6420FC5",
+            "ViewerProtocolPolicy": "redirect-to-https"
+          },
+          "Enabled": true,
+          "HttpVersion": "http2",
+          "IPV6Enabled": true,
+          "Origins": [
+            {
+              "DomainName": {
+                "Fn::GetAtt": [
+                  "Bucket83908E77",
+                  "RegionalDomainName"
+                ]
+              },
+              "Id": "UploadsStackDistributionOrigin1C6420FC5",
+              "S3OriginConfig": {
+                "OriginAccessIdentity": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "origin-access-identity/cloudfront/",
+                      {
+                        "Ref": "DistributionOrigin1S3Origin5F5C0696"
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ],
+          "Restrictions": {
+            "GeoRestriction": {
+              "Locations": [
+                "CN",
+                "IR",
+                "KP",
+                "RU"
+              ],
+              "RestrictionType": "blacklist"
+            }
+          },
+          "ViewerCertificate": {
+            "AcmCertificateArn": {
+              "Fn::GetAtt": [
+                "CertificateCertificateRequestorResource2890C6B7",
+                "Arn"
+              ]
+            },
+            "MinimumProtocolVersion": "TLSv1.2_2021",
+            "SslSupportMethod": "sni-only"
+          }
+        }
+      }
+    },
+    "ARecordE7B57761": {
+      "Type": "AWS::Route53::RecordSet",
+      "Properties": {
+        "AliasTarget": {
+          "DNSName": {
+            "Fn::GetAtt": [
+              "Distribution830FAC52",
+              "DomainName"
+            ]
+          },
+          "HostedZoneId": {
+            "Fn::FindInMap": [
+              "AWSCloudFrontPartitionHostedZoneIdMap",
+              {
+                "Ref": "AWS::Partition"
+              },
+              "zoneId"
+            ]
+          }
+        },
+        "HostedZoneId": "DUMMY",
+        "Name": "uploads.example.com.",
+        "Type": "A"
+      }
+    },
+    "AAAARecord09F889C0": {
+      "Type": "AWS::Route53::RecordSet",
+      "Properties": {
+        "AliasTarget": {
+          "DNSName": {
+            "Fn::GetAtt": [
+              "Distribution830FAC52",
+              "DomainName"
+            ]
+          },
+          "HostedZoneId": {
+            "Fn::FindInMap": [
+              "AWSCloudFrontPartitionHostedZoneIdMap",
+              {
+                "Ref": "AWS::Partition"
+              },
+              "zoneId"
+            ]
+          }
+        },
+        "HostedZoneId": "DUMMY",
+        "Name": "uploads.example.com.",
+        "Type": "AAAA"
+      }
+    }
+  },
+  "Mappings": {
+    "AWSCloudFrontPartitionHostedZoneIdMap": {
+      "aws": {
+        "zoneId": "Z2FDTNDATAQYW2"
+      },
+      "aws-cn": {
+        "zoneId": "Z3RFFRIM2A3IF5"
+      }
+    }
+  },
+  "Outputs": {
+    "ExportsOutputFnGetAttBucket83908E77Arn063C8555": {
+      "Value": {
+        "Fn::GetAtt": [
+          "Bucket83908E77",
+          "Arn"
+        ]
+      },
+      "Export": {
+        "Name": "UploadsStack:ExportsOutputFnGetAttBucket83908E77Arn063C8555"
+      }
+    }
+  },
+  "Parameters": {
+    "BootstrapVersion": {
+      "Type": "AWS::SSM::Parameter::Value<String>",
+      "Default": "/cdk-bootstrap/hnb659fds/version",
+      "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
+    }
+  },
+  "Rules": {
+    "CheckBootstrapVersion": {
+      "Assertions": [
+        {
+          "Assert": {
+            "Fn::Not": [
+              {
+                "Fn::Contains": [
+                  [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                  ],
+                  {
+                    "Ref": "BootstrapVersion"
+                  }
+                ]
+              }
+            ]
+          },
+          "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI."
+        }
+      ]
+    }
+  }
+}"
+`;
+
+exports[`UploadsStack sets removal policy to destroy for non-production stacks 1`] = `
+"Snapshot Diff:
+- First value
++ Second value
+
+@@ -79,11 +79,11 @@
+          "Type": "A",
+        },
+        "Type": "AWS::Route53::RecordSet",
+      },
+      "Bucket83908E77": Object {
+-       "DeletionPolicy": "Retain",
++       "DeletionPolicy": "Delete",
+        "Properties": Object {
+          "BucketName": "uploads-bucket",
+          "CorsConfiguration": Object {
+            "CorsRules": Array [
+              Object {
+@@ -100,21 +100,85 @@
+                  "*",
+                ],
+              },
+            ],
+          },
++         "Tags": Array [
++           Object {
++             "Key": "aws-cdk:auto-delete-objects",
++             "Value": "true",
+            },
++         ],
++       },
+        "Type": "AWS::S3::Bucket",
+-       "UpdateReplacePolicy": "Retain",
++       "UpdateReplacePolicy": "Delete",
++     },
++     "BucketAutoDeleteObjectsCustomResourceBAFD23C2": Object {
++       "DeletionPolicy": "Delete",
++       "DependsOn": Array [
++         "BucketPolicyE9A3008A",
++       ],
++       "Properties": Object {
++         "BucketName": Object {
++           "Ref": "Bucket83908E77",
++         },
++         "ServiceToken": Object {
++           "Fn::GetAtt": Array [
++             "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F",
++             "Arn",
++           ],
++         },
++       },
++       "Type": "Custom::S3AutoDeleteObjects",
++       "UpdateReplacePolicy": "Delete",
+      },
+      "BucketPolicyE9A3008A": Object {
+        "Properties": Object {
+          "Bucket": Object {
+            "Ref": "Bucket83908E77",
+          },
+          "PolicyDocument": Object {
+            "Statement": Array [
++             Object {
++               "Action": Array [
++                 "s3:PutBucketPolicy",
++                 "s3:GetBucket*",
++                 "s3:List*",
++                 "s3:DeleteObject*",
++               ],
++               "Effect": "Allow",
++               "Principal": Object {
++                 "AWS": Object {
++                   "Fn::GetAtt": Array [
++                     "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092",
++                     "Arn",
++                   ],
++                 },
++               },
++               "Resource": Array [
++                 Object {
++                   "Fn::GetAtt": Array [
++                     "Bucket83908E77",
++                     "Arn",
++                   ],
++                 },
++                 Object {
++                   "Fn::Join": Array [
++                     "",
++                     Array [
++                       Object {
++                         "Fn::GetAtt": Array [
++                           "Bucket83908E77",
++                           "Arn",
++                         ],
++                       },
++                       "/*",
++                     ],
++                   ],
++                 },
++               ],
++             },
+              Object {
+                "Action": "s3:GetObject",
+                "Effect": "Allow",
+                "Principal": Object {
+                  "CanonicalUser": Object {
+@@ -273,10 +337,66 @@
+            ],
+          },
+        },
+        "Type": "AWS::CloudFormation::CustomResource",
+        "UpdateReplacePolicy": "Delete",
++     },
++     "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F": Object {
++       "DependsOn": Array [
++         "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092",
++       ],
++       "Properties": Object {
++         "Code": Object {
++           "S3Bucket": "cdk-hnb659fds-assets-1111111111-us-west-2",
++           "S3Key": "b7f33614a69548d6bafe224d751a7ef238cde19097415e553fe8b63a4c8fd8a6.zip",
++         },
++         "Description": Object {
++           "Fn::Join": Array [
++             "",
++             Array [
++               "Lambda function for auto-deleting objects in ",
++               Object {
++                 "Ref": "Bucket83908E77",
++               },
++               " S3 bucket.",
++             ],
++           ],
++         },
++         "Handler": "index.handler",
++         "MemorySize": 128,
++         "Role": Object {
++           "Fn::GetAtt": Array [
++             "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092",
++             "Arn",
++           ],
++         },
++         "Runtime": "nodejs18.x",
++         "Timeout": 900,
++       },
++       "Type": "AWS::Lambda::Function",
++     },
++     "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092": Object {
++       "Properties": Object {
++         "AssumeRolePolicyDocument": Object {
++           "Statement": Array [
++             Object {
++               "Action": "sts:AssumeRole",
++               "Effect": "Allow",
++               "Principal": Object {
++                 "Service": "lambda.amazonaws.com",
++               },
++             },
++           ],
++           "Version": "2012-10-17",
++         },
++         "ManagedPolicyArns": Array [
++           Object {
++             "Fn::Sub": "arn:\${AWS::Partition}:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
++           },
++         ],
++       },
++       "Type": "AWS::IAM::Role",
+      },
+      "DefaultCachePolicyDDFA5BDC": Object {
+        "Properties": Object {
+          "CachePolicyConfig": Object {
+            "DefaultTTL": 604800,"
+`;

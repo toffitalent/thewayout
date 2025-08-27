@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgMelon = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M20 10c0 5.523-4.477 10-10 10a9.967 9.967 0 01-6.984-2.842l4.343-4.153a4 4 0 005.76-5.51l4.342-4.153A9.963 9.963 0 0120 10z" }));
+export default SvgMelon;

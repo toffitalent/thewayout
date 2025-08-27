@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgBoxAlignTopFilled = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M19 3.005H5a2 2 0 00-2 2v5a1 1 0 001 1h16a1 1 0 001-1v-5a2 2 0 00-2-2zM4 13.995a1 1 0 01.993.883l.007.127a1 1 0 01-1.993.117L3 14.995a1 1 0 011-1zM4 18.995a1 1 0 01.993.883l.007.127a1 1 0 01-1.993.117L3 19.995a1 1 0 011-1zM9 18.995a1 1 0 01.993.883l.007.127a1 1 0 01-1.993.117L8 19.995a1 1 0 011-1zM15 18.995a1 1 0 01.993.883l.007.127a1 1 0 01-1.993.117L14 19.995a1 1 0 011-1zM20 18.995a1 1 0 01.993.883l.007.127a1 1 0 01-1.993.117L19 19.995a1 1 0 011-1zM20 13.995a1 1 0 01.993.883l.007.127a1 1 0 01-1.993.117L19 14.995a1 1 0 011-1z", fill: "currentColor", stroke: "none" }));
+export default SvgBoxAlignTopFilled;

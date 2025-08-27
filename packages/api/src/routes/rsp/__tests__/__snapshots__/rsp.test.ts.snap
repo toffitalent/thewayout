@@ -1,0 +1,260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes > Rsp > Rsp DELETE /rsp/:id/accounts/:userId removes rsp account only for owner 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "owner",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Allowed only to owners",
+  "status": 400,
+}
+`;
+
+exports[`Routes > Rsp > Rsp DELETE /rsp/:id/invitations/:invitationId removes invitation only for owner 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "owner",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Allowed only to owners",
+  "status": 400,
+}
+`;
+
+exports[`Routes > Rsp > Rsp GET /rsp/:id/accounts/:userId returns rsp account 1`] = `
+{
+  "avatar": null,
+  "email": "mariah_barton@example.com",
+  "firstName": "Mariah",
+  "id": "01817e24-0d42-786a-a454-7291c0173657",
+  "isProfileFilled": true,
+  "lastName": "Barton",
+  "phone": "1231231234",
+  "role": "member",
+  "rsp": {
+    "address": "Ibrahim Pine",
+    "avatar": null,
+    "city": "East Barneybury",
+    "createdAt": "<Date>",
+    "description": "Enim sequi iusto.
+Explicabo quisquam omnis nisi corporis corrupti.
+Cupiditate qui culpa numquam iure quisquam vero architecto.",
+    "email": null,
+    "id": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    "justiceStatus": [
+      "halfwayHouse",
+      "parole",
+    ],
+    "name": "Oberbrunner and Sons",
+    "offenses": [
+      "burglary",
+      "distribution",
+      "diuDwi",
+      "embezzlement",
+    ],
+    "phone": null,
+    "postalCode": "78580",
+    "servicesArea": [
+      "Adams",
+      "Ashland",
+      "Barron",
+    ],
+    "state": "AK",
+    "support": [
+      "basicHygieneSupport",
+      "clothing",
+      "basicTechSkills",
+      "childCare",
+    ],
+    "updatedAt": "<Date>",
+    "veteranOrJustice": [
+      "justiceImpacted",
+    ],
+  },
+  "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+  "userId": "01817e24-0d42-75e5-8c38-8eb33c91884c",
+}
+`;
+
+exports[`Routes > Rsp > Rsp GET /rsp/:id/accounts/:userId returns rsp account only for owner 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "owner",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Allowed only to owners",
+  "status": 400,
+}
+`;
+
+exports[`Routes > Rsp > Rsp GET /rsp/:id/case-managers lists case managers 1`] = `
+[
+  {
+    "avatar": null,
+    "caseLoad": 26,
+    "email": "mariah_barton@example.com",
+    "firstName": "Mariah",
+    "id": "01817e24-0d42-786a-a454-7291c0173657",
+    "lastName": "Barton",
+    "phone": "1231231234",
+    "userId": "01817e24-0d42-75e5-8c38-8eb33c91884c",
+  },
+  {
+    "avatar": null,
+    "caseLoad": 0,
+    "email": "quinten.mcdermott@example.com",
+    "firstName": "Quinten",
+    "id": "01817e24-0d42-7846-9a0b-4a6f781f0513",
+    "lastName": "McDermott",
+    "phone": "1231231234",
+    "userId": "01817e24-0d42-75da-8f84-bfaed6311cda",
+  },
+]
+`;
+
+exports[`Routes > Rsp > Rsp GET /rsp/:id/case-managers lists case managers only for owner 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "owner",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Allowed only to owners",
+  "status": 400,
+}
+`;
+
+exports[`Routes > Rsp > Rsp GET /rsp/:id/invitations lists invitations 1`] = `
+{
+  "body": [
+    {
+      "email": "zion.reichel12@yahoo.com",
+      "firstName": null,
+      "id": Any<String>,
+      "lastName": null,
+      "phone": null,
+      "rspId": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+    },
+  ],
+}
+`;
+
+exports[`Routes > Rsp > Rsp GET /rsp/:id/invitations lists only pending invitations 1`] = `[]`;
+
+exports[`Routes > Rsp > Rsp PATCH /rsp/:id updates rsp organization 1`] = `
+{
+  "address": "Ibrahim Pine",
+  "avatar": null,
+  "city": "East Barneybury",
+  "createdAt": "<Date>",
+  "description": "Enim sequi iusto.
+Explicabo quisquam omnis nisi corporis corrupti.
+Cupiditate qui culpa numquam iure quisquam vero architecto.",
+  "email": null,
+  "id": "01817e24-0d42-77e5-9a94-ad514d8ec5dc",
+  "justiceStatus": [
+    "halfwayHouse",
+    "parole",
+  ],
+  "name": "Test",
+  "offenses": [
+    "burglary",
+    "distribution",
+    "diuDwi",
+    "embezzlement",
+  ],
+  "phone": null,
+  "postalCode": "78580",
+  "servicesArea": [
+    "Adams",
+    "Ashland",
+    "Barron",
+  ],
+  "state": "AK",
+  "support": [
+    "basicHygieneSupport",
+    "clothing",
+    "basicTechSkills",
+    "childCare",
+  ],
+  "updatedAt": "<Date>",
+  "veteranOrJustice": [
+    "justiceImpacted",
+  ],
+}
+`;
+
+exports[`Routes > Rsp > Rsp PATCH /rsp/:id updates rsp organization only by owner 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "owner",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Allowed only to owners",
+  "status": 400,
+}
+`;
+
+exports[`Routes > Rsp > Rsp PATCH /rsp/:id/accounts/:id updates case manager account only by owner 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "owner",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Allowed only to owners",
+  "status": 400,
+}
+`;
+
+exports[`Routes > Rsp > Rsp POST /rsp/:id/accounts/invite only owner can sends invitation 1`] = `
+{
+  "code": "InvalidRequest",
+  "errors": [
+    {
+      "error": "invalid",
+      "key": [
+        "owner",
+      ],
+      "source": "body",
+    },
+  ],
+  "message": "Allowed only to owners",
+  "status": 400,
+}
+`;

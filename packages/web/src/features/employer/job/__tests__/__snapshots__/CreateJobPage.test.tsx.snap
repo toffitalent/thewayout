@@ -1,0 +1,459 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateJobPage renders correctly 1`] = `
+<div>
+  <div
+    class="wizardWrapper"
+  >
+    <section
+      class="layout detailsStep"
+    >
+      <div
+        class="container"
+      >
+        <header
+          class="header"
+        >
+          <button
+            aria-label="Previous"
+            class="button sm outline c-grey disabled iconButton sm round back backHidden"
+            disabled=""
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+                stroke="none"
+              />
+              <polyline
+                points="15 6 9 12 15 18"
+              />
+            </svg>
+          </button>
+          <div
+            aria-valuemax="100"
+            aria-valuemin="0"
+            aria-valuenow="0"
+            class="progress md rounded trackColor progress"
+            role="progressbar"
+          >
+            <div
+              class="track bgcolor-primary"
+              style="transform: translateX(-100%);"
+            />
+          </div>
+          <h2
+            class="text title"
+          >
+            Add job details
+          </h2>
+          <p
+            class="text description"
+          >
+            Please refrain from including company name or any employer-identifying information.
+          </p>
+        </header>
+        <form
+          class="detailsStep"
+        >
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r0:"
+            >
+              Job Title
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <input
+                class="input"
+                id=":r0:"
+                name="title"
+                placeholder="E.g. Car Wash Attendant"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r1:"
+            >
+              Short Description
+            </label>
+            <div
+              class="root primary md fluid md multiline"
+            >
+              <textarea
+                aria-describedby=":r1:-helptext"
+                class="input"
+                id=":r1:"
+                name="description"
+                placeholder="E.g. Wash attendants are responsible for performing the daily operational practices of running the car wash facility."
+                rows="4"
+                type="text"
+              />
+            </div>
+            <div
+              aria-live="polite"
+              class="helperText"
+              id=":r1:-helptext"
+            >
+              Max 1,000 characters.
+            </div>
+          </div>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r2:"
+            >
+              Department
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <input
+                class="input"
+                id=":r2:"
+                name="department"
+                placeholder="E.g. Customer Service"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="control display-inline-block width-1/2 paddingRight-2"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r3:"
+            >
+              Start Date
+            </label>
+            <div
+              class="root primary md fluid md fieldHalfWidth"
+            >
+              <select
+                class="input"
+                id=":r3:"
+                name="startAtMonth"
+              >
+                <option
+                  disabled=""
+                  hidden=""
+                  value=""
+                >
+                  Select month
+                </option>
+                <option
+                  value="1"
+                >
+                  Jan.
+                </option>
+                <option
+                  value="2"
+                >
+                  Feb.
+                </option>
+                <option
+                  value="3"
+                >
+                  Mar.
+                </option>
+                <option
+                  value="4"
+                >
+                  Apr.
+                </option>
+                <option
+                  value="5"
+                >
+                  May
+                </option>
+                <option
+                  value="6"
+                >
+                  June
+                </option>
+                <option
+                  value="7"
+                >
+                  July
+                </option>
+                <option
+                  value="8"
+                >
+                  Aug.
+                </option>
+                <option
+                  value="9"
+                >
+                  Sept.
+                </option>
+                <option
+                  value="10"
+                >
+                  Oct.
+                </option>
+                <option
+                  value="11"
+                >
+                  Nov.
+                </option>
+                <option
+                  value="12"
+                >
+                  Dec.
+                </option>
+              </select>
+              <div
+                class="icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="control display-inline-block width-1/2 paddingLeft-2"
+            role="group"
+          >
+            <div
+              class="root primary md fluid md fieldHalfWidth"
+            >
+              <select
+                class="input"
+                id=":r4:"
+                name="startAtYear"
+              >
+                <option
+                  disabled=""
+                  hidden=""
+                  value=""
+                >
+                  Select year
+                </option>
+                <option
+                  value="2024"
+                >
+                  2024
+                </option>
+                <option
+                  value="2025"
+                >
+                  2025
+                </option>
+                <option
+                  value="2026"
+                >
+                  2026
+                </option>
+              </select>
+              <div
+                class="icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r5:"
+            >
+              Work Location
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <select
+                class="input"
+                id=":r5:"
+                name="typeOfWork"
+              >
+                <option
+                  disabled=""
+                  hidden=""
+                  value=""
+                >
+                  Select
+                </option>
+                <option
+                  value="onsite"
+                >
+                  Onsite
+                </option>
+                <option
+                  value="remote"
+                >
+                  Remote
+                </option>
+                <option
+                  value="hybrid"
+                >
+                  Hybrid
+                </option>
+                <option
+                  value="inPerson"
+                >
+                  In-person
+                </option>
+              </select>
+              <div
+                class="icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r6:"
+            >
+              Employment Type
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <select
+                class="input"
+                id=":r6:"
+                name="workingTime"
+              >
+                <option
+                  disabled=""
+                  hidden=""
+                  value=""
+                >
+                  Select
+                </option>
+                <option
+                  value="fullTime"
+                >
+                  Full-time
+                </option>
+                <option
+                  value="partTime"
+                >
+                  Part-time
+                </option>
+                <option
+                  value="contractor"
+                >
+                  Contractor
+                </option>
+                <option
+                  value="seasonal"
+                >
+                  Seasonal
+                </option>
+              </select>
+              <div
+                class="icon"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  role="presentation"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="control"
+            role="group"
+          >
+            <label
+              class="label"
+              for=":r7:"
+            >
+              Number of Open Positions
+            </label>
+            <div
+              class="root primary md fluid md"
+            >
+              <input
+                class="input"
+                id=":r7:"
+                name="numberOfOpenPositions"
+                placeholder="E.g. 3"
+                type="number"
+                value=""
+              />
+            </div>
+          </div>
+          <button
+            class="button md solid c-primary disabled fluid maxWidth-96 marginTop-8"
+            disabled=""
+            type="submit"
+          >
+            Save & Next
+          </button>
+        </form>
+      </div>
+    </section>
+  </div>
+</div>
+`;

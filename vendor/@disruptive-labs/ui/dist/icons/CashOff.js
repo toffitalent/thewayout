@@ -1,0 +1,4 @@
+import React from 'react';
+import { createIcon } from '../components/Icon';
+const SvgCashOff = createIcon(React.createElement("path", { d: "M0 0h24v24H0z", stroke: "none" }), React.createElement("path", { d: "M13 9h6a2 2 0 012 2v6m-2 2H9a2 2 0 01-2-2v-6a2 2 0 012-2M12.582 12.59a2 2 0 002.83 2.826M17 9V7a2 2 0 00-2-2H9M5 5a2 2 0 00-2 2v6a2 2 0 002 2h2M3 3l18 18" }));
+export default SvgCashOff;

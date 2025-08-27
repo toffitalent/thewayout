@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomStepPicture renders correctly 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <div
+      class="avatar s-2xl"
+    >
+      <div
+        aria-label="Test User"
+        class="initials"
+      >
+        TU
+      </div>
+    </div>
+    <div
+      class="marginTop-5"
+    >
+      <button
+        class="button md outline c-primary marginBottom-2"
+        type="button"
+      >
+        Edit Picture
+      </button>
+      <input
+        accept="image/jpg, image/png, image/gif"
+        hidden=""
+        type="file"
+      />
+    </div>
+    <p
+      class="text color-grey-600 fontSize-sm"
+    >
+      JPG, GIF or PNG. 1MB max.
+    </p>
+    <button
+      class="button md solid c-primary fluid width-96 marginTop-8"
+      type="button"
+    >
+      Save & Next
+    </button>
+  </div>
+</div>
+`;

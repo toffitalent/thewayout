@@ -1,0 +1,648 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmployersPage renders correctly 1`] = `
+<div>
+  <section
+    class="hero"
+  >
+    <div
+      aria-hidden="true"
+      class="bg"
+    >
+      <span
+        style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+      >
+        <img
+          alt=""
+          data-nimg="fill"
+          decoding="async"
+          sizes="100vw"
+          src="/_next/image?url=%2Ftest-file-stub&w=3840&q=75"
+          srcset="/_next/image?url=%2Ftest-file-stub&w=640&q=75 640w, /_next/image?url=%2Ftest-file-stub&w=750&q=75 750w, /_next/image?url=%2Ftest-file-stub&w=828&q=75 828w, /_next/image?url=%2Ftest-file-stub&w=1080&q=75 1080w, /_next/image?url=%2Ftest-file-stub&w=1200&q=75 1200w, /_next/image?url=%2Ftest-file-stub&w=1920&q=75 1920w, /_next/image?url=%2Ftest-file-stub&w=2048&q=75 2048w, /_next/image?url=%2Ftest-file-stub&w=3840&q=75 3840w"
+          style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+        />
+      </span>
+      s
+    </div>
+    <div
+      class="container"
+    >
+      <div
+        class="container justifyContent-center textAlign-center"
+      >
+        <div
+          class="item bp-xs-12 bp-md-8"
+        >
+          <div
+            class="alignItems-center flexDirection-row justifyContent-center marginBottom-5"
+          >
+            <p
+              class="text marginRight-1 fontWeight-700"
+            >
+              Funded by
+            </p>
+            <span
+              style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+            >
+              <span
+                style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2770%27%20height=%2724%27/%3e"
+                  style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+                />
+              </span>
+              <img
+                alt="google"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </span>
+          </div>
+          <h1>
+            Seeking Qualified Job Applicants?
+          </h1>
+          <p
+            class="text"
+          >
+            Our pipeline is full of qualified, talented, and eager-to-work individuals waiting to fill your open positions.
+          </p>
+          <div
+            class="actions"
+          >
+            <a
+              class="button md solid c-primary"
+              href="/signup"
+            >
+              Create Job Offer
+              <span
+                aria-hidden="true"
+                class="accessoryRight"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="icon"
+                  focusable="false"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    stroke="none"
+                  />
+                  <path
+                    d="M5 12h14M15 16l4-4M15 8l4 4"
+                  />
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container flexDirection-row-reverse"
+    >
+      <div
+        class="sectionContent bp-xs-12 bp-md-6 paddingTop-24 paddingBottom-24"
+      >
+        <h2
+          class="text sectionTitle1 marginBottom-10"
+        >
+          Average Savings with The Way Out
+        </h2>
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%270%27%20height=%270%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt=""
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+          />
+          <noscript />
+        </span>
+        <p
+          class="text marginTop-12"
+        >
+          Based on $31,200 Annual Salary
+        </p>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class="greenBg section paddingRight-4 paddingLeft-4 paddingTop-36 paddingBottom-36"
+  >
+    <p
+      class="text width-full fontSize-4xl fontWeight-700 textAlign-center"
+    >
+      Job search struggles affect nearly 200,000 Veterans every year.
+    </p>
+    <p
+      class="text color-grey-600 marginTop-2"
+    >
+      HR Daily Advisor 11.11.2022
+    </p>
+    <p
+      class="text width-full marginTop-10 fontSize-4xl fontWeight-700 textAlign-center"
+    >
+      Every year more than 650,000 formerly incarcerated individuals enter the job market.
+    </p>
+    <p
+      class="text color-grey-600 marginTop-2"
+    >
+      Forbes 4.29.2022
+    </p>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container flexDirection-row-reverse"
+    >
+      <div
+        class="sectionContent bp-xs-12 bp-md-6"
+      >
+        <h2
+          class="text sectionTitle1 marginBottom-5"
+        >
+          Increase Employee Retention
+        </h2>
+        <p
+          class="text"
+        >
+          When employers, service providers, and job seekers utilize our platform, the job retention rate is nearly 90%.
+        </p>
+        <a
+          class="button md solid c-primary marginTop-8"
+          href="/signup"
+        >
+          Create Profile
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="sectionContent bp-xs-12 bp-md-6"
+      >
+        <h2
+          class="text sectionTitle1 marginBottom-5"
+        >
+          Reduce Recruitment Costs
+        </h2>
+        <p
+          class="text"
+        >
+          Find resources to help your organization with tax credits, training reimbursements, and other financial incentives to save on labor costs.
+        </p>
+        <a
+          class="button md solid c-primary marginTop-8"
+          href="https://doodle.com/bp/elirivera/eli-riverathe-way-out"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Schedule A Demo
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container flexDirection-row-reverse"
+    >
+      <div
+        class="sectionContent bp-xs-12 bp-md-6"
+      >
+        <h2
+          class="text sectionTitle1 marginBottom-5"
+        >
+          Create An Inclusive Culture
+        </h2>
+        <p
+          class="text"
+        >
+          Diversify your talent pool and cultivate a culture of inclusion, collaboration, and innovation. Our cloaking mechanism ensures there will be no implicit biases in the recruiting process. Help build communities and keep families together.
+        </p>
+        <a
+          class="button md solid c-primary marginTop-8"
+          href="/signup"
+        >
+          List Jobs
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class="section paddingRight-4 paddingLeft-4 paddingTop-36"
+  >
+    <div
+      class="bp-xs-12 bp-md-8 alignItems-center flexDirection-column display-flex"
+    >
+      <p
+        class="text fontSize-4xl fontWeight-700 textAlign-center"
+      >
+        While other fair chance employment platforms only focus on bringing employers and employees together, The Way Out additionally focuses on development and retention by offering ongoing training and support opportunities.
+      </p>
+      <a
+        class="button md text c-primary marginTop-2 fontSize-lg"
+        href="/signup"
+      >
+        List a Job
+        <span
+          aria-hidden="true"
+          class="accessoryRight"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon"
+            focusable="false"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              stroke="none"
+            />
+            <path
+              d="M5 12h14M15 16l4-4M15 8l4 4"
+            />
+          </svg>
+        </span>
+      </a>
+    </div>
+  </section>
+  <section
+    class=""
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="sectionContentWider bp-xs-12 bp-md-6"
+      >
+        <h2
+          class="text title marginBottom-2"
+        >
+          How it works?
+        </h2>
+        <div
+          class=""
+        >
+          <div
+            class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+          >
+            <p
+              class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+            >
+              1
+            </p>
+            <div
+              class="marginLeft-8"
+            >
+              <p
+                class="text marginBottom-2 fontSize-xl fontWeight-700"
+              >
+                Create Your Profile
+              </p>
+              <p
+                class="text color-grey-600"
+              >
+                Choose a subscription package and begin creating your employer profile by adding your company details.
+              </p>
+            </div>
+          </div>
+          <div
+            class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+          >
+            <p
+              class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+            >
+              2
+            </p>
+            <div
+              class="marginLeft-8"
+            >
+              <p
+                class="text marginBottom-2 fontSize-xl fontWeight-700"
+              >
+                Identify Ideal Candidate
+              </p>
+              <p
+                class="text color-grey-600"
+              >
+                Identify your ideal candidate qualifications based on federal and state guidelines for each job you post.
+              </p>
+            </div>
+          </div>
+          <div
+            class="infoItem borderBottom flexDirection-row paddingTop-10 paddingBottom-10"
+          >
+            <p
+              class="text color-primary fontSize-5xl fontWeight-700 lineHeight-none"
+            >
+              3
+            </p>
+            <div
+              class="marginLeft-8"
+            >
+              <p
+                class="text marginBottom-2 fontSize-xl fontWeight-700"
+              >
+                Hire Qualified Candidates
+              </p>
+              <p
+                class="text color-grey-600"
+              >
+                Search and review qualified cloaked candidates and set up interviews. Once an interview is scheduled, the applicant's full profile will be made available.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="button md solid c-primary"
+          href="/signup"
+        >
+          List a Job
+          <span
+            aria-hidden="true"
+            class="accessoryRight"
+          >
+            <svg
+              aria-hidden="true"
+              class="icon"
+              focusable="false"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                stroke="none"
+              />
+              <path
+                d="M5 12h14M15 16l4-4M15 8l4 4"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <div
+        class="imgWrapper bp-xs-12 bp-md-6"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 100% 0px 0px 0px;"
+          />
+          <img
+            alt=""
+            data-nimg="responsive"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+          <noscript />
+        </span>
+      </div>
+    </div>
+  </section>
+  <section
+    class="greenBg section paddingRight-4 paddingLeft-4 paddingTop-36 paddingBottom-36"
+  >
+    <div
+      class="bp-xs-12 bp-md-8 alignItems-center flexDirection-column display-flex"
+    >
+      <a
+        href="https://www.inchecksolutions.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <span
+          style="box-sizing: border-box; display: inline-block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;"
+        >
+          <span
+            style="box-sizing: border-box; display: block; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27200%27%20height=%270%27/%3e"
+              style="display: block; max-width: 100%; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"
+            />
+          </span>
+          <img
+            alt=""
+            data-nimg="intrinsic"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: contain;"
+          />
+          <noscript />
+        </span>
+      </a>
+      <p
+        class="text sectionTitle1 marginBottom-5 fontWeight-700 textAlign-center"
+      >
+        InCheck is our Fair Chance screening partner.
+      </p>
+      <p
+        class="text color-grey-600 marginBottom-8 fontSize-xl fontWeight-700 textAlign-center"
+      >
+        Have you evaluated your screening program to ensure candidates are being fairly assessed for a role they are qualified to hold? InCheck can help. By practicing fair chance hiring, you can build a pool of qualified and diverse talent.
+      </p>
+      <a
+        class="button md solid c-primary"
+        href="https://www.inchecksolutions.com/thewayout/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Learn More
+        <span
+          aria-hidden="true"
+          class="accessoryRight"
+        >
+          <svg
+            aria-hidden="true"
+            class="icon"
+            focusable="false"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              stroke="none"
+            />
+            <path
+              d="M5 12h14M15 16l4-4M15 8l4 4"
+            />
+          </svg>
+        </span>
+      </a>
+    </div>
+  </section>
+</div>
+`;
